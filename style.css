@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Duas colunas */
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #357ab7;
+    transform: translateY(-2px);
+    /* Efeito de elevação ao passar o mouse */
+}
+
+button:active {
+    transform: translateY(0);
+    /* Retorna ao normal quando clicado */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#content {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.tabela-ascii {
+    overflow-x: auto;
+}
+
+.tabela-ascii table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-ascii th,
+.tabela-ascii td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.tabela-ascii th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 500px) {
+    .menu {
+        grid-template-columns: 1fr;
+        /* Uma coluna em telas menores */
+    }
+
+    .container {
+        padding: 20px 30px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    #content {
+        font-size: 1em;
+    }
+}
