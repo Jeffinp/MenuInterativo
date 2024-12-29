@@ -46,19 +46,62 @@ function exibirOlaMundo() {
 }
 
 function lerNome() {
-    const nome = prompt("Digite seu nome: ");
     contentDiv.innerHTML = `
-        <h2>Olá, ${nome}! Seja bem-vindo(a)!</h2>
+        <div class="input-group">
+            <label for="nome">Digite seu nome:</label>
+            <input type="text" id="nome">
+        </div>
+        <button onclick="exibirNome()">Exibir Nome</button>
         <button onclick="voltarAoMenu()">Voltar ao Menu</button>
+        <div id="resultado-nome"></div>
     `;
 }
 
+function exibirNome() {
+    const nome = document.getElementById("nome").value;
+    if (nome.trim() !== "") {
+        document.getElementById("resultado-nome").innerHTML = `
+            <h2>Olá, ${nome}! Seja bem-vindo(a)!</h2>
+        `;
+    } else {
+        exibirMensagemErro("Nome inválido!");
+    }
+}
+
 function realizarConta() {
-    let numero1 = parseFloat(prompt("Digite o primeiro número: "));
-    let numero2 = parseFloat(prompt("Digite o segundo número: "));
-    let operacao = parseInt(
-        prompt("Escolha a operação (1: +, 2: -, 3: *, 4: /): ")
-    );
+    contentDiv.innerHTML = `
+        <div class="input-group">
+            <label for="numero1">Digite o primeiro número:</label>
+            <input type="number" id="numero1">
+        </div>
+        <div class="input-group">
+            <label for="numero2">Digite o segundo número:</label>
+            <input type="number" id="numero2">
+        </div>
+        <div class="input-group">
+            <label for="operacao">Escolha a operação:</label>
+            <select id="operacao">
+                <option value="1">+</option>
+                <option value="2">-</option>
+                <option value="3">*</option>
+                <option value="4">/</option>
+            </select>
+        </div>
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="voltarAoMenu()">Voltar ao Menu</button>
+        <div id="resultado-conta"></div>
+    `;
+}
+
+function calcular() {
+    let numero1 = obterNumero("numero1");
+    let numero2 = obterNumero("numero2");
+
+    if (numero1 === null || numero2 === null) {
+        return; // Volta ao menu se a entrada for inválida (tratado em obterNumero)
+    }
+
+    let operacao = parseInt(document.getElementById("operacao").value);
     let resultado;
 
     switch (operacao) {
@@ -75,39 +118,76 @@ function realizarConta() {
             if (numero2 !== 0) {
                 resultado = numero1 / numero2;
             } else {
-                contentDiv.innerHTML = `
-                    <h2>Divisão por zero não é permitida.</h2>
-                    <button onclick="voltarAoMenu()">Voltar ao Menu</button>
-                `;
+                exibirMensagemErro("Divisão por zero não é permitida.");
                 return;
             }
             break;
         default:
-            contentDiv.innerHTML = `
-                <h2>Operação inválida.</h2>
-                <button onclick="voltarAoMenu()">Voltar ao Menu</button>
-            `;
+            exibirMensagemErro("Operação inválida.");
             return;
     }
 
-    contentDiv.innerHTML = `
-        <h2>Resultado: ${resultado}</h2>
-        <button onclick="voltarAoMenu()">Voltar ao Menu</button>
+    // Formata o resultado com separadores de milhares e exibe
+    document.getElementById("resultado-conta").innerHTML = `
+        <h2>Resultado: ${resultado.toLocaleString('pt-BR')}</h2>
     `;
 }
 
 function calculadoraIdade() {
-    let anoNascimento = parseInt(prompt("Digite o ano de nascimento: "));
-    let anoAtual = parseInt(prompt("Digite o ano atual: "));
-    let idade = anoAtual - anoNascimento;
     contentDiv.innerHTML = `
-        <h2>Sua idade é: ${idade} anos</h2>
+        <div class="input-group">
+            <label for="anoNascimento">Digite o ano de nascimento:</label>
+            <input type="number" id="anoNascimento">
+        </div>
+        <div class="input-group">
+            <label for="anoAtual">Digite o ano atual:</label>
+            <input type="number" id="anoAtual">
+        </div>
+        <button onclick="calcularIdade()">Calcular Idade</button>
         <button onclick="voltarAoMenu()">Voltar ao Menu</button>
+        <div id="resultado-idade"></div>
     `;
 }
 
+function calcularIdade() {
+    let anoNascimento = obterNumero("anoNascimento", true);
+    let anoAtual = obterNumero("anoAtual", true);
+
+    if (anoNascimento === null || anoAtual === null) {
+        return; // Volta ao menu se a entrada for inválida
+    }
+
+    let idade = anoAtual - anoNascimento;
+
+    // Valida se a idade é um número positivo
+    if (idade >= 0) {
+        document.getElementById("resultado-idade").innerHTML = `
+            <h2>Sua idade é: ${idade} anos</h2>
+        `;
+    } else {
+        exibirMensagemErro("A idade não pode ser negativa.");
+    }
+}
+
 function verificarNumeroPrimo() {
-    let numero = parseInt(prompt("Digite um número inteiro positivo: "));
+    contentDiv.innerHTML = `
+        <div class="input-group">
+            <label for="numeroPrimo">Digite um número inteiro positivo:</label>
+            <input type="number" id="numeroPrimo">
+        </div>
+        <button onclick="verificarPrimo()">Verificar</button>
+        <button onclick="voltarAoMenu()">Voltar ao Menu</button>
+        <div id="resultado-primo"></div>
+    `;
+}
+
+function verificarPrimo() {
+    let numero = obterNumero("numeroPrimo", true);
+
+    if (numero === null) {
+        return; // Volta ao menu se a entrada for inválida
+    }
+
     let primo = true;
 
     if (numero <= 1) {
@@ -121,15 +201,35 @@ function verificarNumeroPrimo() {
         }
     }
 
-    contentDiv.innerHTML = `
+    document.getElementById("resultado-primo").innerHTML = `
         <h2>${primo ? `${numero} é um número primo.` : `${numero} não é um número primo.`}</h2>
-        <button onclick="voltarAoMenu()">Voltar ao Menu</button>
     `;
 }
 
 function calculadoraIMC() {
-    let peso = parseFloat(prompt("Digite seu peso (em kg): "));
-    let altura = parseFloat(prompt("Digite sua altura (em metros. Ex: 1.75): "));
+    contentDiv.innerHTML = `
+        <div class="input-group">
+            <label for="peso">Digite seu peso (em kg):</label>
+            <input type="number" id="peso">
+        </div>
+        <div class="input-group">
+            <label for="altura">Digite sua altura (em metros. Ex: 1.75):</label>
+            <input type="number" id="altura">
+        </div>
+        <button onclick="calcularIMC()">Calcular IMC</button>
+        <button onclick="voltarAoMenu()">Voltar ao Menu</button>
+        <div id="resultado-imc"></div>
+    `;
+}
+
+function calcularIMC() {
+    let peso = obterNumero("peso");
+    let altura = obterNumero("altura");
+
+    if (peso === null || altura === null) {
+        return; // Volta ao menu se a entrada for inválida
+    }
+
     let imc = peso / (altura * altura);
 
     let classificacao = "";
@@ -147,114 +247,80 @@ function calculadoraIMC() {
         classificacao = "Obesidade Grau III";
     }
 
-    contentDiv.innerHTML = `
-        <h2>Seu IMC é: ${imc.toFixed(2)}</h2>
+    document.getElementById("resultado-imc").innerHTML = `
+        <h2>Seu IMC é: ${imc.toFixed(2).toLocaleString('pt-BR')}</h2>
         <p>Classificação: ${classificacao}</p>
-        <button onclick="voltarAoMenu()">Voltar ao Menu</button>
     `;
 }
 
 function conversorTemperatura() {
-    let temperatura = 0.0;
-    let tipoConversao = 0;
+    contentDiv.innerHTML = `
+        <div class="input-group">
+            <label for="temperatura">Digite a temperatura:</label>
+            <input type="number" id="temperatura">
+        </div>
+        <div class="input-group">
+            <label for="tipoConversao">Escolha o tipo de conversão:</label>
+            <select id="tipoConversao">
+                <option value="1">Celsius para Fahrenheit</option>
+                <option value="2">Celsius para Kelvin</option>
+                <option value="3">Fahrenheit para Celsius</option>
+                <option value="4">Fahrenheit para Kelvin</option>
+                <option value="5">Kelvin para Celsius</option>
+                <option value="6">Kelvin para Fahrenheit</option>
+            </select>
+        </div>
+        <button onclick="converter()">Converter</button>
+        <button onclick="voltarAoMenu()">Voltar ao Menu</button>
+        <div id="resultado-conversao"></div>
+    `;
+}
 
-    tipoConversao = parseInt(
-        prompt(
-            `Escolha o tipo de conversão:
-      1. Celsius para Fahrenheit
-      2. Celsius para Kelvin
-      3. Fahrenheit para Celsius
-      4. Fahrenheit para Kelvin
-      5. Kelvin para Celsius
-      6. Kelvin para Fahrenheit
-      7. Voltar ao menu principal`
-        )
-    );
+function converter() {
+    let temperatura = obterNumero("temperatura");
+    let tipoConversao = parseInt(document.getElementById("tipoConversao").value);
 
-    if (tipoConversao >= 1 && tipoConversao <= 6) {
-        temperatura = parseFloat(prompt("Digite a temperatura: "));
+    if (temperatura === null) {
+        return; // Volta ao menu se a entrada for inválida
     }
 
-    let celsius, fahrenheit, kelvin;
+    let resultado;
 
     switch (tipoConversao) {
-        case 1: // Celsius para Fahrenheit
-            celsius = temperatura;
-            fahrenheit = (celsius * 9) / 5 + 32;
-            contentDiv.innerHTML = `
-            <h2>${celsius.toFixed(
-                1
-            )}°C equivalem a ${fahrenheit.toFixed(1)}°F</h2>
-            <button onclick="voltarAoMenu()">Voltar ao Menu</button>
-          `;
+        case 1:
+            resultado = (temperatura * 9) / 5 + 32;
+            exibirResultadoConversao(temperatura, "°C", resultado, "°F");
             break;
-
-        case 2: // Celsius para Kelvin
-            celsius = temperatura;
-            kelvin = celsius + 273.15;
-            contentDiv.innerHTML = `
-            <h2>${celsius.toFixed(1)}°C equivalem a ${kelvin.toFixed(
-                1
-            )}K</h2>
-            <button onclick="voltarAoMenu()">Voltar ao Menu</button>
-          `;
+        case 2:
+            resultado = temperatura + 273.15;
+            exibirResultadoConversao(temperatura, "°C", resultado, "K");
             break;
-
-        case 3: // Fahrenheit para Celsius
-            fahrenheit = temperatura;
-            celsius = ((fahrenheit - 32) * 5) / 9;
-            contentDiv.innerHTML = `
-            <h2>${fahrenheit.toFixed(
-                1
-            )}°F equivalem a ${celsius.toFixed(1)}°C</h2>
-            <button onclick="voltarAoMenu()">Voltar ao Menu</button>
-          `;
+        case 3:
+            resultado = ((temperatura - 32) * 5) / 9;
+            exibirResultadoConversao(temperatura, "°F", resultado, "°C");
             break;
-
-        case 4: // Fahrenheit para Kelvin
-            fahrenheit = temperatura;
-            kelvin = ((fahrenheit - 32) * 5) / 9 + 273.15;
-            contentDiv.innerHTML = `
-            <h2>${fahrenheit.toFixed(
-                1
-            )}°F equivalem a ${kelvin.toFixed(1)}K</h2>
-            <button onclick="voltarAoMenu()">Voltar ao Menu</button>
-          `;
+        case 4:
+            resultado = ((temperatura - 32) * 5) / 9 + 273.15;
+            exibirResultadoConversao(temperatura, "°F", resultado, "K");
             break;
-
-        case 5: // Kelvin para Celsius
-            kelvin = temperatura;
-            celsius = kelvin - 273.15;
-            contentDiv.innerHTML = `
-            <h2>${kelvin.toFixed(1)}K equivalem a ${celsius.toFixed(
-                1
-            )}°C</h2>
-            <button onclick="voltarAoMenu()">Voltar ao Menu</button>
-          `;
+        case 5:
+            resultado = temperatura - 273.15;
+            exibirResultadoConversao(temperatura, "K", resultado, "°C");
             break;
-
-        case 6: // Kelvin para Fahrenheit
-            kelvin = temperatura;
-            fahrenheit = (kelvin - 273.15) * 9 / 5 + 32;
-            contentDiv.innerHTML = `
-            <h2>${kelvin.toFixed(1)}K equivalem a ${fahrenheit.toFixed(
-                1
-            )}°F</h2>
-            <button onclick="voltarAoMenu()">Voltar ao Menu</button>
-          `;
+        case 6:
+            resultado = (temperatura - 273.15) * 9 / 5 + 32;
+            exibirResultadoConversao(temperatura, "K", resultado, "°F");
             break;
-
-        case 7: // Voltar ao menu principal
-            voltarAoMenu();
-            return;
-
         default:
-            contentDiv.innerHTML = `
-            <h2>Opção de conversão inválida.</h2>
-            <button onclick="voltarAoMenu()">Voltar ao Menu</button>
-        `;
+            exibirMensagemErro("Opção de conversão inválida.");
             return;
     }
+}
+
+function exibirResultadoConversao(temperatura, unidadeOriginal, resultado, unidadeConvertida) {
+    document.getElementById("resultado-conversao").innerHTML = `
+        <h2>${temperatura.toFixed(1).toLocaleString('pt-BR')}${unidadeOriginal} equivalem a ${resultado.toFixed(1).toLocaleString('pt-BR')}${unidadeConvertida}</h2>
+    `;
 }
 
 function geradorTabelaASCII() {
@@ -296,4 +362,22 @@ function geradorTabelaASCII() {
 
 function voltarAoMenu() {
     contentDiv.innerHTML = ""; // Limpa o conteúdo atual
+}
+
+function obterNumero(idElemento, inteiro = false) {
+    let valor = document.getElementById(idElemento).value;
+
+    if (valor.trim() === "" || (inteiro && !/^-?\d+$/.test(valor)) || (!inteiro && !/^-?\d+(\.\d+)?$/.test(valor))) {
+        exibirMensagemErro("Entrada inválida. Por favor, digite um número válido.");
+        return null;
+    }
+
+    return inteiro ? parseInt(valor) : parseFloat(valor);
+}
+
+function exibirMensagemErro(mensagem) {
+    contentDiv.innerHTML = `
+        <h2 style="color: red;">${mensagem}</h2>
+        <button onclick="voltarAoMenu()">Voltar ao Menu</button>
+    `;
 }
