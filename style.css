@@ -49,12 +49,10 @@ button {
 button:hover {
     background-color: #357ab7;
     transform: translateY(-2px);
-    /* Efeito de elevação ao passar o mouse */
 }
 
 button:active {
     transform: translateY(0);
-    /* Retorna ao normal quando clicado */
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -81,28 +79,18 @@ button:active {
 
 .my-site .github-link {
     color: #333;
-    /* Text color */
     text-decoration: none;
-    /* Remove underline */
     font-weight: bold;
-    /* Bold text */
     padding: 5px 10px;
-    /* Padding around the text */
     border: 1px solid #ddd;
-    /* Border around the link */
     border-radius: 5px;
-    /* Rounded corners */
     margin-top: 20px;
-    /* Add some space above the link */
     display: inline-block;
-    /* Display the link inline */
 }
 
 .my-site .github-link:hover {
     background-color: #eee;
-    /* Change background on hover */
     color: #000;
-    /* Change text color on hover */
 }
 
 .tabela-ascii th,
@@ -121,7 +109,6 @@ button:active {
 @media (max-width: 500px) {
     .menu {
         grid-template-columns: 1fr;
-        /* Uma coluna em telas menores */
     }
 
     .container {
