@@ -381,3 +381,5 @@ function exibirMensagemErro(mensagem) {
         <button onclick="voltarAoMenu()">Voltar ao Menu</button>
     `;
 }
+
+document.getElementById('no-js-warning').style.display = 'none';
