@@ -1,46 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Interativo</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body class="my-site">
-    <div id="no-js-warning">
+    <noscript>
         <div class="warning-content">
-        <h1>JavaScript Desabilitado</h1>
-        <p>Parece que o JavaScript está desabilitado no seu navegador. Para uma melhor experiência e para que este site funcione corretamente, você precisa habilitá-lo.</p>
-        <h2>Como habilitar o JavaScript:</h2>
-        <ul>
-            <li><strong>Google Chrome:</strong> Vá para Configurações > Privacidade e segurança > Configurações do site > JavaScript e ative "Os sites podem usar o JavaScript".</li>
-            <li><strong>Mozilla Firefox:</strong> Vá para Configurações > Privacidade e Segurança > Permissões > marque a caixa "Executar JavaScript".</li>
-            <li><strong>Microsoft Edge:</strong> Vá para Configurações > Permissões do site > JavaScript e ative "Permitir (recomendado)".</li>
-            <li><strong>Safari:</strong> Vá para Safari > Preferências > Segurança e marque "Ativar JavaScript".</li>
-        </ul>
-        <p>Após habilitar o JavaScript, recarregue a página.</p>
+            <h1>JavaScript Desabilitado</h1>
+            <p>
+                Parece que o JavaScript está desabilitado no seu navegador. Para uma melhor experiência e para que este
+                site funcione corretamente, você precisa habilitá-lo.
+            </p>
+            <h2>Como habilitar o JavaScript:</h2>
+            <ul>
+                <li><strong>Google Chrome:</strong> Vá para Configurações > Privacidade e segurança > Configurações do site >
+                    JavaScript e ative "Os sites podem usar o JavaScript".</li>
+                <li><strong>Mozilla Firefox:</strong> Vá para Configurações > Privacidade e Segurança > Permissões > marque a caixa
+                    "Executar JavaScript".</li>
+                <li><strong>Microsoft Edge:</strong> Vá para Configurações > Permissões do site > JavaScript e ative "Permitir
+                    (recomendado)".</li>
+                <li><strong>Safari:</strong> Vá para Safari > Preferências > Segurança e marque "Ativar JavaScript".</li>
+            </ul>
+            <p>Após habilitar o JavaScript, recarregue a página.</p>
         </div>
-    </div>
+    </noscript>
 
-    <div class="container">
+    <main class="container">
         <h1>Menu Interativo</h1>
-        <div class="menu">
-            <button data-option="1">Exibir mensagem 'Olá Mundo!'</button>
-            <button data-option="2">Digitar e exibir seu nome</button>
-            <button data-option="3">Realizar uma conta matemática</button>
-            <button data-option="4">Calculadora de Idade</button>
-            <button data-option="5">Verificador de Número Primo</button>
-            <button data-option="6">Calculadora de IMC</button>
-            <button data-option="7">Conversor de Temperatura</button>
-            <button data-option="8">Gerador de Tabela ASCII</button>
-            <button data-option="9">Sair</button>
-        </div>
-        <div id="content">
-        </div>
 
-            <a href="https://github.com/Jeffinp/MenuInterativo" class="github-link" target="_blank">Veja o código-fonte no GitHub</a>
-    </div>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
 
-    <script src="script.js"></script>
+        <nav class="menu" role="menu" aria-label="Menu Principal">
+            <button data-option="1" role="menuitem">Exibir mensagem 'Olá Mundo!'</button>
+            <button data-option="2" role="menuitem">Digitar e exibir seu nome</button>
+            <button data-option="3" role="menuitem">Realizar uma conta matemática</button>
+            <button data-option="4" role="menuitem">Calculadora de Idade</button>
+            <button data-option="5" role="menuitem">Verificador de Número Primo</button>
+            <button data-option="6" role="menuitem">Calculadora de IMC</button>
+            <button data-option="7" role="menuitem">Conversor de Temperatura</button>
+            <button data-option="8" role="menuitem">Gerador de Tabela ASCII</button>
+            <button data-option="9" role="menuitem">Jogo da Forca</button>
+            <button data-option="10" role="menuitem">Jogo da Velha</button>
+            <button data-option="11" role="menuitem">Lista de Tarefas</button>
+            <button data-option="12" role="menuitem">Sair</button>
+        </nav>
+
+        <div id="content"></div>
+
+        <footer>
+            <a href="https://github.com/Jeffinp/MenuInterativo" class="github-link" target="_blank">
+                Veja o código-fonte no GitHub
+            </a>
+        </footer>
+    </main>
 </body>
+
 </html>
