@@ -1,49 +1,65 @@
-# Menu Interativo
+# Menu Interativo 🚀  
 
-Olá! Este é o meu projeto "Menu Interativo", um site simples, mas divertido, que criei para praticar minhas habilidades com HTML, CSS e, principalmente, JavaScript. A ideia principal é oferecer um menu com diversas opções interativas, cada uma com uma pequena funcionalidade interessante.
+Bem-vindo(a) ao **Menu Interativo**!  
+Este é um projeto simples, mas cheio de funcionalidades, criado para praticar HTML, CSS e JavaScript. Explore diversas opções interativas e divirta-se aprendendo!  
 
-## Funcionalidades
+## Funcionalidades  
 
-O site apresenta um menu com os seguintes botões, cada um executando uma ação diferente:
+- **Exibir mensagem 'Olá Mundo!'**: Mostre a clássica mensagem na tela.  
+- **Digitar e exibir seu nome**: Receba uma saudação personalizada.  
+- **Calculadora Simples**: Realize operações matemáticas básicas com validações.  
+- **Calculadora de Idade**: Descubra sua idade com base no ano de nascimento.  
+- **Verificador de Número Primo**: Descubra se um número é primo.  
+- **Calculadora de IMC**: Verifique sua categoria com base no peso e altura.  
+- **Conversor de Temperatura**: Converta entre Celsius, Fahrenheit e Kelvin.  
+- **Gerador de Tabela ASCII**: Explore os caracteres ASCII de 0 a 127.  
+- **Jogo da Forca**: Teste suas habilidades em um jogo clássico.  
+- **Jogo da Velha**: Divirta-se com este clássico para dois jogadores.  
+- **Lista de Tarefas**: Organize e gerencie tarefas de forma simples.  
+- **Modo Escuro**: Ative um tema mais confortável para os olhos.  
 
-*   **Exibir mensagem 'Olá Mundo!'**: Este botão exibe a clássica mensagem "Olá Mundo!" na tela. É um começo simples, mas sempre um bom ponto de partida.
-*   **Digitar e exibir seu nome**: Aqui, o usuário pode digitar seu nome em um campo de texto e, ao clicar no botão, uma saudação personalizada é exibida.
-*   **Realizar uma conta matemática**: Esta opção permite ao usuário inserir dois números e escolher uma operação matemática (adição, subtração, multiplicação ou divisão). O resultado da operação é então exibido na tela. Implementei tratamento de erros para evitar divisão por zero e entradas inválidas.
-*   **Calculadora de Idade**: Com esta funcionalidade, o usuário pode inserir o ano de nascimento e o ano atual, e o site calcula a idade. Também incluí validação para garantir que a idade não seja negativa.
-*   **Verificador de Número Primo**: O usuário insere um número inteiro positivo, e o site verifica se ele é um número primo ou não.
-*   **Calculadora de IMC**: Esta opção calcula o Índice de Massa Corporal (IMC) com base no peso e altura inseridos pelo usuário, e exibe a classificação do IMC (Abaixo do peso, Peso normal, Sobrepeso, etc.).
-*   **Conversor de Temperatura**: Permite converter temperaturas entre Celsius, Fahrenheit e Kelvin. O usuário escolhe o tipo de conversão e insere a temperatura, e o site exibe o resultado convertido.
-*   **Gerador de Tabela ASCII**: Gera uma tabela com os caracteres ASCII de 0 a 127, mostrando seus valores decimais, hexadecimais e octais.
-*   **Sair**: Esta opção exibe uma mensagem de despedida e limpa o conteúdo da área de exibição.
+## Tecnologias Utilizadas  
 
-## Tecnologias Utilizadas
+- **HTML5**: Estrutura semântica e acessível.  
+- **CSS3**: Estilo moderno e responsivo.  
+- **JavaScript (ES6+)**: Funcionalidades interativas e dinâmicas.  
+- **math.js**: Biblioteca para cálculos precisos e seguros.  
 
-*   **HTML:** Para a estrutura do site.
-*   **CSS:** Para a estilização e o layout, incluindo responsividade para diferentes tamanhos de tela e animações sutis.
-*   **JavaScript:** Para a interatividade e a lógica das funcionalidades.
+## Como Executar Localmente  
 
-## Acessibilidade e Experiência do Usuário
+1. Clone o repositório:  
+   ```bash
+   git clone https://github.com/Jeffinp/MenuInterativo.git
+   ```  
+2. Abra o arquivo `index.html` no navegador.  
 
-Me preocupei em oferecer uma boa experiência para o usuário, com um design limpo e intuitivo. Além disso, implementei um aviso amigável caso o JavaScript esteja desabilitado no navegador, com instruções claras sobre como habilitá-lo.
+## Próximos Passos  
 
-## Como Executar
+- Adicionar novas funcionalidades interativas.  
+- Melhorar a responsividade para dispositivos móveis.  
+- Implementar integração com APIs externas.  
+- Adicionar testes automatizados.  
 
-Para executar este projeto localmente, basta clonar o repositório e abrir o arquivo `index.html` no seu navegador.
+## Contribua! ❤️  
 
-## Próximos Passos
+Quer ajudar? Siga os passos:  
 
-Pretendo adicionar novas funcionalidades e melhorar a interface do usuário no futuro. Algumas ideias incluem:
+1. Faça um fork do repositório.  
+2. Crie uma branch para sua feature:  
+   ```bash
+   git checkout -b sua-feature
+   ```  
+3. Faça commit das suas alterações:  
+   ```bash
+   git commit -m "Adicionada a feature X"
+   ```  
+4. Envie para o repositório:  
+   ```bash
+   git push origin sua-feature
+   ```  
+5. Abra um Pull Request.  
 
-*   Implementar testes unitários para o código JavaScript.
-*   Adicionar mais opções interativas ao menu.
-*   Aprimorar a responsividade para dispositivos móveis.
+## Link para o Repositório  
 
-## Contribuições
+[Menu Interativo no GitHub](https://github.com/Jeffinp/MenuInterativo)  
 
-Contribuições são bem-vindas! Se você tiver alguma sugestão, melhoria ou correção, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## Link para o Repositório
-
-[https://github.com/Jeffinp/MenuInterativo](https://github.com/Jeffinp/MenuInterativo)
-
-Espero que gostem deste pequeno projeto! Foi uma ótima experiência de aprendizado para mim.
