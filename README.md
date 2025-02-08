@@ -18,6 +18,16 @@ Este é um projeto simples, mas cheio de funcionalidades, criado para praticar H
 - **Lista de Tarefas**: Organize e gerencie tarefas de forma simples.  
 - **Modo Escuro**: Ative um tema mais confortável para os olhos.  
 
+## Segurança  
+
+O projeto foi desenvolvido com boas práticas de segurança para garantir uma experiência tranquila:  
+
+- **Validação de Entrada Robusta**: Todas as entradas do usuário passam por validações rigorosas para evitar erros e comportamentos inesperados.  
+- **Sanitização de Entrada**: Proteção contra ataques XSS (Cross-Site Scripting) ao sanitizar os dados fornecidos pelos usuários.  
+- **Uso Seguro de Bibliotecas**: A calculadora utiliza a biblioteca `math.js`, uma alternativa segura ao uso de funções como `eval()`.  
+- **Tratamento de Erros**: Mensagens amigáveis são exibidas em caso de erros, prevenindo travamentos da aplicação.  
+- **Aviso para JavaScript Desabilitado**: Um aviso é exibido se o JavaScript estiver desabilitado no navegador, com instruções claras para habilitá-lo.  
+
 ## Tecnologias Utilizadas  
 
 - **HTML5**: Estrutura semântica e acessível.  
@@ -62,4 +72,3 @@ Quer ajudar? Siga os passos:
 ## Link para o Repositório  
 
 [Menu Interativo no GitHub](https://github.com/Jeffinp/MenuInterativo)  
-
