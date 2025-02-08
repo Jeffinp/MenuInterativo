@@ -184,7 +184,7 @@ class Forca {
                 <h2>Jogo da Forca</h2>
                 <p id="forca-palavra">${this.palavraSecreta.split('').map(letra => this.letrasCorretas.includes(letra) ? letra : '_').join(' ')}</p>
                 <p id="forca-letras-erradas">Letras Erradas: ${this.letrasErradas.join(', ')}</p>
-                <p>Erros: <span class="math-inline">\{this\.erros\}/</span>{this.maxErros}</p>
+                <p>Erros: ${this.erros}/${this.maxErros}</p>
                 <input type="text" id="letra-input" maxlength="1" placeholder="Digite uma letra">
                 <button id="btn-adivinhar">Adivinhar</button>
                 <button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
@@ -414,7 +414,7 @@ class ListaDeTarefas {
 
             const deleteBtn = listItem.querySelector('.delete-btn');
             deleteBtn.addEventListener('click', (event) => {
-                const index = event.target.dataset.index;
+                const index = parseInt(event.target.dataset.index, 10);
                 this.deleteTask(index);
             });
 
@@ -639,10 +639,10 @@ class Calculator {
         }
     }
 
-     /**
-     * Limpa o histórico de cálculos e atualiza a exibição.
-     */
-     clearHistory() {
+    /**
+    * Limpa o histórico de cálculos e atualiza a exibição.
+    */
+    clearHistory() {
         this.history = [];
         this.saveHistory();
         this.updateHistoryDisplay();
