@@ -1,33 +1,66 @@
-/* --- Variáveis CSS --- */
+/* ================================
+    Variáveis e Configurações Globais
+================================ */
 :root {
-    --background-color: #f5f7fa;
-    --container-background-color: #ffffff;
-    --text-color: #2d3748;
-    --primary-color: #5a67d8;
-    --primary-hover-color: #434190;
-    --secondary-color: #718096;
-    --success-color: #48bb78;
-    --error-color: #f56565;
-    --warning-color: #ed8936;
-    --border-color: #e2e8f0;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --transition-speed: 0.3s;
-    --radius: 12px;
+    /* Cores */
+    --color-background: #f5f7fa;
+    --color-container: #ffffff;
+    --color-text: #2d3748;
+    --color-primary: #5a67d8;
+    --color-primary-hover: #434190;
+    --color-secondary: #718096;
+    --color-success: #48bb78;
+    --color-error: #f56565;
+    --color-warning: #ed8936;
+    --color-border: #e2e8f0;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-link: #5a67d8;
+    --color-link-hover: #434190;
+
+    /* Tipografia */
+    --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    --font-size-base: 16px;
+    --font-size-sm: 0.875rem;
+    --font-size-lg: 1.25rem;
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.5rem;
+
+    /* Layout e Espaçamentos */
     --spacing-unit: 1rem;
     --max-width: 800px;
+
+    /* Bordas e Arredondamentos */
+    --border-radius: 12px;
+    --border-width: 1px;
+
+    /* Transições e Animações */
+    --transition-speed: 0.3s;
+    --animation-speed: 0.5s;
+
+    /* Sombra */
+    --box-shadow: 0 4px 6px -1px var(--color-shadow),
+        0 2px 4px -1px var(--color-shadow);
 }
 
+/* ================================
+     Modo Escuro
+     ================================ */
 .dark-mode {
-    --background-color: #1a202c;
-    --container-background-color: #2d3748;
-    --text-color: #f7fafc;
-    --primary-color: #667eea;
-    --primary-hover-color: #5a67d8;
-    --border-color: #4a5568;
-    --shadow-color: rgba(0, 0, 0, 0.3);
+    --color-background: #1a202c;
+    --color-container: #2d3748;
+    --color-text: #f7fafc;
+    --color-primary: #667eea;
+    --color-primary-hover: #5a67d8;
+    --color-border: #4a5568;
+    --color-shadow: rgba(0, 0, 0, 0.3);
 }
 
-/* --- Reset e Estilos Base --- */
+/* ================================
+     Reset e Estilos Base
+     ================================ */
 * {
     margin: 0;
     padding: 0;
@@ -35,17 +68,17 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: var(--font-size-base);
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: var(--font-family-sans);
     line-height: 1.6;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    transition: background-color var(--transition-speed) ease;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    transition: background-color var(--transition-speed) ease,
+        color var(--transition-speed) ease;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -53,12 +86,13 @@ body {
     padding: var(--spacing-unit);
 }
 
-/* --- Container Principal --- */
+/* ================================
+     Container Principal
+     ================================ */
 .container {
-    background-color: var(--container-background-color);
-    border-radius: var(--radius);
-    box-shadow: 0 4px 6px -1px var(--shadow-color),
-        0 2px 4px -1px var(--shadow-color);
+    background-color: var(--color-container);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     padding: calc(var(--spacing-unit) * 2);
     width: 100%;
     max-width: var(--max-width);
@@ -66,40 +100,43 @@ body {
     transition: all var(--transition-speed) ease;
 }
 
-/* --- Tipografia --- */
+/* ================================
+     Tipografia
+     ================================ */
 h1,
 h2,
 h3 {
-    color: var(--text-color);
+    color: var(--color-text);
     font-weight: 600;
     margin-bottom: var(--spacing-unit);
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: var(--font-size-h1);
     line-height: 1.2;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: var(--font-size-h2);
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-h3);
 }
 
 p {
     margin-bottom: var(--spacing-unit);
-    color: var(--text-color);
 }
 
-/* --- Botões --- */
+/* ================================
+     Botões
+     ================================ */
 button {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--color-primary);
+    color: #fff;
     border: none;
     padding: calc(var(--spacing-unit) * 0.75) var(--spacing-unit);
-    border-radius: calc(var(--radius) / 2);
+    border-radius: calc(var(--border-radius) / 2);
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -111,10 +148,9 @@ button {
 }
 
 button:hover {
-    background-color: var(--primary-hover-color);
+    background-color: var(--color-primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 4px 6px -1px var(--shadow-color),
-        0 2px 4px -1px var(--shadow-color);
+    box-shadow: var(--box-shadow);
 }
 
 button:active {
@@ -122,13 +158,15 @@ button:active {
     box-shadow: none;
 }
 
-/* --- Botão de Alternância Modo Claro/Escuro --- */
+/* ================================
+     Toggle Modo Escuro
+     ================================ */
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin: 1rem 0;
+    margin: var(--spacing-unit) 0;
 }
 
 .switch input {
@@ -144,7 +182,7 @@ button:active {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--color-secondary);
     transition: all var(--transition-speed) ease;
     border-radius: 34px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -157,28 +195,27 @@ button:active {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: #fff;
     transition: all var(--transition-speed) ease;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 input:checked+.slider {
-    background-color: var(--primary-color);
+    background-color: var(--color-primary);
 }
 
 input:checked+.slider:before {
     transform: translateX(26px);
-    background-color: var(--container-background-color);
+    background-color: var(--color-container);
 }
 
-/* Efeito de foco acessível */
 input:focus-visible+.slider {
-    outline: 2px solid var(--primary-color);
+    outline: 2px solid var(--color-primary);
     outline-offset: 2px;
 }
 
-/* Ícones opcionais (lua/sol) */
+/* Ícones (lua/sol) */
 .slider:after {
     content: "🌙";
     position: absolute;
@@ -197,7 +234,7 @@ input:checked+.slider:after {
     opacity: 1;
 }
 
-/* Animação de pulsação ao alternar */
+/* Efeito de pulsação */
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -216,7 +253,9 @@ input:checked+.slider {
     animation: pulse 0.3s ease;
 }
 
-/* --- Layout do Menu --- */
+/* ================================
+     Layout do Menu
+     ================================ */
 .menu {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -224,27 +263,29 @@ input:checked+.slider {
     margin-bottom: calc(var(--spacing-unit) * 2);
 }
 
-/* --- Notificações --- */
+/* ================================
+     Notificações
+     ================================ */
 .notification {
     position: fixed;
     bottom: var(--spacing-unit);
     right: var(--spacing-unit);
     padding: var(--spacing-unit);
-    border-radius: calc(var(--radius) / 2);
-    color: white;
+    border-radius: calc(var(--border-radius) / 2);
+    color: #fff;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    animation: slideIn 0.5s ease;
+    animation: slideIn var(--animation-speed) ease;
     z-index: 1000;
 }
 
 .notification.info {
-    background-color: var(--primary-color);
+    background-color: var(--color-primary);
 }
 
 .notification.error {
-    background-color: var(--error-color);
+    background-color: var(--color-error);
 }
 
 .notification .close {
@@ -262,7 +303,9 @@ input:checked+.slider {
     }
 }
 
-/* --- Jogo da Forca --- */
+/* ================================
+     Jogo da Forca
+     ================================ */
 #forca-container {
     text-align: center;
     padding: var(--spacing-unit);
@@ -276,11 +319,13 @@ input:checked+.slider {
 }
 
 #forca-letras-erradas {
-    color: var(--error-color);
+    color: var(--color-error);
     margin: var(--spacing-unit) 0;
 }
 
-/* --- Jogo da Velha --- */
+/* ================================
+     Jogo da Velha
+     ================================ */
 .jogo-velha-container {
     display: flex;
     flex-direction: column;
@@ -299,8 +344,8 @@ input:checked+.slider {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color);
-    border-radius: calc(var(--radius) / 2);
+    background-color: var(--color-background);
+    border-radius: calc(var(--border-radius) / 2);
     font-size: 2rem;
     font-weight: 600;
     cursor: pointer;
@@ -308,11 +353,13 @@ input:checked+.slider {
 }
 
 .cell:hover {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--color-primary);
+    color: #fff;
 }
 
-/* --- Lista de Tarefas --- */
+/* ================================
+     Lista de Tarefas
+     ================================ */
 .todo-container {
     display: flex;
     flex-direction: column;
@@ -336,17 +383,19 @@ input:checked+.slider {
     align-items: center;
     gap: var(--spacing-unit);
     padding: calc(var(--spacing-unit) / 2);
-    border-radius: calc(var(--radius) / 2);
-    background-color: var(--background-color);
+    border-radius: calc(var(--border-radius) / 2);
+    background-color: var(--color-background);
 }
 
-/* --- Estilos do Footer --- */
+/* ================================
+     Footer
+     ================================ */
 footer {
     margin-top: 2rem;
     padding: 1.5rem 0;
-    border-top: 1px solid var(--border-color);
+    border-top: var(--border-width) solid var(--color-border);
     text-align: center;
-    animation: fadeInUp 0.5s ease;
+    animation: fadeInUp var(--animation-speed) ease;
 }
 
 .github-link {
@@ -357,24 +406,24 @@ footer {
     border-radius: 25px;
     text-decoration: none;
     font-weight: 500;
-    color: var(--text-color);
-    background-color: var(--background-color);
+    color: var(--color-text);
+    background-color: var(--color-container);
     transition: all var(--transition-speed) ease;
-    box-shadow: 0 2px 5px var(--shadow-color);
-    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 5px var(--color-shadow);
+    border: var(--border-width) solid var(--color-border);
 }
 
 .github-link:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px var(--shadow-color);
-    background-color: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
+    box-shadow: 0 4px 8px var(--color-shadow);
+    background-color: var(--color-primary);
+    color: #fff;
+    border-color: var(--color-primary);
 }
 
 .github-link:active {
     transform: translateY(0);
-    box-shadow: 0 2px 5px var(--shadow-color);
+    box-shadow: 0 2px 5px var(--color-shadow);
 }
 
 .github-link::before {
@@ -392,7 +441,6 @@ footer {
     transform: rotate(360deg);
 }
 
-/* Animação de entrada */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -405,17 +453,22 @@ footer {
     }
 }
 
-/* Modo Escuro */
+/* ================================
+    Modo Escuro no Footer
+     ================================ */
 .dark-mode .github-link {
-    background-color: var(--container-background-color);
-    color: var(--text-color);
+    background-color: var(--color-container);
+    color: var(--color-text);
 }
 
 .dark-mode .github-link:hover {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--color-primary);
+    color: #fff;
 }
 
+/* ================================
+     Responsividade
+     ================================ */
 /* Para telas até 768px */
 @media (max-width: 768px) {
     html {
@@ -426,7 +479,6 @@ footer {
         padding: var(--spacing-unit);
     }
 
-    /* Permite que o menu exiba 1 ou 2 colunas, dependendo do espaço disponível */
     .menu {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
@@ -450,7 +502,6 @@ footer {
         height: 20px;
     }
 
-    /* Reduz as fontes dos títulos e botões */
     h1 {
         font-size: 2rem;
     }
@@ -491,13 +542,14 @@ footer {
         font-size: 12px;
     }
 
-    /* Força os itens do menu a ocuparem toda a largura */
     .menu {
         grid-template-columns: 1fr;
     }
 }
 
-/* --- Animações --- */
+/* ================================
+    Animações Adicionais
+================================ */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -511,5 +563,5 @@ footer {
 }
 
 .fade-in {
-    animation: fadeIn 0.5s ease;
+    animation: fadeIn var(--animation-speed) ease;
 }
