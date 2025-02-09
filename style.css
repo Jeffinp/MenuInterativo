@@ -372,6 +372,261 @@ input:checked+.slider {
     display: block;
 }
 
+/* calc */
+
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Sutil sombra para o container, se desejar um efeito mais 'card' */
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.05); */
+    /* Removido para manter mais minimalista */
+    border-radius: 10px;
+    /* Bordas mais arredondadas para o container, opcional */
+    padding: 20px;
+    /* Aumentar padding interno para respiro, opcional */
+}
+
+.calc-display {
+    background-color: #000;
+    border-radius: 8px;
+    /* Mais arredondamento no display para suavizar */
+    padding: 15px;
+    /* Aumentar padding interno do display */
+    text-align: right;
+    font-size: 2.7em;
+    /* Aumentei mais o tamanho da fonte para o display */
+    color: #fff;
+    /* Sutil sombra interna para o display, dando um leve efeito de profundidade */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calc-display input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 2.7em;
+    /* Tamanho da fonte do input alinhado com o display */
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    color: #fff;
+}
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    /* Aumentei um pouco o gap entre os botões */
+}
+
+.calc-button {
+    padding: 18px;
+    /* Aumentei o padding dos botões para ficarem um pouco maiores */
+    border: none;
+    border-radius: 50%;
+    height: 150px;
+    background-color: #D4D4D2;
+    font-size: 2em;
+    /* Aumentei a fonte dos botões numéricos */
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    /* Adicionada transição para box-shadow e transform */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para os botões */
+}
+
+.calc-button.operator {
+    background-color: #FF9500;
+    color: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para botões de operador */
+}
+
+.calc-button.equal {
+    background-color: #FF9500;
+    color: white;
+    grid-column: span 2;
+    border-radius: 45px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para botão igual */
+}
+
+.calc-button.clear-entry,
+.secondary-button {
+    background-color: #A6A6A6;
+    color: #000;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para botões clear/secundários */
+}
+
+.calc-button:hover {
+    background-color: #B3B3B3;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    /* Sombra um pouco maior no hover */
+}
+
+.calc-button.operator:hover,
+.calc-button.equal:hover {
+    background-color: #ffb84d;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    /* Sombra um pouco maior no hover para operadores/igual */
+}
+
+.calc-button.clear-entry:hover,
+.secondary-button:hover {
+    background-color: #C0C0C0;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    /* Sombra um pouco maior no hover para clear/secundários */
+}
+
+.calc-button:active {
+    background-color: #999;
+    transform: scale(0.97);
+    /* Menor scale para o efeito de pressionar */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    /* Sombra menor quando ativo */
+}
+
+.calc-button.operator:active,
+.calc-button.equal:active,
+.calc-button.clear-entry:active,
+.secondary-button:active {
+    background-color: #999;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    /* Sombra menor quando ativo para botões especiais */
+}
+
+
+.calc-history {
+    margin-top: 25px;
+    /* Aumentei a margem superior do histórico */
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    /* Aumentei o padding superior do histórico */
+}
+
+.calc-history h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+    /* Aumentei um pouco a fonte do título do histórico */
+    color: #eee;
+}
+
+.calc-history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 180px;
+    /* Aumentei a altura máxima do histórico */
+    overflow-y: auto;
+}
+
+.calc-history li.history-item {
+    padding: 10px 0;
+    /* Aumentei o padding vertical dos itens do histórico */
+    border-bottom: 1px dotted #555;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    /* Aumentei o gap nos itens do histórico */
+    font-size: 1em;
+    /* Aumentei um pouco a fonte dos itens do histórico */
+    color: #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.calc-history li.history-item:last-child {
+    border-bottom: none;
+}
+
+.calc-history li.history-item .expression {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 8px;
+    /* Aumentei a margem direita da expressão */
+}
+
+.calc-history li.history-item .separator {
+    margin: 0 8px;
+    /* Aumentei a margem horizontal do separador */
+}
+
+.calc-history li.history-item .result {
+    font-weight: bold;
+    margin-left: auto;
+    color: #fff;
+}
+
+.calc-history li.history-item .timestamp {
+    color: #aaa;
+    font-size: 0.9em;
+    /* Aumentei um pouco a fonte do timestamp */
+    margin-left: 8px;
+    /* Aumentei a margem esquerda do timestamp */
+}
+
+.calc-history li.history-item.new-item {
+    background-color: #222;
+    animation: newItemFlash 1s ease-out;
+}
+
+@keyframes newItemFlash {
+    0% {
+        background-color: #222;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+.clear-history,
+.secondary-button {
+    padding: 12px 20px;
+    /* Aumentei o padding dos botões secundários */
+    border: none;
+    border-radius: 15px;
+    /* Mais arredondamento nos botões secundários */
+    background-color: #A6A6A6;
+    cursor: pointer;
+    font-size: 1.3em;
+    /* Aumentei a fonte dos botões secundários */
+    margin-top: 15px;
+    /* Aumentei a margem superior dos botões secundários */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    /* Adicionada transição para box-shadow */
+    color: #000;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para botões secundários */
+}
+
+.clear-history:hover,
+.secondary-button:hover {
+    background-color: #C0C0C0;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    /* Sombra um pouco maior no hover para botões secundários */
+}
+
+.clear-history:active,
+.secondary-button:active {
+    background-color: #999;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    /* Sombra menor quando ativo para botões secundários */
+}
+
+.secondary-button {
+    background-color: #A6A6A6;
+    color: #000;
+}
+
 /* ================================
              Lista de Tarefas
              ================================ */
@@ -486,6 +741,84 @@ footer {
              ================================ */
 /* Para telas até 768px (tablets e alguns laptops menores) */
 @media (max-width: 768px) {
+    .calculator-container {
+        gap: 10px;
+        /* Reduz o espaçamento geral */
+        padding: 15px;
+        /* Reduz o padding do container */
+        border-radius: 8px;
+        /* Mantém ou ajusta o border-radius se necessário */
+    }
+
+    .calc-display {
+        font-size: 2em;
+        /* Reduz a fonte no display */
+        padding: 8px;
+        /* Reduz o padding do display */
+        border-radius: 6px;
+        /* Ajusta o border-radius se necessário */
+    }
+
+    .calc-display input {
+        font-size: 2em;
+        /* Reduz a fonte do input para corresponder ao display */
+    }
+
+    .calc-buttons {
+        gap: 8px;
+        /* Reduz o espaçamento entre os botões */
+    }
+
+    .calc-button {
+        padding: 12px;
+        /* Reduz o padding dos botões */
+        font-size: 1.6em;
+        /* Reduz a fonte dos botões */
+        border-radius: 50%;
+        /* Ajusta o border-radius para manter a forma arredondada em tamanho menor */
+    }
+
+    .calc-button.equal {
+        border-radius: 35px;
+        /* Ajusta o border-radius do botão de igual */
+    }
+
+    .calc-history {
+        margin-top: 15px;
+        /* Reduz a margem superior do histórico */
+        padding-top: 8px;
+        /* Reduz o padding superior do histórico */
+    }
+
+    .calc-history h3 {
+        font-size: 1.1em;
+        /* Reduz a fonte do título do histórico */
+    }
+
+    .calc-history li.history-item {
+        padding: 6px 0;
+        /* Reduz o padding dos itens do histórico */
+        font-size: 0.85em;
+        /* Reduz a fonte dos itens do histórico */
+    }
+
+    .calc-history li.history-item .timestamp {
+        font-size: 0.75em;
+        /* Reduz a fonte do timestamp */
+    }
+
+    .clear-history,
+    .secondary-button {
+        padding: 10px 15px;
+        /* Reduz o padding dos botões secundários */
+        font-size: 1.1em;
+        /* Reduz a fonte dos botões secundários */
+        border-radius: 10px;
+        /* Ajusta o border-radius dos botões secundários */
+        margin-top: 8px;
+        /* Reduz a margem superior dos botões secundários */
+    }
+
     html {
         font-size: 14px;
     }
@@ -537,6 +870,92 @@ footer {
 
 /* Para telas até 480px (celulares menores) */
 @media (max-width: 480px) {
+    .calculator-container {
+        gap: 8px;
+        /* Reduz ainda mais o espaçamento */
+        padding: 10px;
+        /* Reduz ainda mais o padding do container */
+    }
+
+    .calc-display {
+        font-size: 1.8em;
+        /* Reduz ainda mais a fonte no display */
+        padding: 6px;
+        /* Reduz ainda mais o padding do display */
+    }
+
+    .calc-display input {
+        font-size: 1.8em;
+        /* Reduz a fonte do input para corresponder ao display */
+    }
+
+    .calc-buttons {
+        gap: 6px;
+        /* Reduz ainda mais o espaçamento entre os botões */
+        grid-template-columns: repeat(4, 1fr);
+        /* Garante 4 colunas mesmo em telas pequenas */
+    }
+
+    .calc-button {
+        padding: 10px;
+        /* Reduz ainda mais o padding dos botões */
+        font-size: 1.4em;
+        /* Reduz ainda mais a fonte dos botões */
+        border-radius: 50%;
+        /* Mantém ou ajusta o border-radius para forma arredondada */
+        height: 80px;
+    }
+
+    .calc-button.equal {
+        grid-column: span 2;
+        /* Garante que o botão igual continue ocupando 2 colunas */
+        border-radius: 30px;
+        /* Ajusta o border-radius do botão de igual para telas menores */
+    }
+
+    .calc-history {
+        margin-top: 10px;
+        /* Reduz ainda mais a margem superior do histórico */
+        padding-top: 6px;
+        /* Reduz ainda mais o padding superior do histórico */
+    }
+
+    .calc-history h3 {
+        font-size: 1em;
+        /* Reduz ainda mais a fonte do título do histórico */
+    }
+
+    .calc-history ul {
+        max-height: 120px;
+        /* Reduz a altura máxima do histórico para telas menores */
+    }
+
+    .calc-history li.history-item {
+        padding: 4px 0;
+        /* Reduz ainda mais o padding dos itens do histórico */
+        font-size: 0.8em;
+        /* Reduz ainda mais a fonte dos itens do histórico */
+        gap: 4px;
+        /* Reduz o gap nos itens do histórico */
+    }
+
+    .calc-history li.history-item .timestamp {
+        font-size: 0.7em;
+        /* Reduz ainda mais a fonte do timestamp */
+    }
+
+    .clear-history,
+    .secondary-button {
+        padding: 8px 12px;
+        /* Reduz ainda mais o padding dos botões secundários */
+        font-size: 1em;
+        /* Reduz ainda mais a fonte dos botões secundários */
+        border-radius: 10px;
+        /* Ajusta o border-radius dos botões secundários */
+        margin-top: 6px;
+        /* Reduz ainda mais a margem superior dos botões secundários */
+    }
+
     .switch {
         width: 50px;
         height: 28px;
@@ -563,8 +982,8 @@ footer {
 }
 
 /* ================================
-        Animações Adicionais
-    ================================ */
+    Animações Adicionais
+================================ */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -579,4 +998,113 @@ footer {
 
 .fade-in {
     animation: fadeIn var(--animation-speed) ease;
+}
+
+/* mensagem de erro de calculador de idade e numeros */
+
+.error-message {
+    color: var(--color-error);
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Estilos para a área de mensagens de resultado */
+.resultado-mensagem {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.resultado-mensagem h2 {
+    font-size: 1.5em;
+    color: var(--color-text);
+}
+
+/* Estilo específico para quando o número é primo (ex: cor verde) */
+.primo-valor {
+    font-weight: bold;
+    color: var(--color-success);
+}
+
+/* Estilo específico para quando o número não é primo (ex: cor laranja/avermelhada) */
+.nao-primo-valor {
+    font-weight: bold;
+    color: var(--color-warning);
+}
+
+/* Estilo específico para o valor do IMC */
+.imc-valor {
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+/* Estilo para a classificação do IMC */
+.imc-classificacao {
+    font-style: italic;
+    margin-top: 0.5em;
+    color: var(--color-text);
+    /* Usando --color-text para manter a cor consistente com o modo escuro/claro */
+}
+
+.classificacao-valor {
+    font-weight: normal;
+    color: var(--color-warning);
+}
+
+/* Estilos para formatar o resultado da conversão */
+.temperatura-original,
+.temperatura-convertida {
+    font-weight: bold;
+    color: var(--color-warning);
+}
+
+.unidade-original,
+.unidade-convertida {
+    font-style: italic;
+    color: var(--color-secondary);
+    margin: 0 0.2em;
+}
+
+/* Estilos para a tabela ASCII */
+.tabela-ascii {
+    overflow-x: auto;
+}
+
+.tabela-ascii table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    border: var(--border-width) solid var(--color-border);
+    /* Usando variáveis para borda */
+    background-color: var(--color-container);
+    /* Usando variável para cor de container */
+    color: var(--color-text);
+    /* Usando variável para cor de texto */
+}
+
+.tabela-ascii th,
+.tabela-ascii td {
+    border: var(--border-width) solid var(--color-border);
+    /* Usando variáveis para borda */
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.tabela-ascii thead {
+    background-color: var(--color-secondary);
+    /* Usando variável para cor secundária para o header */
+    color: var(--color-background);
+    /* Usando variável para cor de background para o texto do header, para contraste */
+}
+
+.tabela-ascii tbody tr:nth-child(even) {
+    background-color: color-mix(in lch, var(--color-container) 10%, transparent);
+    /* Sutil variação de cor, mantendo tema */
+}
+
+/* Estilo específico para caracteres de controle */
+.caractere-controle {
+    font-style: italic;
+    color: var(--color-text);
+    /* Usando variável para cor secundária para caracteres de controle */
 }
