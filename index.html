@@ -2,69 +2,92 @@
 <html lang="pt-BR">
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Menu interativo com diversas opções, incluindo jogos, calculadoras e outros recursos dinâmicos." />
     <title>Menu Interativo</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 </head>
 
 <body class="my-site">
+
+    <!-- Mensagem para navegadores com JavaScript desabilitado -->
     <noscript>
         <div id="no-js-warning">
             <div class="warning-content">
                 <h1>JavaScript Desabilitado</h1>
-                <p>
-                    Parece que o JavaScript está desabilitado no seu navegador. Para uma melhor experiência e para que este
-                    site funcione corretamente, você precisa habilitá-lo.
-                </p>
+                <p> Parece que o JavaScript está desabilitado no seu navegador. Para uma melhor experiência e para que
+                    este site funcione corretamente, você precisa habilitá-lo. </p>
                 <h2>Como habilitar o JavaScript:</h2>
                 <ul>
-                    <li><strong>Google Chrome:</strong> Vá para Configurações > Privacidade e segurança > Configurações do site >
-                        JavaScript e ative "Os sites podem usar o JavaScript".</li>
-                    <li><strong>Mozilla Firefox:</strong> Vá para Configurações > Privacidade e Segurança > Permissões > marque a caixa
-                        "Executar JavaScript".</li>
-                    <li><strong>Microsoft Edge:</strong> Vá para Configurações > Permissões do site > JavaScript e ative "Permitir
-                        (recomendado)".</li>
-                    <li><strong>Safari:</strong> Vá para Safari > Preferências > Segurança e marque "Ativar JavaScript".</li>
+                    <li>
+                        <strong>Google Chrome:</strong> Vá para Configurações > Privacidade e segurança > Configurações
+                        do site > JavaScript e ative "Os sites podem usar o JavaScript".
+                    </li>
+                    <li>
+                        <strong>Mozilla Firefox:</strong> Vá para Configurações > Privacidade e Segurança > Permissões >
+                        marque a caixa "Executar JavaScript".
+                    </li>
+                    <li>
+                        <strong>Microsoft Edge:</strong> Vá para Configurações > Permissões do site > JavaScript e ative
+                        "Permitir (recomendado)".
+                    </li>
+                    <li>
+                        <strong>Safari:</strong> Vá para Safari > Preferências > Segurança e marque "Ativar JavaScript".
+                    </li>
                 </ul>
                 <p>Após habilitar o JavaScript, recarregue a página.</p>
             </div>
         </div>
     </noscript>
-
     <main class="container">
-        <h1>Menu Interativo</h1>
 
-        <label class="switch">
-            <input type="checkbox" id="darkModeToggle">
-            <span class="slider round"></span>
-        </label>
+        <header>
+            <h1>Menu Interativo</h1>
+            <!-- Toggle de Modo Escuro -->
+            <div>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle" aria-label="Alternar modo escuro">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </header>
 
+        <!-- Navegação principal -->
         <nav class="menu" role="menu" aria-label="Menu Principal">
-            <button data-option="1" role="menuitem">Exibir mensagem 'Olá Mundo!'</button>
-            <button data-option="2" role="menuitem">Digitar e exibir seu nome</button>
-            <button data-option="3" role="menuitem">Realizar uma conta matemática</button>
-            <button data-option="4" role="menuitem">Calculadora de Idade</button>
-            <button data-option="5" role="menuitem">Verificador de Número Primo</button>
-            <button data-option="6" role="menuitem">Calculadora de IMC</button>
-            <button data-option="7" role="menuitem">Conversor de Temperatura</button>
-            <button data-option="8" role="menuitem">Gerador de Tabela ASCII</button>
-            <button data-option="9" role="menuitem">Jogo da Forca</button>
-            <button data-option="10" role="menuitem">Jogo da Velha</button>
-            <button data-option="11" role="menuitem">Lista de Tarefas</button>
-            <button data-option="12" role="menuitem">Sair</button>
+            <button data-option="1" role="menuitem"> Exibir mensagem 'Olá Mundo!' </button>
+            <button data-option="2" role="menuitem"> Digitar e exibir seu nome </button>
+            <button data-option="3" role="menuitem"> Realizar uma conta matemática </button>
+            <button data-option="4" role="menuitem"> Calculadora de Idade </button>
+            <button data-option="5" role="menuitem"> Verificador de Número Primo </button>
+            <button data-option="6" role="menuitem"> Calculadora de IMC </button>
+            <button data-option="7" role="menuitem"> Conversor de Temperatura </button>
+            <button data-option="8" role="menuitem"> Gerador de Tabela ASCII </button>
+            <button data-option="9" role="menuitem"> Jogo da Forca </button>
+            <button data-option="10" role="menuitem"> Jogo da Velha </button>
+            <button data-option="11" role="menuitem"> Lista de Tarefas </button>
+            <button id="closeButton" data-option="12" role="menuitem"> Sair </button>
         </nav>
-
-        <div id="content"></div>
-        
+        <!-- Área para conteúdo dinâmico -->
+        <section id="content"></section>
         <footer>
-            <a href="https://github.com/Jeffinp/MenuInterativo" class="github-link" target="_blank" rel="noopener noreferrer">
-                Veja o código-fonte no GitHub
-            </a>
+            <a href="https://github.com/Jeffinp/MenuInterativo" class="github-link" target="_blank"
+                rel="noopener noreferrer"> Veja o código-fonte no GitHub </a>
         </footer>
+
     </main>
+
+    <!-- Script para fechar a janela após 4 segundos do clique -->
+    <script>
+        document.getElementById('closeButton').addEventListener('click', function () {
+            setTimeout(function () {
+                window.close();
+            }, 4000); // 4000 milissegundos = 4 segundos
+        });
+    </script>
 </body>
 
 </html>
