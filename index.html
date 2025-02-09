@@ -112,74 +112,136 @@
     </main>
 
     <script>
-        document.getElementById('closeButton').addEventListener('click', function () {
-            setTimeout(function () {
+        document.addEventListener('DOMContentLoaded', () => {
+            const closeButton = document.getElementById('closeButton');
+
+            if (closeButton) {
+                closeButton.addEventListener('click', handleCloseButtonClick);
+            } else {
+                console.error('Botão de fechar não encontrado. Verifique o ID "closeButton" no HTML.');
+            }
+
+            function handleCloseButtonClick() {
+                // Utilize uma função nomeada para melhor rastreamento e organização
+                iniciarTemporizadorDeFechamento(1000);
+            }
+
+            function iniciarTemporizadorDeFechamento(delay) {
+                setTimeout(fecharJanela, delay);
+            }
+
+            function fecharJanela() {
                 window.close();
-            }, 4000); // 4000 milissegundos = 4 segundos
+            }
         });
     </script>
 
-    <script> document.addEventListener('DOMContentLoaded', () => {
-        // Simulação de objetos i18n e app.notifications e app.voltarAoMenu e utils e Logger para o exemplo funcionar
-        const i18n = {
-            t: (key) => {
-                const translations = {
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Módulos Simulados (Organização e Reutilização) ---
+
+            /**
+             * Módulo de Internacionalização (i18n).
+             * Responsável por fornecer traduções para a aplicação.
+             */
+            const i18n = {
+                translations: {
                     'calculator': 'Calculadora',
                     'display': 'Display da Calculadora',
                     'history': 'Histórico',
                     'calculationError': 'Erro de cálculo',
                     'returnToMenu': 'Voltar ao Menu',
                     'back': 'Voltar'
-                };
-                return translations[key] || key;
+                },
+                t: function (key) {
+                    // Use 'this' para acessar 'translations'
+                    return this.translations[key] || key;
+                }
+            };
+
+            /**
+             * Módulo de Notificações.
+             * Responsável por exibir notificações ao usuário.
+             */
+            const notifications = {
+                show: function (message, type = 'info') {
+                    // Valor padrão para 'type'
+                    alert(`${type.toUpperCase()}: ${message}`);
+                }
+            };
+
+            /**
+             * Função simulada para voltar ao menu principal.
+             * Em uma aplicação real, isso navegaria para a tela de menu.
+             */
+            function voltarAoMenu() {
+                alert('Voltar ao Menu (funcionalidade simulada)');
             }
-        };
 
-        const notifications = {
-            show: (message, type) => {
-                alert(`${type.toUpperCase()}: ${message}`);
+            /**
+             * Módulo de Utilitários.
+             * Contém funções genéricas e reutilizáveis.
+             */
+            const utils = {
+                sanitizeInput: function (input) {
+                    return input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                },
+                formatNumber: function (number) {
+                    return new Intl.NumberFormat('pt-BR').format(number);
+                }
+            };
+
+            /**
+             * Módulo de Logger.
+             * Responsável por registrar logs da aplicação com diferentes níveis.
+             */
+            const Logger = {
+                levels: {
+                    // Defina os níveis como constantes estáticas
+                    ERROR: 'ERROR',
+                    INFO: 'INFO'
+                },
+                log: function (level, message, details) {
+                    console.log(`[${level}] ${message}`, details);
+                },
+                info: function (message, details) {
+                    // Métodos convenientes para cada nível
+                    this.log(this.levels.INFO, message, details);
+                },
+                error: function (message, details) {
+                    this.log(this.levels.ERROR, message, details);
+                }
+            };
+
+            /**
+             * Objeto da Aplicação (app).
+             * Contém instâncias de módulos e funcionalidades principais.
+             */
+            const app = {
+                i18n: i18n,
+                notifications: notifications,
+                voltarAoMenu: voltarAoMenu,
+                utils: utils,
+                logger: Logger,
+                calculator: null
+            };
+
+
+            // --- Inicialização da Calculadora ---
+            const contentDiv = document.getElementById('content');
+
+            if (contentDiv) {
+                // Supondo que 'Calculator' seja uma classe definida em outro lugar ou incluída.
+                app.calculator = new Calculator(app.i18n, contentDiv);
+                app.calculator.initialize();
+                contentDiv.innerHTML = app.calculator.render();
+                app.calculator.setupEventListeners();
+            } else {
+                Logger.error('Elemento com ID "content" não encontrado. A calculadora não pode ser inicializada.', { contentDivId: 'content' });
+                app.notifications.show(app.i18n.t('contentDivNotFound'), 'error');
             }
-        };
-
-        const voltarAoMenu = () => {
-            alert('Voltar ao Menu (funcionalidade simulada)');
-        };
-
-        const utils = {
-            sanitizeInput: (input) => {
-                return input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-            },
-            formatNumber: (number) => {
-                return new Intl.NumberFormat('pt-BR').format(number);
-            }
-        };
-
-        const Logger = {
-            levels: {
-                ERROR: 'ERROR',
-                INFO: 'INFO'
-            },
-            log: (level, message, details) => {
-                console.log(`[${level}] ${message}`, details);
-            }
-        };
-
-        const app = {
-            notifications: notifications,
-            voltarAoMenu: voltarAoMenu,
-            calculator: null // Será instanciada abaixo
-        };
-
-
-        const contentDiv = document.getElementById('content');
-        app.calculator = new Calculator(i18n, contentDiv);
-        app.calculator.initialize();
-        contentDiv.innerHTML = app.calculator.render();
-        app.calculator.setupEventListeners();
-
-
-    });
-</script>
+        });
+    </script>
 </body>
 
 </html>
