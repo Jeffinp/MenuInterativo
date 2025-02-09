@@ -1,5 +1,5 @@
 /* ================================
-    Variáveis e Configurações Globais
+    Variáveis e Configurações Globais
 ================================ */
 :root {
     /* Cores */
@@ -46,8 +46,8 @@
 }
 
 /* ================================
-     Modo Escuro
-     ================================ */
+             Modo Escuro
+             ================================ */
 .dark-mode {
     --color-background: #1a202c;
     --color-container: #2d3748;
@@ -59,8 +59,8 @@
 }
 
 /* ================================
-     Reset e Estilos Base
-     ================================ */
+             Reset e Estilos Base
+             ================================ */
 * {
     margin: 0;
     padding: 0;
@@ -87,8 +87,8 @@ body {
 }
 
 /* ================================
-     Container Principal
-     ================================ */
+             Container Principal
+             ================================ */
 .container {
     background-color: var(--color-container);
     border-radius: var(--border-radius);
@@ -101,8 +101,8 @@ body {
 }
 
 /* ================================
-     Tipografia
-     ================================ */
+             Tipografia
+             ================================ */
 h1,
 h2,
 h3 {
@@ -129,8 +129,8 @@ p {
 }
 
 /* ================================
-     Botões
-     ================================ */
+             Botões
+             ================================ */
 button {
     background-color: var(--color-primary);
     color: #fff;
@@ -159,8 +159,8 @@ button:active {
 }
 
 /* ================================
-     Toggle Modo Escuro
-     ================================ */
+             Toggle Modo Escuro
+             ================================ */
 .switch {
     position: relative;
     display: inline-block;
@@ -254,8 +254,8 @@ input:checked+.slider {
 }
 
 /* ================================
-     Layout do Menu
-     ================================ */
+             Layout do Menu
+             ================================ */
 .menu {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -264,8 +264,8 @@ input:checked+.slider {
 }
 
 /* ================================
-     Notificações
-     ================================ */
+             Notificações
+             ================================ */
 .notification {
     position: fixed;
     bottom: var(--spacing-unit);
@@ -304,8 +304,8 @@ input:checked+.slider {
 }
 
 /* ================================
-     Jogo da Forca
-     ================================ */
+             Jogo da Forca
+             ================================ */
 #forca-container {
     text-align: center;
     padding: var(--spacing-unit);
@@ -324,8 +324,8 @@ input:checked+.slider {
 }
 
 /* ================================
-     Jogo da Velha
-     ================================ */
+             Jogo da Velha
+             ================================ */
 .jogo-velha-container {
     display: flex;
     flex-direction: column;
@@ -350,6 +350,7 @@ input:checked+.slider {
     font-weight: 600;
     cursor: pointer;
     transition: all var(--transition-speed) ease;
+    user-select: none;
 }
 
 .cell:hover {
@@ -357,9 +358,23 @@ input:checked+.slider {
     color: #fff;
 }
 
+/* Estilos para 'X' */
+.cell.X::before {
+    content: 'X';
+    color: var(--color-error);
+    display: block;
+}
+
+/* Estilos para 'O' */
+.cell.O::before {
+    content: 'O';
+    color: var(--color-success);
+    display: block;
+}
+
 /* ================================
-     Lista de Tarefas
-     ================================ */
+             Lista de Tarefas
+             ================================ */
 .todo-container {
     display: flex;
     flex-direction: column;
@@ -388,8 +403,8 @@ input:checked+.slider {
 }
 
 /* ================================
-     Footer
-     ================================ */
+             Footer
+             ================================ */
 footer {
     margin-top: 2rem;
     padding: 1.5rem 0;
@@ -454,8 +469,8 @@ footer {
 }
 
 /* ================================
-    Modo Escuro no Footer
-     ================================ */
+             Modo Escuro no Footer
+             ================================ */
 .dark-mode .github-link {
     background-color: var(--color-container);
     color: var(--color-text);
@@ -467,9 +482,9 @@ footer {
 }
 
 /* ================================
-     Responsividade
-     ================================ */
-/* Para telas até 768px */
+             Responsividade
+             ================================ */
+/* Para telas até 768px (tablets e alguns laptops menores) */
 @media (max-width: 768px) {
     html {
         font-size: 14px;
@@ -520,7 +535,7 @@ footer {
     }
 }
 
-/* Para telas até 480px */
+/* Para telas até 480px (celulares menores) */
 @media (max-width: 480px) {
     .switch {
         width: 50px;
@@ -548,8 +563,8 @@ footer {
 }
 
 /* ================================
-    Animações Adicionais
-================================ */
+        Animações Adicionais
+    ================================ */
 @keyframes fadeIn {
     from {
         opacity: 0;

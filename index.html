@@ -3,67 +3,86 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Menu Interativo - Experiência Dinâmica e Completa</title>
     <meta name="description"
-        content="Menu interativo com diversas opções, incluindo jogos, calculadoras e outros recursos dinâmicos." />
-    <title>Menu Interativo</title>
+        content="Descubra um menu interativo com jogos envolventes, calculadoras úteis e diversos outros recursos dinâmicos para uma experiência online completa e divertida." />
+    <meta name="keywords"
+        content="menu interativo, jogos online, calculadora web, recursos dinâmicos, ferramentas web, entretenimento online" />
+    <meta name="author" content="Jeferson Reis Almeida" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png" />
+    <link rel="icon" type="image/svg+xml" href="/fav/favicon.svg" />
+    <link rel="manifest" href="/fav/site.webmanifest" />
+    <link rel="shortcut icon" href="/fav/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+
     <script src="script.js" defer></script>
-    <link rel="icon" type="image/png" href="/fav/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/fav/favicon.svg" />
-    <link rel="shortcut icon" href="/fav/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Menu Interativo" />
-    <link rel="manifest" href="/fav/site.webmanifest" />
 </head>
 
 <body class="my-site">
 
-    <!-- Mensagem para navegadores com JavaScript desabilitado -->
     <noscript>
-        <div id="no-js-warning">
+        <div id="no-js-warning" role="alert" aria-live="assertive">
             <div class="warning-content">
                 <h1>JavaScript Desabilitado</h1>
-                <p> Parece que o JavaScript está desabilitado no seu navegador. Para uma melhor experiência e para que
-                    este site funcione corretamente, você precisa habilitá-lo. </p>
+                <p>
+                    Para uma melhor experiência e para que este site funcione corretamente, o JavaScript precisa estar
+                    habilitado no seu navegador.
+                </p>
                 <h2>Como habilitar o JavaScript:</h2>
                 <ul>
                     <li>
-                        <strong>Google Chrome:</strong> Vá para Configurações > Privacidade e segurança > Configurações
-                        do site > JavaScript e ative "Os sites podem usar o JavaScript".
+                        <strong>Google Chrome:</strong> Vá em <code>Configurações</code> &gt;
+                        <code>Privacidade e segurança</code> &gt; <code>Configurações do site</code> &gt;
+                        <code>JavaScript</code> e ative "<code>Os sites podem usar o JavaScript</code>".
                     </li>
                     <li>
-                        <strong>Mozilla Firefox:</strong> Vá para Configurações > Privacidade e Segurança > Permissões >
-                        marque a caixa "Executar JavaScript".
+                        <strong>Mozilla Firefox:</strong> Vá em <code>Configurações</code> &gt;
+                        <code>Privacidade e Segurança</code> &gt; <code>Permissões</code> &gt; marque a caixa
+                        "<code>Executar JavaScript</code>".
                     </li>
                     <li>
-                        <strong>Microsoft Edge:</strong> Vá para Configurações > Permissões do site > JavaScript e ative
-                        "Permitir (recomendado)".
+                        <strong>Microsoft Edge:</strong> Vá em <code>Configurações</code> &gt;
+                        <code>Permissões do site</code> &gt; <code>JavaScript</code> e ative
+                        "<code>Permitir (recomendado)</code>".
                     </li>
                     <li>
-                        <strong>Safari:</strong> Vá para Safari > Preferências > Segurança e marque "Ativar JavaScript".
+                        <strong>Safari:</strong> Vá em <code>Safari</code> &gt; <code>Preferências</code> &gt;
+                        <code>Segurança</code> e marque "<code>Ativar JavaScript</code>".
                     </li>
                 </ul>
-                <p>Após habilitar o JavaScript, recarregue a página.</p>
+                <p>Após habilitar o JavaScript, por favor, recarregue a página.</p>
             </div>
         </div>
     </noscript>
+
     <main class="container">
 
         <header>
-            <h1>Menu Interativo</h1>
-            <!-- Toggle de Modo Escuro -->
-            <div>
-                <label class="switch">
+            <section id="header-top">
+                <h1>Menu Interativo</h1>
+            </section>
+            <section id="dark-mode-toggle-section">
+                <label class="switch" for="darkModeToggle">
                     <input type="checkbox" id="darkModeToggle" aria-label="Alternar modo escuro">
                     <span class="slider round"></span>
                 </label>
-            </div>
+            </section>
         </header>
 
-        <!-- Navegação principal -->
-        <nav class="menu" role="menu" aria-label="Menu Principal">
+        <nav class="menu" role="navigation" aria-label="Menu Principal">
             <button data-option="1" role="menuitem"> Exibir mensagem 'Olá Mundo!' </button>
             <button data-option="2" role="menuitem"> Digitar e exibir seu nome </button>
             <button data-option="3" role="menuitem"> Realizar uma conta matemática </button>
@@ -77,16 +96,21 @@
             <button data-option="11" role="menuitem"> Lista de Tarefas </button>
             <button id="closeButton" data-option="12" role="menuitem"> Sair </button>
         </nav>
-        <!-- Área para conteúdo dinâmico -->
-        <section id="content"></section>
+
+        <section id="content" aria-live="polite"></section>
+
         <footer>
-            <a href="https://github.com/Jeffinp/MenuInterativo" class="github-link" target="_blank"
-                rel="noopener noreferrer"> Veja o código-fonte no GitHub </a>
+            <p>© 2024 Menu Interativo. Todos os direitos reservados.</p>
+            <p>
+                <a href="https://github.com/Jeffinp/MenuInterativo" class="github-link" target="_blank"
+                    rel="noopener noreferrer">
+                    Código-fonte no GitHub
+                </a>
+            </p>
         </footer>
 
     </main>
 
-    <!-- Script para fechar a janela após 4 segundos do clique -->
     <script>
         document.getElementById('closeButton').addEventListener('click', function () {
             setTimeout(function () {
