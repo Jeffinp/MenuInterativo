@@ -1,1 +1,1960 @@
-const _0x4fd80d=_0x5d2b;(function(_0x3da170,_0x5d15d2){const _0xf690f8=_0x5d2b,_0x3d2b3c=_0x3da170();while(!![]){try{const _0x1fd51b=-parseInt(_0xf690f8(0x6dc))/(0x219d*0x1+0x1614+-0x1b0*0x21)*(parseInt(_0xf690f8(0x2ee))/(0x2235+-0x4*0x3d3+0x3*-0x64d))+parseInt(_0xf690f8(0x5f1))/(-0x13f6+0x2070+-0xc77)+-parseInt(_0xf690f8(0x515))/(-0x11*-0x184+-0xd28+-0xc98)+-parseInt(_0xf690f8(0x287))/(-0x80e+-0x4*0x320+-0x17*-0xe5)*(parseInt(_0xf690f8(0x4fc))/(0xc35+-0x2304+0x16d5))+-parseInt(_0xf690f8(0x65a))/(-0x1804+0x1*-0x926+0x2131)*(-parseInt(_0xf690f8(0x5d9))/(-0x2*-0x93c+0x23f9*0x1+-0x3669))+-parseInt(_0xf690f8(0x3a0))/(0x2*0x4fd+0x242a+-0x1*0x2e1b)*(parseInt(_0xf690f8(0x568))/(-0x1*0x1c6a+-0xe*0x18d+0x322a))+parseInt(_0xf690f8(0x2e4))/(0xc*-0x1f+0x264c+0x1*-0x24cd);if(_0x1fd51b===_0x5d15d2)break;else _0x3d2b3c['push'](_0x3d2b3c['shift']());}catch(_0x361862){_0x3d2b3c['push'](_0x3d2b3c['shift']());}}}(_0x155b,-0x1c420+0xa5ab0+0x2e078));const utils={'sanitizeInput':function(_0x3163e0){const _0x5abe1f=_0x5d2b,_0x254b7c={'kWfDx':_0x5abe1f(0x64f),'OItks':_0x5abe1f(0x57d),'XxuHm':_0x5abe1f(0x541),'FdEht':_0x5abe1f(0x468),'mPIJg':_0x5abe1f(0x527)};return _0x3163e0[_0x5abe1f(0x362)]()[_0x5abe1f(0x61b)](/&/g,_0x254b7c[_0x5abe1f(0x599)])[_0x5abe1f(0x61b)](/</g,_0x254b7c[_0x5abe1f(0x383)])[_0x5abe1f(0x61b)](/>/g,_0x254b7c[_0x5abe1f(0x5d6)])[_0x5abe1f(0x61b)](/"/g,_0x254b7c[_0x5abe1f(0x747)])[_0x5abe1f(0x61b)](/'/g,_0x254b7c[_0x5abe1f(0x36a)]);},'formatNumber':function(_0x67c4de){const _0xf05aa9=_0x5d2b,_0x5ec783={'UyDgp':_0xf05aa9(0x54f)};return _0x67c4de[_0xf05aa9(0x417)+_0xf05aa9(0x4ab)](_0x5ec783[_0xf05aa9(0x660)]);}},Logger={'levels':{'ERROR':_0x4fd80d(0x410),'INFO':_0x4fd80d(0x3a3)},'log':function(_0x2273ad,_0x576ad3,_0x48ac0e={}){const _0x1917ad=_0x4fd80d;console[_0x1917ad(0x297)]('['+_0x2273ad+']\x20'+_0x576ad3,_0x48ac0e);}};class Cache{constructor(){const _0x3b5145=_0x4fd80d;this[_0x3b5145(0x578)]={};}[_0x4fd80d(0x5e3)](_0x56e966){const _0x3a36ea=_0x4fd80d,_0x4ba3f0={'AiCDB':function(_0x712eb7,_0x376bfd){return _0x712eb7<_0x376bfd;}},_0x28a70e=this[_0x3a36ea(0x578)][_0x56e966];if(_0x28a70e&&_0x4ba3f0[_0x3a36ea(0x349)](Date[_0x3a36ea(0x28b)](),_0x28a70e[_0x3a36ea(0x7ad)]))return _0x28a70e[_0x3a36ea(0x1f0)];return delete this[_0x3a36ea(0x578)][_0x56e966],null;}[_0x4fd80d(0x60b)](_0x3068bf,_0x4f641e,_0x187e6a=-0x719*0xe1d+-0x3dc470+0x2b5fc1*0x5){const _0x4a0171=_0x4fd80d,_0x219104={'mgsEi':function(_0x3ccd84,_0x92acf8){return _0x3ccd84+_0x92acf8;}};this[_0x4a0171(0x578)][_0x3068bf]={'value':_0x4f641e,'expires':_0x219104[_0x4a0171(0x79d)](Date[_0x4a0171(0x28b)](),_0x187e6a)};}}function _0x155b(){const _0x2051de=['mall>\x0a\x09\x09\x09\x09','a\x20Fahrenhe','stener','\x09\x09\x09\x09\x09<inpu','showJogoDa','pVKGH','oup\x22>\x0a\x09\x09\x09\x09','TabelaASCI','XxuHm','=\x22app.volt','\x20id=\x22anoNa','24BVxkQp','exibirNome','f\x20Transmis','ido!','processarV','Ajlmm','AoMenu()\x22>','RTJwn','n\x20id=\x22volt','\x20of\x20Text)','get','qrBoE','Escape','</span>\x20eq','\x22></div>\x0a\x09','alcular\x20a\x20','click','>\x0a\x09\x09\x09\x09\x09<op','ntou\x20essa\x20','<tbody>\x0a\x20\x20','ciarJogo()','aded.','target','QiShv','216180SGyEAx','mnxZC','s=\x22caracte','\x20\u00a0\x20<button','Ano\x20Atual:','\x20(em\x20metro','idade','rUYOg','nvertida\x22>','ssage\x22\x20id=','bel>\x0a\x09\x09\x09\x09<','value=\x226\x22>','Obesidade\x20','erificacao','e\x20ser\x20maio','lt\x22>','info','leLYJ','alert','updateWeig','peTHi','s=\x22seconda','PafzZ','fyfVX','renderTask','MtQDj','set','sFjEu','r\x20tarefa\x20','rzTvM','unshift','YJDIg','válida.\x20Po','</div>\x0a\x09\x09\x09','nu()\x22>Volt','\x22\x20aria-lab','input\x20type','uHwDj','keyup','show','IxkZX','lare.com/a','replace','levels','ss=\x22input-','resultado-','isPrimo','com\x20iphone','FBwjT','Jcmgz','it</option','Erro\x20inter','id=\x22altura','xfTcj','ractereASC','on\x20class=\x22','ite\x20seu\x20pe','eit\x20para\x20K','\x20venceu!','ipo\x20de\x20con','=\x22resultad','uladora-im','USMCX','ator','r=\x22numeroP','iv>\x0a\x09\x09\x09</d','message\x22\x20i','ListenersF','QXRSO','ltadoConve','\x20Medium)','toFixed','\x20encontrad','\x20operator','x:\x2075\x22>\x0a\x09\x09','\x20uma\x20letra','\x20\x20\x20\x20\x20\x20','Listeners','abs','LF\x20(Line\x20F','ESC\x20(Escap','agensErro','upxdm','tWWyK','eWVEU','rDFoe','rsao','showCalcul','mo-valor\x22>','orListItem','u!\x20A\x20palav','lFkzE','wkAVb','er\x20posteri','&amp;','DLE\x20(Data\x20','Menu</butt','\x09\x09\x09\x09</div>','.status','rbFuv','\x09<small\x20cl','QkcFZ','Erro\x20inesp','nsDpp','scimento\x22\x20','123571GGMaRp','>Olá,\x20','KqHBH','th>Decimal','OBnty','geradorTab','UyDgp','HpbAz','GS\x20(Group\x20','QBgMO','Calcular\x20I','calcularIM','kksmz','\x20\x20\x20\x20\x20\x20\x20<h3','bzdXy','aIdade','yAqRO','CBtn','d=\x22nome\x22>\x0a','palavras','</button>','rKcMw','adivinharL','\x22>\x0a\x09\x09\x09\x09\x09<s','rca</h2>\x0a\x20','updateTask','GUYgX','h>\x0a\x20\x20\x20\x20\x20\x20\x20','=\x22anoNasci','Limpar\x20His','group\x22>\x0a\x09\x09','anoNascime','nQVMW','togglePlay','s=\x22input-g','setupMenu','DrevJ','ged:','</span>\x20é\x20','forEach','e=\x22text\x22\x20i','eparator)','\x20\x20\x20\x20\x20\x20\x20<h2','mYCRp','RKGvL','\x20<p\x20id=\x22fo','\x20</li>','id=\x22calcHi','tXRAm','!\x20Seja\x20bem','PFBOm','fqXUA','lavra','ltar\x20ao\x20Me','esultado-n','iv\x20class=\x22','lass=\x22ler-','ghfeD','preventDef','EUacQ','reverse','Kelvin\x20par','sao','KjlOn','r=\x22Ex:\x201.7','Separator)','concat','XeCPY','2>\x0a\x20\x20\x20\x20','etra','\x22\x20id=\x22disp','class=\x22tim','rimo\x22>Digi','número\x20int','v>\x0a\x09\x09\x09<but','oWApo','reiniciarJ','esDdu','ome\x22\x20class','maxErros','\x0a\x09\x09\x09\x09<butt','</label>\x0a\x09','ype=\x22check','elsius\x20par','Peso\x20deve\x20','erros','hzLcn','versão</op','álido:','\x20inválida.','isBoardFul','\x20número\x20in','\x20\x20\x20<div\x20id','toUpperCas','sagemErro','efas','\x22\x20class=\x22','Jogador\x20','isplay\x22\x20ro','ozxvu','lass=\x22jogo','\x20type=\x22tex','</span>\x20an','rIMC','ogo','app.voltar','IZNJn','a\x20inválida','são:</labe','SYN\x20(Synch','reshold','expression','\x20insira\x20um','FWyLF','jax/libs/m','max','/button>\x0a\x20','s=\x22nao-pri','sRpLg','mento-erro','programaca','learHistor','dMlwt','</h3>\x0a\x20\x20\x20\x20','etas','nto','iv>\x0a\x20\x20\x20\x20\x20\x20','UGGqm','UKyqX','rca-letras','125GiLVkA','rregar\x20Mat','\x09\x09\x09<small\x20','\x20\x20>','\x20\x20\x20\x20\x20\x20</di','bel=\x22','body','ura\x22>Digit','QPEEC','option\x20val','/100','\x09\x09\x09<label\x20','iuJdA','Vez\x20do\x20Jog','<button\x20cl','cfNMs','rregar\x20his','7\x22>\x0a\x09\x09\x09\x09\x09<','ItemUI','chMSC','</span></h','número.','</option>\x0a','type=\x22text','on\x20id=\x22ver','O\x20ano\x20atua','fade-out','getBestMov',')</span>','ad>\x0a\x20\x20\x20\x20\x20\x20','tton>\x0a\x09\u00a0\x20\u00a0','BYMAl','.menu\x20butt','=\x22calc-his','OUPKK','tasks','\x09\x09</div>\x0a\x09','=\x22forca-pa','HUNJu','rIdadeBtn\x22','h.js.','TiezD','lkYec','\x20\x20\x20\x20\x20\x20\x20','error','DojcD','do-idade\x22\x20','formatarCa','njs.cloudf','\x20\x20\x20\x20<input','calculatio','tado-mensa','cJhAB','ZsXof','script','\x09\x09<label\x20f','4\x22>Fahrenh','on>\x0a\x09\x09\x09\x09\x09<','h2>Tabela\x20','ReMlm','\x09\x09\x09\x09\x09<opti','ive\x20Acknow','darkMode','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20','classifica','isDisplayi','ohSqL','dzGlH','GWsTH','Grau\x20III','r\x20que\x20zero','dazzH','hGRft','Seleção\x20de','div>\x0a\x09\u00a0\x20\u00a0\x20','mostrarMen','setupEvent','-key=\x22','TNgnf','amMTJ','ite\x20um\x20núm','OGtYK','peso','lledby=\x22ta','urbwn','test','eratura-er','-mensagem\x22','VAGHm','put','map','KccOv','OdpiS','Tnkot','renderBoar','LxLOD','AEDqz','ledgement)','t\x22\x20id=\x22tas','ListUI',':</label>\x0a','lavra\x22>','um\x20número\x20','ODMXX','-buttons\x22\x20','timestamp','addEventLi','FdEht','t\x20type=\x22nu','Erro\x20ao\x20ca','\x20\x20\x20<th>Hex','a\x20tarefa\x20a','d=\x22resulta','Jogo\x20da\x20Fo','listaDeTar','ser\x20maior\x20','\u00a0\x20\u00a0\x20\u00a0\x20<h2>','TIBNC','VrmPg','handleButt','lUZNu','BHTMq','<input\x20typ','o-mensagem','FS\x20(File\x20S','utton\x20id=\x22','Menu()\x22>Vo','</div>\x0a\x09\x09','aHcwY','jaBCD','\x09<div\x20clas','class=\x22sep','meGvF','lass=\x22temp','idade.','\x09\x09<button\x20','e\x20um\x20númer','Peso\x20invál','\x20<input\x20ty','\u00a0\x20\u00a0\x20<div\x20c','reta','tipoConver','\x20\x20\x20\x20\x20\x20clas','\x20\x20\x20\x20','le=\x22listit','back','alor\x22>','\x22tabela-as','placeholde','setItem','NUL\x20(Null)','IJAGi','id=\x22temper','>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','SO\x20(Shift\x20','tem\x22>\x0a\x20\x20\x20\x20','change','mbCXz','splice','s=\x22idade-v','s=\x22error-m','r\x22>\x0a\x20\x20\x20\x20\x20\x20','válido.\x20Di','ge\x20Return)','xwxuY','.close','>\x0a\x09\x09\x09\x09</di','fill','lha</h2>\x0a\x09','Altura\x20dev','DC2\x20(Devic','Backspace','gerarLinha','bzOIx','Grau\x20II','Calculador','role','bnXFC','</h2>\x0a\x20\x20\x20\x20','iwALm','r\x20favor,\x20d','=\x22forca-co','h>Octal</t','yRbSs','ton>\x0a\x09\x09\x09\x09<','.calc-butt','inválido.\x20','\x20\x20\x20\x20\x20\x20\x20\x20<t','Índice\x20de\x20','addToHisto','sUgAI','</span></p','ask-label-','mgsEi','ory\x20ul','ace)','Ano\x20de\x20nas','irNome()\x22>','darkModeTo','/span>\x0a\x20\x20\x20','cJcWD','processarC','ra\x20Celsius','primo','table>\x0a\x20\x20\x20','https://cd','NAxEj','nly>\x0a\x20\x20\x20\x20\x20','rGVaZ','expires','showListaD','obterNumer','iner\x22>\x0a\x09\x09\x09','error\x22></s','>\x0a\x09\x09\x09</div','que\x20zero.','ento.','\x22peso\x22>Dig','conversão.','sQFem','ro\x20inteiro','\x20válido\x20(a','o\x20tipo\x20de\x20','new-item','erado\x20ao\x20c','ASCII</h2>','Celsius</o','teiro\x20váli','RXNej','s=\x22primo-v','YszJw','ior\x20ao\x20ano','lculo','letrasCorr','ass=\x22resul','atual.','zJLle','value','estamp\x22>','rtida\x22>','cii\x22>\x0a\x20\x20\x20\x20','ontroleASC','SzmHJ','\x22anoAtual-','\x20\x20<div\x20cla','eTarefas','uma\x20tarefa','\x20\x20\x20\x20\x20\x20\x20</u','peso\x22\x20plac','TFDuk','pe=\x22text\x22\x20','cdAMe','ass=\x22error','inWog','=\x22voltarMe','mento:</la','stepSize','te\x20outra.','content','role=\x22grou','YPRoz','src','TcjUC','on\x20value=\x22','ISIod','tor','ultado-men','ZMiTU','nome','anoAtual\x22>','label\x20for=','nu()\x22\x0a\x20\x20\x20\x20','US\x20(Unit\x20S','\x20\x20\x20\x20<butto','imc','for=\x22altur','\x22todo-list','updateStat','calculateO','ZHSUL','desabilita','hPWHf','BjOOa','ersor-temp','<tr>\x0a\x20\x20\x20\x20\x20','=\x22input-gr','imo-error\x22','ificarPrim','BS\x20(Backsp','.grid\x20.cel','th>\x0a\x20\x20\x20\x20\x20\x20','\x20\x20<input\x20t','Abaixo\x20do\x20','ero\x20primo.','<button\x0a\x20\x20','KjNdU','zaIlN','DvJUi','ry)','=\x222\x22>Celsi','calcHistor','eLeQy','yer','contains','</span><sp','key','lect>\x0a\x09\x09\x09\x09','id=\x22calcul','bGUPL','box\x22\x20id=\x22t','=\x22checkbox','itQOl','KyAmc','\x20Parecida\x20','vjiWJ','YfcxS','p\x22>\x0a\x20\x20\x20\x20\x20\x20','fromCharCo','\x20(Código\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<','UhjmW','lass=\x22calc','ber\x22\x20id=\x22n','eiro\x20*posi','\x09<div\x20id=\x22','XXXxx','ck=\x22app.ca','pTOAY','NAK\x20(Negat','WJPeS','onerror','\x20\x20\x20\x20<span\x20','body>\x0a\x20\x20\x20\x20','ById','3\x20metros).','nRQHr','d=\x22tipoCon','checkWinne','or-message','s=\x22tempera','on\x20onclick','2>\x0a\x20\x20\x20\x20\x20\x20\x20','letra.\x20Ten','bybHj','=\x220\x22\x20reado','el=\x22Nova\x20t','div\x20class=','NwtLC','siBTZ','ton>\x0a\x09\x09\x09<d','addTask','ibPTI','enabled','er=\x22Digite','nTDCk','</span>\x20nã','fzSAD','Histórico','Btn','-vindo(a)!','h2><span\x20c','sdwJV','computador','utton>\x0a\x09\x09\x09','o\x20para\x20ID:','iYEbg','>Voltar\x20ao','Control\x20Co','\x09\x09<h2>Olá\x20','\x22>Excluir<','\x20</div>\x0a\x20\x20','har','sion\x20Block','div','eUxTI','conversao','\x20e\x20razoáve','-message\x22\x20','djHbA','RVruC','result','getItem','In)','initialize','jfnir','handleKeyP','\x20\x20\x20\x20</tr>\x0a','ficador-pr','1832390caNGJE','ror\x22></sma','vxcXy','=\x22app.exib','now','xZODO','peso.','Loaded','escolherPa','\x22btn-adivi','\x20\x20\x20\x20\x20\x20\x20\x20<p','nverterBtn','inválida.\x20','LFmcd','Peso\x20norma','\x20\x20\x20\x20\x20\x20aria','log','agem','\x22\x20id=\x22peso','das','lDtmZ','elha.reini','push','luPPD','renheit\x20pa','FPRJI','displayNex','handleClic','ronous\x20Idl','utput','palavraSec','\u00a0\x20\u00a0\x20\u00a0\x20\u00a0\x20<d','Zgnie','Velha','cimento\x20in','\x22>Voltar\x20a','o\x20em\x20kg.','gameBoard','sion\x22>','\x20onclick=\x22','XAXwo','altura','tzwhS','qESOc','<span\x20clas','ade-contai','eJeZN','Idade</but','classList','\x20\x20\x20\x20\x20\x20\x20</t','ent','\x20\x20\x20\x20\x20<butt','<option\x20va','tr>\x0a\x20\x20\x20\x20\x20\x20','button\x20onc','MRMod','AMzKH','n\x22>Voltar\x20','Uivfl','oggle\x20chan','container\x20','\u00a0\x20\u00a0\x20\u00a0\x20\u00a0\x20\u00a0\x20','assificaca','\x20é:\x20<span\x20','ACK\x20(Ackno','onClick','\x20conversão','split','</td>\x0a\x20\x20\x20\x20','igite\x20um\x20n','meString','calc-butto','lass=\x22mess','decisionTh','>\x0a\x09\x09\x09\x09\x09<in','ton>\x0a\x20\x20\x20\x20\x20','ass=\x22todo-','\x20\x20\x20\x20\x20\x20\x20onc','contentDiv','Voltar\x20ao\x20','\x20equal','JdNtT','DOMContent','rJogo','r</button>','essage\x22\x20id','CR\x20(Carria','handleBack','\x20digite\x20um','TFiyC','xHayS','Primo','tion>\x0a\x09\x09\x09\x09','31294516OsPNVh','lGETM','<h2>','f\x20Text)','class=\x22res','ceholder=\x22','</span>\x0a\x20\x20','KeMFL','r=\x22anoNasc','clearDispl','3290Izxwxv','alue=\x221\x22>C','atura:</la','limparMens',')\x22>Voltar\x20','ton\x20id=\x22co','fUxBE','\x20\x20\x20\x20\x20\x20<ul\x20','\x20\x20\x20\x20\x20\x20\x20\x20<d','fsUha','mero.','\x20of\x20Headin','IrMYa','rnizN','\x20ser\x20anter','oBACW','l\x20(máximo\x20','VRhvP','s):</label','O\x20ano\x20de\x20n','lPqLz','or\x20ao\x20ano\x20','arefas</h2','\x22>Adiciona','SOpYe','gite\x20um\x20nú','QwfYB','Parabéns!\x20','=\x22error-me','Nome\x20invál','fYKfu','LsDHF','\x20do\x20progra','TvleP','adas:\x20','dQurO','\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20','includes','der=\x22Ex:\x201','SaFUY','\x20<p\x20class=','voltarAoMe','\x22\x20id=\x22temp','\x20aria-labe','qXiRP','match','voltarMenu','tHPKD','space','completed','=\x22altura\x22\x20','kInput\x22\x20pl','tórico','Ykcsr','1|6','\x20\x20\x20\x20\x20</the','stringify','\x20\x20class=\x22','vQzeJ','-error\x22></','tarAoMenu(','abel\x20for=\x22','so\x20(em\x20kg)','gyyvh','calculator','<ul\x20class=','te\x20um\x20núme','formatNumb','WqTqY','IRoNK','wAKLU','0\x22>\x0a\x09\x09\x09\x09\x09<','ss=\x22expres','mall\x20class','5\x22\x20step=\x220','\x0a\x09\x09\x09<div\x20c','e\x20a\x20temper','Entrada\x20in','atura\x22\x20pla','nAaLv','conversorT','KVTUB','toISOStrin','sua\x20altura','SoRql','oryDisplay','entage','<label\x20for','kBSHU','RzRPs','\x22Adicione\x20','AiCDB','forca-pala','lyyRF','ry-button\x22','emperatura','pp.jogoDaV','\x20\x20\x20<input\x20','mTVOY','vKonC','rQccB','lmypz','taskInput','renderCell','em\x22>\x0a\x20\x20\x20\x20\x20','<small\x20cla','\x20class=\x22cl','lass=\x22veri','sagem\x22></d','d=\x22calcula','span','hgTwM','pSdzr','r\x20Jogo</bu','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','VT\x20(Vertic','toString','\x09\x09\x09\x09<div\x20i','laceholder','id=\x22letra-','></p>\x0a\x20\x20\x20\x20','mente.</h2','checkbox','el=\x22Exclui','mPIJg','\x09<button\x20i','exibirOlaM','ggGhU','.01\x22>\x0a\x09\x09\x09\x09','keydown','noAtual\x22\x20p','onclick=\x22a','l\x20não\x20pode','\x09<option\x20v','MJdaE','1|2','iginal\x22>','onload','tton>\x0a\x09\x09\x09\x09','ss=\x22calc-d','tainer\x22>\x0a\x09','n.js','ainer\x22>\x0a\x09\x09','type','mber\x22\x20id=\x22','\x20data-inde','Sobrepeso.','4|5|2|0|1|','yDpoa','OItks','\x09\x09<option\x20','KLEQX','\x22>\x0a\x09\x09\x09\x09<la','tura-conve','render','mais!</h2>','frFbQ','DEL\x20(Delet','lBJdR','al\x20Tab)','mWMPV','UDrVW','makeComput','gIKrv','lculator.c','ificacao\x22>','toggleTask','display','></small>\x0a','showForca','TSnkW','ntainer\x22>\x0a','nJdGM','itute)','NyDrf','calculador','jMfQa','\x22>Reinicia','225eThEGi','nput-group','ador\x20','INFO','tion\x20value','tton>\x0a\x20\x20\x20\x20','\x09\x09<div\x20cla','\x20positivo:','ault','AaBIR','calculate','Digite\x20seu','qZtnq','length=\x221\x22','=\x22numeroPr','>\x0a\x20\x20\x20\x20','javascript','>Calcular\x20','ido.\x20Digit','ar\x20ao\x20Menu','dataset','\x20\x20\x20</tr>\x0a\x20','-erradas\x22>','r\x22></small','sion)','length','atualizarJ','weights','tory\x22>\x0a\x20\x20\x20','iv>\x0a\x09\x09\x09<di','rvgXf','PARBG','fUwob','ODtEU','clearEntry','aIMC','\u00a0\x20<button\x20','\x20\x20\x20','\x20idade\x20é:\x20','vOVQA','=\x22number\x22\x20','v\x20class=\x22i','vra','button\x0a\x20\x20\x20','lvin\x20para\x20','CahId','dqbhl','eratura-or','Exibir\x20Nom','do-primo\x22\x20','do.','zNsDU','versão.','de\x20','hbkOU','or\x22></smal','Link\x20Escap','HMZwP','té\x20','ARTCd','\x20\x20\x20<li\x20cla','FMuUw','arMenuBtn\x22','ltUUS','obterNomeC','x\x22\x20aria-la','AATlE','BHPom','\x20\x20<thead>\x0a','e\x22>','toLocaleDa','CpiOn','fRcSi','Weights','floor','STX\x20(Start','<div\x20class','exibirResu','utton>\x0a\x20\x20\x20','addTaskBtn','XirGv','e\x20erro\x20não','Out)','input-grou','\u00a0\x20\u00a0\x20\u00a0\x20<div','arator\x22>=<','currentPla','wJcrU','makeDecisi','l>\x0a\x09\x09\x09</di','qgqOp','us\x20para\x20Ke','lvin</opti','athjs/11.7','\x20\x20\x20\x20\x20\x20\x20\x20','bbXRJ','tarefa\x20inv','ss=\x22todo-i','uWkzK','button\x20id=','\x20<button\x20o','>\x0a\x09\x09\x09\x09<but','eed)','hts','\x20type=\x22num','ipoConvers','notificati','ere</th>\x0a\x20','ss=\x22histor','random','ros.','UzCFv','ERROR','ZJoLJ','JXzWU','Grau\x20I','bZjLq','</p>\x0a\x20\x20\x20\x20\x20','queue','toLocaleSt','v>\x0a\x20\x20\x20\x20\x20\x20\x20','appendChil','\x20\x20\x20\x20\x20\x20data','lass=\x22resu','ETX\x20(End\x20o','eRzLo','kdYPJ','Letras\x20Err','o-valor\x22>','ainer\x22\x20rol','\x20\x20\x20<h2>Cal','DarkMode\x20t','SI\x20(Shift\x20','nclick=\x22ap','\x20placehold','lhZwT','shift','\x20\x20</div>\x0a\x20','or=\x22nome\x22>','zAMLa','-valor\x22>','converterB','<th>Caract','EQrgX','\x20li:nth-ch','re-control','gvNvm','clear-hist','bel\x20for=\x22t','eratura-co','MC</button','\x22>Converte','p\x22>\x0a\x09\x09\x09\x09\x09<','ton\x20id=\x22vo','ll>\x0a\x09\x09\x09</d','ltarMenuBt','className','culadora\x20-','forca-mens','QOyZU','ild(','n\x20class=\x22d','\x22>&times;<','a\x22>Digite\x20','el=\x22Fechar','erMove','sage','remove','checked','renderButt','querySelec','ption>\x0a\x09\x09\x09','ssAfN','Voltar','mundo-cont','arefa\x22>\x0a\x20\x20','iRRYb','álida.\x20Dig','lue=\x22\x22>Sel','slice','IsjTZ','e</button>','add','loadHistor','nome-conta','index','KebZk','arIMCBtn\x22>','.\x20Digite\x20u','fbyoY','\x20\x20\x20\x20\x20\x20\x20\x20\x20<','sk-label-','EvJoD','\x20<span\x20cla','DC3\x20(Devic','arAoMenu()','\x20clear-ent','uivalem\x20a\x20','\x20\x20\x20\x20\x20\x20<h2>','lay\x22\x20value','&quot;','lass=\x22ola-','ss=\x22error-','eefxU','head','4|5|0|3|6|','lect\x20id=\x22t','class=\x22imc','h2>Seu\x20IMC','alculoIMC','nhar\x22>Adiv','temperatur','css','m\x20número.','k=\x22app.vol','0|5|2|4|3|','onversao','ENQ\x20(Enqui','ultado-con','Classifica','<h2>Opção\x20','Lista\x20de\x20T','a\x20a\x20conver','o\x20de\x20Nasci','ASCIIBtn','ggBpK','ber\x22\x20id=\x22a','elvin</opt','\x22>\x0a\x09\x09\x09\x09\x09<l','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20','\x20\u00a0\x20','</th>\x0a\x20\x20\x20\x20','ascimento\x20','class=\x22err','isInteger','c-containe','aceholder=','gameActive','FF\x20(Form\x20F','Ex:\x2025\x22>\x0a\x09','\x09\x09\x09\x09<input','i18n','<h2>Saindo','ass=\x22calcu','innerHTML','Math.js\x20lo','ybwlD','uBtn\x22>Volt','message','ory\x22\x20oncli','nuASCIIBtn','toLowerCas','QCwvX','xlAtt','Você\x20ganho','\x20de\x20nascim','wxPqp','umeroPrimo','\x20\x20\x20<span\x20c','join','hDrTf','>\x0a\x09\x09','lue=\x225\x22>Ke','no\x20na\x20sele','Ano\x20atual\x20','html','Selecione\x20','ring','\x20\x20\x20\x20\x20\x20<td>','VdPOe','ppgQc','\x20\x20\x20\x20\x20\x20\x20\x20</','SUB\x20(Subst','\x20\x20\x20\x20\x20\x20\x20\x20<b','v>\x0a\x09\x09\x09\x09<di','\x0a\x09\u00a0\x20\u00a0\x20\u00a0\x20\u00a0\x20','ion>\x0a\x09\x09\x09\x09\x09','ecione\x20o\x20t','unidade-or','e=\x22applica','e=\x22list\x22><','ntainer\x22>\x20','gem\x22></div','l>\x0a\x09\x09\x09\x09<se','lass=\x22conv','-velha-con','IFVNa','input\x22\x20max','BEL\x20(Bell)','teString','uQQOl','ask-','tyghs','y-item\x22\x20ro','ção\x20de\x20con','/div>\x0a\x20\x20\x20\x20','lYeOQ','x=\x22','AZaye','Por\x20favor,','p.voltarAo','<div\x20id=\x22r','evaluate','\x20\x20\x20<div\x20cl','\x20ano\x20atual','dark-mode','WzWDw','.todo-list','<button\x20id','stamp','tivo*.','\x20\x20\x20\x20<div\x20c','on>\x0a\x09\u00a0\x20\u00a0\x20\u00a0','RyowV','QAATN','não\x20pode\x20s','Elemento\x20d','anoAtual','ePXub','versao-err','option','ao\x20Menu</b','DC1\x20(Devic','</button>\x0a','eholder=\x22E','letra-inpu','status\x22></','elaASCII','handlePerc','eKRPV','l:nth-chil','egXFg','\x20Menu</but','Letiz','calcularId','iv>\x0a\x09\x09','ner\x22>\x0a\x09\x09\x09\x09','xBnwA','small\x20clas','\x22imc-class','HeJBd','VIcIT','CAN\x20(Cance','ao\x22>\x0a\x09\x09\x09\x09\x09','sqUCv','y()\x22>','equalize','\x20Separator','12lHqIjG','undo','ao\x22>Escolh','story\x22\x20rol','.grid','loadTasks','verificarN','createElem','Empate!','cell','ICjDK','osXLg','RFnUx','every','RKYbO','\x20id=\x22forca','KEEqN','wledgement','\x20\x20\x20\x20\x20</div','EM\x20(End\x20of','id\x22></div>','qldHj','imc\x22\x20class','ero\x20em\x20met','adeBtn','2728904fKRSRj','unidade-co','tChild','btn-adivin','a\x20letra\x20vá','HEWnz','history','le=\x22textbo','ress','fglOM','Enter','Tente\x20nova','BacPE','ggle','CjaMX','-error','WSdtz','disabled','&#039;','toLocaleTi','xnLfG','iv\x20id=\x22res','</li>\x0a\x20\x20\x20\x20','SLYVG','ra\x20era\x20','\x20\u00a0\x20\u00a0\x20\u00a0\x20</d','tion\x22>\x0a\x20\x20\x20','\x0a\x09\x09\x09<butto','roup\x22>\x0a\x09\x09\x09','iv>\x0a\x09\u00a0\x20\u00a0\x20\u00a0','owgja','torAll','\x20\x20\x20<h2>Sua','BKpND','numeroPrim','ma...\x20Até\x20','trim','os</h2>\x0a\x20\x20','FlUJV','rimoBtn','Temperatur','tRkwj','adecimal</','TAB\x20(Tab)','&gt;','internet','todo-heade','imento\x22>An','nRysd','FvgjV','age\x22>','inhar</but','ção:\x20<span','l>\x0a\x20\x20\x20\x20\x20\x20\x20','\x20\x20\x20\x20\x20<p\x20id','updateHist','ntes\x20de\x20ad','able>\x0a\x20\x20\x20\x20','pt-BR','verificarP','imo-contai','delete-btn','saveTasks','lerNome','alculoIdad','Digite\x20um\x20','input[type','\x20nome:</la','JesSd','\x09<label\x20fo','on\x20','\x20\x20\x20\x20\x20\x20\x20</d','SOH\x20(Start','forca','SPznD','\x20class=\x22gr','EOT\x20(End\x20o','UGXEb','lastElemen','fade-in\x22>\x0a','nu</button','ons','ListItems','239120OEmpcV','=\x22temperat','ficar</but','primo.','sanitizeIn','ZhmxZ','-label=\x22','Mundo!</h2','bel>\x0a\x09\x09\x09\x09\x09','formatTime','Você\x20já\x20te','biPdd','Erro\x20no\x20cá','saveHistor','o\x20Menu</bu','ETB\x20(End\x20o','storage','l=\x22','RS\x20(Record','úmero\x20váli','lick=\x22app.','&lt;','DC4\x20(Devic','>\x0a\x09\x09\x09\x09</se','oBtn\x22>Veri','AtRiU','nError','lvar\x20histó','bprSi','VUqRL','cBjBd','zJTBg','jogoDaVelh','ue=\x223\x22>Fah','\x22\x20placehol','\x22voltarMen','number\x22\x20id','tsMGD','text','ass=\x22close','cache','parse','lida.','r\x22>\x0a\x09\x09\x09\x09<d','LRxFl','.calc-hist','elete-btn\x22','r=\x22Ex:\x20199','\x20<p>Erros:','kWfDx','FUELv','versao\x22\x20cl','dpRhh','icionar.','\x09</div>\x0a\x09\x09','uladora-id','Altura\x20inv','deleteTask','Visor','AbJPs','.error-mes','mathParser','2|4|3|1|0','returnToMe','QvYdR','Erro\x20ao\x20sa','rico','lator-cont','kXXGq','CXDJa','</h2>','\x20\x20\x20\x20\x20\x20\x20\x20>','IqGKG','CSelU','clearHisto','div>\x0a\x20\x20\x20\x20\x20','getElement','/ul>\x0a\x20\x20\x20\x20\x20','alpha','put\x20type=\x22','getFullYea','ton\x20onclic','span\x20id=\x22t','letrasErra','Você\x20perde','e\x20Control\x20','\x20\u00a0\x20\u00a0\x20\u00a0\x20\u00a0\x20\u00a0','sZCvh','setAttribu','\x20\x20\x20\x20\x20\x20\x20</b','small>\x0a\x09\x09\x09','o\x20é\x20um\x20núm','PXwdZ','e=\x22number\x22','textConten','Menu','OEycY','XWlZs','an\x20class=\x22','fKHIY','.0/math.mi','Jogo\x20da\x20Ve'];_0x155b=function(){return _0x2051de;};return _0x155b();}class Notifications{constructor(){const _0x5ac009=_0x4fd80d;this[_0x5ac009(0x416)]=[],this[_0x5ac009(0x71d)+'ng']=![];}[_0x4fd80d(0x618)](_0x97516a,_0x849d16=_0x4fd80d(0x601)){const _0x42af7e=_0x4fd80d;this[_0x42af7e(0x416)][_0x42af7e(0x29d)]({'message':_0x97516a,'type':_0x849d16}),!this[_0x42af7e(0x71d)+'ng']&&this[_0x42af7e(0x2a1)+'t']();}[_0x4fd80d(0x2a1)+'t'](){const _0x513ac4=_0x4fd80d,_0x5c4648={'ZMiTU':_0x513ac4(0x6f6),'KjNdU':function(_0x282286,_0x1331a8,_0x297e48){return _0x282286(_0x1331a8,_0x297e48);},'BjOOa':function(_0x3bbc5b,_0x3365b9){return _0x3bbc5b===_0x3365b9;},'nTDCk':_0x513ac4(0x278),'amMTJ':_0x513ac4(0x78c),'bprSi':_0x513ac4(0x603),'tsMGD':_0x513ac4(0x781),'yRbSs':_0x513ac4(0x5e9)};if(_0x5c4648[_0x513ac4(0x21d)](this[_0x513ac4(0x416)][_0x513ac4(0x3b9)],-0x2*0x883+0x1*-0x1c8c+-0x1*-0x2d92)){this[_0x513ac4(0x71d)+'ng']=![];return;}this[_0x513ac4(0x71d)+'ng']=!![];const _0x5e20d6=this[_0x513ac4(0x416)][_0x513ac4(0x428)](),_0x4c871a=document[_0x513ac4(0x503)+_0x513ac4(0x2b9)](_0x5c4648[_0x513ac4(0x265)]);_0x4c871a[_0x513ac4(0x43c)]=_0x513ac4(0x40a)+_0x513ac4(0x55b)+_0x5e20d6[_0x513ac4(0x37d)],_0x4c871a[_0x513ac4(0x5c0)+'te'](_0x5c4648[_0x513ac4(0x72b)],_0x5c4648[_0x513ac4(0x584)]),_0x4c871a[_0x513ac4(0x494)]=_0x513ac4(0x71b)+_0x513ac4(0x4a2)+_0x513ac4(0x2cf)+_0x513ac4(0x547)+utils[_0x513ac4(0x56c)+_0x513ac4(0x735)](_0x5e20d6[_0x513ac4(0x498)])+(_0x513ac4(0x2ea)+_0x513ac4(0x360)+_0x513ac4(0x6ea)+_0x513ac4(0x58f)+_0x513ac4(0x614)+_0x513ac4(0x444)+_0x513ac4(0x442)+_0x513ac4(0x6ce)+_0x513ac4(0x707)),document[_0x513ac4(0x6e2)][_0x513ac4(0x419)+'d'](_0x4c871a),_0x5c4648[_0x513ac4(0x22a)](setTimeout,()=>{const _0x3f6a5d=_0x513ac4;_0x4c871a[_0x3f6a5d(0x2b7)][_0x3f6a5d(0x456)](_0x5c4648[_0x3f6a5d(0x20e)]),_0x5c4648[_0x3f6a5d(0x22a)](setTimeout,()=>{const _0x40948d=_0x3f6a5d;_0x4c871a[_0x40948d(0x447)](),this[_0x40948d(0x2a1)+'t']();},0x20ed+-0x1bcd+-0x3f4);},0x1930+0x3d+-0x5e5),_0x4c871a[_0x513ac4(0x44a)+_0x513ac4(0x20c)](_0x5c4648[_0x513ac4(0x58d)])[_0x513ac4(0x746)+_0x513ac4(0x5d0)](_0x5c4648[_0x513ac4(0x793)],()=>{const _0x175c0f=_0x513ac4;_0x4c871a[_0x175c0f(0x447)](),this[_0x175c0f(0x2a1)+'t']();});}}class Forca{constructor(_0x23a67e){const _0xdf8f66=_0x4fd80d,_0x237340={'tRkwj':_0xdf8f66(0x477)+_0xdf8f66(0x324),'biPdd':_0xdf8f66(0x3b0),'YfcxS':_0xdf8f66(0x4a9),'fUwob':_0xdf8f66(0x474),'VRhvP':_0xdf8f66(0x6d2)+'o','BHTMq':_0xdf8f66(0x26d),'OBnty':_0xdf8f66(0x542)},_0x198580=_0x237340[_0xdf8f66(0x53e)][_0xdf8f66(0x2ca)]('|');let _0x1b79f8=0x89c*0x1+-0x670*-0x3+-0x1bec;while(!![]){switch(_0x198580[_0x1b79f8++]){case'0':this[_0xdf8f66(0x2d5)]=_0x23a67e;continue;case'1':this[_0xdf8f66(0x6a9)]=-0x117f+0x398*-0x1+0x151d;continue;case'2':this[_0xdf8f66(0x2a5)+_0xdf8f66(0x768)]=this[_0xdf8f66(0x28f)+_0xdf8f66(0x68e)]();continue;case'3':this[_0xdf8f66(0x1ec)+_0xdf8f66(0x6d6)]=[];continue;case'4':this[_0xdf8f66(0x5bb)+_0xdf8f66(0x29a)]=[];continue;case'5':this[_0xdf8f66(0x66d)]=[_0x237340[_0xdf8f66(0x573)],_0x237340[_0xdf8f66(0x23e)],_0x237340[_0xdf8f66(0x3c0)],_0x237340[_0xdf8f66(0x2ff)],_0x237340[_0xdf8f66(0x755)],_0x237340[_0xdf8f66(0x65e)]];continue;case'6':this[_0xdf8f66(0x6af)]=-0xcd*0x25+-0x1499*0x1+-0x2*-0x191d;continue;}break;}}[_0x4fd80d(0x28f)+_0x4fd80d(0x68e)](){const _0x32a407=_0x4fd80d,_0x58cf83={'urbwn':function(_0x5353b3,_0x586d0e){return _0x5353b3*_0x586d0e;}};return this[_0x32a407(0x66d)][Math[_0x32a407(0x3ea)](_0x58cf83[_0x32a407(0x730)](Math[_0x32a407(0x40d)](),this[_0x32a407(0x66d)][_0x32a407(0x3b9)]))];}[_0x4fd80d(0x3ba)+_0x4fd80d(0x6c2)](){const _0x958ee0=_0x4fd80d,_0x14f3a5={'Ajlmm':function(_0x360464,_0x5b1388){return _0x360464===_0x5b1388;},'TIBNC':_0x958ee0(0x51f),'FBwjT':_0x958ee0(0x518)+_0x958ee0(0x276),'qldHj':_0x958ee0(0x5e9),'fglOM':_0x958ee0(0x4e5)+'t','zAMLa':_0x958ee0(0x617)};this[_0x958ee0(0x2d5)][_0x958ee0(0x494)]=_0x958ee0(0x71b)+_0x958ee0(0x6b6)+_0x958ee0(0x791)+_0x958ee0(0x399)+_0x958ee0(0x360)+_0x958ee0(0x466)+_0x958ee0(0x74d)+_0x958ee0(0x672)+_0x958ee0(0x360)+_0x958ee0(0x54b)+_0x958ee0(0x701)+_0x958ee0(0x741)+this[_0x958ee0(0x2a5)+_0x958ee0(0x768)][_0x958ee0(0x2ca)]('')[_0x958ee0(0x736)](_0x726bff=>this[_0x958ee0(0x1ec)+_0x958ee0(0x6d6)][_0x958ee0(0x313)](_0x726bff)?_0x726bff:'_')[_0x958ee0(0x4a3)]('\x20')+(_0x958ee0(0x415)+_0x958ee0(0x360)+_0x958ee0(0x687)+_0x958ee0(0x6db)+_0x958ee0(0x3b6)+_0x958ee0(0x41f)+_0x958ee0(0x310))+this[_0x958ee0(0x5bb)+_0x958ee0(0x29a)][_0x958ee0(0x4a3)](',\x20')+(_0x958ee0(0x415)+_0x958ee0(0x360)+_0x958ee0(0x598)+'\x20')+this[_0x958ee0(0x6af)]+'/'+this[_0x958ee0(0x6a9)]+(_0x958ee0(0x415)+_0x958ee0(0x360)+_0x958ee0(0x766)+_0x958ee0(0x1fd)+_0x958ee0(0x365)+_0x958ee0(0x4bf)+_0x958ee0(0x3ad)+_0x958ee0(0x426)+_0x958ee0(0x264)+_0x958ee0(0x63c)+_0x958ee0(0x485)+_0x958ee0(0x45e)+_0x958ee0(0x403)+_0x958ee0(0x290)+_0x958ee0(0x472)+_0x958ee0(0x548)+_0x958ee0(0x2d2)+_0x958ee0(0x360)+_0x958ee0(0x404)+_0x958ee0(0x425)+_0x958ee0(0x4cc)+_0x958ee0(0x75a)+_0x958ee0(0x68f)+_0x958ee0(0x565)+_0x958ee0(0x775)+_0x958ee0(0x291)+_0x958ee0(0x50b)+_0x958ee0(0x733)+_0x958ee0(0x366)+_0x958ee0(0x4af)+_0x958ee0(0x5b3)+_0x958ee0(0x3c5)),document[_0x958ee0(0x5b4)+_0x958ee0(0x250)](_0x14f3a5[_0x958ee0(0x621)])[_0x958ee0(0x746)+_0x958ee0(0x5d0)](_0x14f3a5[_0x958ee0(0x511)],()=>this[_0x958ee0(0x670)+_0x958ee0(0x69f)]()),document[_0x958ee0(0x5b4)+_0x958ee0(0x250)](_0x14f3a5[_0x958ee0(0x51e)])[_0x958ee0(0x746)+_0x958ee0(0x5d0)](_0x14f3a5[_0x958ee0(0x42b)],_0x5a1d95=>{const _0x24f032=_0x958ee0;_0x14f3a5[_0x24f032(0x5de)](_0x5a1d95[_0x24f032(0x234)],_0x14f3a5[_0x24f032(0x751)])&&this[_0x24f032(0x670)+_0x24f032(0x69f)]();});}[_0x4fd80d(0x670)+_0x4fd80d(0x69f)](){const _0x492763=_0x4fd80d,_0x41b0f8={'rKcMw':_0x492763(0x4e5)+'t','mWMPV':_0x492763(0x43e)+_0x492763(0x298),'EUacQ':_0x492763(0x4cb)+_0x492763(0x2df)+_0x492763(0x519)+_0x492763(0x592),'HpbAz':_0x492763(0x572)+_0x492763(0x5eb)+_0x492763(0x259)+_0x492763(0x204),'UzCFv':function(_0x4668d2,_0x120f07){return _0x4668d2===_0x120f07;},'rQccB':_0x492763(0x34a)+_0x492763(0x3ca),'AtRiU':_0x492763(0x309)+_0x492763(0x49e)+'u!'},_0x2ade47=document[_0x492763(0x5b4)+_0x492763(0x250)](_0x41b0f8[_0x492763(0x66f)]),_0x7bc327=_0x2ade47[_0x492763(0x1f0)][_0x492763(0x49b)+'e']();_0x2ade47[_0x492763(0x1f0)]='';if(!_0x7bc327[_0x492763(0x31b)](/[a-z]/i)){document[_0x492763(0x5b4)+_0x492763(0x250)](_0x41b0f8[_0x492763(0x38e)])[_0x492763(0x5c6)+'t']=_0x41b0f8[_0x492763(0x695)];return;}if(this[_0x492763(0x1ec)+_0x492763(0x6d6)][_0x492763(0x313)](_0x7bc327)||this[_0x492763(0x5bb)+_0x492763(0x29a)][_0x492763(0x313)](_0x7bc327)){document[_0x492763(0x5b4)+_0x492763(0x250)](_0x41b0f8[_0x492763(0x38e)])[_0x492763(0x5c6)+'t']=_0x41b0f8[_0x492763(0x661)];return;}this[_0x492763(0x2a5)+_0x492763(0x768)][_0x492763(0x313)](_0x7bc327)?this[_0x492763(0x1ec)+_0x492763(0x6d6)][_0x492763(0x29d)](_0x7bc327):(this[_0x492763(0x5bb)+_0x492763(0x29a)][_0x492763(0x29d)](_0x7bc327),this[_0x492763(0x6af)]++);this[_0x492763(0x3ba)+_0x492763(0x6c2)]();if(_0x41b0f8[_0x492763(0x40f)](this[_0x492763(0x6af)],this[_0x492763(0x6a9)]))document[_0x492763(0x5b4)+_0x492763(0x250)](_0x41b0f8[_0x492763(0x38e)])[_0x492763(0x5c6)+'t']=_0x492763(0x5bc)+_0x492763(0x64b)+_0x492763(0x52d)+this[_0x492763(0x2a5)+_0x492763(0x768)]+'.',this[_0x492763(0x21b)+_0x492763(0x2da)]();else!document[_0x492763(0x5b4)+_0x492763(0x250)](_0x41b0f8[_0x492763(0x352)])[_0x492763(0x5c6)+'t'][_0x492763(0x313)]('_')&&(document[_0x492763(0x5b4)+_0x492763(0x250)](_0x41b0f8[_0x492763(0x38e)])[_0x492763(0x5c6)+'t']=_0x41b0f8[_0x492763(0x581)],this[_0x492763(0x21b)+_0x492763(0x2da)]());}[_0x4fd80d(0x21b)+_0x4fd80d(0x2da)](){const _0x5d5b06=_0x4fd80d,_0x1d0b71={'sRpLg':_0x5d5b06(0x4e5)+'t','DrevJ':_0x5d5b06(0x518)+_0x5d5b06(0x276)};document[_0x5d5b06(0x5b4)+_0x5d5b06(0x250)](_0x1d0b71[_0x5d5b06(0x6d0)])[_0x5d5b06(0x526)]=!![],document[_0x5d5b06(0x5b4)+_0x5d5b06(0x250)](_0x1d0b71[_0x5d5b06(0x67e)])[_0x5d5b06(0x526)]=!![];}}class JogoDaVelha{constructor(_0x1d5ad1){const _0x3a298d=_0x4fd80d;this[_0x3a298d(0x2d5)]=_0x1d5ad1,this[_0x3a298d(0x3f6)+_0x3a298d(0x231)]='X',this[_0x3a298d(0x2ac)]=['','','','','','','','',''],this[_0x3a298d(0x48d)]=!![];}[_0x4fd80d(0x73a)+'d'](){const _0x3b5ea3=_0x4fd80d,_0x53f6e2={'gvNvm':_0x3b5ea3(0x500),'meGvF':function(_0xbcf10b,_0x44ae76){return _0xbcf10b<_0x44ae76;},'tyghs':_0x3b5ea3(0x278),'eLeQy':_0x3b5ea3(0x505),'mYCRp':_0x3b5ea3(0x5e9)};this[_0x3b5ea3(0x2d5)][_0x3b5ea3(0x494)]=_0x3b5ea3(0x4b3)+_0x3b5ea3(0x767)+_0x3b5ea3(0x6be)+_0x3b5ea3(0x4bd)+_0x3b5ea3(0x37a)+_0x3b5ea3(0x2c4)+_0x3b5ea3(0x750)+_0x3b5ea3(0x5cd)+_0x3b5ea3(0x784)+_0x3b5ea3(0x2c4)+_0x3b5ea3(0x3f4)+_0x3b5ea3(0x560)+_0x3b5ea3(0x510)+_0x3b5ea3(0x4b3)+_0x3b5ea3(0x2a6)+_0x3b5ea3(0x691)+_0x3b5ea3(0x4e6)+_0x3b5ea3(0x726)+_0x3b5ea3(0x2c4)+_0x3b5ea3(0x3c4)+_0x3b5ea3(0x371)+_0x3b5ea3(0x34e)+_0x3b5ea3(0x29c)+_0x3b5ea3(0x5ed)+_0x3b5ea3(0x39f)+_0x3b5ea3(0x35f)+_0x3b5ea3(0x6fa)+_0x3b5ea3(0x5be)+_0x3b5ea3(0x5f4)+_0x3b5ea3(0x2ae)+_0x3b5ea3(0x6c3)+_0x3b5ea3(0x5df)+_0x3b5ea3(0x2d6)+_0x3b5ea3(0x651)+_0x3b5ea3(0x4d8)+_0x3b5ea3(0x52e)+_0x3b5ea3(0x532)+_0x3b5ea3(0x486);const _0x18afae=document[_0x3b5ea3(0x44a)+_0x3b5ea3(0x20c)](_0x53f6e2[_0x3b5ea3(0x432)]);for(let _0x8f82ab=0x1dd9+0x20b0+-0x3e89;_0x53f6e2[_0x3b5ea3(0x760)](_0x8f82ab,-0x77*-0x22+-0x1*0xedf+-0xe6);_0x8f82ab++){const _0x4120e6=document[_0x3b5ea3(0x503)+_0x3b5ea3(0x2b9)](_0x53f6e2[_0x3b5ea3(0x4c4)]);_0x4120e6[_0x3b5ea3(0x2b7)][_0x3b5ea3(0x456)](_0x53f6e2[_0x3b5ea3(0x230)]),_0x4120e6[_0x3b5ea3(0x746)+_0x3b5ea3(0x5d0)](_0x53f6e2[_0x3b5ea3(0x685)],()=>this[_0x3b5ea3(0x2a2)+'k'](_0x8f82ab)),_0x18afae[_0x3b5ea3(0x419)+'d'](_0x4120e6);}this[_0x3b5ea3(0x218)+'us']();}[_0x4fd80d(0x2a2)+'k'](_0x405a52){const _0x28a522=_0x4fd80d,_0x3d3d18={'lFkzE':function(_0x3dece5,_0x22067c){return _0x3dece5===_0x22067c;},'xwxuY':_0x28a522(0x46d)+_0x28a522(0x375),'dMlwt':function(_0x463de9,_0x5baaa9){return _0x463de9===_0x5baaa9;},'RVruC':function(_0x2cdfb2,_0x234085,_0x520194){return _0x2cdfb2(_0x234085,_0x520194);}};if(_0x3d3d18[_0x28a522(0x64c)](this[_0x28a522(0x2ac)][_0x405a52],'')&&this[_0x28a522(0x48d)]){const _0x57fe7d=_0x3d3d18[_0x28a522(0x780)][_0x28a522(0x2ca)]('|');let _0x41baf3=0x7ab*0x1+0x24fb+-0x2ca6;while(!![]){switch(_0x57fe7d[_0x41baf3++]){case'0':if(this[_0x28a522(0x254)+'r']()){this[_0x28a522(0x218)+'us'](),this[_0x28a522(0x48d)]=![];return;}continue;case'1':this[_0x28a522(0x218)+'us']();continue;case'2':_0x3d3d18[_0x28a522(0x6d4)](this[_0x28a522(0x3f6)+_0x28a522(0x231)],'O')&&this[_0x28a522(0x48d)]&&_0x3d3d18[_0x28a522(0x27e)](setTimeout,()=>this[_0x28a522(0x390)+_0x28a522(0x445)](),0x201d+0x1281+0x1*-0x30aa);continue;case'3':if(this[_0x28a522(0x6b4)+'l']()){this[_0x28a522(0x218)+'us'](),this[_0x28a522(0x48d)]=![];return;}continue;case'4':this[_0x28a522(0x2ac)][_0x405a52]=this[_0x28a522(0x3f6)+_0x28a522(0x231)];continue;case'5':this[_0x28a522(0x355)](_0x405a52);continue;case'6':this[_0x28a522(0x67b)+'er']();continue;}break;}}}[_0x4fd80d(0x355)](_0x255291){const _0x519d4c=_0x4fd80d,_0x50743e={'KebZk':function(_0x5ad71f,_0x225a84){return _0x5ad71f+_0x225a84;}},_0x2eed7e=document[_0x519d4c(0x44a)+_0x519d4c(0x20c)](_0x519d4c(0x224)+_0x519d4c(0x4ea)+'d('+_0x50743e[_0x519d4c(0x45a)](_0x255291,-0x15a8+-0x91a*0x2+0x27dd)+')');_0x2eed7e[_0x519d4c(0x2b7)][_0x519d4c(0x456)](this[_0x519d4c(0x3f6)+_0x519d4c(0x231)]);}[_0x4fd80d(0x67b)+'er'](){const _0x2d13b4=_0x4fd80d,_0x491251={'iuJdA':function(_0x12df13,_0xa64dd1){return _0x12df13===_0xa64dd1;}};this[_0x2d13b4(0x3f6)+_0x2d13b4(0x231)]=_0x491251[_0x2d13b4(0x6e8)](this[_0x2d13b4(0x3f6)+_0x2d13b4(0x231)],'X')?'O':'X';}[_0x4fd80d(0x254)+'r'](){const _0x54f3d5=_0x4fd80d,_0x1f4c32={'UDrVW':function(_0x26e460,_0x15f5bf){return _0x26e460===_0x15f5bf;}},_0x3c0596=[[0x26b7+0x1657+-0x1e87*0x2,-0x1*0xfd+0xa80+-0x982,0x2*-0x38d+0x518+0x2*0x102],[-0xd6b*0x2+0x25de+0xb05*-0x1,0x1711+0x1*0x267b+0x2c*-0x166,0x112d*0x1+0x5d7+0x1*-0x16ff],[0x7f7*0x4+0x1*-0x141e+0x5dc*-0x2,0x208e+-0x12ad+-0xdda,-0x35*0xa4+-0x58f+0x278b],[0x6c6+0xe19+-0x14df,0x20ce+-0x1de*-0x2+0x9*-0x40f,-0x165+0x976+0x1*-0x80b],[-0x634+0x1294+0x1*-0xc5f,-0x9db*0x2+0x1c00+-0x1*0x846,0x26a4+-0x7f5+-0x28e*0xc],[0x1338+-0x1480*-0x1+0x27b6*-0x1,0x11f7+-0x1f3c+-0x6a5*-0x2,-0x1389+0x136*-0x1+0x14c7],[0x13ea+0x7ac*0x4+0x1*-0x329a,0x2*-0x9ac+-0x4f*0x1a+-0x57a*-0x5,0x30*-0xc5+0x6*-0x153+-0x1675*-0x2],[0x3*0x916+-0x1654+-0x54*0xf,0xd*-0x1a5+0x1659+-0xf4,-0x1*0x647+0x13ea+-0x2b9*0x5]];for(const _0x5456bc of _0x3c0596){const [_0x30c21c,_0x5d7d7e,_0x242a91]=_0x5456bc;if(this[_0x54f3d5(0x2ac)][_0x30c21c]&&_0x1f4c32[_0x54f3d5(0x38f)](this[_0x54f3d5(0x2ac)][_0x30c21c],this[_0x54f3d5(0x2ac)][_0x5d7d7e])&&_0x1f4c32[_0x54f3d5(0x38f)](this[_0x54f3d5(0x2ac)][_0x30c21c],this[_0x54f3d5(0x2ac)][_0x242a91]))return this[_0x54f3d5(0x2ac)][_0x30c21c];}return null;}[_0x4fd80d(0x6b4)+'l'](){const _0x2f5610=_0x4fd80d;return this[_0x2f5610(0x2ac)][_0x2f5610(0x509)](_0x5181bb=>_0x5181bb!=='');}[_0x4fd80d(0x218)+'us'](){const _0x5954c8=_0x4fd80d,_0x3886b3={'itQOl':_0x5954c8(0x653),'djHbA':_0x5954c8(0x504)};if(!this[_0x5954c8(0x48d)])return;const _0xbfc3be=this[_0x5954c8(0x254)+'r'](),_0x2d4a70=document[_0x5954c8(0x44a)+_0x5954c8(0x20c)](_0x3886b3[_0x5954c8(0x23a)]);if(_0xbfc3be)_0x2d4a70[_0x5954c8(0x5c6)+'t']=_0x5954c8(0x6bb)+_0xbfc3be+_0x5954c8(0x62b),this[_0x5954c8(0x48d)]=![];else this[_0x5954c8(0x6b4)+'l']()?(_0x2d4a70[_0x5954c8(0x5c6)+'t']=_0x3886b3[_0x5954c8(0x27d)],this[_0x5954c8(0x48d)]=![]):_0x2d4a70[_0x5954c8(0x5c6)+'t']=_0x5954c8(0x6e9)+_0x5954c8(0x3a2)+this[_0x5954c8(0x3f6)+_0x5954c8(0x231)];}[_0x4fd80d(0x390)+_0x4fd80d(0x445)](){const _0x3ef3b7=_0x4fd80d,_0x59d4da={'USMCX':function(_0x250407,_0x1b8dc0){return _0x250407!==_0x1b8dc0;},'HMZwP':_0x3ef3b7(0x381)+'3'};if(!this[_0x3ef3b7(0x48d)]||_0x59d4da[_0x3ef3b7(0x62f)](this[_0x3ef3b7(0x3f6)+_0x3ef3b7(0x231)],'O'))return;let _0x3ea152=this[_0x3ef3b7(0x6f7)+'e']();if(_0x59d4da[_0x3ef3b7(0x62f)](_0x3ea152,null)){const _0xa3df0a=_0x59d4da[_0x3ef3b7(0x3d9)][_0x3ef3b7(0x2ca)]('|');let _0x3f0b33=0x29d+0xf7*0x2+-0x48b;while(!![]){switch(_0xa3df0a[_0x3f0b33++]){case'0':if(this[_0x3ef3b7(0x6b4)+'l']()){this[_0x3ef3b7(0x218)+'us'](),this[_0x3ef3b7(0x48d)]=![];return;}continue;case'1':this[_0x3ef3b7(0x67b)+'er']();continue;case'2':if(this[_0x3ef3b7(0x254)+'r']()){this[_0x3ef3b7(0x218)+'us'](),this[_0x3ef3b7(0x48d)]=![];return;}continue;case'3':this[_0x3ef3b7(0x218)+'us']();continue;case'4':this[_0x3ef3b7(0x2ac)][_0x3ea152]='O';continue;case'5':this[_0x3ef3b7(0x355)](_0x3ea152);continue;}break;}}}[_0x4fd80d(0x6f7)+'e'](){const _0x1bff30=_0x4fd80d,_0x49cfff={'RTJwn':function(_0x408cc6,_0x57d33d){return _0x408cc6<_0x57d33d;},'dazzH':function(_0x146200,_0x23ec6a){return _0x146200===_0x23ec6a;},'Ykcsr':function(_0x3c766d,_0x43e950){return _0x3c766d<_0x43e950;},'QiShv':function(_0x2d0af4,_0x9294db){return _0x2d0af4===_0x9294db;},'FlUJV':function(_0x3a6a6a,_0x1af6a4){return _0x3a6a6a===_0x1af6a4;},'eUxTI':function(_0x4800ce,_0x34ae58){return _0x4800ce===_0x34ae58;}};for(let _0x35baa1=-0x1*0x21f5+0x2095+-0x8*-0x2c;_0x49cfff[_0x1bff30(0x5e0)](_0x35baa1,-0x83f+-0x68*-0x53+-0xb0*0x25);_0x35baa1++){if(_0x49cfff[_0x1bff30(0x723)](this[_0x1bff30(0x2ac)][_0x35baa1],'')){this[_0x1bff30(0x2ac)][_0x35baa1]='O';if(_0x49cfff[_0x1bff30(0x723)](this[_0x1bff30(0x254)+'r'](),'O'))return this[_0x1bff30(0x2ac)][_0x35baa1]='',_0x35baa1;this[_0x1bff30(0x2ac)][_0x35baa1]='';}}for(let _0x1cc984=0x10ab*-0x1+-0x7*-0x479+0x4*-0x3a9;_0x49cfff[_0x1bff30(0x323)](_0x1cc984,0x1*0x11a2+0x158a+-0x2723);_0x1cc984++){if(_0x49cfff[_0x1bff30(0x5f0)](this[_0x1bff30(0x2ac)][_0x1cc984],'')){this[_0x1bff30(0x2ac)][_0x1cc984]='X';if(_0x49cfff[_0x1bff30(0x53b)](this[_0x1bff30(0x254)+'r'](),'X'))return _0x1cc984;this[_0x1bff30(0x2ac)][_0x1cc984]='';}}const _0x5eaa36=[0x1a*0x65+-0x13a4+0x966,0xb5*0x9+0x7*-0x17+-0x5bc,-0x6aa*-0x1+-0x655*-0x4+-0x1ffc,0x2*0xe65+-0x1*-0x263b+-0x42ff,0x1*-0x19a2+0x5d8+0x2b*0x76,-0x19*-0x17f+0x1144*0x1+0x2*-0x1b55,-0x1169*0x2+-0x2*-0xd01+0x1*0x8d3,0x21a9+0x22ce*-0x1+0x95*0x2,0x21a7*-0x1+0x38*0x11+-0x3b*-0x82];for(const _0x25a867 of _0x5eaa36){if(_0x49cfff[_0x1bff30(0x279)](this[_0x1bff30(0x2ac)][_0x25a867],''))return _0x25a867;}return null;}[_0x4fd80d(0x6a6)+_0x4fd80d(0x6c2)](){const _0x59088c=_0x4fd80d;this[_0x59088c(0x3f6)+_0x59088c(0x231)]='X',this[_0x59088c(0x2ac)]=['','','','','','','','',''],this[_0x59088c(0x48d)]=!![],this[_0x59088c(0x73a)+'d']();}}class ListaDeTarefas{constructor(_0x23a4f6){const _0x44d67e=_0x4fd80d;this[_0x44d67e(0x2d5)]=_0x23a4f6,this[_0x44d67e(0x6ff)]=this[_0x44d67e(0x501)]();}[_0x4fd80d(0x501)](){const _0x1d6f8c=_0x4fd80d,_0x19e368={'bybHj':_0x1d6f8c(0x6ff)},_0x162b26=localStorage[_0x1d6f8c(0x280)](_0x19e368[_0x1d6f8c(0x25a)]);return _0x162b26?JSON[_0x1d6f8c(0x591)](_0x162b26):[];}[_0x4fd80d(0x553)](){const _0xa8c91b=_0x4fd80d,_0x570573={'YJDIg':_0xa8c91b(0x6ff)};localStorage[_0xa8c91b(0x771)](_0x570573[_0xa8c91b(0x610)],JSON[_0xa8c91b(0x326)](this[_0xa8c91b(0x6ff)]));}[_0x4fd80d(0x609)+'s'](){const _0x52f3c4=_0x4fd80d;this[_0x52f3c4(0x2d5)][_0x52f3c4(0x494)]=_0x52f3c4(0x71b)+_0x52f3c4(0x4cf)+_0x52f3c4(0x2d3)+_0x52f3c4(0x2c3)+_0x52f3c4(0x564)+_0x52f3c4(0x360)+_0x52f3c4(0x466)+_0x52f3c4(0x47d)+_0x52f3c4(0x304)+_0x52f3c4(0x775)+_0x52f3c4(0x2f6)+_0x52f3c4(0x691)+_0x52f3c4(0x543)+_0x52f3c4(0x77d)+_0x52f3c4(0x360)+_0x52f3c4(0x70d)+_0x52f3c4(0x6bf)+_0x52f3c4(0x73e)+_0x52f3c4(0x321)+_0x52f3c4(0x48c)+_0x52f3c4(0x348)+_0x52f3c4(0x1f9)+_0x52f3c4(0x614)+_0x52f3c4(0x25c)+_0x52f3c4(0x44f)+_0x52f3c4(0x360)+_0x52f3c4(0x4b1)+_0x52f3c4(0x759)+_0x52f3c4(0x3ef)+_0x52f3c4(0x305)+_0x52f3c4(0x2db)+_0x52f3c4(0x71b)+_0x52f3c4(0x55c)+_0x52f3c4(0x6d8)+_0x52f3c4(0x360)+_0x52f3c4(0x32f)+_0x52f3c4(0x217)+_0x52f3c4(0x485)+_0x52f3c4(0x360)+_0x52f3c4(0x3c5)+this[_0x52f3c4(0x609)+_0x52f3c4(0x567)]()+(_0x52f3c4(0x71b)+_0x52f3c4(0x1fa)+_0x52f3c4(0x54a)+_0x52f3c4(0x45e)+_0x52f3c4(0x2bd)+_0x52f3c4(0x57c)+_0x52f3c4(0x317)+_0x52f3c4(0x613)+_0x52f3c4(0x3b3)+_0x52f3c4(0x4e3)+_0x52f3c4(0x360)+_0x52f3c4(0x429)+_0x52f3c4(0x707)),this[_0x52f3c4(0x728)+_0x52f3c4(0x63e)]();}[_0x4fd80d(0x609)+_0x4fd80d(0x567)](){const _0x103275=_0x4fd80d;return this[_0x103275(0x6ff)][_0x103275(0x736)]((_0x4defe8,_0x3de7c6)=>_0x103275(0x71b)+_0x103275(0x3dc)+_0x103275(0x401)+_0x103275(0x777)+_0x103275(0x360)+_0x103275(0x226)+_0x103275(0x6ac)+_0x103275(0x238)+_0x103275(0x4c3)+_0x3de7c6+'\x22\x20'+(_0x4defe8[_0x103275(0x31f)]?_0x103275(0x448):'')+(_0x103275(0x319)+_0x103275(0x72f)+_0x103275(0x45f))+_0x3de7c6+(_0x103275(0x485)+_0x103275(0x45e)+_0x103275(0x5ba)+_0x103275(0x79c))+_0x3de7c6+_0x103275(0x6ba)+(_0x4defe8[_0x103275(0x31f)]?_0x103275(0x31f):'')+'\x22>'+utils[_0x103275(0x56c)+_0x103275(0x735)](_0x4defe8[_0x103275(0x58e)])+(_0x103275(0x2ea)+_0x103275(0x360)+_0x103275(0x214)+_0x103275(0x441)+_0x103275(0x596)+_0x103275(0x37f)+_0x103275(0x4c9))+_0x3de7c6+(_0x103275(0x614)+_0x103275(0x369)+_0x103275(0x60d))+_0x4defe8[_0x103275(0x58e)]+(_0x103275(0x274)+_0x103275(0x6ce)+_0x103275(0x360)+_0x103275(0x688)))[_0x103275(0x4a3)]('');}[_0x4fd80d(0x728)+_0x4fd80d(0x63e)](){const _0x14567c=_0x4fd80d,_0x2a42a1={'Letiz':function(_0x4e46ac,_0x284c26){return _0x4e46ac===_0x284c26;},'SzmHJ':_0x14567c(0x368),'SOpYe':function(_0x218296,_0x15f867,_0x1f12b3){return _0x218296(_0x15f867,_0x1f12b3);},'PFBOm':_0x14567c(0x552),'pSdzr':function(_0x1f4484,_0x595f71,_0x65e57c){return _0x1f4484(_0x595f71,_0x65e57c);},'ZsXof':_0x14567c(0x3ef),'lmypz':_0x14567c(0x5e9),'BacPE':_0x14567c(0x4d3),'MRMod':_0x14567c(0x778)};document[_0x14567c(0x5b4)+_0x14567c(0x250)](_0x2a42a1[_0x14567c(0x711)])[_0x14567c(0x746)+_0x14567c(0x5d0)](_0x2a42a1[_0x14567c(0x353)],()=>this[_0x14567c(0x261)]());const _0x12ac83=document[_0x14567c(0x44a)+_0x14567c(0x20c)](_0x2a42a1[_0x14567c(0x521)]);_0x12ac83[_0x14567c(0x746)+_0x14567c(0x5d0)](_0x2a42a1[_0x14567c(0x2be)],_0x43b363=>{const _0xc6c731=_0x14567c;if(_0x2a42a1[_0xc6c731(0x4ed)](_0x43b363[_0xc6c731(0x5ef)][_0xc6c731(0x37d)],_0x2a42a1[_0xc6c731(0x1f5)])){const _0x198e9a=_0x2a42a1[_0xc6c731(0x306)](parseInt,_0x43b363[_0xc6c731(0x5ef)]['id'][_0xc6c731(0x2ca)]('-')[0x1e2c+0x99e+-0x27c9],0xa28+-0x2516+0x1af8);this[_0xc6c731(0x394)](_0x198e9a);}}),_0x12ac83[_0x14567c(0x746)+_0x14567c(0x5d0)](_0x2a42a1[_0x14567c(0x353)],_0x527ea4=>{const _0x60a6d0=_0x14567c;if(_0x527ea4[_0x60a6d0(0x5ef)][_0x60a6d0(0x2b7)][_0x60a6d0(0x232)](_0x2a42a1[_0x60a6d0(0x68c)])){const _0x3e172e=_0x2a42a1[_0x60a6d0(0x35e)](parseInt,_0x527ea4[_0x60a6d0(0x5ef)][_0x60a6d0(0x3b4)][_0x60a6d0(0x459)],-0x1f*0x55+0x15e2+-0xb8d);this[_0x60a6d0(0x5a1)](_0x3e172e);}});}[_0x4fd80d(0x261)](){const _0x4c0495=_0x4fd80d,_0x219c51={'SPznD':_0x4c0495(0x354),'qXiRP':function(_0xf50b8,_0x38396e){return _0xf50b8(_0x38396e);},'ReMlm':_0x4c0495(0x4cb)+_0x4c0495(0x6ca)+_0x4c0495(0x74b)+_0x4c0495(0x54d)+_0x4c0495(0x59d)},_0x3bab63=document[_0x4c0495(0x5b4)+_0x4c0495(0x250)](_0x219c51[_0x4c0495(0x55f)]),_0x31d789=_0x3bab63[_0x4c0495(0x1f0)][_0x4c0495(0x539)]();if(!_0x31d789){_0x219c51[_0x4c0495(0x31a)](alert,_0x219c51[_0x4c0495(0x717)]);return;}this[_0x4c0495(0x6ff)][_0x4c0495(0x29d)]({'text':_0x31d789,'completed':![]}),this[_0x4c0495(0x553)](),_0x3bab63[_0x4c0495(0x1f0)]='',this[_0x4c0495(0x673)+_0x4c0495(0x73f)]();}[_0x4fd80d(0x394)](_0x260d43){const _0x8a5b50=_0x4fd80d,_0x5aa683={'bzdXy':function(_0x2e2c14,_0x14ea68){return _0x2e2c14>=_0x14ea68;},'rvgXf':function(_0x17386d,_0x3deea2){return _0x17386d<_0x3deea2;},'kdYPJ':_0x8a5b50(0x798)+_0x8a5b50(0x400)+_0x8a5b50(0x6b2)};_0x5aa683[_0x8a5b50(0x668)](_0x260d43,-0xb70+-0x17*-0x27+0x7ef)&&_0x5aa683[_0x8a5b50(0x3be)](_0x260d43,this[_0x8a5b50(0x6ff)][_0x8a5b50(0x3b9)])?(this[_0x8a5b50(0x6ff)][_0x260d43][_0x8a5b50(0x31f)]=!this[_0x8a5b50(0x6ff)][_0x260d43][_0x8a5b50(0x31f)],this[_0x8a5b50(0x553)](),this[_0x8a5b50(0x673)+_0x8a5b50(0x6ee)](_0x260d43)):console[_0x8a5b50(0x708)](_0x5aa683[_0x8a5b50(0x41e)],_0x260d43);}[_0x4fd80d(0x5a1)](_0x5cc698){const _0x2e99d5=_0x4fd80d,_0x319d10={'IFVNa':function(_0x5aa8ad,_0x5ec842){return _0x5aa8ad>=_0x5ec842;},'QwfYB':function(_0x4e4cd3,_0x460e2d){return _0x4e4cd3<_0x460e2d;},'TNgnf':_0x2e99d5(0x798)+_0x2e99d5(0x400)+_0x2e99d5(0x6b2)};_0x319d10[_0x2e99d5(0x4be)](_0x5cc698,0x117a*0x2+-0x112*-0x1+-0x9f*0x3a)&&_0x319d10[_0x2e99d5(0x308)](_0x5cc698,this[_0x2e99d5(0x6ff)][_0x2e99d5(0x3b9)])?(this[_0x2e99d5(0x6ff)][_0x2e99d5(0x77a)](_0x5cc698,-0x117*-0x5+0x208c+-0x25fe),this[_0x2e99d5(0x553)](),this[_0x2e99d5(0x673)+_0x2e99d5(0x73f)]()):console[_0x2e99d5(0x708)](_0x319d10[_0x2e99d5(0x72a)],_0x5cc698);}[_0x4fd80d(0x673)+_0x4fd80d(0x73f)](){const _0x2fd8ee=_0x4fd80d,_0x59788b={'qrBoE':_0x2fd8ee(0x4d3)},_0x3aa790=document[_0x2fd8ee(0x44a)+_0x2fd8ee(0x20c)](_0x59788b[_0x2fd8ee(0x5e4)]);_0x3aa790&&(_0x3aa790[_0x2fd8ee(0x494)]=this[_0x2fd8ee(0x609)+_0x2fd8ee(0x567)](),this[_0x2fd8ee(0x728)+_0x2fd8ee(0x634)+_0x2fd8ee(0x64a)+'s']());}[_0x4fd80d(0x673)+_0x4fd80d(0x6ee)](_0x3a8af4){const _0x222f03=_0x4fd80d,_0x16b25b={'CjaMX':function(_0x564c93,_0x4f97a2){return _0x564c93+_0x4f97a2;},'pTOAY':_0x222f03(0x35c),'MJdaE':_0x222f03(0x557)+_0x222f03(0x239)+'\x22]','qgqOp':_0x222f03(0x31f)},_0xa4576f=document[_0x222f03(0x44a)+_0x222f03(0x20c)](_0x222f03(0x4d3)+_0x222f03(0x430)+_0x222f03(0x440)+_0x16b25b[_0x222f03(0x523)](_0x3a8af4,0xd*-0x2a1+0x61*0x17+-0x3*-0x87d)+')');if(_0xa4576f){const _0x631946=this[_0x222f03(0x6ff)][_0x3a8af4],_0x50dd4e=_0xa4576f[_0x222f03(0x44a)+_0x222f03(0x20c)](_0x16b25b[_0x222f03(0x24a)]),_0x3ace20=_0xa4576f[_0x222f03(0x44a)+_0x222f03(0x20c)](_0x16b25b[_0x222f03(0x374)]);if(_0x50dd4e)_0x50dd4e[_0x222f03(0x43c)]=_0x631946[_0x222f03(0x31f)]?_0x16b25b[_0x222f03(0x3fa)]:'';if(_0x3ace20)_0x3ace20[_0x222f03(0x448)]=_0x631946[_0x222f03(0x31f)];}}[_0x4fd80d(0x728)+_0x4fd80d(0x634)+_0x4fd80d(0x64a)+'s'](){}}class Calculator{constructor(_0x1fdf42,_0x253eda){const _0xa2a500=_0x4fd80d,_0x47f4e7={'RzRPs':_0xa2a500(0x5a6)},_0xee6808=_0x47f4e7[_0xa2a500(0x347)][_0xa2a500(0x2ca)]('|');let _0x40e3fa=-0xf7f+0x1*0x5c+0xf23;while(!![]){switch(_0xee6808[_0x40e3fa++]){case'0':this[_0xa2a500(0x5a5)]=math;continue;case'1':this[_0xa2a500(0x590)]=new Cache();continue;case'2':this[_0xa2a500(0x2d5)]=_0x253eda;continue;case'3':this[_0xa2a500(0x51b)]=[];continue;case'4':this[_0xa2a500(0x491)]=_0x1fdf42;continue;}break;}}[_0x4fd80d(0x282)](){const _0x1f459a=_0x4fd80d;this[_0x1f459a(0x457)+'y']();}[_0x4fd80d(0x449)+_0x4fd80d(0x566)](){const _0x3df43e=_0x4fd80d,_0x63368e={'FPRJI':_0x3df43e(0x2ce)+'n','dqbhl':_0x3df43e(0x63a),'zNsDU':function(_0xe92821,_0x3a0104){return _0xe92821===_0x3a0104;},'bZjLq':_0x3df43e(0x2d7),'esDdu':function(_0x5637b5,_0x192aca){return _0x5637b5===_0x192aca;},'lYeOQ':_0x3df43e(0x464)+'ry'},_0x32a810=['7','8','9','/','4','5','6','*','1','2','3','-','0','.','=','+','CE','%'];return _0x32a810[_0x3df43e(0x736)](_0x55bd21=>{const _0x55c093=_0x3df43e;let _0x2a6465=_0x63368e[_0x55c093(0x2a0)];if(['/','*','-','+','%'][_0x55c093(0x313)](_0x55bd21))_0x2a6465+=_0x63368e[_0x55c093(0x3ce)];else{if(_0x63368e[_0x55c093(0x3d3)](_0x55bd21,'='))_0x2a6465+=_0x63368e[_0x55c093(0x414)];else _0x63368e[_0x55c093(0x6a7)](_0x55bd21,'CE')&&(_0x2a6465+=_0x63368e[_0x55c093(0x4c8)]);}return _0x55c093(0x229)+_0x55c093(0x360)+_0x55c093(0x360)+_0x55c093(0x327)+_0x2a6465+(_0x55c093(0x312)+_0x55c093(0x360)+_0x55c093(0x41a)+_0x55c093(0x729))+_0x55bd21+(_0x55c093(0x312)+_0x55c093(0x360)+_0x55c093(0x296)+_0x55c093(0x56e))+_0x55bd21+(_0x55c093(0x312)+_0x55c093(0x360)+_0x55c093(0x6df))+_0x55bd21+_0x55c093(0x66e);})[_0x3df43e(0x4a3)]('');}[_0x4fd80d(0x753)+_0x4fd80d(0x2c8)](_0x65bcca){const _0x46570c=_0x4fd80d,_0x44530a={'oBACW':_0x46570c(0x395),'RyowV':function(_0x1b1fbc,_0x543a38){return _0x1b1fbc===_0x543a38;},'hDrTf':_0x46570c(0x708),'CXDJa':function(_0x33e377,_0x5ae8dd){return _0x33e377===_0x5ae8dd;},'leLYJ':function(_0x181407,_0x5b229d){return _0x181407===_0x5b229d;}},_0x3f2509=document[_0x46570c(0x5b4)+_0x46570c(0x250)](_0x44530a[_0x46570c(0x2fd)]);if(_0x44530a[_0x46570c(0x4d9)](_0x65bcca,'='))try{const _0x28903b=this[_0x46570c(0x3aa)](_0x3f2509[_0x46570c(0x1f0)]);_0x3f2509[_0x46570c(0x1f0)]=_0x28903b;}catch(_0x20c0ce){app[_0x46570c(0x40a)+_0x46570c(0x566)][_0x46570c(0x618)](_0x20c0ce[_0x46570c(0x498)],_0x44530a[_0x46570c(0x4a4)]);}else{if(_0x44530a[_0x46570c(0x5ad)](_0x65bcca,'CE'))this[_0x46570c(0x3c2)]();else _0x44530a[_0x46570c(0x602)](_0x65bcca,'%')?this[_0x46570c(0x4e8)+_0x46570c(0x344)]():_0x3f2509[_0x46570c(0x1f0)]+=_0x65bcca;}}[_0x4fd80d(0x388)](){const _0x584d46=_0x4fd80d,_0x57ac02={'hPWHf':_0x584d46(0x395),'NwtLC':_0x584d46(0x51b),'EQrgX':_0x584d46(0x5b2)+'ry','VUqRL':_0x584d46(0x677)+_0x584d46(0x322),'eWVEU':_0x584d46(0x5a7)+'nu','OUPKK':_0x584d46(0x76d)};return _0x584d46(0x71b)+_0x584d46(0x4cf)+_0x584d46(0x493)+_0x584d46(0x5ab)+_0x584d46(0x421)+_0x584d46(0x4b7)+_0x584d46(0x52f)+_0x584d46(0x360)+_0x584d46(0x422)+_0x584d46(0x43d)+_0x584d46(0x23c)+_0x584d46(0x620)+_0x584d46(0x78e)+_0x584d46(0x360)+_0x584d46(0x1f7)+_0x584d46(0x379)+_0x584d46(0x6bc)+_0x584d46(0x51c)+_0x584d46(0x3e1)+_0x584d46(0x6e1)+this[_0x584d46(0x491)]['t'](_0x57ac02[_0x584d46(0x21c)])+(_0x584d46(0x485)+_0x584d46(0x360)+_0x584d46(0x34f)+_0x584d46(0x6f3)+_0x584d46(0x6a0)+_0x584d46(0x467)+_0x584d46(0x25b)+_0x584d46(0x7ab)+_0x584d46(0x360)+_0x584d46(0x275)+_0x584d46(0x360)+_0x584d46(0x4d7)+_0x584d46(0x244)+_0x584d46(0x744)+_0x584d46(0x206)+_0x584d46(0x23f)+_0x584d46(0x360)+_0x584d46(0x76b))+this[_0x584d46(0x449)+_0x584d46(0x566)]()+(_0x584d46(0x71b)+_0x584d46(0x55c)+_0x584d46(0x6d8)+_0x584d46(0x360)+_0x584d46(0x3ec)+_0x584d46(0x6fd)+_0x584d46(0x3bc)+_0x584d46(0x360)+_0x584d46(0x667)+'>')+this[_0x584d46(0x491)]['t'](_0x57ac02[_0x584d46(0x25e)])+(_0x584d46(0x6d5)+_0x584d46(0x360)+_0x584d46(0x2f5)+_0x584d46(0x689)+_0x584d46(0x4ff)+_0x584d46(0x4b8)+_0x584d46(0x5b5)+_0x584d46(0x360)+_0x584d46(0x2ba)+_0x584d46(0x628)+_0x584d46(0x433)+_0x584d46(0x499)+_0x584d46(0x249)+_0x584d46(0x392)+_0x584d46(0x6d3)+_0x584d46(0x4f9))+(this[_0x584d46(0x491)]['t'](_0x57ac02[_0x584d46(0x42f)])||_0x57ac02[_0x584d46(0x585)])+(_0x584d46(0x4e3)+_0x584d46(0x360)+_0x584d46(0x6e0)+_0x584d46(0x418)+_0x584d46(0x45e)+_0x584d46(0x3cb)+_0x584d46(0x360)+_0x584d46(0x2d4)+_0x584d46(0x57c)+_0x584d46(0x317)+_0x584d46(0x212)+_0x584d46(0x360)+_0x584d46(0x76a)+_0x584d46(0x606)+_0x584d46(0x34c)+_0x584d46(0x71b)+_0x584d46(0x360)+_0x584d46(0x319)+_0x584d46(0x579))+this[_0x584d46(0x491)]['t'](_0x57ac02[_0x584d46(0x645)])+(_0x584d46(0x312)+_0x584d46(0x5af))+this[_0x584d46(0x491)]['t'](_0x57ac02[_0x584d46(0x6fe)])+(_0x584d46(0x71b)+_0x584d46(0x5c1)+_0x584d46(0x3ee)+_0x584d46(0x45e)+_0x584d46(0x4c7)+_0x584d46(0x76b));}[_0x4fd80d(0x3aa)](_0x5b0cb2){const _0x13d110=_0x4fd80d,_0x3f913b={'ePXub':_0x13d110(0x6e6),'QkcFZ':function(_0x4bc430,_0x218eef){return _0x4bc430(_0x218eef);},'rzTvM':_0x13d110(0x70e)+_0x13d110(0x582),'cBjBd':_0x13d110(0x574)+_0x13d110(0x1eb)};try{_0x5b0cb2=_0x5b0cb2[_0x13d110(0x61b)](/%/g,_0x3f913b[_0x13d110(0x4de)]);const _0x32a7e4=this[_0x13d110(0x5a5)][_0x13d110(0x4ce)](_0x5b0cb2);if(!_0x3f913b[_0x13d110(0x656)](isFinite,_0x32a7e4))throw new Error(this[_0x13d110(0x491)]['t'](_0x3f913b[_0x13d110(0x60e)]));return this[_0x13d110(0x799)+'ry'](_0x5b0cb2,_0x32a7e4),_0x32a7e4;}catch(_0x1c2c8a){Logger[_0x13d110(0x297)](Logger[_0x13d110(0x61c)][_0x13d110(0x410)],_0x3f913b[_0x13d110(0x586)],{'expression':_0x5b0cb2,'error':_0x1c2c8a});throw new Error(this[_0x13d110(0x491)]['t'](_0x3f913b[_0x13d110(0x60e)]));}}[_0x4fd80d(0x799)+'ry'](_0x37a832,_0x273b5c){const _0x818619=_0x4fd80d,_0x5103b4={'expression':_0x37a832,'result':_0x273b5c,'timestamp':new Date()[_0x818619(0x340)+'g']()};this[_0x818619(0x51b)][_0x818619(0x60f)](_0x5103b4),this[_0x818619(0x51b)]=this[_0x818619(0x51b)][_0x818619(0x453)](-0x12d5+0x2cd+0x9*0x1c8,-0x1*-0x19f+-0x1*-0x801+-0x4cb*0x2),this[_0x818619(0x575)+'y'](),this[_0x818619(0x54c)+_0x818619(0x343)]();}[_0x4fd80d(0x457)+'y'](){const _0x163112=_0x4fd80d,_0x31a808={'fyfVX':_0x163112(0x22f)+'y','Jcmgz':_0x163112(0x749)+_0x163112(0x6ec)+_0x163112(0x322)};try{const _0xada4cc=localStorage[_0x163112(0x280)](_0x31a808[_0x163112(0x608)]);_0xada4cc&&(this[_0x163112(0x51b)]=JSON[_0x163112(0x591)](_0xada4cc),this[_0x163112(0x54c)+_0x163112(0x343)]());}catch(_0x3302b3){Logger[_0x163112(0x297)](Logger[_0x163112(0x61c)][_0x163112(0x410)],_0x31a808[_0x163112(0x622)],{'error':_0x3302b3});}}[_0x4fd80d(0x575)+'y'](){const _0x1cf618=_0x4fd80d,_0x58339d={'nRysd':_0x1cf618(0x22f)+'y','tWWyK':_0x1cf618(0x5a9)+_0x1cf618(0x583)+_0x1cf618(0x5aa)};try{localStorage[_0x1cf618(0x771)](_0x58339d[_0x1cf618(0x545)],JSON[_0x1cf618(0x326)](this[_0x1cf618(0x51b)]));}catch(_0xb339c9){Logger[_0x1cf618(0x297)](Logger[_0x1cf618(0x61c)][_0x1cf618(0x410)],_0x58339d[_0x1cf618(0x644)],{'error':_0xb339c9});}}[_0x4fd80d(0x54c)+_0x4fd80d(0x343)](){const _0x49cb37=_0x4fd80d,_0x59a865={'ghfeD':_0x49cb37(0x1e2),'fUxBE':_0x49cb37(0x595)+_0x49cb37(0x79e),'QBgMO':function(_0x2d5908,_0x4beb43,_0x3f8998){return _0x2d5908(_0x4beb43,_0x3f8998);}},_0x49ace4=this[_0x49cb37(0x2d5)][_0x49cb37(0x44a)+_0x49cb37(0x20c)](_0x59a865[_0x49cb37(0x2f4)]);if(!_0x49ace4)return;_0x49ace4[_0x49cb37(0x494)]=this[_0x49cb37(0x51b)][_0x49cb37(0x736)](_0x4140eb=>_0x49cb37(0x71b)+_0x49cb37(0x3dc)+_0x49cb37(0x40c)+_0x49cb37(0x4c5)+_0x49cb37(0x76c)+_0x49cb37(0x356)+_0x49cb37(0x360)+_0x49cb37(0x461)+_0x49cb37(0x336)+_0x49cb37(0x2ad)+utils[_0x49cb37(0x56c)+_0x49cb37(0x735)](_0x4140eb[_0x49cb37(0x6c9)])+(_0x49cb37(0x2ea)+_0x49cb37(0x360)+_0x49cb37(0x24e)+_0x49cb37(0x75f)+_0x49cb37(0x3f5)+_0x49cb37(0x7a3)+_0x49cb37(0x360)+_0x49cb37(0x4a2)+_0x49cb37(0x41b)+_0x49cb37(0x600))+utils[_0x49cb37(0x331)+'er'](_0x4140eb[_0x49cb37(0x27f)])+(_0x49cb37(0x2ea)+_0x49cb37(0x360)+_0x49cb37(0x24e)+_0x49cb37(0x6a1)+_0x49cb37(0x1f1))+this[_0x49cb37(0x571)+_0x49cb37(0x4d5)](_0x4140eb[_0x49cb37(0x745)])+(_0x49cb37(0x2ea)+_0x49cb37(0x360)+_0x49cb37(0x52b)+_0x49cb37(0x76b)))[_0x49cb37(0x4a3)]('');const _0x40e9ad=_0x49ace4[_0x49cb37(0x563)+_0x49cb37(0x517)];_0x40e9ad&&(_0x40e9ad[_0x49cb37(0x2b7)][_0x49cb37(0x456)](_0x59a865[_0x49cb37(0x693)]),_0x59a865[_0x49cb37(0x663)](setTimeout,()=>{const _0x5d3421=_0x49cb37;_0x40e9ad[_0x5d3421(0x2b7)][_0x5d3421(0x447)](_0x59a865[_0x5d3421(0x693)]);},-0x1a97*-0x1+0x61*0x6+-0x1ae9));}[_0x4fd80d(0x5b2)+'ry'](){const _0xe59bce=_0x4fd80d;this[_0xe59bce(0x51b)]=[],this[_0xe59bce(0x575)+'y'](),this[_0xe59bce(0x54c)+_0xe59bce(0x343)]();}[_0x4fd80d(0x571)+_0x4fd80d(0x4d5)](_0x3a3457){const _0x1c0920=_0x4fd80d,_0x117805={'JesSd':_0x1c0920(0x54f)},_0x4ffc0=new Date(_0x3a3457);return _0x4ffc0[_0x1c0920(0x3e6)+_0x1c0920(0x4c1)](_0x117805[_0x1c0920(0x559)])+'\x20'+_0x4ffc0[_0x1c0920(0x528)+_0x1c0920(0x2cd)](_0x117805[_0x1c0920(0x559)]);}[_0x4fd80d(0x728)+_0x4fd80d(0x63e)](){const _0x27de85=_0x4fd80d,_0x3c25f0={'TSnkW':_0x27de85(0x795)+_0x27de85(0x566),'fKHIY':_0x27de85(0x5e9),'ODMXX':_0x27de85(0x36f)},_0x4c789f=this[_0x27de85(0x2d5)][_0x27de85(0x44a)+_0x27de85(0x20c)](_0x3c25f0[_0x27de85(0x398)]);_0x4c789f&&_0x4c789f[_0x27de85(0x746)+_0x27de85(0x5d0)](_0x3c25f0[_0x27de85(0x5cb)],_0x2e6aab=>{const _0x311f2d=_0x27de85,_0x248fcc=_0x2e6aab[_0x311f2d(0x5ef)][_0x311f2d(0x3b4)][_0x311f2d(0x234)];_0x248fcc&&this[_0x311f2d(0x753)+_0x311f2d(0x2c8)](_0x248fcc);}),document[_0x27de85(0x746)+_0x27de85(0x5d0)](_0x3c25f0[_0x27de85(0x743)],_0x35ff41=>{const _0x248573=_0x27de85;this[_0x248573(0x284)+_0x248573(0x51d)](_0x35ff41);});}[_0x4fd80d(0x284)+_0x4fd80d(0x51d)](_0x2b2597){const _0x1365e6=_0x4fd80d,_0x4603f5={'TFDuk':function(_0x453545,_0x3290fa){return _0x453545===_0x3290fa;},'GWsTH':function(_0x513b59,_0xef419c){return _0x513b59===_0xef419c;},'DvJUi':_0x1365e6(0x51f),'ltUUS':_0x1365e6(0x787),'TvleP':_0x1365e6(0x5e5)},_0x1ac048=_0x2b2597[_0x1365e6(0x234)],_0xd85645=['0','1','2','3','4','5','6','7','8','9','/','*','-','+','.','=','%'];if(_0xd85645[_0x1365e6(0x313)](_0x1ac048))_0x2b2597[_0x1365e6(0x694)+_0x1365e6(0x3a8)](),this[_0x1365e6(0x753)+_0x1365e6(0x2c8)](_0x4603f5[_0x1365e6(0x1fc)](_0x1ac048,'=')?'=':_0x1ac048);else{if(_0x4603f5[_0x1365e6(0x720)](_0x1ac048,_0x4603f5[_0x1365e6(0x22c)]))_0x2b2597[_0x1365e6(0x694)+_0x1365e6(0x3a8)](),this[_0x1365e6(0x753)+_0x1365e6(0x2c8)]('=');else{if(_0x4603f5[_0x1365e6(0x1fc)](_0x1ac048,_0x4603f5[_0x1365e6(0x3df)]))_0x2b2597[_0x1365e6(0x694)+_0x1365e6(0x3a8)](),this[_0x1365e6(0x2de)+_0x1365e6(0x31e)]();else _0x4603f5[_0x1365e6(0x720)](_0x1ac048,_0x4603f5[_0x1365e6(0x30f)])&&(_0x2b2597[_0x1365e6(0x694)+_0x1365e6(0x3a8)](),this[_0x1365e6(0x2ed)+'ay']());}}}[_0x4fd80d(0x2de)+_0x4fd80d(0x31e)](){const _0x26d923=_0x4fd80d,_0x3b839d={'jfnir':_0x26d923(0x395)},_0x1b9561=document[_0x26d923(0x5b4)+_0x26d923(0x250)](_0x3b839d[_0x26d923(0x283)]);_0x1b9561[_0x26d923(0x1f0)]=_0x1b9561[_0x26d923(0x1f0)][_0x26d923(0x453)](0x15f*-0x18+0x730+-0x1*-0x19b8,-(0x433*-0x1+-0x2006+-0x121d*-0x2));}[_0x4fd80d(0x2ed)+'ay'](){const _0x436f5d=_0x4fd80d,_0x58bede={'RKGvL':_0x436f5d(0x395)},_0x1bc496=document[_0x436f5d(0x5b4)+_0x436f5d(0x250)](_0x58bede[_0x436f5d(0x686)]);_0x1bc496[_0x436f5d(0x1f0)]='0';}[_0x4fd80d(0x3c2)](){const _0x32d13f=_0x4fd80d;this[_0x32d13f(0x2ed)+'ay']();}[_0x4fd80d(0x4e8)+_0x4fd80d(0x344)](){const _0xdc197b=_0x4fd80d,_0x2b3e4c={'WzWDw':_0xdc197b(0x395),'nRQHr':function(_0x262778,_0x2aaf79){return _0x262778(_0x2aaf79);},'wkAVb':function(_0x526aaa,_0x165f99){return _0x526aaa(_0x165f99);},'xBnwA':function(_0x24d28f,_0x3ef3dd){return _0x24d28f/_0x3ef3dd;}},_0x307d9a=document[_0xdc197b(0x5b4)+_0xdc197b(0x250)](_0x2b3e4c[_0xdc197b(0x4d2)]);let _0xde9cb=_0x2b3e4c[_0xdc197b(0x252)](parseFloat,_0x307d9a[_0xdc197b(0x1f0)]);!_0x2b3e4c[_0xdc197b(0x64d)](isNaN,_0xde9cb)&&(_0x307d9a[_0xdc197b(0x1f0)]=_0x2b3e4c[_0xdc197b(0x4f1)](_0xde9cb,-0x6*0x6d+-0x1*0x20ab+0x1*0x239d));}}class ImprovedBlindEqualization{constructor(_0x31537d=0x292*0x1+-0x21d5+0x1f43*0x1+0.01,_0x3f1173=-0x3*-0x8a5+0x1115+0x2*-0x1582+0.1){const _0x16af6f=_0x4fd80d;this[_0x16af6f(0x3bb)]=[],this[_0x16af6f(0x203)]=_0x31537d,this[_0x16af6f(0x5b6)]=_0x3f1173,this[_0x16af6f(0x2d0)+_0x16af6f(0x6c8)]=-0x865*0x1+0x12f*-0xd+0x17c9;}[_0x4fd80d(0x282)+_0x4fd80d(0x3e9)](_0x2bf891){const _0x58516f=_0x4fd80d,_0x1a691d={'KeMFL':function(_0xa8c066,_0x222c2d){return _0xa8c066(_0x222c2d);}};this[_0x58516f(0x3bb)]=_0x1a691d[_0x58516f(0x2eb)](Array,_0x2bf891)[_0x58516f(0x783)](0xc1*0x31+-0x86+-0x1*0x246b),this[_0x58516f(0x3bb)][0xc42+-0x1ba1+0x5*0x313]=-0xcea+0x195d+-0x426*0x3;}[_0x4fd80d(0x4fa)](_0x1f3502){const _0x989b7=_0x4fd80d,_0xf24ac2={'nJdGM':function(_0xdba91,_0x55e69b){return _0xdba91<_0x55e69b;},'bbXRJ':function(_0x42a968,_0x47a7f0){return _0x42a968+_0x47a7f0;},'QCwvX':function(_0x4dcb63,_0x51c561){return _0x4dcb63-_0x51c561;},'AZaye':function(_0x375213,_0x490bd5){return _0x375213(_0x490bd5);},'hbkOU':function(_0x2b4af9,_0x572ab2){return _0x2b4af9-_0x572ab2;}},_0x5cf3fd=[];for(let _0x4ad5f8=0x211e+-0x1e01+0x31d*-0x1;_0xf24ac2[_0x989b7(0x39a)](_0x4ad5f8,_0x1f3502[_0x989b7(0x3b9)]);_0x4ad5f8++){const _0x142484=_0x1f3502[_0x989b7(0x453)](Math[_0x989b7(0x6cd)](-0x2f*-0x31+0x1de2*0x1+-0x1*0x26e1,_0xf24ac2[_0x989b7(0x3ff)](_0xf24ac2[_0x989b7(0x49c)](_0x4ad5f8,this[_0x989b7(0x3bb)][_0x989b7(0x3b9)]),0xbcf+-0x2*0x674+0x8d*0x2)),_0xf24ac2[_0x989b7(0x3ff)](_0x4ad5f8,-0x61*0x2b+0xe9+-0xf63*-0x1)),_0x5097a4=_0x142484[_0x989b7(0x453)]()[_0x989b7(0x696)](),_0x199158=_0xf24ac2[_0x989b7(0x4ca)](Array,_0xf24ac2[_0x989b7(0x3d6)](this[_0x989b7(0x3bb)][_0x989b7(0x3b9)],_0x5097a4[_0x989b7(0x3b9)]))[_0x989b7(0x783)](0x3*-0x833+-0x1210*0x2+0x3cb9)[_0x989b7(0x69c)](_0x5097a4),_0x3aafb2=this[_0x989b7(0x219)+_0x989b7(0x2a4)](_0x199158);_0x5cf3fd[_0x989b7(0x29d)](_0x3aafb2),this[_0x989b7(0x604)+_0x989b7(0x407)](_0x199158,_0x3aafb2);}return _0x5cf3fd;}[_0x4fd80d(0x219)+_0x4fd80d(0x2a4)](_0x8f9639){const _0x48a72d=_0x4fd80d,_0x365ba3={'Tnkot':function(_0xd23970,_0x295af0){return _0xd23970<_0x295af0;},'kksmz':function(_0x53079a,_0x566783){return _0x53079a*_0x566783;}};let _0x420653=0x518+0x21*-0x8b+0xcd3;for(let _0x2c522a=-0x107d+0x7*-0x39a+0x7*0x5f5;_0x365ba3[_0x48a72d(0x739)](_0x2c522a,this[_0x48a72d(0x3bb)][_0x48a72d(0x3b9)]);_0x2c522a++){_0x420653+=_0x365ba3[_0x48a72d(0x666)](this[_0x48a72d(0x3bb)][_0x2c522a],_0x8f9639[_0x2c522a]);}return _0x420653;}[_0x4fd80d(0x604)+_0x4fd80d(0x407)](_0x312949,_0x48f886){const _0x5b7fee=_0x4fd80d,_0xfaac8d={'TFiyC':function(_0x481d8b,_0x5e80be){return _0x481d8b-_0x5e80be;},'eefxU':function(_0x2c5e92,_0x247e06){return _0x2c5e92>_0x247e06;},'ZHSUL':function(_0x4fb251,_0x48ca91){return _0x4fb251<_0x48ca91;},'hgTwM':function(_0x159d33,_0x2bce8d){return _0x159d33*_0x2bce8d;},'ODtEU':function(_0x2097f5,_0x24ca96){return _0x2097f5*_0x24ca96;}},_0x2ce27d=this[_0x5b7fee(0x3f8)+'on'](_0x48f886),_0x253674=_0xfaac8d[_0x5b7fee(0x2e0)](_0x2ce27d,_0x48f886),_0x5f0b61=_0xfaac8d[_0x5b7fee(0x46b)](Math[_0x5b7fee(0x63f)](_0x48f886),this[_0x5b7fee(0x2d0)+_0x5b7fee(0x6c8)])?-0xd*-0x74+-0x2196+0x3f5*0x7:this[_0x5b7fee(0x5b6)];for(let _0x8bb645=0x1e2d+0x1*0xc17+0x874*-0x5;_0xfaac8d[_0x5b7fee(0x21a)](_0x8bb645,this[_0x5b7fee(0x3bb)][_0x5b7fee(0x3b9)]);_0x8bb645++){this[_0x5b7fee(0x3bb)][_0x8bb645]+=_0xfaac8d[_0x5b7fee(0x35d)](_0xfaac8d[_0x5b7fee(0x3c1)](_0xfaac8d[_0x5b7fee(0x35d)](_0x5f0b61,this[_0x5b7fee(0x203)]),_0x253674),_0x312949[_0x8bb645]);}}[_0x4fd80d(0x3f8)+'on'](_0x5c9d32){const _0x440790=_0x4fd80d,_0xe9cd28={'fYKfu':function(_0x3d4ac2,_0x433f05){return _0x3d4ac2>_0x433f05;}};return _0xe9cd28[_0x440790(0x30c)](_0x5c9d32,-0x5a8*-0x3+-0x1d72*0x1+0x2*0x63d)?-0x3e3*-0x2+-0x19a*0xb+0x9d9:-(-0x1130+-0x1f16+0x2d7*0x11);}}class App{constructor(){const _0x5b5602=_0x4fd80d,_0x59440c={'upxdm':_0x5b5602(0x78b)+'a','owgja':_0x5b5602(0x5a2),'WJPeS':_0x5b5602(0x268),'rGVaZ':_0x5b5602(0x2d6)+_0x5b5602(0x5c7),'UGXEb':_0x5b5602(0x44d),'XAXwo':_0x5b5602(0x574)+_0x5b5602(0x1eb),'xfTcj':_0x5b5602(0x205)};this[_0x5b5602(0x2d5)]=document[_0x5b5602(0x5b4)+_0x5b5602(0x250)](_0x59440c[_0x5b5602(0x626)]),this[_0x5b5602(0x491)]={'t':_0x1df549=>{const _0x5285c7=_0x5b5602,_0x45d8b7={'calculator':_0x59440c[_0x5285c7(0x643)],'display':_0x59440c[_0x5285c7(0x533)],'history':_0x59440c[_0x5285c7(0x24c)],'returnToMenu':_0x59440c[_0x5285c7(0x7ac)],'back':_0x59440c[_0x5285c7(0x562)],'calculationError':_0x59440c[_0x5285c7(0x2af)]};return _0x45d8b7[_0x1df549]||_0x1df549;}},this[_0x5b5602(0x32e)]=new Calculator(this[_0x5b5602(0x491)],this[_0x5b5602(0x2d5)]),this[_0x5b5602(0x40a)+_0x5b5602(0x566)]=new Notifications(),this[_0x5b5602(0x55e)]=new Forca(this[_0x5b5602(0x2d5)]),this[_0x5b5602(0x588)+'a']=new JogoDaVelha(this[_0x5b5602(0x2d5)]),this[_0x5b5602(0x74e)+_0x5b5602(0x6b9)]=new ListaDeTarefas(this[_0x5b5602(0x2d5)]);}[_0x4fd80d(0x282)](){const _0x3f0ee7=_0x4fd80d;this[_0x3f0ee7(0x67d)]();}[_0x4fd80d(0x67d)](){const _0x4eca8d=_0x4fd80d,_0x4ede43={'FUELv':function(_0x136c52,_0x1790cb){return _0x136c52(_0x1790cb);},'SoRql':_0x4eca8d(0x492)+_0x4eca8d(0x30e)+_0x4eca8d(0x538)+_0x4eca8d(0x389),'lGETM':_0x4eca8d(0x47c)+_0x4eca8d(0x293)+_0x4eca8d(0x520)+_0x4eca8d(0x367)+'>','MtQDj':_0x4eca8d(0x5e9),'aHcwY':_0x4eca8d(0x6fc)+'on'};document[_0x4eca8d(0x44a)+_0x4eca8d(0x534)](_0x4ede43[_0x4eca8d(0x75c)])[_0x4eca8d(0x681)](_0xdad549=>{const _0x3e3277=_0x4eca8d;_0xdad549[_0x3e3277(0x746)+_0x3e3277(0x5d0)](_0x4ede43[_0x3e3277(0x60a)],()=>{const _0x3ae0c2=_0x3e3277,_0x4123a4=_0x4ede43[_0x3ae0c2(0x59a)](parseInt,_0xdad549[_0x3ae0c2(0x3b4)][_0x3ae0c2(0x4e0)]);switch(_0x4123a4){case 0x3b3*0x2+-0x251*0x4+0x1df:this[_0x3ae0c2(0x36c)+_0x3ae0c2(0x4fd)]();break;case-0x1209+-0x1b5c+0x2d67:this[_0x3ae0c2(0x554)]();break;case 0x143*0x6+0x2452*0x1+0x1*-0x2be1:this[_0x3ae0c2(0x648)+_0x3ae0c2(0x630)]();break;case 0x183d+0x2*0x242+-0x7*0x41b:this[_0x3ae0c2(0x39d)+_0x3ae0c2(0x669)]();break;case-0x1*-0x1d27+-0x10c7+-0x1*0xc5b:this[_0x3ae0c2(0x502)+_0x3ae0c2(0x4a1)]();break;case-0x64f+0x792+-0x1*0x13d:this[_0x3ae0c2(0x39d)+_0x3ae0c2(0x3c3)]();break;case-0x2d5+0x373*-0xb+0x829*0x5:this[_0x3ae0c2(0x33e)+_0x3ae0c2(0x34d)]();break;case 0xb2b+-0x2470+0x194d:this[_0x3ae0c2(0x65f)+_0x3ae0c2(0x4e7)]();break;case-0x1035*0x1+-0x268b+-0x19*-0x231:this[_0x3ae0c2(0x397)]();break;case 0x31*-0x20+0x1b62+-0x4*0x54e:this[_0x3ae0c2(0x5d2)+_0x3ae0c2(0x2a8)]();break;case 0x1f*-0xfd+0x5ff+0x47*0x59:this[_0x3ae0c2(0x7ae)+_0x3ae0c2(0x1f8)]();break;case 0x1*-0x9b9+-0x15a1+-0x1f66*-0x1:this[_0x3ae0c2(0x2d5)][_0x3ae0c2(0x494)]=_0x4ede43[_0x3ae0c2(0x342)];break;default:this[_0x3ae0c2(0x2d5)][_0x3ae0c2(0x494)]=_0x4ede43[_0x3ae0c2(0x2e5)];}});});}[_0x4fd80d(0x648)+_0x4fd80d(0x630)](){const _0x19ce95=_0x4fd80d;this[_0x19ce95(0x2d5)][_0x19ce95(0x494)]=this[_0x19ce95(0x32e)][_0x19ce95(0x388)](),this[_0x19ce95(0x32e)][_0x19ce95(0x282)](),this[_0x19ce95(0x32e)][_0x19ce95(0x728)+_0x19ce95(0x63e)]();}[_0x4fd80d(0x397)](){const _0x293295=_0x4fd80d;this[_0x293295(0x55e)][_0x293295(0x3ba)+_0x293295(0x6c2)]();}[_0x4fd80d(0x5d2)+_0x4fd80d(0x2a8)](){const _0x4154ca=_0x4fd80d;this[_0x4154ca(0x588)+'a'][_0x4154ca(0x73a)+'d']();}[_0x4fd80d(0x7ae)+_0x4fd80d(0x1f8)](){const _0x599422=_0x4fd80d;this[_0x599422(0x74e)+_0x599422(0x6b9)][_0x599422(0x609)+'s']();}[_0x4fd80d(0x317)+'nu'](){const _0x2d90ae=_0x4fd80d;this[_0x2d90ae(0x2d5)][_0x2d90ae(0x494)]='';}[_0x4fd80d(0x36c)+_0x4fd80d(0x4fd)](){const _0x596af3=_0x4fd80d;this[_0x596af3(0x2d5)][_0x596af3(0x494)]=_0x596af3(0x339)+_0x596af3(0x469)+_0x596af3(0x44e)+_0x596af3(0x37c)+_0x596af3(0x273)+_0x596af3(0x56f)+_0x596af3(0x405)+_0x596af3(0x5b9)+_0x596af3(0x476)+_0x596af3(0x32a)+_0x596af3(0x2f2)+_0x596af3(0x4e1)+_0x596af3(0x26e)+_0x596af3(0x75b);}[_0x4fd80d(0x554)](){const _0x47de9a=_0x4fd80d;this[_0x47de9a(0x2d5)][_0x47de9a(0x494)]=_0x47de9a(0x339)+_0x47de9a(0x692)+_0x47de9a(0x458)+_0x47de9a(0x7b0)+_0x47de9a(0x75e)+_0x47de9a(0x67c)+_0x47de9a(0x531)+_0x47de9a(0x713)+_0x47de9a(0x42a)+_0x47de9a(0x3ab)+_0x47de9a(0x558)+_0x47de9a(0x570)+_0x47de9a(0x756)+_0x47de9a(0x682)+_0x47de9a(0x66c)+_0x47de9a(0x652)+_0x47de9a(0x6aa)+_0x47de9a(0x257)+_0x47de9a(0x28a)+_0x47de9a(0x7a1)+_0x47de9a(0x3d0)+_0x47de9a(0x455)+_0x47de9a(0x6aa)+_0x47de9a(0x257)+_0x47de9a(0x5d7)+_0x47de9a(0x463)+_0x47de9a(0x2aa)+_0x47de9a(0x576)+_0x47de9a(0x378)+_0x47de9a(0x4cd)+_0x47de9a(0x690)+_0x47de9a(0x6a8)+_0x47de9a(0x62d)+_0x47de9a(0x757)+_0x47de9a(0x5e7)+_0x47de9a(0x700)+'\x09';}[_0x4fd80d(0x5da)](){const _0x1ccb18=_0x4fd80d,_0x1cb861={'bnXFC':_0x1ccb18(0x20f),'siBTZ':function(_0x5839f0,_0x36e9dc){return _0x5839f0!==_0x36e9dc;},'XXXxx':_0x1ccb18(0x61e)+_0x1ccb18(0x20f),'sdwJV':_0x1ccb18(0x30b)+_0x1ccb18(0x5dc),'nAaLv':_0x1ccb18(0x708)},_0x30f468=document[_0x1ccb18(0x5b4)+_0x1ccb18(0x250)](_0x1cb861[_0x1ccb18(0x78d)])[_0x1ccb18(0x1f0)];_0x1cb861[_0x1ccb18(0x25f)](_0x30f468[_0x1ccb18(0x539)](),'')?document[_0x1ccb18(0x5b4)+_0x1ccb18(0x250)](_0x1cb861[_0x1ccb18(0x248)])[_0x1ccb18(0x494)]=_0x1ccb18(0x71b)+_0x1ccb18(0x684)+_0x1ccb18(0x65b)+utils[_0x1ccb18(0x56c)+_0x1ccb18(0x735)](_0x30f468)+(_0x1ccb18(0x68b)+_0x1ccb18(0x26a)+_0x1ccb18(0x78e)+_0x1ccb18(0x3fe)):this[_0x1ccb18(0x40a)+_0x1ccb18(0x566)][_0x1ccb18(0x618)](_0x1cb861[_0x1ccb18(0x26c)],_0x1cb861[_0x1ccb18(0x33d)]);}[_0x4fd80d(0x39d)+_0x4fd80d(0x669)](){const _0x450b94=_0x4fd80d,_0x4f35ca={'kBSHU':_0x450b94(0x4ee)+_0x450b94(0x514),'ssAfN':_0x450b94(0x5e9),'lBJdR':_0x450b94(0x31c)+_0x450b94(0x269)};this[_0x450b94(0x2d5)][_0x450b94(0x494)]=_0x450b94(0x339)+_0x450b94(0x244)+_0x450b94(0x59f)+_0x450b94(0x2b4)+_0x450b94(0x4f0)+_0x450b94(0x3ec)+_0x450b94(0x220)+_0x450b94(0x5d4)+_0x450b94(0x55a)+_0x450b94(0x2ec)+_0x450b94(0x544)+_0x450b94(0x47f)+_0x450b94(0x202)+_0x450b94(0x570)+_0x450b94(0x756)+_0x450b94(0x5c5)+_0x450b94(0x5d8)+_0x450b94(0x659)+_0x450b94(0x770)+_0x450b94(0x597)+_0x450b94(0x335)+_0x450b94(0x4f2)+_0x450b94(0x77c)+_0x450b94(0x2dc)+_0x450b94(0x676)+_0x450b94(0x6d1)+_0x450b94(0x3b7)+_0x450b94(0x782)+_0x450b94(0x4b2)+_0x450b94(0x3c9)+_0x450b94(0x3a1)+_0x450b94(0x484)+_0x450b94(0x32b)+_0x450b94(0x210)+_0x450b94(0x5f5)+_0x450b94(0x6ab)+_0x450b94(0x490)+_0x450b94(0x408)+_0x450b94(0x482)+_0x450b94(0x370)+_0x450b94(0x364)+'=\x22'+new Date()[_0x450b94(0x5b8)+'r']()+(_0x450b94(0x671)+_0x450b94(0x337)+_0x450b94(0x30a)+_0x450b94(0x5fa)+_0x450b94(0x1f6)+_0x450b94(0x1d8)+_0x450b94(0x5ce)+_0x450b94(0x612)+_0x450b94(0x36b)+_0x450b94(0x35b)+_0x450b94(0x703)+_0x450b94(0x3b1)+_0x450b94(0x2b6)+_0x450b94(0x794)+_0x450b94(0x403)+_0x450b94(0x58b)+_0x450b94(0x497)+_0x450b94(0x3b3)+_0x450b94(0x4e3)+_0x450b94(0x363)+_0x450b94(0x74c)+_0x450b94(0x70a)+_0x450b94(0x2e8)+_0x450b94(0x20d)+_0x450b94(0x35a)+_0x450b94(0x632)+_0x450b94(0x4ef)),document[_0x450b94(0x5b4)+_0x450b94(0x250)](_0x4f35ca[_0x450b94(0x346)])[_0x450b94(0x746)+_0x450b94(0x5d0)](_0x4f35ca[_0x450b94(0x44c)],()=>this[_0x450b94(0x7a5)+_0x450b94(0x555)+'e']()),document[_0x450b94(0x5b4)+_0x450b94(0x250)](_0x4f35ca[_0x450b94(0x38c)])[_0x450b94(0x746)+_0x450b94(0x5d0)](_0x4f35ca[_0x450b94(0x44c)],()=>this[_0x450b94(0x317)+'nu']());}[_0x4fd80d(0x7a5)+_0x4fd80d(0x555)+'e'](){const _0x80e80=_0x4fd80d,_0x58db5c={'fzSAD':_0x80e80(0x679)+_0x80e80(0x6d7),'IZNJn':_0x80e80(0x4dd),'ggGhU':function(_0x1ff749,_0x230acb){return _0x1ff749===_0x230acb;},'PafzZ':_0x80e80(0x7a0)+_0x80e80(0x2a9)+_0x80e80(0x77e)+_0x80e80(0x307)+_0x80e80(0x2f8),'vQzeJ':_0x80e80(0x4a8)+_0x80e80(0x796)+_0x80e80(0x556)+_0x80e80(0x6f1),'gyyvh':function(_0x1df7e7,_0x896206){return _0x1df7e7>_0x896206;},'QPEEC':_0x80e80(0x301)+_0x80e80(0x488)+_0x80e80(0x4db)+_0x80e80(0x64e)+_0x80e80(0x303)+_0x80e80(0x1ee),'oWApo':_0x80e80(0x6f5)+_0x80e80(0x372)+_0x80e80(0x2fc)+_0x80e80(0x1ea)+_0x80e80(0x49f)+_0x80e80(0x1db),'ppgQc':function(_0x3f4dca,_0x15fd5e){return _0x3f4dca+_0x15fd5e;},'fbyoY':function(_0x5d51f5,_0x3d2e4d){return _0x5d51f5+_0x3d2e4d;},'LRxFl':function(_0x421cdb,_0x34e207){return _0x421cdb-_0x34e207;},'vxcXy':function(_0x4e4fe6,_0x30f07e){return _0x4e4fe6>=_0x30f07e;},'Zgnie':_0x80e80(0x61e)+_0x80e80(0x5f7),'JXzWU':_0x80e80(0x657)+_0x80e80(0x1e3)+_0x80e80(0x5e8)+_0x80e80(0x762),'UKyqX':_0x80e80(0x708)},_0x1ead20=this[_0x80e80(0x7af)+'o'](_0x58db5c[_0x80e80(0x267)]),_0x2bafc5=this[_0x80e80(0x7af)+'o'](_0x58db5c[_0x80e80(0x6c4)]);this[_0x80e80(0x2f1)+_0x80e80(0x642)]();if(_0x58db5c[_0x80e80(0x36d)](_0x1ead20,null)){this[_0x80e80(0x727)+_0x80e80(0x6b8)](_0x58db5c[_0x80e80(0x267)],_0x58db5c[_0x80e80(0x607)]);return;}if(_0x58db5c[_0x80e80(0x36d)](_0x2bafc5,null)){this[_0x80e80(0x727)+_0x80e80(0x6b8)](_0x58db5c[_0x80e80(0x6c4)],_0x58db5c[_0x80e80(0x328)]);return;}if(_0x58db5c[_0x80e80(0x32d)](_0x1ead20,_0x2bafc5)){this[_0x80e80(0x727)+_0x80e80(0x6b8)](_0x58db5c[_0x80e80(0x267)],_0x58db5c[_0x80e80(0x6e4)]),this[_0x80e80(0x727)+_0x80e80(0x6b8)](_0x58db5c[_0x80e80(0x6c4)],_0x58db5c[_0x80e80(0x6a5)]);return;}const _0x184fab=new Date()[_0x80e80(0x5b8)+'r']();if(_0x58db5c[_0x80e80(0x32d)](_0x2bafc5,_0x58db5c[_0x80e80(0x4ae)](_0x184fab,-0x5*-0x779+0xe7*0xb+0x5*-0x975))){this[_0x80e80(0x727)+_0x80e80(0x6b8)](_0x58db5c[_0x80e80(0x6c4)],_0x80e80(0x4cb)+_0x80e80(0x6ca)+_0x80e80(0x4d0)+_0x80e80(0x1e0)+_0x80e80(0x3da)+_0x58db5c[_0x80e80(0x45d)](_0x184fab,-0x183+0xff6+0xe72*-0x1)+').');return;}const _0x10965b=_0x58db5c[_0x80e80(0x594)](_0x2bafc5,_0x1ead20);_0x58db5c[_0x80e80(0x289)](_0x10965b,-0xd43+0x1408+-0x6c5)?document[_0x80e80(0x5b4)+_0x80e80(0x250)](_0x58db5c[_0x80e80(0x2a7)])[_0x80e80(0x494)]=_0x80e80(0x71b)+_0x80e80(0x535)+_0x80e80(0x3c6)+_0x80e80(0x2b3)+_0x80e80(0x77b)+_0x80e80(0x76e)+_0x10965b+(_0x80e80(0x6c0)+_0x80e80(0x53a)+_0x80e80(0x63d)):this[_0x80e80(0x40a)+_0x80e80(0x566)][_0x80e80(0x618)](_0x58db5c[_0x80e80(0x412)],_0x58db5c[_0x80e80(0x6da)]);}[_0x4fd80d(0x7af)+'o'](_0x5de444){const _0x3a8b54=_0x4fd80d,_0x51d317={'eRzLo':function(_0xd7fd2,_0x5bcdc8){return _0xd7fd2(_0x5bcdc8);}},_0x5a80d6=document[_0x3a8b54(0x5b4)+_0x3a8b54(0x250)](_0x5de444)[_0x3a8b54(0x1f0)],_0x22bceb=_0x51d317[_0x3a8b54(0x41d)](Number,_0x5a80d6);if(_0x51d317[_0x3a8b54(0x41d)](isNaN,_0x22bceb))return null;return _0x22bceb;}[_0x4fd80d(0x2f1)+_0x4fd80d(0x642)](){const _0x758762=_0x4fd80d,_0x518da6={'TcjUC':_0x758762(0x5a4)+_0x758762(0x446)};let _0x17c4c0=document[_0x758762(0x44a)+_0x758762(0x534)](_0x518da6[_0x758762(0x209)]);_0x17c4c0[_0x758762(0x681)](_0xa70a3b=>_0xa70a3b[_0x758762(0x5c6)+'t']='');}[_0x4fd80d(0x727)+_0x4fd80d(0x6b8)](_0x2921a6,_0xc56e12){const _0x18adb5=_0x4fd80d,_0x3f538f={'chMSC':function(_0xda37c7,_0x407695){return _0xda37c7+_0x407695;},'KqHBH':_0x18adb5(0x524),'RFnUx':_0x18adb5(0x4dc)+_0x18adb5(0x3f1)+_0x18adb5(0x639)+_0x18adb5(0x26f)};let _0x51287f=document[_0x18adb5(0x5b4)+_0x18adb5(0x250)](_0x3f538f[_0x18adb5(0x6ef)](_0x2921a6,_0x3f538f[_0x18adb5(0x65c)]));_0x51287f?_0x51287f[_0x18adb5(0x5c6)+'t']=_0xc56e12:console[_0x18adb5(0x708)](_0x3f538f[_0x18adb5(0x508)],_0x2921a6);}[_0x4fd80d(0x502)+_0x4fd80d(0x4a1)](){const _0x387bb2=_0x4fd80d,_0x29f614={'kXXGq':_0x387bb2(0x550)+_0x387bb2(0x53c),'hzLcn':_0x387bb2(0x5e9),'AaBIR':_0x387bb2(0x31c)+_0x387bb2(0x269)};this[_0x387bb2(0x2d5)][_0x387bb2(0x494)]=_0x387bb2(0x339)+_0x387bb2(0x359)+_0x387bb2(0x286)+_0x387bb2(0x551)+_0x387bb2(0x4f0)+_0x387bb2(0x3ec)+_0x387bb2(0x220)+_0x387bb2(0x5d4)+_0x387bb2(0x55a)+_0x387bb2(0x631)+_0x387bb2(0x6a2)+_0x387bb2(0x330)+_0x387bb2(0x1df)+_0x387bb2(0x3a7)+_0x387bb2(0x6ab)+_0x387bb2(0x490)+_0x387bb2(0x408)+_0x387bb2(0x245)+_0x387bb2(0x4a1)+_0x387bb2(0x58a)+_0x387bb2(0x314)+_0x387bb2(0x6ed)+_0x387bb2(0x4f2)+_0x387bb2(0x77c)+_0x387bb2(0x2dc)+_0x387bb2(0x3ae)+_0x387bb2(0x221)+_0x387bb2(0x396)+_0x387bb2(0x652)+_0x387bb2(0x6aa)+_0x387bb2(0x6f4)+_0x387bb2(0x222)+_0x387bb2(0x580)+_0x387bb2(0x56a)+_0x387bb2(0x794)+_0x387bb2(0x403)+_0x387bb2(0x58b)+_0x387bb2(0x497)+_0x387bb2(0x3b3)+_0x387bb2(0x4e3)+_0x387bb2(0x363)+_0x387bb2(0x74c)+_0x387bb2(0x3d1)+_0x387bb2(0x2e8)+_0x387bb2(0x20d)+_0x387bb2(0x35a)+_0x387bb2(0x632)+_0x387bb2(0x4ef),document[_0x387bb2(0x5b4)+_0x387bb2(0x250)](_0x29f614[_0x387bb2(0x5ac)])[_0x387bb2(0x746)+_0x387bb2(0x5d0)](_0x29f614[_0x387bb2(0x6b0)],()=>this[_0x387bb2(0x5dd)+_0x387bb2(0x5fe)+_0x387bb2(0x2e2)]()),document[_0x387bb2(0x5b4)+_0x387bb2(0x250)](_0x29f614[_0x387bb2(0x3a9)])[_0x387bb2(0x746)+_0x387bb2(0x5d0)](_0x29f614[_0x387bb2(0x6b0)],()=>this[_0x387bb2(0x317)+'nu']());}[_0x4fd80d(0x5dd)+_0x4fd80d(0x5fe)+_0x4fd80d(0x2e2)](){const _0x3329f3=_0x4fd80d,_0x5e6f48={'lUZNu':_0x3329f3(0x537)+'o','LsDHF':function(_0x24d772,_0x106871){return _0x24d772===_0x106871;},'dpRhh':_0x3329f3(0x4cb)+_0x3329f3(0x2df)+_0x3329f3(0x6b5)+_0x3329f3(0x1e6)+_0x3329f3(0x3d2),'OGtYK':function(_0x5383db,_0x558e0a){return _0x5383db<=_0x558e0a;},'pVKGH':_0x3329f3(0x556)+_0x3329f3(0x6a3)+_0x3329f3(0x246)+_0x3329f3(0x4d6),'yAqRO':_0x3329f3(0x61e)+_0x3329f3(0x7a7)},_0x4d64a4=document[_0x3329f3(0x5b4)+_0x3329f3(0x250)](_0x5e6f48[_0x3329f3(0x754)]),_0x52dd78=this[_0x3329f3(0x7af)+'o'](_0x5e6f48[_0x3329f3(0x754)]);this[_0x3329f3(0x2f1)+_0x3329f3(0x642)]();if(_0x5e6f48[_0x3329f3(0x30d)](_0x52dd78,null)){this[_0x3329f3(0x727)+_0x3329f3(0x6b8)](_0x5e6f48[_0x3329f3(0x754)],_0x5e6f48[_0x3329f3(0x59c)]);return;}if(!Number[_0x3329f3(0x48a)](_0x52dd78)||_0x5e6f48[_0x3329f3(0x72d)](_0x52dd78,0x6b*-0x55+-0x26ad+-0xc5e*-0x6)){this[_0x3329f3(0x727)+_0x3329f3(0x6b8)](_0x5e6f48[_0x3329f3(0x754)],_0x5e6f48[_0x3329f3(0x5d3)]);return;}const _0x6fce87=this[_0x3329f3(0x61f)](_0x52dd78),_0x243c10=_0x6fce87?_0x3329f3(0x2b3)+_0x3329f3(0x1e8)+_0x3329f3(0x76e)+_0x52dd78+(_0x3329f3(0x680)+_0x3329f3(0x742)+_0x3329f3(0x56b)):_0x3329f3(0x2b3)+_0x3329f3(0x6cf)+_0x3329f3(0x649)+_0x52dd78+(_0x3329f3(0x266)+_0x3329f3(0x5c3)+_0x3329f3(0x228));document[_0x3329f3(0x5b4)+_0x3329f3(0x250)](_0x5e6f48[_0x3329f3(0x66a)])[_0x3329f3(0x494)]=_0x3329f3(0x2e6)+_0x243c10+_0x3329f3(0x5ae);}[_0x4fd80d(0x61f)](_0x40dc17){const _0x3130d0=_0x4fd80d,_0x377f8c={'SLYVG':function(_0x13c06f,_0x4dd1eb){return _0x13c06f<=_0x4dd1eb;},'gIKrv':function(_0x3ea483,_0x2e3885){return _0x3ea483<=_0x2e3885;},'eKRPV':function(_0x42c663,_0x4982fe){return _0x42c663===_0x4982fe;},'wJcrU':function(_0x254b23,_0x5d1820){return _0x254b23%_0x5d1820;},'JdNtT':function(_0x353bdd,_0x8e404e){return _0x353bdd*_0x8e404e;},'nsDpp':function(_0x40785c,_0x2c40a9){return _0x40785c+_0x2c40a9;},'lDtmZ':function(_0x1e3c2e,_0x58a019){return _0x1e3c2e===_0x58a019;},'ozxvu':function(_0x5933fa,_0x27c9ca){return _0x5933fa%_0x27c9ca;},'sUgAI':function(_0x679449,_0x7c4923){return _0x679449===_0x7c4923;}};if(_0x377f8c[_0x3130d0(0x52c)](_0x40dc17,0xeb*0xa+0x1*0x1ce1+0x2*-0x1307))return![];if(_0x377f8c[_0x3130d0(0x391)](_0x40dc17,0x14a*-0x5+-0x50b+0xb80))return!![];if(_0x377f8c[_0x3130d0(0x4e9)](_0x377f8c[_0x3130d0(0x3f7)](_0x40dc17,-0x7*-0x373+-0x19fa+0x1d7),0x1eb9+-0x2*0x1191+0x469)||_0x377f8c[_0x3130d0(0x4e9)](_0x377f8c[_0x3130d0(0x3f7)](_0x40dc17,0x2554+-0x2081+0x268*-0x2),0x3a*-0x29+0x1ecf+-0x1585))return![];for(let _0x10d9d9=-0x24ed+0x75b+0x1d97;_0x377f8c[_0x3130d0(0x52c)](_0x377f8c[_0x3130d0(0x2d8)](_0x10d9d9,_0x10d9d9),_0x40dc17);_0x10d9d9=_0x377f8c[_0x3130d0(0x658)](_0x10d9d9,0x11*0x45+-0x1291+0xe02)){if(_0x377f8c[_0x3130d0(0x29b)](_0x377f8c[_0x3130d0(0x6bd)](_0x40dc17,_0x10d9d9),0x1b71+-0x1*0x1d03+0x192)||_0x377f8c[_0x3130d0(0x79a)](_0x377f8c[_0x3130d0(0x3f7)](_0x40dc17,_0x377f8c[_0x3130d0(0x658)](_0x10d9d9,-0x1ca7+-0xdf5*-0x1+-0x3ad*-0x4)),-0x24b7+0xa*-0x26+0x2633))return![];}return!![];}[_0x4fd80d(0x7af)+'o'](_0x2e91d6){const _0xfec51f=_0x4fd80d,_0x3209b5={'yDpoa':function(_0x1f69de,_0x2fa5d8){return _0x1f69de(_0x2fa5d8);},'RKYbO':function(_0x2470cc,_0x33e58d){return _0x2470cc(_0x33e58d);}},_0x3bb871=document[_0xfec51f(0x5b4)+_0xfec51f(0x250)](_0x2e91d6)[_0xfec51f(0x1f0)],_0x556918=_0x3209b5[_0xfec51f(0x382)](Number,_0x3bb871);if(_0x3209b5[_0xfec51f(0x50a)](isNaN,_0x556918))return null;return _0x556918;}[_0x4fd80d(0x2f1)+_0x4fd80d(0x642)](){const _0x1f7160=_0x4fd80d,_0x5f005c={'QOyZU':_0x1f7160(0x5a4)+_0x1f7160(0x446)},_0x5ee4e9=document[_0x1f7160(0x44a)+_0x1f7160(0x534)](_0x5f005c[_0x1f7160(0x43f)]);_0x5ee4e9[_0x1f7160(0x681)](_0x27c93f=>_0x27c93f[_0x1f7160(0x5c6)+'t']='');}[_0x4fd80d(0x727)+_0x4fd80d(0x6b8)](_0x11acca,_0x120838){const _0x129548=_0x4fd80d,_0x3ae0a6={'CSelU':function(_0x1285ab,_0x4776f0){return _0x1285ab+_0x4776f0;},'NAxEj':_0x129548(0x524),'BKpND':_0x129548(0x4dc)+_0x129548(0x3f1)+_0x129548(0x639)+_0x129548(0x26f)},_0x4eab15=document[_0x129548(0x5b4)+_0x129548(0x250)](_0x3ae0a6[_0x129548(0x5b1)](_0x11acca,_0x3ae0a6[_0x129548(0x7aa)]));_0x4eab15?_0x4eab15[_0x129548(0x5c6)+'t']=_0x120838:console[_0x129548(0x708)](_0x3ae0a6[_0x129548(0x536)],_0x11acca);}[_0x4fd80d(0x39d)+_0x4fd80d(0x3c3)](){const _0x5712d6=_0x4fd80d,_0x14f72d={'QAATN':_0x5712d6(0x665)+_0x5712d6(0x66b),'WqTqY':_0x5712d6(0x5e9),'XirGv':_0x5712d6(0x31c)+_0x5712d6(0x269)};this[_0x5712d6(0x2d5)][_0x5712d6(0x494)]=_0x5712d6(0x339)+_0x5712d6(0x244)+_0x5712d6(0x62e)+_0x5712d6(0x48b)+_0x5712d6(0x593)+_0x5712d6(0x691)+_0x5712d6(0x3f3)+_0x5712d6(0x438)+_0x5712d6(0x211)+_0x5712d6(0x1dc)+_0x5712d6(0x629)+_0x5712d6(0x32c)+_0x5712d6(0x740)+_0x5712d6(0x5d1)+_0x5712d6(0x748)+_0x5712d6(0x37e)+_0x5712d6(0x1fb)+_0x5712d6(0x4e4)+_0x5712d6(0x63b)+_0x5712d6(0x6de)+_0x5712d6(0x489)+_0x5712d6(0x255)+_0x5712d6(0x299)+_0x5712d6(0x329)+_0x5712d6(0x5c2)+_0x5712d6(0x59e)+_0x5712d6(0x3a6)+_0x5712d6(0x61d)+_0x5712d6(0x678)+_0x5712d6(0x6e7)+_0x5712d6(0x216)+_0x5712d6(0x443)+_0x5712d6(0x341)+_0x5712d6(0x5f6)+_0x5712d6(0x300)+_0x5712d6(0x2d1)+_0x5712d6(0x5b7)+_0x5712d6(0x58c)+_0x5712d6(0x320)+_0x5712d6(0x770)+_0x5712d6(0x69a)+_0x5712d6(0x338)+_0x5712d6(0x36e)+_0x5712d6(0x655)+_0x5712d6(0x1ff)+_0x5712d6(0x27c)+_0x5712d6(0x625)+_0x5712d6(0x329)+_0x5712d6(0x5c2)+_0x5712d6(0x59e)+_0x5712d6(0x763)+_0x5712d6(0x236)+_0x5712d6(0x45b)+_0x5712d6(0x664)+_0x5712d6(0x436)+_0x5712d6(0x405)+_0x5712d6(0x439)+_0x5712d6(0x43b)+_0x5712d6(0x2c0)+_0x5712d6(0x4e1)+_0x5712d6(0x26e)+_0x5712d6(0x247)+_0x5712d6(0x61e)+_0x5712d6(0x512)+_0x5712d6(0x62d)+_0x5712d6(0x757)+_0x5712d6(0x5e7)+_0x5712d6(0x700)+'\x09',document[_0x5712d6(0x5b4)+_0x5712d6(0x250)](_0x14f72d[_0x5712d6(0x4da)])[_0x5712d6(0x746)+_0x5712d6(0x5d0)](_0x14f72d[_0x5712d6(0x332)],()=>this[_0x5712d6(0x7a5)+_0x5712d6(0x471)]()),document[_0x5712d6(0x5b4)+_0x5712d6(0x250)](_0x14f72d[_0x5712d6(0x3f0)])[_0x5712d6(0x746)+_0x5712d6(0x5d0)](_0x14f72d[_0x5712d6(0x332)],()=>this[_0x5712d6(0x317)+'nu']());}[_0x4fd80d(0x7a5)+_0x4fd80d(0x471)](){const _0x3d96b6=_0x4fd80d,_0x1b3150={'qZtnq':_0x3d96b6(0x72e),'BHPom':_0x3d96b6(0x2b0),'lkYec':function(_0x5070eb,_0x2409f2){return _0x5070eb===_0x2409f2;},'XWlZs':_0x3d96b6(0x765)+_0x3d96b6(0x3b2)+_0x3d96b6(0x764)+_0x3d96b6(0x2ab),'rnizN':_0x3d96b6(0x5a0)+_0x3d96b6(0x451)+_0x3d96b6(0x72c)+_0x3d96b6(0x513)+_0x3d96b6(0x40e),'KVTUB':function(_0x3bdfbb,_0xe095c9){return _0x3bdfbb<=_0xe095c9;},'XeCPY':_0x3d96b6(0x6ae)+_0x3d96b6(0x74f)+_0x3d96b6(0x1da),'mnxZC':function(_0x23e0af,_0x1cea4e){return _0x23e0af<=_0x1cea4e;},'fqXUA':function(_0x34a19b,_0x24678c){return _0x34a19b>_0x24678c;},'uQQOl':_0x3d96b6(0x785)+_0x3d96b6(0x5ff)+_0x3d96b6(0x722)+_0x3d96b6(0x27b)+_0x3d96b6(0x2fe)+_0x3d96b6(0x251),'bGUPL':function(_0x1862dc,_0x104bf2){return _0x1862dc/_0x104bf2;},'wAKLU':function(_0x218c5b,_0x3e4541){return _0x218c5b*_0x3e4541;},'zJTBg':_0x3d96b6(0x61e)+_0x3d96b6(0x215),'egXFg':_0x3d96b6(0x54f)},_0x4eb5f9=this[_0x3d96b6(0x7af)+'o'](_0x1b3150[_0x3d96b6(0x3ac)]),_0x4148a7=this[_0x3d96b6(0x7af)+'o'](_0x1b3150[_0x3d96b6(0x3e3)]);this[_0x3d96b6(0x2f1)+_0x3d96b6(0x642)]();if(_0x1b3150[_0x3d96b6(0x706)](_0x4eb5f9,null)){this[_0x3d96b6(0x727)+_0x3d96b6(0x6b8)](_0x1b3150[_0x3d96b6(0x3ac)],_0x1b3150[_0x3d96b6(0x5c9)]);return;}if(_0x1b3150[_0x3d96b6(0x706)](_0x4148a7,null)){this[_0x3d96b6(0x727)+_0x3d96b6(0x6b8)](_0x1b3150[_0x3d96b6(0x3e3)],_0x1b3150[_0x3d96b6(0x2fb)]);return;}if(_0x1b3150[_0x3d96b6(0x33f)](_0x4eb5f9,-0x1*0x152a+0x199f+-0x475)){this[_0x3d96b6(0x727)+_0x3d96b6(0x6b8)](_0x1b3150[_0x3d96b6(0x3ac)],_0x1b3150[_0x3d96b6(0x69d)]);return;}if(_0x1b3150[_0x3d96b6(0x5f2)](_0x4148a7,-0x2574+-0x1a69+-0x3fdd*-0x1)||_0x1b3150[_0x3d96b6(0x68d)](_0x4148a7,-0x347*-0x7+-0xb*0x9c+-0x103a)){this[_0x3d96b6(0x727)+_0x3d96b6(0x6b8)](_0x1b3150[_0x3d96b6(0x3e3)],_0x1b3150[_0x3d96b6(0x4c2)]);return;}const _0x18244e=_0x1b3150[_0x3d96b6(0x237)](_0x4eb5f9,_0x1b3150[_0x3d96b6(0x334)](_0x4148a7,_0x4148a7)),_0x1c4d24=this[_0x3d96b6(0x71c)+_0x3d96b6(0x6c1)](_0x18244e);document[_0x3d96b6(0x5b4)+_0x3d96b6(0x250)](_0x1b3150[_0x3d96b6(0x587)])[_0x3d96b6(0x494)]=_0x3d96b6(0x242)+_0x3d96b6(0x470)+_0x3d96b6(0x2c6)+_0x3d96b6(0x46f)+_0x3d96b6(0x42c)+_0x18244e[_0x3d96b6(0x638)](-0x2217+0x1c32+0x5e7)[_0x3d96b6(0x417)+_0x3d96b6(0x4ab)](_0x1b3150[_0x3d96b6(0x4eb)])+(_0x3d96b6(0x6f0)+_0x3d96b6(0x258)+_0x3d96b6(0x316)+_0x3d96b6(0x4f3)+_0x3d96b6(0x393)+_0x3d96b6(0x47b)+_0x3d96b6(0x549)+_0x3d96b6(0x358)+_0x3d96b6(0x2c5)+_0x3d96b6(0x420))+_0x1c4d24+(_0x3d96b6(0x79b)+_0x3d96b6(0x3af));}[_0x4fd80d(0x71c)+_0x4fd80d(0x6c1)](_0x421a71){const _0x295b55=_0x4fd80d,_0x16721b={'KccOv':function(_0x5c6255,_0x395cb3){return _0x5c6255<_0x395cb3;},'tzwhS':_0x295b55(0x227)+_0x295b55(0x28d),'IxkZX':function(_0x52aeaa,_0x111901){return _0x52aeaa>=_0x111901;},'inWog':function(_0x2f990f,_0x339333){return _0x2f990f<_0x339333;},'DojcD':_0x295b55(0x295)+'l.','IrMYa':_0x295b55(0x380),'AbJPs':function(_0x133ce0,_0x129386){return _0x133ce0>=_0x129386;},'ICjDK':_0x295b55(0x5fd)+_0x295b55(0x413),'VrmPg':function(_0x142316,_0x325df8){return _0x142316>=_0x325df8;},'FWyLF':function(_0x11fd97,_0x39353f){return _0x11fd97<_0x39353f;},'hGRft':_0x295b55(0x5fd)+_0x295b55(0x78a),'Uivfl':_0x295b55(0x5fd)+_0x295b55(0x721)};let _0x1c09ae='';if(_0x16721b[_0x295b55(0x737)](_0x421a71,0x21c4*-0x1+-0x5*0x21d+0x2c67+0.5))_0x1c09ae=_0x16721b[_0x295b55(0x2b1)];else{if(_0x16721b[_0x295b55(0x619)](_0x421a71,-0x5a*0xf+0x1875+0x131d*-0x1+0.5)&&_0x16721b[_0x295b55(0x200)](_0x421a71,0x2c6*0xd+-0x603*-0x1+-0x29f8))_0x1c09ae=_0x16721b[_0x295b55(0x709)];else{if(_0x16721b[_0x295b55(0x619)](_0x421a71,-0x19c9+0x7b9*0x1+0x1229*0x1)&&_0x16721b[_0x295b55(0x737)](_0x421a71,0x10b8+-0x1a35+0x99b))_0x1c09ae=_0x16721b[_0x295b55(0x2fa)];else{if(_0x16721b[_0x295b55(0x5a3)](_0x421a71,0x2e*0xae+-0x1*0xfe+-0x1e28)&&_0x16721b[_0x295b55(0x737)](_0x421a71,-0x9d*0x13+0x1*0xfb5+-0x3eb))_0x1c09ae=_0x16721b[_0x295b55(0x506)];else _0x16721b[_0x295b55(0x752)](_0x421a71,-0x59+-0x5d*0x47+-0x1f*-0xd9)&&_0x16721b[_0x295b55(0x6cb)](_0x421a71,0x4cd*0x6+-0x6*-0x345+0x2*-0x1822)?_0x1c09ae=_0x16721b[_0x295b55(0x724)]:_0x1c09ae=_0x16721b[_0x295b55(0x2c1)];}}}return _0x1c09ae;}[_0x4fd80d(0x7af)+'o'](_0x3409f2){const _0x121cd7=_0x4fd80d,_0x3d6869={'ZhmxZ':function(_0x48d514,_0x5e2fdb){return _0x48d514(_0x5e2fdb);},'lhZwT':function(_0x458912,_0x44ec6d){return _0x458912(_0x44ec6d);}},_0x5de4a4=document[_0x121cd7(0x5b4)+_0x121cd7(0x250)](_0x3409f2)[_0x121cd7(0x1f0)],_0x58fd3a=_0x3d6869[_0x121cd7(0x56d)](Number,_0x5de4a4);if(_0x3d6869[_0x121cd7(0x427)](isNaN,_0x58fd3a))return null;return _0x58fd3a;}[_0x4fd80d(0x2f1)+_0x4fd80d(0x642)](){const _0x5a5f18=_0x4fd80d,_0xf7dba6={'IqGKG':_0x5a5f18(0x5a4)+_0x5a5f18(0x446)},_0x2f2d35=document[_0x5a5f18(0x44a)+_0x5a5f18(0x534)](_0xf7dba6[_0x5a5f18(0x5b0)]);_0x2f2d35[_0x5a5f18(0x681)](_0x1c2181=>_0x1c2181[_0x5a5f18(0x5c6)+'t']='');}[_0x4fd80d(0x727)+_0x4fd80d(0x6b8)](_0x4fc730,_0x54d09c){const _0x423bb1=_0x4fd80d,_0x2f728e={'cdAMe':function(_0x23bb66,_0x51de14){return _0x23bb66+_0x51de14;},'ohSqL':_0x423bb1(0x524),'VdPOe':_0x423bb1(0x4dc)+_0x423bb1(0x3f1)+_0x423bb1(0x639)+_0x423bb1(0x26f)},_0x34bb31=document[_0x423bb1(0x5b4)+_0x423bb1(0x250)](_0x2f728e[_0x423bb1(0x1fe)](_0x4fc730,_0x2f728e[_0x423bb1(0x71e)]));_0x34bb31?_0x34bb31[_0x423bb1(0x5c6)+'t']=_0x54d09c:console[_0x423bb1(0x708)](_0x2f728e[_0x423bb1(0x4ad)],_0x4fc730);}[_0x4fd80d(0x33e)+_0x4fd80d(0x34d)](){const _0x37ad95=_0x4fd80d,_0x530ee7={'bzOIx':_0x37ad95(0x42d)+'tn','rUYOg':_0x37ad95(0x5e9),'uHwDj':_0x37ad95(0x31c)+_0x37ad95(0x269)};this[_0x37ad95(0x2d5)][_0x37ad95(0x494)]=_0x37ad95(0x339)+_0x37ad95(0x4bc)+_0x37ad95(0x21e)+_0x37ad95(0x435)+_0x37ad95(0x4b9)+_0x37ad95(0x3ec)+_0x37ad95(0x220)+_0x37ad95(0x5d4)+_0x37ad95(0x345)+_0x37ad95(0x569)+_0x37ad95(0x6e3)+_0x37ad95(0x33a)+_0x37ad95(0x2f0)+_0x37ad95(0x5fb)+_0x37ad95(0x615)+_0x37ad95(0x3c8)+_0x37ad95(0x774)+_0x37ad95(0x33c)+_0x37ad95(0x2e9)+_0x37ad95(0x48f)+_0x37ad95(0x6de)+_0x37ad95(0x489)+_0x37ad95(0x255)+_0x37ad95(0x318)+_0x37ad95(0x732)+_0x37ad95(0x288)+_0x37ad95(0x43a)+_0x37ad95(0x3bd)+_0x37ad95(0x3c9)+_0x37ad95(0x3a1)+_0x37ad95(0x386)+_0x37ad95(0x434)+_0x37ad95(0x409)+_0x37ad95(0x4fe)+_0x37ad95(0x47e)+_0x37ad95(0x6c6)+_0x37ad95(0x4bb)+_0x37ad95(0x46e)+_0x37ad95(0x409)+_0x37ad95(0x4f7)+_0x37ad95(0x2bb)+_0x37ad95(0x452)+_0x37ad95(0x4b5)+_0x37ad95(0x62c)+_0x37ad95(0x6b1)+_0x37ad95(0x2e3)+_0x37ad95(0x373)+_0x37ad95(0x2ef)+_0x37ad95(0x6ad)+_0x37ad95(0x5cf)+_0x37ad95(0x623)+_0x37ad95(0x5ea)+_0x37ad95(0x3a4)+_0x37ad95(0x22e)+_0x37ad95(0x3fb)+_0x37ad95(0x3fc)+_0x37ad95(0x715)+_0x37ad95(0x6e5)+_0x37ad95(0x589)+_0x37ad95(0x29f)+_0x37ad95(0x7a6)+_0x37ad95(0x6f2)+_0x37ad95(0x718)+_0x37ad95(0x20a)+_0x37ad95(0x714)+_0x37ad95(0x62a)+_0x37ad95(0x483)+_0x37ad95(0x4b4)+_0x37ad95(0x2bb)+_0x37ad95(0x4a6)+_0x37ad95(0x3cc)+_0x37ad95(0x1e5)+_0x37ad95(0x44b)+_0x37ad95(0x384)+_0x37ad95(0x5fc)+_0x37ad95(0x697)+_0x37ad95(0x5cf)+_0x37ad95(0x623)+_0x37ad95(0x57f)+_0x37ad95(0x235)+_0x37ad95(0x357)+_0x37ad95(0x46a)+_0x37ad95(0x633)+_0x37ad95(0x253)+_0x37ad95(0x4df)+_0x37ad95(0x3d7)+_0x37ad95(0x3f9)+_0x37ad95(0x6a4)+_0x37ad95(0x2f3)+_0x37ad95(0x292)+_0x37ad95(0x437)+_0x37ad95(0x2db)+_0x37ad95(0x530)+_0x37ad95(0x5e1)+_0x37ad95(0x3de)+_0x37ad95(0x271)+_0x37ad95(0x4ec)+_0x37ad95(0x260)+_0x37ad95(0x52a)+_0x37ad95(0x47a)+(_0x37ad95(0x59b)+_0x37ad95(0x1ed)+_0x37ad95(0x70f)+_0x37ad95(0x4ba)+_0x37ad95(0x1d9)+_0x37ad95(0x4a5)),document[_0x37ad95(0x5b4)+_0x37ad95(0x250)](_0x530ee7[_0x37ad95(0x789)])[_0x37ad95(0x746)+_0x37ad95(0x5d0)](_0x530ee7[_0x37ad95(0x5f8)],()=>this[_0x37ad95(0x7a5)+_0x37ad95(0x478)]()),document[_0x37ad95(0x5b4)+_0x37ad95(0x250)](_0x530ee7[_0x37ad95(0x616)])[_0x37ad95(0x746)+_0x37ad95(0x5d0)](_0x530ee7[_0x37ad95(0x5f8)],()=>this[_0x37ad95(0x317)+'nu']());}[_0x4fd80d(0x7a5)+_0x4fd80d(0x478)](){const _0x392eaf=_0x4fd80d,_0x550732={'luPPD':_0x392eaf(0x473)+'a','ibPTI':_0x392eaf(0x769)+_0x392eaf(0x698),'xnLfG':function(_0xd01307,_0x7f3039){return _0xd01307(_0x7f3039);},'IsjTZ':function(_0x5728a9,_0x2a1030){return _0x5728a9===_0x2a1030;},'frFbQ':_0x392eaf(0x53d)+_0x392eaf(0x6c5)+_0x392eaf(0x45c)+_0x392eaf(0x475),'sZCvh':_0x392eaf(0x4aa)+_0x392eaf(0x1e1)+_0x392eaf(0x1dd),'ybwlD':function(_0x573d94,_0x5e8e77){return _0x573d94(_0x5e8e77);},'CahId':function(_0x355a4f,_0x36efdc){return _0x355a4f<_0x36efdc;},'AEDqz':function(_0x140ccc,_0x399ff7){return _0x140ccc>_0x399ff7;},'wxPqp':_0x392eaf(0x725)+_0x392eaf(0x2c9)+_0x392eaf(0x6b3),'IJAGi':function(_0x46b75d,_0x389d11){return _0x46b75d+_0x389d11;},'PARBG':function(_0x261ec6,_0x5ba865){return _0x261ec6/_0x5ba865;},'xZODO':function(_0x3cb58f,_0x4919f2){return _0x3cb58f*_0x4919f2;},'YszJw':function(_0x33b6f4,_0x54bb64){return _0x33b6f4/_0x54bb64;},'SaFUY':function(_0x430ff3,_0x45545a){return _0x430ff3-_0x45545a;},'eJeZN':function(_0x39606f,_0x37d1af){return _0x39606f/_0x37d1af;},'RXNej':function(_0x43ab7c,_0x414329){return _0x43ab7c*_0x414329;},'EvJoD':function(_0x354a71,_0x38365f){return _0x354a71-_0x38365f;},'tHPKD':function(_0x235af1,_0x24fa97){return _0x235af1-_0x24fa97;},'jaBCD':function(_0x4a4db2,_0x1c54cc){return _0x4a4db2+_0x1c54cc;},'OEycY':function(_0x216ac8,_0xc4fba2){return _0x216ac8/_0xc4fba2;},'YPRoz':function(_0x640e49,_0x42d2a5){return _0x640e49-_0x42d2a5;},'TiezD':_0x392eaf(0x624)+_0x392eaf(0x4a7)+_0x392eaf(0x4c6)+_0x392eaf(0x3d4)},_0x4d67c6=this[_0x392eaf(0x7af)+'o'](_0x550732[_0x392eaf(0x29e)]),_0x5eb17e=document[_0x392eaf(0x5b4)+_0x392eaf(0x250)](_0x550732[_0x392eaf(0x262)]),_0x1f39ea=_0x550732[_0x392eaf(0x529)](parseInt,_0x5eb17e[_0x392eaf(0x1f0)]);this[_0x392eaf(0x2f1)+_0x392eaf(0x642)]();if(_0x550732[_0x392eaf(0x454)](_0x4d67c6,null)){this[_0x392eaf(0x727)+_0x392eaf(0x6b8)](_0x550732[_0x392eaf(0x29e)],_0x550732[_0x392eaf(0x38a)]);return;}if(_0x550732[_0x392eaf(0x454)](_0x5eb17e[_0x392eaf(0x1f0)],'')){this[_0x392eaf(0x727)+_0x392eaf(0x6b8)](_0x550732[_0x392eaf(0x262)],_0x550732[_0x392eaf(0x5bf)]);return;}if(_0x550732[_0x392eaf(0x496)](isNaN,_0x1f39ea)||_0x550732[_0x392eaf(0x3cd)](_0x1f39ea,0x2*-0xfcb+0x1a5b+0x53c)||_0x550732[_0x392eaf(0x73c)](_0x1f39ea,0x7*0x4af+-0xa3c+-0x4f*0x49)){this[_0x392eaf(0x727)+_0x392eaf(0x6b8)](_0x550732[_0x392eaf(0x262)],_0x550732[_0x392eaf(0x4a0)]);return;}let _0x32cf8b,_0x48c425,_0x470950;switch(_0x1f39ea){case 0x2*-0xbe4+-0x3*-0x8b4+-0x253:_0x32cf8b=_0x550732[_0x392eaf(0x773)](_0x550732[_0x392eaf(0x3bf)](_0x550732[_0x392eaf(0x28c)](_0x4d67c6,-0x108b+-0x3*0x195+-0x67*-0x35),0x202a+0x32*0x9f+-0x3f33),0x15d1+0x214d+-0x36fe),_0x48c425='°C',_0x470950='°F';break;case 0x313*0xb+0x15*-0x4f+-0x42*0x6a:_0x32cf8b=_0x550732[_0x392eaf(0x773)](_0x4d67c6,0xa78*-0x3+0x14*0x8f+-0x85*-0x29+0.14999999999997726),_0x48c425='°C',_0x470950='K';break;case-0x1*0x1d97+0x1fb9+-0x21f:_0x32cf8b=_0x550732[_0x392eaf(0x1e9)](_0x550732[_0x392eaf(0x28c)](_0x550732[_0x392eaf(0x315)](_0x4d67c6,-0x874+0x19da+-0x1146),-0x277*0x2+-0x1f*-0x3d+0x4*-0x9c),0x1*0x2462+-0xa39+-0x344*0x8),_0x48c425='°F',_0x470950='°C';break;case 0x59*-0x1+0x576+0xf*-0x57:_0x32cf8b=_0x550732[_0x392eaf(0x773)](_0x550732[_0x392eaf(0x2b5)](_0x550732[_0x392eaf(0x1e7)](_0x550732[_0x392eaf(0x460)](_0x4d67c6,0x67*0x25+0x13e4+-0xb8d*0x3),-0x3ac*0x5+0xf8d+0x2d4),-0x861+0x116b+0x1*-0x901),0x124f+0x6*0x5f9+-0x3514+0.14999999999997726),_0x48c425='°F',_0x470950='K';break;case-0x3*0x867+-0xbad+-0x3*-0xc4d:_0x32cf8b=_0x550732[_0x392eaf(0x31d)](_0x4d67c6,-0x165f+0x489+-0x64d*-0x3+0.14999999999997726),_0x48c425='K',_0x470950='°C';break;case-0x260d+0x263*-0x5+0xad*0x4a:_0x32cf8b=_0x550732[_0x392eaf(0x75d)](_0x550732[_0x392eaf(0x5c8)](_0x550732[_0x392eaf(0x1e7)](_0x550732[_0x392eaf(0x207)](_0x4d67c6,-0x1b*0x16e+0x10f*-0x15+0x3de6+0.14999999999997726),-0x1*-0x1b1+-0x103*0x3+0x1*0x161),-0xeed+-0x7d3*-0x3+-0x887),0x587+-0x19*-0x151+-0x265*0x10),_0x48c425='K',_0x470950='°F';break;default:this[_0x392eaf(0x727)+_0x392eaf(0x6b8)](_0x550732[_0x392eaf(0x262)],_0x550732[_0x392eaf(0x705)]);return;}this[_0x392eaf(0x3ed)+_0x392eaf(0x636)+_0x392eaf(0x647)](_0x4d67c6,_0x48c425,_0x32cf8b,_0x470950);}[_0x4fd80d(0x3ed)+_0x4fd80d(0x636)+_0x4fd80d(0x647)](_0x578e44,_0x32bfe8,_0x1e6856,_0xc1d64b){const _0x3f943c=_0x4fd80d,_0x26273e={'HEWnz':_0x3f943c(0x61e)+_0x3f943c(0x27a),'jMfQa':_0x3f943c(0x54f)};document[_0x3f943c(0x5b4)+_0x3f943c(0x250)](_0x26273e[_0x3f943c(0x51a)])[_0x3f943c(0x494)]=_0x3f943c(0x242)+_0x3f943c(0x26b)+_0x3f943c(0x761)+_0x3f943c(0x3cf)+_0x3f943c(0x376)+_0x578e44[_0x3f943c(0x638)](0x1921+-0x1*0xb9b+-0xd85)[_0x3f943c(0x417)+_0x3f943c(0x4ab)](_0x26273e[_0x3f943c(0x39e)])+(_0x3f943c(0x233)+_0x3f943c(0x5ca)+_0x3f943c(0x4b6)+_0x3f943c(0x376))+_0x32bfe8+(_0x3f943c(0x5e6)+_0x3f943c(0x465)+_0x3f943c(0x2b3)+_0x3f943c(0x256)+_0x3f943c(0x387)+_0x3f943c(0x1f2))+_0x1e6856[_0x3f943c(0x638)](0xe2e+-0x13*-0xff+-0x13*0x1be)[_0x3f943c(0x417)+_0x3f943c(0x4ab)](_0x26273e[_0x3f943c(0x39e)])+(_0x3f943c(0x233)+_0x3f943c(0x5ca)+_0x3f943c(0x516)+_0x3f943c(0x5f9))+_0xc1d64b+(_0x3f943c(0x6f0)+_0x3f943c(0x69e));}[_0x4fd80d(0x7af)+'o'](_0x56312d){const _0x5137c4=_0x4fd80d,_0x259dfd={'xHayS':function(_0x362a8c,_0x4e0f93){return _0x362a8c(_0x4e0f93);}},_0x5e4083=document[_0x5137c4(0x5b4)+_0x5137c4(0x250)](_0x56312d)[_0x5137c4(0x1f0)],_0x373a3a=_0x259dfd[_0x5137c4(0x2e1)](Number,_0x5e4083);if(_0x259dfd[_0x5137c4(0x2e1)](isNaN,_0x373a3a))return null;return _0x373a3a;}[_0x4fd80d(0x2f1)+_0x4fd80d(0x642)](){const _0x2b6ff6=_0x4fd80d,_0x44ee03={'FvgjV':_0x2b6ff6(0x5a4)+_0x2b6ff6(0x446)},_0x361568=document[_0x2b6ff6(0x44a)+_0x2b6ff6(0x534)](_0x44ee03[_0x2b6ff6(0x546)]);_0x361568[_0x2b6ff6(0x681)](_0x1a62e6=>_0x1a62e6[_0x2b6ff6(0x5c6)+'t']='');}[_0x4fd80d(0x727)+_0x4fd80d(0x6b8)](_0x1772a2,_0x1be129){const _0x4d75b6=_0x4fd80d,_0x563725={'mTVOY':function(_0x853b5c,_0x31ee8b){return _0x853b5c+_0x31ee8b;},'ggBpK':_0x4d75b6(0x524),'sFjEu':_0x4d75b6(0x4dc)+_0x4d75b6(0x3f1)+_0x4d75b6(0x639)+_0x4d75b6(0x26f)},_0x3acaa8=document[_0x4d75b6(0x5b4)+_0x4d75b6(0x250)](_0x563725[_0x4d75b6(0x350)](_0x1772a2,_0x563725[_0x4d75b6(0x481)]));_0x3acaa8?_0x3acaa8[_0x4d75b6(0x5c6)+'t']=_0x1be129:console[_0x4d75b6(0x708)](_0x563725[_0x4d75b6(0x60c)],_0x1772a2);}[_0x4fd80d(0x65f)+_0x4fd80d(0x4e7)](){const _0x58fa6c=_0x4fd80d,_0x173df5={'dQurO':function(_0x5667ef,_0x397793){return _0x5667ef<=_0x397793;},'lPqLz':_0x58fa6c(0x31c)+_0x58fa6c(0x480),'BYMAl':_0x58fa6c(0x5e9)};let _0x28f203=_0x58fa6c(0x242)+_0x58fa6c(0x716)+_0x58fa6c(0x1e4)+_0x58fa6c(0x242)+_0x58fa6c(0x25d)+_0x58fa6c(0x76f)+_0x58fa6c(0x1f3)+_0x58fa6c(0x797)+_0x58fa6c(0x54e)+_0x58fa6c(0x360)+_0x58fa6c(0x3e4)+_0x58fa6c(0x360)+_0x58fa6c(0x360)+_0x58fa6c(0x21f)+_0x58fa6c(0x360)+_0x58fa6c(0x45e)+_0x58fa6c(0x65d)+_0x58fa6c(0x487)+_0x58fa6c(0x360)+_0x58fa6c(0x360)+_0x58fa6c(0x42e)+_0x58fa6c(0x40b)+_0x58fa6c(0x360)+_0x58fa6c(0x360)+_0x58fa6c(0x74a)+_0x58fa6c(0x53f)+_0x58fa6c(0x225)+_0x58fa6c(0x360)+_0x58fa6c(0x797)+_0x58fa6c(0x792)+_0x58fa6c(0x675)+_0x58fa6c(0x360)+_0x58fa6c(0x3b5)+_0x58fa6c(0x360)+_0x58fa6c(0x325)+_0x58fa6c(0x6f9)+_0x58fa6c(0x360)+_0x58fa6c(0x5ec)+'\x20\x20';for(let _0x1e742a=-0x1d8b*-0x1+0xd6+-0x1e61;_0x173df5[_0x58fa6c(0x311)](_0x1e742a,-0x15*0x116+-0x1ff3+0x1ba*0x20);_0x1e742a++){_0x28f203+=this[_0x58fa6c(0x788)+_0x58fa6c(0x5d5)+'I'](_0x1e742a);}_0x28f203+=_0x58fa6c(0x71b)+_0x58fa6c(0x2b8)+_0x58fa6c(0x24f)+_0x58fa6c(0x4af)+_0x58fa6c(0x7a8)+_0x58fa6c(0x50e)+_0x58fa6c(0x775)+_0x58fa6c(0x4d4)+_0x58fa6c(0x201)+_0x58fa6c(0x49a)+_0x58fa6c(0x2aa)+_0x58fa6c(0x576)+_0x58fa6c(0x3a5),this[_0x58fa6c(0x2d5)][_0x58fa6c(0x494)]=_0x28f203,document[_0x58fa6c(0x5b4)+_0x58fa6c(0x250)](_0x173df5[_0x58fa6c(0x302)])[_0x58fa6c(0x746)+_0x58fa6c(0x5d0)](_0x173df5[_0x58fa6c(0x6fb)],()=>this[_0x58fa6c(0x317)+'nu']());}[_0x4fd80d(0x788)+_0x4fd80d(0x5d5)+'I'](_0x31e7e4){const _0x335341=_0x4fd80d,_0x12f05d=String[_0x335341(0x240)+'de'](_0x31e7e4),_0x39ae8d=_0x31e7e4[_0x335341(0x362)](-0x1*0x13fa+-0x156d+-0x2977*-0x1)[_0x335341(0x6b7)+'e'](),_0xb39da5=_0x31e7e4[_0x335341(0x362)](-0xad4+-0x7*-0x3f5+-0x10d7);return _0x335341(0x242)+_0x335341(0x2bc)+_0x335341(0x4ac)+_0x31e7e4+(_0x335341(0x2cb)+_0x335341(0x797)+'d>')+this[_0x335341(0x70b)+_0x335341(0x627)+'II'](_0x12f05d,_0x31e7e4)+(_0x335341(0x2cb)+_0x335341(0x797)+'d>')+_0x39ae8d+(_0x335341(0x2cb)+_0x335341(0x797)+'d>')+_0xb39da5+(_0x335341(0x2cb)+_0x335341(0x285)+_0x335341(0x76b));}[_0x4fd80d(0x70b)+_0x4fd80d(0x627)+'II'](_0x16c4bd,_0x34e0d0){const _0x444664=_0x4fd80d,_0x44d463={'rDFoe':function(_0xd7aca9,_0x6b905b){return _0xd7aca9<_0x6b905b;},'sqUCv':function(_0x34f623,_0x56d0fe){return _0x34f623===_0x56d0fe;}};return _0x44d463[_0x444664(0x646)](_0x34e0d0,-0x2175+-0x1f67*-0x1+-0x6*-0x5d)||_0x44d463[_0x444664(0x4f8)](_0x34e0d0,0x426+0x7*-0x35a+0x13cf)?_0x444664(0x2b3)+_0x444664(0x5f3)+_0x444664(0x431)+_0x444664(0x3e5)+this[_0x444664(0x3e0)+_0x444664(0x1f4)+'II'](_0x34e0d0)+_0x444664(0x241)+_0x34e0d0+_0x444664(0x6f8):_0x16c4bd;}[_0x4fd80d(0x3e0)+_0x4fd80d(0x1f4)+'II'](_0x56bb83){const _0x3da499=_0x4fd80d,_0x2c76b8={'fsUha':_0x3da499(0x772),'HUNJu':_0x3da499(0x55d)+_0x3da499(0x2f9)+'g)','tXRAm':_0x3da499(0x3eb)+_0x3da499(0x5e2),'ISIod':_0x3da499(0x41c)+_0x3da499(0x2e7),'AMzKH':_0x3da499(0x561)+_0x3da499(0x5db)+_0x3da499(0x3b8),'ZJoLJ':_0x3da499(0x479)+_0x3da499(0x22d),'iYEbg':_0x3da499(0x2c7)+_0x3da499(0x50d)+')','rbFuv':_0x3da499(0x4c0),'HeJBd':_0x3da499(0x223)+_0x3da499(0x79f),'IRoNK':_0x3da499(0x540),'mbCXz':_0x3da499(0x640)+_0x3da499(0x406),'KjlOn':_0x3da499(0x361)+_0x3da499(0x38d),'AATlE':_0x3da499(0x48e)+_0x3da499(0x406),'ARTCd':_0x3da499(0x2dd)+_0x3da499(0x77f),'VIcIT':_0x3da499(0x776)+_0x3da499(0x3f2),'LxLOD':_0x3da499(0x424)+_0x3da499(0x281),'osXLg':_0x3da499(0x650)+_0x3da499(0x3d8)+'e)','vjiWJ':_0x3da499(0x4e2)+_0x3da499(0x5bd)+'1)','dzGlH':_0x3da499(0x786)+_0x3da499(0x5bd)+'2)','uWkzK':_0x3da499(0x462)+_0x3da499(0x5bd)+'3)','qESOc':_0x3da499(0x57e)+_0x3da499(0x5bd)+'4)','PXwdZ':_0x3da499(0x24b)+_0x3da499(0x719)+_0x3da499(0x73d),'peTHi':_0x3da499(0x6c7)+_0x3da499(0x2a3)+'e)','KLEQX':_0x3da499(0x577)+_0x3da499(0x5db)+_0x3da499(0x277)+')','cfNMs':_0x3da499(0x4f6)+'l)','fRcSi':_0x3da499(0x50f)+_0x3da499(0x637),'UhjmW':_0x3da499(0x4b0)+_0x3da499(0x39b),'UGGqm':_0x3da499(0x641)+'e)','QvYdR':_0x3da499(0x758)+_0x3da499(0x683),'vKonC':_0x3da499(0x662)+_0x3da499(0x69b),'NyDrf':_0x3da499(0x57a)+_0x3da499(0x4fb)+')','lyyRF':_0x3da499(0x213)+_0x3da499(0x683),'sQFem':_0x3da499(0x38b)+'e)'},_0x45c588={0x0:_0x2c76b8[_0x3da499(0x2f7)],0x1:_0x2c76b8[_0x3da499(0x702)],0x2:_0x2c76b8[_0x3da499(0x68a)],0x3:_0x2c76b8[_0x3da499(0x20b)],0x4:_0x2c76b8[_0x3da499(0x2bf)],0x5:_0x2c76b8[_0x3da499(0x411)],0x6:_0x2c76b8[_0x3da499(0x270)],0x7:_0x2c76b8[_0x3da499(0x654)],0x8:_0x2c76b8[_0x3da499(0x4f4)],0x9:_0x2c76b8[_0x3da499(0x333)],0xa:_0x2c76b8[_0x3da499(0x779)],0xb:_0x2c76b8[_0x3da499(0x699)],0xc:_0x2c76b8[_0x3da499(0x3e2)],0xd:_0x2c76b8[_0x3da499(0x3db)],0xe:_0x2c76b8[_0x3da499(0x4f5)],0xf:_0x2c76b8[_0x3da499(0x73b)],0x10:_0x2c76b8[_0x3da499(0x507)],0x11:_0x2c76b8[_0x3da499(0x23d)],0x12:_0x2c76b8[_0x3da499(0x71f)],0x13:_0x2c76b8[_0x3da499(0x402)],0x14:_0x2c76b8[_0x3da499(0x2b2)],0x15:_0x2c76b8[_0x3da499(0x5c4)],0x16:_0x2c76b8[_0x3da499(0x605)],0x17:_0x2c76b8[_0x3da499(0x385)],0x18:_0x2c76b8[_0x3da499(0x6eb)],0x19:_0x2c76b8[_0x3da499(0x3e8)],0x1a:_0x2c76b8[_0x3da499(0x243)],0x1b:_0x2c76b8[_0x3da499(0x6d9)],0x1c:_0x2c76b8[_0x3da499(0x5a8)],0x1d:_0x2c76b8[_0x3da499(0x351)],0x1e:_0x2c76b8[_0x3da499(0x39c)],0x1f:_0x2c76b8[_0x3da499(0x34b)],0x7f:_0x2c76b8[_0x3da499(0x1de)]};return _0x45c588[_0x56bb83]||_0x3da499(0x272)+_0x3da499(0x3d5)+_0x56bb83;}[_0x4fd80d(0x7af)+'o'](_0x450004,_0x4e7a61=![]){const _0x2d7bf3=_0x4fd80d,_0x2930d4={'OdpiS':function(_0x2e833c,_0x3f2d42){return _0x2e833c===_0x3f2d42;},'GUYgX':_0x2d7bf3(0x33b)+_0x2d7bf3(0x611)+_0x2d7bf3(0x790)+_0x2d7bf3(0x2cc)+_0x2d7bf3(0x57b)+_0x2d7bf3(0x3d2),'FMuUw':_0x2d7bf3(0x708),'iwALm':function(_0x4496f3,_0x432aa3){return _0x4496f3(_0x432aa3);},'LFmcd':function(_0x116188,_0x4651dd){return _0x116188(_0x4651dd);}};let _0x2ccf26=document[_0x2d7bf3(0x5b4)+_0x2d7bf3(0x250)](_0x450004)[_0x2d7bf3(0x1f0)];if(_0x2930d4[_0x2d7bf3(0x738)](_0x2ccf26[_0x2d7bf3(0x539)](),'')||_0x4e7a61&&!/^-?\d+$/[_0x2d7bf3(0x731)](_0x2ccf26)||!_0x4e7a61&&!/^-?\d+(\.\d+)?$/[_0x2d7bf3(0x731)](_0x2ccf26))return this[_0x2d7bf3(0x40a)+_0x2d7bf3(0x566)][_0x2d7bf3(0x618)](_0x2930d4[_0x2d7bf3(0x674)],_0x2930d4[_0x2d7bf3(0x3dd)]),null;return _0x4e7a61?_0x2930d4[_0x2d7bf3(0x78f)](parseInt,_0x2ccf26):_0x2930d4[_0x2d7bf3(0x294)](parseFloat,_0x2ccf26);}}let app;function initializeApp(){const _0x417498=_0x4fd80d,_0x3b993b={'zaIlN':_0x417498(0x423)+_0x417498(0x2c2)+_0x417498(0x67f),'KyAmc':_0x417498(0x4d1),'cJhAB':_0x417498(0x71a),'nQVMW':_0x417498(0x263),'xlAtt':_0x417498(0x526),'vOVQA':_0x417498(0x7a2)+_0x417498(0x522),'CpiOn':function(_0x460497,_0x3665ae){return _0x460497===_0x3665ae;},'KEEqN':_0x417498(0x778)};app=new App(),app[_0x417498(0x282)]();const _0x4a4c5e=document[_0x417498(0x5b4)+_0x417498(0x250)](_0x3b993b[_0x417498(0x3c7)]);_0x3b993b[_0x417498(0x3e7)](localStorage[_0x417498(0x280)](_0x3b993b[_0x417498(0x710)]),_0x3b993b[_0x417498(0x67a)])&&(document[_0x417498(0x6e2)][_0x417498(0x2b7)][_0x417498(0x456)](_0x3b993b[_0x417498(0x23b)]),_0x4a4c5e[_0x417498(0x448)]=!![]),_0x4a4c5e[_0x417498(0x746)+_0x417498(0x5d0)](_0x3b993b[_0x417498(0x50c)],()=>{const _0x6db83c=_0x417498;console[_0x6db83c(0x297)](_0x3b993b[_0x6db83c(0x22b)],_0x4a4c5e[_0x6db83c(0x448)]),_0x4a4c5e[_0x6db83c(0x448)]?(document[_0x6db83c(0x6e2)][_0x6db83c(0x2b7)][_0x6db83c(0x456)](_0x3b993b[_0x6db83c(0x23b)]),localStorage[_0x6db83c(0x771)](_0x3b993b[_0x6db83c(0x710)],_0x3b993b[_0x6db83c(0x67a)])):(document[_0x6db83c(0x6e2)][_0x6db83c(0x2b7)][_0x6db83c(0x447)](_0x3b993b[_0x6db83c(0x23b)]),localStorage[_0x6db83c(0x771)](_0x3b993b[_0x6db83c(0x710)],_0x3b993b[_0x6db83c(0x49d)]));});}function loadMathLibrary(){const _0x410fde=_0x4fd80d,_0x38128a={'WSdtz':_0x410fde(0x495)+_0x410fde(0x5ee),'iRRYb':function(_0x26fe9a){return _0x26fe9a();},'VAGHm':_0x410fde(0x749)+_0x410fde(0x6dd)+_0x410fde(0x704),'cJcWD':_0x410fde(0x712),'QXRSO':_0x410fde(0x7a9)+_0x410fde(0x70c)+_0x410fde(0x61a)+_0x410fde(0x6cc)+_0x410fde(0x3fd)+_0x410fde(0x5cc)+_0x410fde(0x37b)},_0x342adb=document[_0x410fde(0x503)+_0x410fde(0x2b9)](_0x38128a[_0x410fde(0x7a4)]);_0x342adb[_0x410fde(0x208)]=_0x38128a[_0x410fde(0x635)],_0x342adb[_0x410fde(0x377)]=()=>{const _0x35d9e0=_0x410fde;console[_0x35d9e0(0x297)](_0x38128a[_0x35d9e0(0x525)]),_0x38128a[_0x35d9e0(0x450)](initializeApp);},_0x342adb[_0x410fde(0x24d)]=()=>{const _0x4d2a84=_0x410fde;console[_0x4d2a84(0x708)](_0x38128a[_0x4d2a84(0x734)]);},document[_0x410fde(0x46c)][_0x410fde(0x419)+'d'](_0x342adb);}function _0x5d2b(_0x5253f6,_0x5740a0){const _0x346eb3=_0x155b();return _0x5d2b=function(_0x2a167d,_0x24727a){_0x2a167d=_0x2a167d-(-0x22df+0x3*-0xa3e+0x4371);let _0x14b4a9=_0x346eb3[_0x2a167d];return _0x14b4a9;},_0x5d2b(_0x5253f6,_0x5740a0);}document[_0x4fd80d(0x746)+_0x4fd80d(0x5d0)](_0x4fd80d(0x2d9)+_0x4fd80d(0x28e),()=>{const _0x154dd7=_0x4fd80d,_0x4cd0f8={'zJLle':function(_0x184d13){return _0x184d13();}};_0x4cd0f8[_0x154dd7(0x1ef)](loadMathLibrary);});
+// --------------------------------------------------
+//  FUNÇÕES AUXILIARES 
+// --------------------------------------------------
+
+/**
+ * @namespace utils
+ * @description Funções utilitárias para sanitização de entrada e formatação de números.
+ */
+const utils = {
+	/**
+	 * Sanitiza a entrada do usuário para prevenir ataques XSS.
+	 * @memberof utils
+	 * @param {string} input - A entrada do usuário a ser sanitizada.
+	 * @returns {string} A entrada sanitizada.
+	 */
+	sanitizeInput: function (input) {
+		return input.toString().replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+	},
+	/**
+	 * Formata um número para o padrão brasileiro.
+	 * @memberof utils
+	 * @param {number} number - O número a ser formatado.
+	 * @returns {string} O número formatado.
+	 */
+	formatNumber: function (number) {
+		return number.toLocaleString('pt-BR');
+	}
+};
+
+/**
+ * @namespace Logger
+ * @description Funções para logging de mensagens em diferentes níveis.
+ */
+const Logger = {
+	levels: {
+		ERROR: 'ERROR',
+		INFO: 'INFO'
+	},
+	/**
+	 * Registra uma mensagem no console.
+	 * @memberof Logger
+	 * @param {string} level - O nível da mensagem (ex: 'ERROR', 'INFO').
+	 * @param {string} message - A mensagem a ser registrada.
+	 * @param {object} data - Dados adicionais a serem registrados.
+	 */
+	log: function (level, message, data = {}) {
+		console.log(`[${level}] ${message}`, data);
+	}
+};
+
+
+/**
+ * @class Cache
+ * @description Implementa uma funcionalidade simples de cache.
+ */
+class Cache {
+	constructor() {
+		/** @private */
+		this.storage = {};
+	}
+
+	/**
+	 * Obtém um valor do cache.
+	 * @param {string} key - A chave do valor.
+	 * @returns {*} O valor armazenado ou null se não encontrado ou expirado.
+	 */
+	get(key) {
+		const item = this.storage[key];
+		if (item && Date.now() < item.expires) {
+			return item.value;
+		}
+		delete this.storage[key];
+		return null;
+	}
+
+	/**
+	 * Define um valor no cache.
+	 * @param {string} key - A chave do valor.
+	 * @param {*} value - O valor a ser armazenado.
+	 * @param {number} [ttl=3600000] - Tempo de vida em milissegundos (padrão: 1 hora).
+	 */
+	set(key, value, ttl = 3600000) {
+		this.storage[key] = {
+			value,
+			expires: Date.now() + ttl
+		};
+	}
+}
+
+// --------------------------------------------------
+//  NOTIFICAÇÕES
+// --------------------------------------------------
+/**
+ * @class Notifications
+ * @description Gerencia a exibição de notificações.
+ */
+class Notifications {
+	constructor() {
+		/** @private */
+		this.queue = [];
+		/** @private */
+		this.isDisplaying = false;
+	}
+
+	/**
+	 * Mostra uma notificação.
+	 * @param {string} message - A mensagem a ser exibida.
+	 * @param {string} [type='info'] - O tipo da notificação ('info', 'error').
+	 */
+	show(message, type = 'info') {
+		this.queue.push({
+			message,
+			type
+		});
+		if (!this.isDisplaying) {
+			this.displayNext();
+		}
+	}
+
+	/**
+	 * @private
+	 */
+	displayNext() {
+		if (this.queue.length === 0) {
+			this.isDisplaying = false;
+			return;
+		}
+
+		this.isDisplaying = true;
+		const next = this.queue.shift();
+		const notification = document.createElement('div');
+		notification.className = `notification ${next.type}`;
+		notification.setAttribute('role', 'alert');
+		notification.innerHTML = `
+            <span class="message">${utils.sanitizeInput(next.message)}</span>
+            <button class="close" aria-label="Fechar">&times;</button>
+        `;
+
+		document.body.appendChild(notification);
+
+		setTimeout(() => {
+			notification.classList.add('fade-out');
+			setTimeout(() => {
+				notification.remove();
+				this.displayNext();
+			}, 300);
+		}, 5000);
+
+		notification.querySelector('.close').addEventListener('click', () => {
+			notification.remove();
+			this.displayNext();
+		});
+	}
+}
+
+// --------------------------------------------------
+//  JOGO DA FORCA
+// --------------------------------------------------
+/**
+ * @class Forca
+ * @description Gerencia a lógica do Jogo da Forca.
+ */
+class Forca {
+	constructor(contentDiv) {
+		this.contentDiv = contentDiv;
+		this.palavras = ["javascript", "html", "css", "programacao", "computador", "internet"];
+		this.palavraSecreta = this.escolherPalavra();
+		this.letrasErradas = [];
+		this.letrasCorretas = [];
+		this.maxErros = 6;
+		this.erros = 0;
+	}
+
+	/**
+	 * @private
+	 */
+	escolherPalavra() {
+		return this.palavras[Math.floor(Math.random() * this.palavras.length)];
+	}
+
+	/**
+	 * Atualiza o estado do jogo na interface.
+	 */
+	atualizarJogo() {
+		this.contentDiv.innerHTML = `
+            <div id="forca-container">
+                <h2>Jogo da Forca</h2>
+                <p id="forca-palavra">${this.palavraSecreta.split('').map(letra => this.letrasCorretas.includes(letra) ? letra : '_').join(' ')}</p>
+                <p id="forca-letras-erradas">Letras Erradas: ${this.letrasErradas.join(', ')}</p>
+                <p>Erros: ${this.erros}/${this.maxErros}</p>
+                <input type="text" id="letra-input" maxlength="1" placeholder="Digite uma letra">
+                <button id="btn-adivinhar">Adivinhar</button>
+                <button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
+                <p id="forca-mensagem"></p>
+            </div>
+        `;
+
+		document.getElementById('btn-adivinhar').addEventListener('click', () => this.adivinharLetra());
+		document.getElementById('letra-input').addEventListener('keyup', (event) => {
+			if (event.key === 'Enter') {
+				this.adivinharLetra();
+			}
+		});
+	}
+
+	/**
+	 * @private
+	 */
+	adivinharLetra() {
+		const letraInput = document.getElementById('letra-input');
+		const letra = letraInput.value.toLowerCase();
+		letraInput.value = '';
+
+		if (!letra.match(/[a-z]/i)) {
+			document.getElementById('forca-mensagem').textContent = 'Por favor, digite uma letra válida.';
+			return;
+		}
+
+		if (this.letrasCorretas.includes(letra) || this.letrasErradas.includes(letra)) {
+			document.getElementById('forca-mensagem').textContent = 'Você já tentou essa letra. Tente outra.';
+			return;
+		}
+
+		if (this.palavraSecreta.includes(letra)) {
+			this.letrasCorretas.push(letra);
+		} else {
+			this.letrasErradas.push(letra);
+			this.erros++;
+		}
+
+		this.atualizarJogo();
+
+		if (this.erros === this.maxErros) {
+			document.getElementById('forca-mensagem').textContent = `Você perdeu! A palavra era ${this.palavraSecreta}.`;
+			this.desabilitarJogo();
+		} else if (!document.getElementById('forca-palavra').textContent.includes('_')) {
+			document.getElementById('forca-mensagem').textContent = 'Parabéns! Você ganhou!';
+			this.desabilitarJogo();
+		}
+	}
+
+	/**
+	 * @private
+	 */
+	desabilitarJogo() {
+		document.getElementById('letra-input').disabled = true;
+		document.getElementById('btn-adivinhar').disabled = true;
+	}
+}
+
+// --------------------------------------------------
+//  JOGO DA VELHA - Inteligência Aprimorada
+// --------------------------------------------------
+/**
+ * @class JogoDaVelha
+ * @description Gerencia a lógica do Jogo da Velha com IA aprimorada.
+ */
+class JogoDaVelha {
+	constructor(contentDiv) {
+		this.contentDiv = contentDiv;
+		this.currentPlayer = 'X'; // Jogador humano começa como 'X'
+		this.gameBoard = ['', '', '', '', '', '', '', '', '']; // Tabuleiro vazio
+		this.gameActive = true; // Jogo ativo no início
+	}
+
+	/**
+	 * @method renderBoard
+	 * @description Renderiza o tabuleiro do jogo e os elementos da interface.
+	 */
+	renderBoard() {
+		this.contentDiv.innerHTML = `
+	            <div class="jogo-velha-container">
+	                <h2>Jogo da Velha</h2>
+	                <div class="grid"></div>
+	                <div class="status"></div>
+	                <button onclick="app.jogoDaVelha.reiniciarJogo()">Reiniciar Jogo</button>
+	                <button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
+	            </div>
+	        `;
+		const grid = document.querySelector('.grid');
+		for (let i = 0; i < 9; i++) {
+			const cell = document.createElement('div');
+			cell.classList.add('cell');
+			cell.addEventListener('click', () => this.handleClick(i));
+			grid.appendChild(cell);
+		}
+		this.updateStatus();
+	}
+
+	/**
+	 * @method handleClick
+	 * @param {number} index - Índice da célula clicada.
+	 * @description Lida com o clique em uma célula do tabuleiro.
+	 */
+	handleClick(index) {
+		if (this.gameBoard[index] === '' && this.gameActive) {
+			this.gameBoard[index] = this.currentPlayer;
+			this.renderCell(index);
+			if (this.checkWinner()) {
+				this.updateStatus();
+				this.gameActive = false;
+				return;
+			}
+			if (this.isBoardFull()) { // Verifica empate aqui também
+				this.updateStatus();
+				this.gameActive = false;
+				return;
+			}
+			this.togglePlayer();
+			this.updateStatus();
+			if (this.currentPlayer === 'O' && this.gameActive) {
+				setTimeout(() => this.makeComputerMove(), 500);
+			}
+		}
+	}
+
+	/**
+	 * @method renderCell
+	 * @param {number} index - Índice da célula a ser renderizada.
+	 * @description Adiciona a classe do jogador ('X' ou 'O') à célula correspondente no tabuleiro visual.
+	 */
+	renderCell(index) {
+		const cell = document.querySelector(`.grid .cell:nth-child(${index + 1})`);
+		cell.classList.add(this.currentPlayer);
+	}
+
+	/**
+	 * @method togglePlayer
+	 * @description Alterna o jogador atual entre 'X' e 'O'.
+	 */
+	togglePlayer() {
+		this.currentPlayer = this.currentPlayer === 'X' ? 'O' : 'X';
+	}
+
+	/**
+	 * @method checkWinner
+	 * @returns {boolean} - Retorna true se houver um vencedor ou empate, false caso contrário.
+	 * @description Verifica se há um vencedor no jogo ou se o jogo empatou.
+	 */
+	checkWinner() {
+		const winPatterns = [
+			[0, 1, 2], [3, 4, 5], [6, 7, 8], // Linhas
+			[0, 3, 6], [1, 4, 7], [2, 5, 8], // Colunas
+			[0, 4, 8], [2, 4, 6]          // Diagonais
+		];
+
+		for (const pattern of winPatterns) {
+			const [a, b, c] = pattern;
+			if (this.gameBoard[a] && this.gameBoard[a] === this.gameBoard[b] && this.gameBoard[a] === this.gameBoard[c]) {
+				return this.gameBoard[a]; // Retorna o jogador vencedor ('X' ou 'O')
+			}
+		}
+		return null; // Retorna null se não houver vencedor ainda
+	}
+
+	/**
+	 * @method isBoardFull
+	 * @returns {boolean} - Retorna true se o tabuleiro estiver cheio (empate), false caso contrário.
+	 * @description Verifica se todas as células do tabuleiro estão preenchidas.
+	 */
+	isBoardFull() {
+		return this.gameBoard.every(cell => cell !== '');
+	}
+
+
+	/**
+	 * @method updateStatus
+	 * @description Atualiza a mensagem de status do jogo na interface, exibindo o jogador da vez, o vencedor ou empate.
+	 */
+	updateStatus() {
+		if (!this.gameActive) return; // Não atualiza se o jogo não estiver ativo
+
+		const winner = this.checkWinner();
+		const status = document.querySelector('.status');
+
+		if (winner) {
+			status.textContent = `Jogador ${winner} venceu!`; // Exibe o jogador vencedor
+			this.gameActive = false; // Desativa o jogo após vitória
+		} else if (this.isBoardFull()) {
+			status.textContent = 'Empate!'; // Exibe mensagem de empate
+			this.gameActive = false; // Desativa o jogo após empate
+		} else {
+			status.textContent = `Vez do Jogador ${this.currentPlayer}`; // Exibe o jogador atual
+		}
+	}
+
+	/**
+	 * @method makeComputerMove
+	 * @description Determina e executa o movimento do computador ('O') com lógica de IA (nível fácil/médio).
+	 */
+	makeComputerMove() {
+		if (!this.gameActive || this.currentPlayer !== 'O') return; // Impede movimento se o jogo acabou ou não for vez do computador
+
+		let bestMoveIndex = this.getBestMove(); // Obtém o melhor movimento usando a IA
+
+		if (bestMoveIndex !== null) {
+			this.gameBoard[bestMoveIndex] = 'O'; // Faz o movimento no tabuleiro
+			this.renderCell(bestMoveIndex);  // Renderiza o movimento visualmente
+
+			if (this.checkWinner()) {      // Verifica se o computador venceu
+				this.updateStatus();       // Atualiza o status do jogo
+				this.gameActive = false;     // Desativa o jogo se o computador venceu
+				return;
+			}
+			if (this.isBoardFull()) {      // Verifica se o jogo empatou
+				this.updateStatus();       // Atualiza o status para empate
+				this.gameActive = false;     // Desativa o jogo em caso de empate
+				return;
+			}
+
+			this.togglePlayer();         // Passa a vez para o jogador humano
+			this.updateStatus();       // Atualiza a interface para refletir a vez do jogador humano
+		}
+	}
+
+
+	/**
+	 * @method getBestMove
+	 * @returns {number|null} - Retorna o índice do melhor movimento para o computador ou null se não houver movimentos possíveis.
+	 * @description Implementa a lógica de IA para o computador encontrar o melhor movimento, priorizando vitória, bloqueio e jogadas estratégicas.
+	 */
+	getBestMove() {
+		// 1. Tenta vencer: Verifica se o computador pode vencer no próximo movimento
+		for (let i = 0; i < 9; i++) {
+			if (this.gameBoard[i] === '') {
+				this.gameBoard[i] = 'O'; // Simula movimento do computador
+				if (this.checkWinner() === 'O') { // Verifica se este movimento vence
+					this.gameBoard[i] = ''; // Desfaz a simulação
+					return i;                // Retorna o índice para vencer
+				}
+				this.gameBoard[i] = ''; // Desfaz a simulação
+			}
+		}
+
+		// 2. Tenta bloquear: Verifica se o jogador humano pode vencer no próximo movimento e bloqueia
+		for (let i = 0; i < 9; i++) {
+			if (this.gameBoard[i] === '') {
+				this.gameBoard[i] = 'X'; // Simula movimento do jogador humano
+				if (this.checkWinner() === 'X') { // Verifica se o jogador humano venceriathis.gameBoard[i] = ''; // Desfaz a simulação
+					return i;                // Retorna o índice para bloquear
+				}
+				this.gameBoard[i] = ''; // Desfaz a simulação
+			}
+		}
+
+		// 3. Movimento Estratégico: Prioriza o centro, cantos e depois os lados
+		const strategicMoves = [4, 0, 2, 6, 8, 1, 3, 5, 7]; // Centro, Cantos, Lados
+		for (const move of strategicMoves) {
+			if (this.gameBoard[move] === '') {
+				return move; // Retorna o primeiro movimento estratégico disponível
+			}
+		}
+
+		// 4. Fallback: Se nenhum movimento estratégico estiver disponível (não deve acontecer em um jogo normal de Jogo da Velha com IA bem implementada neste nível, mas por segurança)
+		return null; // ou poderia retornar um movimento aleatório de células vazias, se necessário como último recurso. Em teoria, com as prioridades acima, sempre haverá um movimento válido a ser retornado antes de chegar aqui em um jogo de Jogo da Velha que não terminou em empate.
+	}
+
+
+	/**
+	 * @method reiniciarJogo
+	 * @description Reinicia o jogo, resetando o tabuleiro, o jogador atual e o estado do jogo.
+	 */
+	reiniciarJogo() {
+		this.currentPlayer = 'X'; // Jogador 'X' (humano) começa sempre
+		this.gameBoard = ['', '', '', '', '', '', '', '', '']; // Limpa o tabuleiro
+		this.gameActive = true; // Reativa o jogo
+		this.renderBoard(); // Renderiza o tabuleiro vazio novamente
+	}
+}
+
+// --------------------------------------------------
+//  LISTA DE TAREFAS - Inteligência Aprimorada (Refatoração e Melhorias)
+// --------------------------------------------------
+/**
+ * @class ListaDeTarefas
+ * @description Gerencia a lógica da Lista de Tarefas com renderização aprimorada e melhor organização.
+ */
+class ListaDeTarefas {
+	constructor(contentDiv) {
+		this.contentDiv = contentDiv;
+		this.tasks = this.loadTasks(); // Carrega tarefas do localStorage no construtor
+	}
+
+	/**
+	 * @method loadTasks
+	 * @returns {Array<object>} - Array de tarefas carregadas do localStorage ou um array vazio se não houver tarefas salvas.
+	 * @description Carrega as tarefas do localStorage ou inicializa com um array vazio.
+	 */
+	loadTasks() {
+		const storedTasks = localStorage.getItem('tasks');
+		return storedTasks ? JSON.parse(storedTasks) : [];
+	}
+
+	/**
+	 * @method saveTasks
+	 * @description Salva o array de tarefas atual no localStorage.
+	 */
+	saveTasks() {
+		localStorage.setItem('tasks', JSON.stringify(this.tasks));
+	}
+
+	/**
+	 * @method renderTasks
+	 * @description Renderiza a estrutura HTML principal da lista de tarefas e lista as tarefas.
+	 */
+	renderTasks() {
+		this.contentDiv.innerHTML = `
+            <div class="todo-container fade-in">
+                <h2>Lista de Tarefas</h2>
+                <div class="todo-header">
+                    <input type="text" id="taskInput" placeholder="Adicione uma tarefa" aria-label="Nova tarefa">
+                    <button id="addTaskBtn">Adicionar</button>
+                </div>
+                <ul class="todo-list">
+                    ${this.renderTaskListItems()}
+                </ul>
+                <button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
+            </div>
+        `;
+		this.setupEventListeners(); // Configura os event listeners após renderizar o HTML
+	}
+
+	/**
+	 * @method renderTaskListItems
+	 * @private
+	 * @returns {string} - HTML string contendo os list items para cada tarefa.
+	 * @description Gera o HTML para cada item da lista de tarefas baseado no array de tarefas atual.
+	 */
+	renderTaskListItems() {
+		return this.tasks.map((task, index) => `
+            <li class="todo-item">
+                <input type="checkbox" id="task-${index}" ${task.completed ? 'checked' : ''} aria-labelledby="task-label-${index}">
+                <span id="task-label-${index}" class="${task.completed ? 'completed' : ''}">${utils.sanitizeInput(task.text)}</span>
+                <button class="delete-btn" data-index="${index}" aria-label="Excluir tarefa ${task.text}">Excluir</button>
+            </li>`
+		).join(''); // .join('') para converter o array de strings HTML em uma única string
+	}
+
+
+	/**
+	 * @method setupEventListeners
+	 * @private
+	 * @description Configura os event listeners para os botões e checkboxes dentro da lista de tarefas.
+	 */
+	setupEventListeners() {
+		document.getElementById('addTaskBtn').addEventListener('click', () => this.addTask());
+
+		const taskList = document.querySelector('.todo-list');
+		taskList.addEventListener('change', (event) => { // Delegação de eventos para checkboxes
+			if (event.target.type === 'checkbox') {
+				const index = parseInt(event.target.id.split('-')[1], 10); // Extrai o índice do ID
+				this.toggleTask(index);
+			}
+		});
+
+		taskList.addEventListener('click', (event) => { // Delegação de eventos para botões de delete
+			if (event.target.classList.contains('delete-btn')) {
+				const index = parseInt(event.target.dataset.index, 10);
+				this.deleteTask(index);
+			}
+		});
+	}
+
+
+	/**
+	 * @method addTask
+	 * @description Adiciona uma nova tarefa à lista, obtendo o texto do input, validando-o e atualizando a UI e o localStorage.
+	 */
+	addTask() {
+		const taskInput = document.getElementById('taskInput');
+		const taskText = taskInput.value.trim();
+
+		if (!taskText) {
+			alert("Por favor, insira uma tarefa antes de adicionar."); // Feedback amigável para o usuário
+			return; // Impede adicionar tarefa vazia
+		}
+
+		this.tasks.push({ text: taskText, completed: false });
+		this.saveTasks(); // Salva no localStorage após adicionar
+		taskInput.value = ''; // Limpa o input
+		this.updateTaskListUI(); // Atualiza apenas a lista de tarefas na UI
+	}
+
+
+	/**
+	 * @method toggleTask
+	 * @param {number} index - Índice da tarefa a ser alternada (concluída/não concluída).
+	 * @description Marca uma tarefa como concluída ou não concluída, atualizando a UI e o localStorage.
+	 */
+	toggleTask(index) {
+		if (index >= 0 && index < this.tasks.length) { // Validação de índice
+			this.tasks[index].completed = !this.tasks[index].completed;
+			this.saveTasks(); // Salva no localStorage após alterar o estado da tarefa
+			this.updateTaskItemUI(index); // Atualiza apenas o item da tarefa específico na UI
+		} else {
+			console.error('Índice de tarefa inválido:', index); // Log de erro para debug
+		}
+	}
+
+	/**
+	 * @method deleteTask
+	 * @param {number} index - Índice da tarefa a ser excluída.
+	 * @description Exclui uma tarefa da lista, atualizando a UI e o localStorage.
+	 */
+	deleteTask(index) {
+		if (index >= 0 && index < this.tasks.length) { // Validação de índice
+			this.tasks.splice(index, 1);
+			this.saveTasks(); // Salva no localStorage após excluir
+			this.updateTaskListUI(); // Atualiza a lista de tarefas na UI
+		} else {
+			console.error('Índice de tarefa inválido:', index); // Log de erro para debug
+		}
+	}
+
+	/**
+	 * @method updateTaskListUI
+	 * @private
+	 * @description Renderiza novamente apenas a lista de itens de tarefas dentro da UL, de forma eficiente.
+	 */
+	updateTaskListUI() {
+		const taskList = document.querySelector('.todo-list');
+		if (taskList) {
+			taskList.innerHTML = this.renderTaskListItems(); // Atualiza apenas o conteúdo da lista (UL)
+			this.setupEventListenersForListItems(); // Reconfigura event listeners para os novos list items
+		}
+	}
+
+	/**
+	 * @method updateTaskItemUI
+	 * @private
+	 * @param {number} index - Índice do item da tarefa a ser atualizado na UI.
+	 * @description Atualiza um único item da tarefa na UI (e.g., para mudar a classe 'completed').
+	 */
+	updateTaskItemUI(index) {
+		const listItem = document.querySelector(`.todo-list li:nth-child(${index + 1})`);
+		if (listItem) {
+			const task = this.tasks[index];
+			const taskSpan = listItem.querySelector('span');
+			const checkbox = listItem.querySelector('input[type="checkbox"]');
+
+			if (taskSpan) taskSpan.className = task.completed ? 'completed' : ''; // Atualiza a classe do span
+			if (checkbox) checkbox.checked = task.completed; // Atualiza o estado do checkbox
+		}
+	}
+
+	/**
+	 * @method setupEventListenersForListItems
+	 * @private
+	 * @description Configura event listeners especificamente para os itens da lista (checkboxes e delete buttons) após uma renderização parcial da lista.
+	 *              Necessário após substituir o innerHTML da lista para re-ligar os eventos.
+	 * @deprecated  -- Delegação de eventos no `setupEventListeners` tornou isto obsoleto, mantendo por referência ou possível uso futuro.
+	 */
+	setupEventListenersForListItems() { // @deprecated - Tornou-se redundante com a delegação no setupEventListeners principal
+		// Implementação de event listeners para checkboxes e delete buttons em cada item da lista, se necessário em cenários de renderização parcial.
+		// No modelo atual com delegação no 'setupEventListeners', esta função pode não ser mais necessária, mas é mantida como referência ou para cenários de uso futuro
+	}
+}
+
+/* script.js */
+// --------------------------------------------------
+//  CALCULADORA
+// --------------------------------------------------
+/**
+ * @class Calculator
+ * @description Gerencia a lógica da Calculadora.
+ */
+class Calculator {
+	/**
+	 * Cria uma instância da Calculadora.
+	 * @param {object} i18n - Objeto de internacionalização.
+	 * @param {object} contentDiv - Referência ao elemento div de conteúdo
+	 */
+	constructor(i18n, contentDiv) {
+		this.contentDiv = contentDiv;
+		this.i18n = i18n;
+		this.history = [];
+		this.cache = new Cache(); // Supondo que Cache esteja definido em outro lugar se necessário
+		this.mathParser = math; // Usando a biblioteca math.js (inclua na sua HTML)
+	}
+
+	initialize() {
+		this.loadHistory();
+	}
+
+	/**
+	 * Renderiza os botões da calculadora.
+	 * @private
+	 * @returns {string} HTML dos botões.
+	 */
+	renderButtons() {
+		const buttons = [
+			'7', '8', '9', '/',
+			'4', '5', '6', '*',
+			'1', '2', '3', '-',
+			'0', '.', '=', '+',
+			'CE', '%' // Botões adicionados: Clear Entry e Porcentagem
+		];
+
+		return buttons.map(button => {
+			let className = 'calc-button';
+			if (['/', '*', '-', '+', '%'].includes(button)) { // Incluindo '%' como operador
+				className += ' operator';
+			} else if (button === '=') {
+				className += ' equal';
+			} else if (button === 'CE') {
+				className += ' clear-entry'; // Classe para o botão CE
+			}
+
+			return `<button
+                        class="${className}"
+                        data-key="${button}"
+                        aria-label="${button}"
+                    >${button}</button>`;
+		}).join('');
+	}
+
+	/**
+	 * Manipula o clique nos botões da calculadora.
+	 * @param {string} button - O botão que foi clicado.
+	 */
+	handleButtonClick(button) {
+		const display = document.getElementById('display');
+		if (button === '=') {
+			try {
+				const result = this.calculate(display.value);
+				display.value = result;
+			} catch (error) {
+				app.notifications.show(error.message, 'error');
+			}
+		} else if (button === 'CE') {
+			this.clearEntry(); // Limpa a entrada atual
+		} else if (button === '%') {
+			this.handlePercentage(); // Lida com o botão de porcentagem
+		}
+		else {
+			display.value += button;
+		}
+	}
+
+	/**
+	 * Renderiza a interface da calculadora.
+	 * @returns {string} HTML da calculadora.
+	 */
+	render() {
+		return `
+            <div class="calculator-container" role="application">
+                <h2>Calculadora - Parecida com iphone</h2>
+                <div class="calc-display" role="textbox" aria-label="${this.i18n.t('display')}">
+                    <input type="text" id="display" value="0" readonly>
+                </div>
+                <div class="calc-buttons" role="group">
+                    ${this.renderButtons()}
+                </div>
+                <div class="calc-history">
+                    <h3>${this.i18n.t('history')}</h3>
+                    <ul id="calcHistory" role="list"></ul>
+                    <button class="clear-history" onclick="app.calculator.clearHistory()">${this.i18n.t('clearHistory') || 'Limpar Histórico'}</button>
+                </div>
+                <button
+                    onclick="app.voltarAoMenu()"
+                    class="secondary-button"
+                    aria-label="${this.i18n.t('returnToMenu')}"
+                >${this.i18n.t('back')}
+                </button>
+            </div>
+        `;
+	}
+
+	/**
+	 * Calcula o resultado de uma expressão matemática.
+	 * @param {string} expression - A expressão a ser calculada.
+	 * @returns {number} O resultado do cálculo.
+	 * @throws {Error} Se a expressão for inválida.
+	 */
+	calculate(expression) {
+		try {
+			// Substitui a porcentagem pelo seu valor decimal antes de avaliar
+			expression = expression.replace(/%/g, '/100');
+			const result = this.mathParser.evaluate(expression);
+
+			if (!isFinite(result)) {
+				throw new Error(this.i18n.t('calculationError'));
+			}
+
+			this.addToHistory(expression, result);
+			return result;
+		} catch (error) {
+			Logger.log(Logger.levels.ERROR, 'Erro no cálculo', {
+				expression,
+				error
+			});
+			throw new Error(this.i18n.t('calculationError'));
+		}
+	}
+
+	/**
+	 * Adiciona uma expressão e seu resultado ao histórico.
+	 * @param {string} expression - A expressão calculada.
+	 * @param {number} result - O resultado do cálculo.
+	 */
+	addToHistory(expression, result) {
+		const historyItem = {
+			expression,
+			result,
+			timestamp: new Date().toISOString()
+		};
+
+		this.history.unshift(historyItem);
+		this.history = this.history.slice(0, 10); // Manter apenas últimos 10 cálculos
+		this.saveHistory();
+		this.updateHistoryDisplay();
+	}
+
+	/**
+	 * Carrega o histórico do localStorage.
+	 */
+	loadHistory() {
+		try {
+			const saved = localStorage.getItem('calcHistory');
+			if (saved) {
+				this.history = JSON.parse(saved);
+				this.updateHistoryDisplay();
+			}
+		} catch (error) {
+			Logger.log(Logger.levels.ERROR, 'Erro ao carregar histórico', {
+				error
+			});
+		}
+	}
+
+	/**
+	 * Salva o histórico no localStorage.
+	 */
+	saveHistory() {
+		try {
+			localStorage.setItem('calcHistory', JSON.stringify(this.history));
+		} catch (error) {
+			Logger.log(Logger.levels.ERROR, 'Erro ao salvar histórico', {
+				error
+			});
+		}
+	}
+
+	/**
+	 * Atualiza a exibição do histórico na interface.
+	 */
+	updateHistoryDisplay() {
+		const historyList = this.contentDiv.querySelector('.calc-history ul');
+		if (!historyList) return;
+
+		historyList.innerHTML = this.history.map(item => `
+            <li class="history-item" role="listitem">
+                <span class="expression">${utils.sanitizeInput(item.expression)}</span>
+                <span class="separator">=</span>
+                <span class="result">${utils.formatNumber(item.result)}</span>
+                <span class="timestamp">${this.formatTimestamp(item.timestamp)}</span>
+            </li>
+        `).join('');
+
+		// Adiciona um efeito visual ao adicionar um novo item
+		const lastItem = historyList.lastElementChild;
+		if (lastItem) {
+			lastItem.classList.add('new-item');
+			setTimeout(() => {
+				lastItem.classList.remove('new-item');
+			}, 500); // Remove o efeito após 500ms
+		}
+	}
+
+	/**
+	 * Limpa o histórico de cálculos e atualiza a exibição.
+	 */
+	clearHistory() {
+		this.history = [];
+		this.saveHistory();
+		this.updateHistoryDisplay();
+	}
+
+	/**
+	 * Formata o timestamp para um formato mais legível.
+	 * @private
+	 * @param {string} timestamp - O timestamp no formato ISO.
+	 * @returns {string} O timestamp formatado.
+	 */
+	formatTimestamp(timestamp) {
+		const date = new Date(timestamp);
+		return `${date.toLocaleDateString('pt-BR')} ${date.toLocaleTimeString('pt-BR')}`;
+	}
+
+	/**
+	 * Configura os event listeners para os botões da calculadora e do teclado.
+	 */
+	setupEventListeners() {
+		const buttons = this.contentDiv.querySelector('.calc-buttons');
+		if (buttons) {
+			buttons.addEventListener('click', (event) => {
+				const key = event.target.dataset.key;
+				if (key) {
+					this.handleButtonClick(key);
+				}
+			});
+		}
+
+		// Adiciona suporte para entrada via teclado
+		document.addEventListener('keydown', (event) => {
+			this.handleKeyPress(event);
+		});
+	}
+
+	/**
+	 * Manipula a entrada do teclado.
+	 * @param {KeyboardEvent} event - O evento de teclado.
+	 */
+	handleKeyPress(event) {
+		const key = event.key;
+		const validKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '/', '*', '-', '+', '.', '=', '%']; // Adicionado '%' como tecla válida
+
+		if (validKeys.includes(key)) {
+			event.preventDefault();
+			this.handleButtonClick(key === '=' ? '=' : key);
+		} else if (key === 'Enter') {
+			event.preventDefault();
+			this.handleButtonClick('=');
+		} else if (key === 'Backspace') {
+			event.preventDefault();
+			this.handleBackspace();
+		} else if (key === 'Escape') {
+			event.preventDefault();
+			this.clearDisplay();
+		}
+	}
+
+	/**
+	 * Apaga o último caractere do display.
+	 */
+	handleBackspace() {
+		const display = document.getElementById('display');
+		display.value = display.value.slice(0, -1);
+	}
+
+	/**
+	 * Limpa o display da calculadora.
+	 */
+	clearDisplay() {
+		const display = document.getElementById('display');
+		display.value = '0'; // Define o valor para '0' ao invés de vazio
+	}
+
+	/**
+	 * Limpa a entrada atual no display (botão CE).
+	 */
+	clearEntry() {
+		this.clearDisplay(); // No exemplo, CE e Clear Display fazem o mesmo (limpar para '0') - pode ajustar se necessário
+	}
+
+	/**
+	 * Manipula o botão de porcentagem.
+	 */
+	handlePercentage() {
+		const display = document.getElementById('display');
+		let currentValue = parseFloat(display.value);
+		if (!isNaN(currentValue)) {
+			display.value = currentValue / 100; // Divide o valor atual por 100
+			// Ou outra lógica de porcentagem que você desejar implementar
+		}
+	}
+}
+
+
+// --------------------------------------------------
+//  CLASSE ImprovedBlindEqualization (Implementação do Algoritmo de Equalização Cega)
+// --------------------------------------------------
+
+/**
+ * @class ImprovedBlindEqualization
+ * @description Implementa o algoritmo de equalização cega aprimorado.
+ */
+class ImprovedBlindEqualization {
+	/**
+	 * Cria uma instância de ImprovedBlindEqualization.
+	 * @param {number} [stepSize=0.01] - Tamanho do passo inicial.
+	 * @param {number} [alpha=0.1] - Parâmetro de ajuste do fator variável dinâmico.
+	 */
+	constructor(stepSize = 0.01, alpha = 0.1) {
+		this.weights = []; // Pesos do equalizador
+		this.stepSize = stepSize;
+		this.alpha = alpha;
+		this.decisionThreshold = 1; // Limiar de decisão, ajuste conforme a modulação
+	}
+
+	/**
+	 * Inicializa os pesos do equalizador.
+	 * @param {number} numTaps - Número de taps do equalizador.
+	 */
+	initializeWeights(numTaps) {
+		this.weights = Array(numTaps).fill(0);
+		this.weights[0] = 1; // Inicializa o tap central como 1
+	}
+
+	/**
+	 * Equaliza o sinal de entrada.
+	 * @param {number[]} inputSignal - O sinal de entrada a ser equalizado.
+	 * @returns {number[]} O sinal equalizado.
+	 */
+	equalize(inputSignal) {
+		const outputSignal = [];
+		for (let i = 0; i < inputSignal.length; i++) {
+			const inputVector = inputSignal.slice(Math.max(0, i - this.weights.length + 1), i + 1);
+			const reversedInput = inputVector.slice().reverse(); // Inverte o vetor de entrada
+			const paddedInput = Array(this.weights.length - reversedInput.length).fill(0).concat(reversedInput);
+			const output = this.calculateOutput(paddedInput);
+			outputSignal.push(output);
+			this.updateWeights(paddedInput, output);
+		}
+		return outputSignal;
+	}
+
+	/**
+	 * Calcula a saída do equalizador.
+	 * @private
+	 * @param {number[]} input - O vetor de entrada.
+	 * @returns {number} A saída do equalizador.
+	 */
+	calculateOutput(input) {
+		let output = 0;
+		for (let i = 0; i < this.weights.length; i++) {
+			output += this.weights[i] * input[i];
+		}
+		return output;
+	}
+
+	/**
+	 * Atualiza os pesos do equalizador.
+	 * @private
+	 * @param {number[]} input - O vetor de entrada.
+	 * @param {number} output - A saída do equalizador.
+	 */
+	updateWeights(input, output) {
+		const decision = this.makeDecision(output);
+		const error = decision - output;
+
+		// Fator variável dinâmico
+		const dynamicFactor = Math.abs(output) > this.decisionThreshold ? 1 : this.alpha;
+
+		for (let i = 0; i < this.weights.length; i++) {
+			this.weights[i] += dynamicFactor * this.stepSize * error * input[i];
+		}
+	}
+
+	/**
+	 * Toma uma decisão sobre o símbolo de saída.
+	 * @private
+	 * @param {number} output - A saída do equalizador.
+	 * @returns {number} O símbolo decidido.
+	 */
+	makeDecision(output) {
+		// Decisão para QPSK (ajuste conforme a modulação)
+		return output > 0 ? 1 : -1;
+	}
+}
+
+// --------------------------------------------------
+//  CLASSE APP (GERENCIAMENTO DA APLICAÇÃO)
+// --------------------------------------------------
+/**
+ * @class App
+ * @description Classe principal que gerencia a aplicação.
+ */
+class App {
+	constructor() {
+		this.contentDiv = document.getElementById('content'); // ডিফাইন করুন contentDiv
+		/** @type {object} */
+		this.i18n = {
+			t: (key) => {
+				const translations = {
+					'calculator': 'Calculadora',
+					'display': 'Visor',
+					'history': 'Histórico',
+					'returnToMenu': 'Voltar ao Menu',
+					'back': 'Voltar',
+					'calculationError': 'Erro no cálculo'
+					// adicionar outras traduções conforme necessário
+				};
+				return translations[key] || key;
+			}
+		};
+		/** @type {Calculator} */
+		this.calculator = new Calculator(this.i18n, this.contentDiv);
+		this.notifications = new Notifications();
+		this.forca = new Forca(this.contentDiv);
+		this.jogoDaVelha = new JogoDaVelha(this.contentDiv);
+		this.listaDeTarefas = new ListaDeTarefas(this.contentDiv);
+	}
+	/**
+	 * Inicializa a aplicação e configura o menu principal.
+	 */
+	initialize() {
+		this.setupMenu();
+	}
+
+	/**
+	 * Configura os event listeners para o menu principal.
+	 * @private
+	 */
+	setupMenu() {
+		document.querySelectorAll(".menu button").forEach(button => {
+			button.addEventListener("click", () => {
+				const option = parseInt(button.dataset.option);
+
+				switch (option) {
+					case 1:
+						this.exibirOlaMundo();
+						break;
+					case 2:
+						this.lerNome();
+						break;
+					case 3:
+						this.showCalculator();
+						break;
+					case 4:
+						this.calculadoraIdade();
+						break;
+					case 5:
+						this.verificarNumeroPrimo();
+						break;
+					case 6:
+						this.calculadoraIMC();
+						break;
+					case 7:
+						this.conversorTemperatura();
+						break;
+					case 8:
+						this.geradorTabelaASCII();
+						break;
+					case 9:
+						this.showForca();
+						break;
+					case 10:
+						this.showJogoDaVelha();
+						break;
+					case 11:
+						this.showListaDeTarefas();
+						break;
+					case 12:
+						this.contentDiv.innerHTML = "<h2>Saindo do programa... Até mais!</h2>";
+						break;
+					default:
+						this.contentDiv.innerHTML = "<h2>Opção inválida. Tente novamente.</h2>";
+				}
+			});
+		});
+	}
+
+	/**
+	 * Exibe a calculadora.
+	 */
+	showCalculator() {
+		this.contentDiv.innerHTML = this.calculator.render();
+		this.calculator.initialize();
+		this.calculator.setupEventListeners();
+	}
+
+	/**
+	 * Exibe o jogo da forca.
+	 */
+	showForca() {
+		this.forca.atualizarJogo();
+	}
+
+	/**
+	 * Exibe o jogo da velha.
+	 */
+	showJogoDaVelha() {
+		this.jogoDaVelha.renderBoard();
+	}
+
+	/**
+	 * Exibe a lista de tarefas.
+	 */
+	showListaDeTarefas() {
+		this.listaDeTarefas.renderTasks();
+	}
+
+	/**
+	 * Volta ao menu principal.
+	 */
+	voltarAoMenu() {
+		this.contentDiv.innerHTML = "";
+	}
+
+	/**
+	 * Exibe a mensagem de "Olá Mundo!".
+	 */
+	exibirOlaMundo() {
+		this.contentDiv.innerHTML = `
+			<div class="ola-mundo-container">
+				<h2>Olá Mundo!</h2>
+				<button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
+			</div>
+		`;
+	}
+
+	/**
+	 * Solicita e exibe o nome do usuário.
+	 */
+	lerNome() {
+		this.contentDiv.innerHTML = `
+			<div class="ler-nome-container">
+				<div class="input-group">
+					<label for="nome">Digite seu nome:</label>
+					<input type="text" id="nome">
+				</div>
+				<button onclick="app.exibirNome()">Exibir Nome</button>
+				<button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
+				<div id="resultado-nome" class="resultado-mensagem"></div>
+			</div>
+		`;
+	}
+
+	/**
+	 * Exibe o nome digitado pelo usuário.
+	 */
+	exibirNome() {
+		const nome = document.getElementById("nome").value;
+		if (nome.trim() !== "") {
+			document.getElementById("resultado-nome").innerHTML = `
+                <h2>Olá, ${utils.sanitizeInput(nome)}! Seja bem-vindo(a)!</h2>
+            `;
+		} else {
+			this.notifications.show("Nome inválido!", "error");
+		}
+	}
+
+	/**
+ * Solicita e calcula a idade do usuário, com melhorias na interface e validação.
+ */
+	calculadoraIdade() {
+		this.contentDiv.innerHTML = `
+			<div class="calculadora-idade-container">
+				<div class="input-group">
+					<label for="anoNascimento">Ano de Nascimento:</label>
+					<input type="number" id="anoNascimento" placeholder="Ex: 1990">
+					<small class="error-message" id="anoNascimento-error"></small>
+				</div>
+				<div class="input-group">
+					<label for="anoAtual">Ano Atual:</label>
+					<input type="number" id="anoAtual" placeholder="${new Date().getFullYear()}">
+					<small class="error-message" id="anoAtual-error"></small>
+				</div>
+				<button id="calcularIdadeBtn">Calcular Idade</button>
+				<button id="voltarMenuBtn">Voltar ao Menu</button>
+				<div id="resultado-idade" class="resultado-mensagem"></div>
+			</div>
+		`;
+	
+		document.getElementById('calcularIdadeBtn').addEventListener('click', () => this.processarCalculoIdade());
+		document.getElementById('voltarMenuBtn').addEventListener('click', () => this.voltarAoMenu());
+	}
+
+	/**
+ * Processa o cálculo da idade após obter e validar os anos de nascimento e atual.
+ * Este método é chamado ao clicar no botão 'Calcular Idade' na interface.
+ */
+	processarCalculoIdade() {
+		// 1. Obter valores dos campos de input e tentar convertê-los para números.
+		const anoNascimento = this.obterNumero("anoNascimento");
+		const anoAtual = this.obterNumero("anoAtual");
+
+		// 2. Limpar quaisquer mensagens de erro exibidas anteriormente.
+		this.limparMensagensErro();
+
+		// 3. Validar as entradas do usuário:
+		if (anoNascimento === null) {
+			this.mostrarMensagemErro("anoNascimento", "Ano de nascimento inválido. Digite um número.");
+			return; // Aborta o processamento se a entrada for inválida.
+		}
+		if (anoAtual === null) {
+			this.mostrarMensagemErro("anoAtual", "Ano atual inválido. Digite um número.");
+			return; // Aborta o processamento se a entrada for inválida.
+		}
+
+		if (anoNascimento > anoAtual) {
+			this.mostrarMensagemErro("anoNascimento", "O ano de nascimento não pode ser posterior ao ano atual.");
+			this.mostrarMensagemErro("anoAtual", "O ano atual não pode ser anterior ao ano de nascimento.");
+			return; // Aborta se os anos forem logicamente inválidos.
+		}
+
+		const anoCorrente = new Date().getFullYear();
+		if (anoAtual > anoCorrente + 1) { // Limite de segurança para ano atual (considerando o próximo ano como razoável)
+			this.mostrarMensagemErro("anoAtual", `Por favor, insira um ano atual válido (até ${anoCorrente + 1}).`);
+			return; // Aborta se o ano atual for irrealista.
+		}
+
+		// 4. Calcular a idade (somente se todas as validações passarem).
+		const idade = anoAtual - anoNascimento;
+
+		// 5. Exibir o resultado na interface do usuário.
+		if (idade >= 0) {
+			document.getElementById("resultado-idade").innerHTML = `
+            <h2>Sua idade é: <span class="idade-valor">${idade}</span> anos</h2>
+        `;
+		} else {
+			// 6. Caso improvável de idade negativa após validações, exibir mensagem de erro genérica.
+			//    Este bloco deve ser dificilmente atingido pelas validações robustas.
+			this.notifications.show("Erro inesperado ao calcular a idade.", "error");
+		}
+	}
+
+
+	/**
+	 * Obtém o valor de um campo de input pelo ID, tenta convertê-lo para um número,
+	 * e valida se o resultado é realmente um número (não NaN).
+	 *
+	 * @param {string} idDoElemento - O ID do elemento input do qual obter o valor.
+	 * @returns {number|null} - O número obtido do campo de input, ou null se a entrada não for um número válido.
+	 */
+	obterNumero(idDoElemento) {
+		const valorInput = document.getElementById(idDoElemento).value;
+		const numero = Number(valorInput); // Converte a string para um número.
+
+		// 1. Verificar se a conversão resultou em um número válido (não NaN - Not a Number).
+		if (isNaN(numero)) {
+			return null; // Retorna null se a conversão falhar, indicando entrada não numérica.
+		}
+
+		// 2. Retornar o número convertido se for válido.
+		return numero;
+	}
+
+	/**
+	 * Limpa todas as mensagens de erro exibidas.
+	 */
+	limparMensagensErro() {
+		let errorMessages = document.querySelectorAll('.error-message');
+		errorMessages.forEach(message => message.textContent = '');
+	}
+
+	/**
+	 * Exibe uma mensagem de erro abaixo do campo de input especificado.
+	 * @param {string} elementoId - ID do elemento input.
+	 * @param {string} mensagem - Mensagem de erro a ser exibida.
+	 */
+	mostrarMensagemErro(elementoId, mensagem) {
+		let errorElement = document.getElementById(elementoId + "-error");
+		if (errorElement) {
+			errorElement.textContent = mensagem;
+		} else {
+			console.error("Elemento de erro não encontrado para ID:", elementoId);
+		}
+	}
+
+	/**
+ * Inicializa a interface para verificar se um número é primo.
+ * Solicita ao usuário que digite um número inteiro positivo.
+ */
+	verificarNumeroPrimo() {
+		this.contentDiv.innerHTML = `
+			<div class="verificador-primo-container">
+				<div class="input-group">
+					<label for="numeroPrimo">Digite um número inteiro positivo:</label>
+					<input type="number" id="numeroPrimo" placeholder="Ex: 17">
+					<small class="error-message" id="numeroPrimo-error"></small>
+				</div>
+				<button id="verificarPrimoBtn">Verificar</button>
+				<button id="voltarMenuBtn">Voltar ao Menu</button>
+				<div id="resultado-primo" class="resultado-mensagem"></div>
+			</div>
+		`;
+	
+		document.getElementById('verificarPrimoBtn').addEventListener('click', () => this.processarVerificacaoPrimo());
+		document.getElementById('voltarMenuBtn').addEventListener('click', () => this.voltarAoMenu());
+	}
+
+	/**
+	 * Processa a verificação se o número inserido é primo, após validação.
+	 */
+	processarVerificacaoPrimo() {
+		// 1. Obtém o número do input e tenta convertê-lo para número.
+		const numeroInput = document.getElementById("numeroPrimo");
+		const numero = this.obterNumero("numeroPrimo"); // Já retorna null se não for um número válido
+
+		// 2. Limpa mensagens de erro anteriores.
+		this.limparMensagensErro();
+
+		// 3. Validação da entrada:
+		if (numero === null) {
+			this.mostrarMensagemErro("numeroPrimo", "Por favor, digite um número inteiro válido.");
+			return; // Aborta se a entrada não for um número.
+		}
+
+		if (!Number.isInteger(numero) || numero <= 0) {
+			this.mostrarMensagemErro("numeroPrimo", "Digite um número inteiro *positivo*.");
+			return; // Aborta se não for um inteiro positivo.
+		}
+
+		// 4. Verifica se o número é primo.
+		const ehPrimo = this.isPrimo(numero);
+
+		// 5. Exibe o resultado na interface.
+		const resultadoTexto = ehPrimo ? `<span class="primo-valor">${numero}</span> é um número primo.` : `<span class="nao-primo-valor">${numero}</span> não é um número primo.`;
+		document.getElementById("resultado-primo").innerHTML = `<h2>${resultadoTexto}</h2>`;
+	}
+
+	/**
+	 * Determina se um número é primo.
+	 * Implementa uma otimização simples: verifica divisores até a raiz quadrada do número.
+	 * @param {number} numero - O número a ser verificado.
+	 * @returns {boolean} - True se o número for primo, false caso contrário.
+	 */
+	isPrimo(numero) {
+		if (numero <= 1) return false; // Números menores ou iguais a 1 não são primos.
+		if (numero <= 3) return true;  // 2 e 3 são primos.
+
+		// Se divisível por 2 ou 3, não é primo.
+		if (numero % 2 === 0 || numero % 3 === 0) return false;
+
+		// Verifica apenas até a raiz quadrada de 'numero'.
+		// Otimização: incrementa de 6 em 6, verificando i e i+2, pois já excluímos divisíveis por 2 e 3.
+		for (let i = 5; i * i <= numero; i = i + 6) {
+			if (numero % i === 0 || numero % (i + 2) === 0) return false;
+		}
+
+		return true; // Se não encontrou divisores, é primo.
+	}
+
+
+	/**
+	 * Obtém um número do campo de input, validando se é um número.
+	 * Retorna null se não for um número.
+	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 */
+	obterNumero(idDoElemento) {
+		const valorInput = document.getElementById(idDoElemento).value;
+		const numero = Number(valorInput);
+
+		if (isNaN(numero)) {
+			return null;
+		}
+		return numero;
+	}
+
+	/**
+	 * Limpa todas as mensagens de erro exibidas.
+	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 */
+	limparMensagensErro() {
+		const errorMessages = document.querySelectorAll('.error-message');
+		errorMessages.forEach(message => message.textContent = '');
+	}
+
+	/**
+	 * Exibe uma mensagem de erro abaixo do campo de input especificado.
+	 * @param {string} elementoId - ID do elemento input.
+	 * @param {string} mensagem - Mensagem de erro a ser exibida.
+	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 */
+	mostrarMensagemErro(elementoId, mensagem) {
+		const errorElement = document.getElementById(elementoId + "-error");
+		if (errorElement) {
+			errorElement.textContent = mensagem;
+		} else {
+			console.error("Elemento de erro não encontrado para ID:", elementoId);
+		}
+	}
+
+	/**
+ * Inicializa a interface para a calculadora de IMC.
+ * Solicita peso (em kg) e altura (em metros) do usuário.
+ */
+	calculadoraIMC() {
+		this.contentDiv.innerHTML = `
+			<div class="calculadora-imc-container">
+				<div class="input-group">
+					<label for="peso">Digite seu peso (em kg):</label>
+					<input type="number" id="peso" placeholder="Ex: 75">
+					<small class="error-message" id="peso-error"></small>
+				</div>
+				<div class="input-group">
+					<label for="altura">Digite sua altura (em metros):</label>
+					<input type="number" id="altura" placeholder="Ex: 1.75" step="0.01">
+					<small class="error-message" id="altura-error"></small>
+				</div>
+				<button id="calcularIMCBtn">Calcular IMC</button>
+				<button id="voltarMenuBtn">Voltar ao Menu</button>
+				<div id="resultado-imc" class="resultado-mensagem"></div>
+			</div>
+		`;
+	
+		document.getElementById('calcularIMCBtn').addEventListener('click', () => this.processarCalculoIMC());
+		document.getElementById('voltarMenuBtn').addEventListener('click', () => this.voltarAoMenu());
+	}
+
+	/**
+	 * Processa o cálculo do IMC após obter e validar peso e altura.
+	 */
+	processarCalculoIMC() {
+		// 1. Obter valores dos inputs e tentar convertê-los para números.
+		const peso = this.obterNumero("peso");
+		const altura = this.obterNumero("altura");
+
+		// 2. Limpar mensagens de erro anteriores.
+		this.limparMensagensErro();
+
+		// 3. Validação das entradas:
+		if (peso === null) {
+			this.mostrarMensagemErro("peso", "Peso inválido. Digite um número em kg.");
+			return; // Aborta se o peso for inválido.
+		}
+		if (altura === null) {
+			this.mostrarMensagemErro("altura", "Altura inválida. Digite um número em metros.");
+			return; // Aborta se a altura for inválida.
+		}
+
+		if (peso <= 0) {
+			this.mostrarMensagemErro("peso", "Peso deve ser maior que zero.");
+			return; // Aborta se o peso for zero ou negativo.
+		}
+		if (altura <= 0 || altura > 3) { // Altura máxima razoável é 3 metros
+			this.mostrarMensagemErro("altura", "Altura deve ser maior que zero e razoável (máximo 3 metros).");
+			return; // Aborta se a altura for zero, negativa ou irrazoável.
+		}
+
+		// 4. Calcular o IMC.
+		const imc = peso / (altura * altura);
+
+		// 5. Determinar a classificação do IMC.
+		const classificacao = this.classificarIMC(imc);
+
+		// 6. Exibir o resultado na interface do usuário.
+		document.getElementById("resultado-imc").innerHTML = `
+        <h2>Seu IMC é: <span class="imc-valor">${imc.toFixed(2).toLocaleString('pt-BR')}</span></h2>
+        <p class="imc-classificacao">Classificação: <span class="classificacao-valor">${classificacao}</span></p>
+    `;
+	}
+
+	/**
+	 * Classifica o IMC em categorias de peso.
+	 * @param {number} imc - O valor do IMC.
+	 * @returns {string} - A classificação do IMC.
+	 */
+	classificarIMC(imc) {
+		let classificacao = "";
+		if (imc < 18.5) {
+			classificacao = "Abaixo do peso.";
+		} else if (imc >= 18.5 && imc < 25) {
+			classificacao = "Peso normal.";
+		} else if (imc >= 25 && imc < 30) {
+			classificacao = "Sobrepeso.";
+		} else if (imc >= 30 && imc < 35) {
+			classificacao = "Obesidade Grau I";
+		} else if (imc >= 35 && imc < 40) {
+			classificacao = "Obesidade Grau II";
+		} else {
+			classificacao = "Obesidade Grau III";
+		}
+		return classificacao;
+	}
+
+
+	/**
+	 * Obtém um número do campo de input, validando se é um número.
+	 * Retorna null se não for um número.
+	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 */
+	obterNumero(idDoElemento) {
+		const valorInput = document.getElementById(idDoElemento).value;
+		const numero = Number(valorInput);
+
+		if (isNaN(numero)) {
+			return null;
+		}
+		return numero;
+	}
+
+	/**
+	 * Limpa todas as mensagens de erro exibidas.
+	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 */
+	limparMensagensErro() {
+		const errorMessages = document.querySelectorAll('.error-message');
+		errorMessages.forEach(message => message.textContent = '');
+	}
+
+	/**
+	 * Exibe uma mensagem de erro abaixo do campo de input especificado.
+	 * @param {string} elementoId - ID do elemento input.
+	 * @param {string} mensagem - Mensagem de erro a ser exibida.
+	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 */
+	mostrarMensagemErro(elementoId, mensagem) {
+		const errorElement = document.getElementById(elementoId + "-error");
+		if (errorElement) {
+			errorElement.textContent = mensagem;
+		} else {
+			console.error("Elemento de erro não encontrado para ID:", elementoId);
+		}
+	}
+
+	/**
+ * Inicializa a interface para o conversor de temperatura.
+ * Solicita a temperatura e o tipo de conversão desejado.
+ */
+	conversorTemperatura() {
+		this.contentDiv.innerHTML = `
+			<div class="conversor-temperatura-container"> <div class="input-group">
+				<label for="temperatura">Digite a temperatura:</label>
+				<input type="number" id="temperatura" placeholder="Ex: 25">
+				<small class="error-message" id="temperatura-error"></small>
+			</div>
+			<div class="input-group">
+				<label for="tipoConversao">Escolha a conversão:</label>
+				<select id="tipoConversao">
+					<option value="">Selecione o tipo de conversão</option>
+					<option value="1">Celsius para Fahrenheit</option>
+					<option value="2">Celsius para Kelvin</option>
+					<option value="3">Fahrenheit para Celsius</option>
+					<option value="4">Fahrenheit para Kelvin</option>
+					<option value="5">Kelvin para Celsius</option>
+					<option value="6">Kelvin para Fahrenheit</option>
+				</select>
+				<small class="error-message" id="tipoConversao-error"></small>
+			</div>
+			<button id="converterBtn">Converter</button>
+			<button id="voltarMenuBtn">Voltar ao Menu</button>
+			<div id="resultado-conversao" class="resultado-mensagem"></div>
+			</div>
+		`;
+	
+		document.getElementById('converterBtn').addEventListener('click', () => this.processarConversao());
+		document.getElementById('voltarMenuBtn').addEventListener('click', () => this.voltarAoMenu());
+	}
+
+	/**
+	 * Processa a conversão de temperatura após validação da entrada.
+	 */
+	processarConversao() {
+		// 1. Obter valores dos inputs e tentar convertê-los.
+		const temperatura = this.obterNumero("temperatura");
+		const tipoConversaoElement = document.getElementById("tipoConversao");
+		const tipoConversao = parseInt(tipoConversaoElement.value);
+
+
+		// 2. Limpar mensagens de erro anteriores.
+		this.limparMensagensErro();
+
+		// 3. Validação das entradas:
+		if (temperatura === null) {
+			this.mostrarMensagemErro("temperatura", "Temperatura inválida. Digite um número.");
+			return; // Aborta se a temperatura for inválida.
+		}
+
+		if (tipoConversaoElement.value === "") {
+			this.mostrarMensagemErro("tipoConversao", "Selecione o tipo de conversão.");
+			return; // Aborta se o tipo de conversão não for selecionado.
+		}
+
+		if (isNaN(tipoConversao) || tipoConversao < 1 || tipoConversao > 6) {
+			this.mostrarMensagemErro("tipoConversao", "Seleção de conversão inválida.");
+			return; // Validação adicional para garantir que tipoConversao é um valor esperado.
+		}
+
+		let resultado;
+		let unidadeOriginal, unidadeConvertida;
+
+		// 4. Realizar a conversão com base no tipo selecionado.
+		switch (tipoConversao) {
+			case 1: // Celsius para Fahrenheit
+				resultado = (temperatura * 9) / 5 + 32;
+				unidadeOriginal = "°C";
+				unidadeConvertida = "°F";
+				break;
+			case 2: // Celsius para Kelvin
+				resultado = temperatura + 273.15;
+				unidadeOriginal = "°C";
+				unidadeConvertida = "K";
+				break;
+			case 3: // Fahrenheit para Celsius
+				resultado = ((temperatura - 32) * 5) / 9;
+				unidadeOriginal = "°F";
+				unidadeConvertida = "°C";
+				break;
+			case 4: // Fahrenheit para Kelvin
+				resultado = ((temperatura - 32) * 5) / 9 + 273.15;
+				unidadeOriginal = "°F";
+				unidadeConvertida = "K";
+				break;
+			case 5: // Kelvin para Celsius
+				resultado = temperatura - 273.15;
+				unidadeOriginal = "K";
+				unidadeConvertida = "°C";
+				break;
+			case 6: // Kelvin para Fahrenheit
+				resultado = (temperatura - 273.15) * 9 / 5 + 32;
+				unidadeOriginal = "K";
+				unidadeConvertida = "°F";
+				break;
+			default:
+				// Este caso não deve ocorrer devido à validação anterior, mas é mantido como fallback.
+				this.mostrarMensagemErro("tipoConversao", "Erro interno na seleção de conversão.");
+				return;
+		}
+
+		// 5. Exibir o resultado da conversão na interface.
+		this.exibirResultadoConversao(temperatura, unidadeOriginal, resultado, unidadeConvertida);
+	}
+
+	/**
+	 * Exibe o resultado formatado da conversão de temperatura na interface.
+	 * @param {number} temperatura - Temperatura original.
+	 * @param {string} unidadeOriginal - Unidade original da temperatura.
+	 * @param {number} resultado - Temperatura convertida.
+	 * @param {string} unidadeConvertida - Unidade para a qual a temperatura foi convertida.
+	 */
+	exibirResultadoConversao(temperatura, unidadeOriginal, resultado, unidadeConvertida) {
+		document.getElementById("resultado-conversao").innerHTML = `
+        <h2><span class="temperatura-original">${temperatura.toFixed(1).toLocaleString('pt-BR')}</span><span class="unidade-original">${unidadeOriginal}</span> equivalem a <span class="temperatura-convertida">${resultado.toFixed(1).toLocaleString('pt-BR')}</span><span class="unidade-convertida">${unidadeConvertida}</span></h2>
+    `;
+	}
+
+
+	/**
+	 * Obtém um número do campo de input, validando se é um número.
+	 * Retorna null se não for um número.
+	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 */
+	obterNumero(idDoElemento) {
+		const valorInput = document.getElementById(idDoElemento).value;
+		const numero = Number(valorInput);
+
+		if (isNaN(numero)) {
+			return null;
+		}
+		return numero;
+	}
+
+	/**
+	 * Limpa todas as mensagens de erro exibidas.
+	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 */
+	limparMensagensErro() {
+		const errorMessages = document.querySelectorAll('.error-message');
+		errorMessages.forEach(message => message.textContent = '');
+	}
+
+	/**
+	 * Exibe uma mensagem de erro abaixo do campo de input especificado.
+	 * @param {string} elementoId - ID do elemento input.
+	 * @param {string} mensagem - Mensagem de erro a ser exibida.
+	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 */
+	mostrarMensagemErro(elementoId, mensagem) {
+		const errorElement = document.getElementById(elementoId + "-error");
+		if (errorElement) {
+			errorElement.textContent = mensagem;
+		} else {
+			console.error("Elemento de erro não encontrado para ID:", elementoId);
+		}
+	}
+
+	/**
+ * Gera e exibe a tabela ASCII de forma mais estruturada e legível.
+ */
+geradorTabelaASCII() {
+    // 1. Inicializa o cabeçalho da tabela HTML.
+    let tabelaHTML = `
+        <h2>Tabela ASCII</h2>
+        <div class="tabela-ascii">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Decimal</th>
+                        <th>Caractere</th>
+                        <th>Hexadecimal</th>
+                        <th>Octal</th>
+                    </tr>
+                </thead>
+                <tbody>
+    `;
+
+    // 2. Loop para gerar as linhas da tabela ASCII para os códigos de 0 a 127.
+    for (let codigoASCII = 0; codigoASCII <= 127; codigoASCII++) {
+        tabelaHTML += this.gerarLinhaTabelaASCII(codigoASCII);
+    }
+
+    // 3. Finaliza a tabela HTML e adiciona o botão 'Voltar ao Menu'.
+    tabelaHTML += `
+                </tbody>
+            </table>
+        </div>
+        <button id="voltarMenuASCIIBtn">Voltar ao Menu</button>
+    `;
+
+    // 4. Insere a tabela HTML completa e o botão no elemento contentDiv.
+    this.contentDiv.innerHTML = tabelaHTML;
+
+    // 5. Adiciona um listener de evento para o botão 'Voltar ao Menu' usando addEventListener.
+    document.getElementById('voltarMenuASCIIBtn').addEventListener('click', () => this.voltarAoMenu());
+}
+
+/**
+ * Gera uma linha (<tr>) da tabela ASCII para um código ASCII específico.
+ * @param {number} codigoASCII - O código ASCII para gerar a linha.
+ * @returns {string} - Uma string representando a linha <tr> da tabela ASCII.
+ */
+gerarLinhaTabelaASCII(codigoASCII) {
+    // Converte o código ASCII para caractere, hexadecimal e octal.
+    const caractere = String.fromCharCode(codigoASCII);
+    const hexadecimal = codigoASCII.toString(16).toUpperCase(); // Converter para hexadecimal (base 16) e maiúsculas
+    const octal = codigoASCII.toString(8); // Converter para octal (base 8)
+
+    // Formata a linha da tabela (<tr>) com os dados.
+    return `
+        <tr>
+            <td>${codigoASCII}</td>
+            <td>${this.formatarCaractereASCII(caractere, codigoASCII)}</td>
+            <td>${hexadecimal}</td>
+            <td>${octal}</td>
+        </tr>
+    `;
+}
+
+/**
+ * Formata o caractere ASCII para exibição na tabela.
+ * Para caracteres de controle (códigos 0-31 e 127), exibe representações especiais.
+ * @param {string} caractere - O caractere ASCII a ser formatado.
+ * @param {number} codigoASCII - O código ASCII do caractere.
+ * @returns {string} - O caractere formatado para exibição.
+ */
+formatarCaractereASCII(caractere, codigoASCII) {
+    // Caracteres de controle ASCII (0-31 e 127) não são imprimíveis, então os representamos por nomes.
+    if (codigoASCII < 32 || codigoASCII === 127) {
+        return `<span class="caractere-controle">${this.obterNomeControleASCII(codigoASCII)} (Código ${codigoASCII})</span>`;
+    } else {
+        return caractere; // Caracteres imprimíveis são exibidos normalmente.
+    }
+}
+
+
+/**
+ * Obtém o nome descritivo de um caractere de controle ASCII.
+ * @param {number} codigoASCII - O código ASCII do caractere de controle.
+ * @returns {string} - O nome descritivo do caractere de controle.
+ */
+obterNomeControleASCII(codigoASCII) {
+    // Mapeamento de alguns códigos de controle ASCII para nomes descritivos para melhor entendimento na tabela.
+    const nomesControle = {
+        0: "NUL (Null)",
+        1: "SOH (Start of Heading)",
+        2: "STX (Start of Text)",
+        3: "ETX (End of Text)",
+        4: "EOT (End of Transmission)",
+        5: "ENQ (Enquiry)",
+        6: "ACK (Acknowledgement)",
+        7: "BEL (Bell)",
+        8: "BS (Backspace)",
+        9: "TAB (Tab)",
+        10: "LF (Line Feed)",
+        11: "VT (Vertical Tab)",
+        12: "FF (Form Feed)",
+        13: "CR (Carriage Return)",
+        14: "SO (Shift Out)",
+        15: "SI (Shift In)",
+        16: "DLE (Data Link Escape)",
+        17: "DC1 (Device Control 1)",
+        18: "DC2 (Device Control 2)",
+        19: "DC3 (Device Control 3)",
+        20: "DC4 (Device Control 4)",
+        21: "NAK (Negative Acknowledgement)",
+        22: "SYN (Synchronous Idle)",
+        23: "ETB (End of Transmission Block)",
+        24: "CAN (Cancel)",
+        25: "EM (End of Medium)",
+        26: "SUB (Substitute)",
+        27: "ESC (Escape)",
+        28: "FS (File Separator)",
+        29: "GS (Group Separator)",
+        30: "RS (Record Separator)",
+        31: "US (Unit Separator)",
+        127: "DEL (Delete)"
+    };
+    return nomesControle[codigoASCII] || `Control Code ${codigoASCII}`; // Retorna nome ou um genérico se não mapeado.
+}
+
+
+/**
+ * Obtém um número do campo de entrada especificado.
+ * @param {string} idElemento - O ID do elemento do campo de entrada.
+ * @param {boolean} [inteiro=false] - Se verdadeiro, retorna um inteiro, caso contrário, um float.
+ * @returns {number|null} O número obtido ou null se a entrada for inválida.
+ * (Função reutilizada - manter conforme necessário)
+ */
+obterNumero(idElemento, inteiro = false) {
+    let valor = document.getElementById(idElemento).value;
+
+    if (valor.trim() === "" || (inteiro && !/^-?\d+$/.test(valor)) || (!inteiro && !/^-?\d+(\.\d+)?$/.test(valor))) {
+        this.notifications.show("Entrada inválida. Por favor, digite um número válido.", "error");
+        return null;
+    }
+
+    return inteiro ? parseInt(valor) : parseFloat(valor);
+}
+}
+
+// --------------------------------------------------
+//  INICIALIZAÇÃO DA APLICAÇÃO
+// --------------------------------------------------
+
+/**
+ * @global
+ * @description Instância principal da aplicação.
+ * @type {App}
+ */
+let app;
+
+/**
+ * @global
+ * @description Função chamada quando o script math.js é carregado.
+ */
+function initializeApp() {
+	app = new App();
+	app.initialize();
+
+	// Configura o modo escuro após a inicialização da App
+	const darkModeToggle = document.getElementById('darkModeToggle');
+
+	// Verifica se o modo noturno está ativado no localStorage
+	if (localStorage.getItem('darkMode') === 'enabled') {
+		document.body.classList.add('dark-mode');
+		darkModeToggle.checked = true;
+	}
+
+	darkModeToggle.addEventListener('change', () => {
+		console.log("DarkMode toggle changed:", darkModeToggle.checked);
+		if (darkModeToggle.checked) {
+			document.body.classList.add('dark-mode');
+			localStorage.setItem('darkMode', 'enabled');
+		} else {
+			document.body.classList.remove('dark-mode');
+			localStorage.setItem('darkMode', 'disabled');
+		}
+	});
+}
+
+function loadMathLibrary() {
+	const script = document.createElement('script');
+	script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.7.0/math.min.js';
+	script.onload = () => {
+		console.log('Math.js loaded.');
+		initializeApp();
+	};
+	script.onerror = () => {
+		console.error('Erro ao carregar Math.js.');
+	};
+	document.head.appendChild(script);
+}
+
+// Inicializa a aplicação após o DOM ser carregado
+document.addEventListener('DOMContentLoaded', () => {
+	loadMathLibrary();
+});
