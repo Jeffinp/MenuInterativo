@@ -1,5 +1,5 @@
 // --------------------------------------------------
-//  FUNÇÕES AUXILIARES 
+//  FUNÇÕES AUXILIARES
 // --------------------------------------------------
 
 /**
@@ -13,7 +13,7 @@ const utils = {
 	 * @param {string} input - A entrada do usuário a ser sanitizada.
 	 * @returns {string} A entrada sanitizada.
 	 */
-	sanitizeInput: function (input) {
+	sanitizeInput: function(input) {
 		return input.toString().replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
 	},
 	/**
@@ -22,7 +22,7 @@ const utils = {
 	 * @param {number} number - O número a ser formatado.
 	 * @returns {string} O número formatado.
 	 */
-	formatNumber: function (number) {
+	formatNumber: function(number) {
 		return number.toLocaleString('pt-BR');
 	}
 };
@@ -43,15 +43,19 @@ const Logger = {
 	 * @param {string} message - A mensagem a ser registrada.
 	 * @param {object} data - Dados adicionais a serem registrados.
 	 */
-	log: function (level, message, data = {}) {
+	log: function(level, message, data = {}) {
 		console.log(`[${level}] ${message}`, data);
 	}
 };
 
 
+// --------------------------------------------------
+//  CACHE
+// --------------------------------------------------
+
 /**
  * @class Cache
- * @description Implementa uma funcionalidade simples de cache.
+ * @description Implementa uma funcionalidade simples de cache para armazenar e recuperar dados temporariamente.
  */
 class Cache {
 	constructor() {
@@ -60,29 +64,29 @@ class Cache {
 	}
 
 	/**
-	 * Obtém um valor do cache.
-	 * @param {string} key - A chave do valor.
-	 * @returns {*} O valor armazenado ou null se não encontrado ou expirado.
+	 * Obtém um valor do cache usando sua chave.
+	 * @param {string} key - A chave de identificação do valor a ser recuperado.
+	 * @returns {*} O valor em cache se for válido e não expirado, caso contrário, retorna null.
 	 */
 	get(key) {
 		const item = this.storage[key];
 		if (item && Date.now() < item.expires) {
 			return item.value;
 		}
-		delete this.storage[key];
+		delete this.storage[key]; // Remove o item expirado do cache.
 		return null;
 	}
 
 	/**
-	 * Define um valor no cache.
-	 * @param {string} key - A chave do valor.
-	 * @param {*} value - O valor a ser armazenado.
-	 * @param {number} [ttl=3600000] - Tempo de vida em milissegundos (padrão: 1 hora).
+	 * Define um valor no cache associado a uma chave, com tempo de vida (TTL) opcional.
+	 * @param {string} key - A chave para armazenar o valor no cache.
+	 * @param {*} value - O valor a ser armazenado no cache.
+	 * @param {number} [ttl=3600000] - Tempo de vida (Time To Live) em milissegundos antes de expirar (padrão: 1 hora).
 	 */
 	set(key, value, ttl = 3600000) {
 		this.storage[key] = {
 			value,
-			expires: Date.now() + ttl
+			expires: Date.now() + ttl // Calcula o tempo de expiração baseado no TTL fornecido e no tempo atual.
 		};
 	}
 }
@@ -92,7 +96,7 @@ class Cache {
 // --------------------------------------------------
 /**
  * @class Notifications
- * @description Gerencia a exibição de notificações.
+ * @description Gerencia a exibição de notificações em sequência, utilizando uma fila para controlar a ordem e tempo de exibição.
  */
 class Notifications {
 	constructor() {
@@ -103,9 +107,9 @@ class Notifications {
 	}
 
 	/**
-	 * Mostra uma notificação.
-	 * @param {string} message - A mensagem a ser exibida.
-	 * @param {string} [type='info'] - O tipo da notificação ('info', 'error').
+	 * Adiciona uma nova notificação à fila para ser exibida.
+	 * @param {string} message - A mensagem de texto a ser exibida na notificação.
+	 * @param {string} [type='info'] - O tipo da notificação ('info' ou 'error'), que define o estilo visual.
 	 */
 	show(message, type = 'info') {
 		this.queue.push({
@@ -132,9 +136,9 @@ class Notifications {
 		notification.className = `notification ${next.type}`;
 		notification.setAttribute('role', 'alert');
 		notification.innerHTML = `
-            <span class="message">${utils.sanitizeInput(next.message)}</span>
-            <button class="close" aria-label="Fechar">&times;</button>
-        `;
+                <span class="message">${utils.sanitizeInput(next.message)}</span>
+                <button class="close" aria-label="Fechar">&times;</button>
+            `;
 
 		document.body.appendChild(notification);
 
@@ -164,7 +168,7 @@ class Forca {
 	constructor(contentDiv) {
 		this.contentDiv = contentDiv;
 		this.palavras = ["javascript", "html", "css", "programacao", "computador", "internet"];
-		this.palavraSecreta = this.escolherPalavra();
+		this.palavraSecreta = this.escolherPalavra(); // Define a palavra a ser adivinhada
 		this.letrasErradas = [];
 		this.letrasCorretas = [];
 		this.maxErros = 6;
@@ -175,7 +179,7 @@ class Forca {
 	 * @private
 	 */
 	escolherPalavra() {
-		return this.palavras[Math.floor(Math.random() * this.palavras.length)];
+		return this.palavras[Math.floor(Math.random() * this.palavras.length)]; // Retorna uma palavra aleatória do array
 	}
 
 	/**
@@ -183,20 +187,20 @@ class Forca {
 	 */
 	atualizarJogo() {
 		this.contentDiv.innerHTML = `
-            <div id="forca-container">
-                <h2>Jogo da Forca</h2>
-                <p id="forca-palavra">${this.palavraSecreta.split('').map(letra => this.letrasCorretas.includes(letra) ? letra : '_').join(' ')}</p>
-                <p id="forca-letras-erradas">Letras Erradas: ${this.letrasErradas.join(', ')}</p>
-                <p>Erros: ${this.erros}/${this.maxErros}</p>
-                <input type="text" id="letra-input" maxlength="1" placeholder="Digite uma letra">
-                <button id="btn-adivinhar">Adivinhar</button>
-                <button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
-                <p id="forca-mensagem"></p>
-            </div>
-        `;
+                <div id="forca-container">
+                    <h2>Jogo da Forca</h2>
+                    <p id="forca-palavra">${this.palavraSecreta.split('').map(letra => this.letrasCorretas.includes(letra) ? letra : '_').join(' ')}</p>
+                    <p id="forca-letras-erradas">Letras Erradas: ${this.letrasErradas.join(', ')}</p>
+                    <p>Erros: ${this.erros}/${this.maxErros}</p>
+                    <input type="text" id="letra-input" maxlength="1" placeholder="Digite uma letra">
+                    <button id="btn-adivinhar">Adivinhar</button>
+                    <button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
+                    <p id="forca-mensagem"></p>
+                </div>
+            `;
 
-		document.getElementById('btn-adivinhar').addEventListener('click', () => this.adivinharLetra());
-		document.getElementById('letra-input').addEventListener('keyup', (event) => {
+		document.getElementById('btn-adivinhar').addEventListener('click', () => this.adivinharLetra()); // Evento do botão "Adivinhar"
+		document.getElementById('letra-input').addEventListener('keyup', (event) => { // Evento para Enter no input
 			if (event.key === 'Enter') {
 				this.adivinharLetra();
 			}
@@ -209,31 +213,31 @@ class Forca {
 	adivinharLetra() {
 		const letraInput = document.getElementById('letra-input');
 		const letra = letraInput.value.toLowerCase();
-		letraInput.value = '';
+		letraInput.value = ''; // Limpa o input
 
-		if (!letra.match(/[a-z]/i)) {
+		if (!letra.match(/[a-z]/i)) { // Valida se é letra
 			document.getElementById('forca-mensagem').textContent = 'Por favor, digite uma letra válida.';
 			return;
 		}
 
-		if (this.letrasCorretas.includes(letra) || this.letrasErradas.includes(letra)) {
+		if (this.letrasCorretas.includes(letra) || this.letrasErradas.includes(letra)) { // Verifica se letra já foi tentada
 			document.getElementById('forca-mensagem').textContent = 'Você já tentou essa letra. Tente outra.';
 			return;
 		}
 
 		if (this.palavraSecreta.includes(letra)) {
-			this.letrasCorretas.push(letra);
+			this.letrasCorretas.push(letra); // Acertou a letra
 		} else {
-			this.letrasErradas.push(letra);
-			this.erros++;
+			this.letrasErradas.push(letra); // Errou a letra
+			this.erros++; // Incrementa erros
 		}
 
-		this.atualizarJogo();
+		this.atualizarJogo(); // Atualiza a tela
 
-		if (this.erros === this.maxErros) {
+		if (this.erros === this.maxErros) { // Perdeu o jogo
 			document.getElementById('forca-mensagem').textContent = `Você perdeu! A palavra era ${this.palavraSecreta}.`;
 			this.desabilitarJogo();
-		} else if (!document.getElementById('forca-palavra').textContent.includes('_')) {
+		} else if (!document.getElementById('forca-palavra').textContent.includes('_')) { // Ganhou o jogo
 			document.getElementById('forca-mensagem').textContent = 'Parabéns! Você ganhou!';
 			this.desabilitarJogo();
 		}
@@ -243,8 +247,8 @@ class Forca {
 	 * @private
 	 */
 	desabilitarJogo() {
-		document.getElementById('letra-input').disabled = true;
-		document.getElementById('btn-adivinhar').disabled = true;
+		document.getElementById('letra-input').disabled = true; // Desabilita input
+		document.getElementById('btn-adivinhar').disabled = true; // Desabilita botão
 	}
 }
 
@@ -258,9 +262,9 @@ class Forca {
 class JogoDaVelha {
 	constructor(contentDiv) {
 		this.contentDiv = contentDiv;
-		this.currentPlayer = 'X'; // Jogador humano começa como 'X'
+		this.currentPlayer = 'X'; // Jogador humano começa
 		this.gameBoard = ['', '', '', '', '', '', '', '', '']; // Tabuleiro vazio
-		this.gameActive = true; // Jogo ativo no início
+		this.gameActive = true; // Jogo ativo
 	}
 
 	/**
@@ -281,10 +285,10 @@ class JogoDaVelha {
 		for (let i = 0; i < 9; i++) {
 			const cell = document.createElement('div');
 			cell.classList.add('cell');
-			cell.addEventListener('click', () => this.handleClick(i));
+			cell.addEventListener('click', () => this.handleClick(i)); // Evento de clique na célula
 			grid.appendChild(cell);
 		}
-		this.updateStatus();
+		this.updateStatus(); // Status inicial
 	}
 
 	/**
@@ -293,23 +297,23 @@ class JogoDaVelha {
 	 * @description Lida com o clique em uma célula do tabuleiro.
 	 */
 	handleClick(index) {
-		if (this.gameBoard[index] === '' && this.gameActive) {
-			this.gameBoard[index] = this.currentPlayer;
-			this.renderCell(index);
-			if (this.checkWinner()) {
-				this.updateStatus();
-				this.gameActive = false;
+		if (this.gameBoard[index] === '' && this.gameActive) { // Célula vazia e jogo ativo?
+			this.gameBoard[index] = this.currentPlayer; // Marca célula com jogador atual
+			this.renderCell(index); // Atualiza visual da célula
+			if (this.checkWinner()) { // Checa vitória
+				this.updateStatus(); // Atualiza status de vitória
+				this.gameActive = false; // Jogo inativo após vitória
 				return;
 			}
-			if (this.isBoardFull()) { // Verifica empate aqui também
-				this.updateStatus();
-				this.gameActive = false;
+			if (this.isBoardFull()) { // Checa empate
+				this.updateStatus(); // Atualiza status de empate
+				this.gameActive = false; // Jogo inativo após empate
 				return;
 			}
-			this.togglePlayer();
-			this.updateStatus();
-			if (this.currentPlayer === 'O' && this.gameActive) {
-				setTimeout(() => this.makeComputerMove(), 500);
+			this.togglePlayer(); // Troca jogador
+			this.updateStatus(); // Atualiza status do jogador da vez
+			if (this.currentPlayer === 'O' && this.gameActive) { // Vez do computador?
+				setTimeout(() => this.makeComputerMove(), 500); // IA joga após um delay
 			}
 		}
 	}
@@ -321,7 +325,7 @@ class JogoDaVelha {
 	 */
 	renderCell(index) {
 		const cell = document.querySelector(`.grid .cell:nth-child(${index + 1})`);
-		cell.classList.add(this.currentPlayer);
+		cell.classList.add(this.currentPlayer); // Adiciona classe 'X' ou 'O'
 	}
 
 	/**
@@ -329,7 +333,7 @@ class JogoDaVelha {
 	 * @description Alterna o jogador atual entre 'X' e 'O'.
 	 */
 	togglePlayer() {
-		this.currentPlayer = this.currentPlayer === 'X' ? 'O' : 'X';
+		this.currentPlayer = this.currentPlayer === 'X' ? 'O' : 'X'; // Troca 'X' por 'O' ou vice-versa
 	}
 
 	/**
@@ -338,10 +342,15 @@ class JogoDaVelha {
 	 * @description Verifica se há um vencedor no jogo ou se o jogo empatou.
 	 */
 	checkWinner() {
-		const winPatterns = [
-			[0, 1, 2], [3, 4, 5], [6, 7, 8], // Linhas
-			[0, 3, 6], [1, 4, 7], [2, 5, 8], // Colunas
-			[0, 4, 8], [2, 4, 6]          // Diagonais
+		const winPatterns = [ // Padrões de vitória
+			[0, 1, 2],
+			[3, 4, 5],
+			[6, 7, 8], // Linhas
+			[0, 3, 6],
+			[1, 4, 7],
+			[2, 5, 8], // Colunas
+			[0, 4, 8],
+			[2, 4, 6] // Diagonais
 		];
 
 		for (const pattern of winPatterns) {
@@ -350,7 +359,7 @@ class JogoDaVelha {
 				return this.gameBoard[a]; // Retorna o jogador vencedor ('X' ou 'O')
 			}
 		}
-		return null; // Retorna null se não houver vencedor ainda
+		return null; // Sem vencedor ainda
 	}
 
 	/**
@@ -359,7 +368,7 @@ class JogoDaVelha {
 	 * @description Verifica se todas as células do tabuleiro estão preenchidas.
 	 */
 	isBoardFull() {
-		return this.gameBoard.every(cell => cell !== '');
+		return this.gameBoard.every(cell => cell !== ''); // Checa se não tem célula vazia
 	}
 
 
@@ -368,19 +377,19 @@ class JogoDaVelha {
 	 * @description Atualiza a mensagem de status do jogo na interface, exibindo o jogador da vez, o vencedor ou empate.
 	 */
 	updateStatus() {
-		if (!this.gameActive) return; // Não atualiza se o jogo não estiver ativo
+		if (!this.gameActive) return; // Jogo inativo, não atualiza
 
-		const winner = this.checkWinner();
-		const status = document.querySelector('.status');
+		const winner = this.checkWinner(); // Verifica vencedor
+		const status = document.querySelector('.status'); // Elemento de status
 
 		if (winner) {
-			status.textContent = `Jogador ${winner} venceu!`; // Exibe o jogador vencedor
-			this.gameActive = false; // Desativa o jogo após vitória
+			status.textContent = `Jogador ${winner} venceu!`; // Mostra vencedor
+			this.gameActive = false; // Desativa jogo
 		} else if (this.isBoardFull()) {
-			status.textContent = 'Empate!'; // Exibe mensagem de empate
-			this.gameActive = false; // Desativa o jogo após empate
+			status.textContent = 'Empate!'; // Mostra empate
+			this.gameActive = false; // Desativa jogo
 		} else {
-			status.textContent = `Vez do Jogador ${this.currentPlayer}`; // Exibe o jogador atual
+			status.textContent = `Vez do Jogador ${this.currentPlayer}`; // Mostra jogador da vez
 		}
 	}
 
@@ -389,27 +398,27 @@ class JogoDaVelha {
 	 * @description Determina e executa o movimento do computador ('O') com lógica de IA (nível fácil/médio).
 	 */
 	makeComputerMove() {
-		if (!this.gameActive || this.currentPlayer !== 'O') return; // Impede movimento se o jogo acabou ou não for vez do computador
+		if (!this.gameActive || this.currentPlayer !== 'O') return; // Jogo inativo ou não é vez do computador
 
-		let bestMoveIndex = this.getBestMove(); // Obtém o melhor movimento usando a IA
+		let bestMoveIndex = this.getBestMove(); // IA calcula o melhor movimento
 
 		if (bestMoveIndex !== null) {
-			this.gameBoard[bestMoveIndex] = 'O'; // Faz o movimento no tabuleiro
-			this.renderCell(bestMoveIndex);  // Renderiza o movimento visualmente
+			this.gameBoard[bestMoveIndex] = 'O'; // Computador faz o movimento
+			this.renderCell(bestMoveIndex); // Atualiza visual
 
-			if (this.checkWinner()) {      // Verifica se o computador venceu
-				this.updateStatus();       // Atualiza o status do jogo
-				this.gameActive = false;     // Desativa o jogo se o computador venceu
+			if (this.checkWinner()) { // Checa se IA venceu
+				this.updateStatus(); // Atualiza status (IA venceu)
+				this.gameActive = false; // Desativa jogo
 				return;
 			}
-			if (this.isBoardFull()) {      // Verifica se o jogo empatou
-				this.updateStatus();       // Atualiza o status para empate
-				this.gameActive = false;     // Desativa o jogo em caso de empate
+			if (this.isBoardFull()) { // Checa empate
+				this.updateStatus(); // Atualiza status (empate)
+				this.gameActive = false; // Desativa jogo
 				return;
 			}
 
-			this.togglePlayer();         // Passa a vez para o jogador humano
-			this.updateStatus();       // Atualiza a interface para refletir a vez do jogador humano
+			this.togglePlayer(); // Troca para jogador humano
+			this.updateStatus(); // Atualiza status (vez do humano)
 		}
 	}
 
@@ -420,39 +429,40 @@ class JogoDaVelha {
 	 * @description Implementa a lógica de IA para o computador encontrar o melhor movimento, priorizando vitória, bloqueio e jogadas estratégicas.
 	 */
 	getBestMove() {
-		// 1. Tenta vencer: Verifica se o computador pode vencer no próximo movimento
+		// 1. Tenta vencer
 		for (let i = 0; i < 9; i++) {
 			if (this.gameBoard[i] === '') {
-				this.gameBoard[i] = 'O'; // Simula movimento do computador
-				if (this.checkWinner() === 'O') { // Verifica se este movimento vence
-					this.gameBoard[i] = ''; // Desfaz a simulação
-					return i;                // Retorna o índice para vencer
+				this.gameBoard[i] = 'O'; // Simula movimento IA
+				if (this.checkWinner() === 'O') { // Vencerá?
+					this.gameBoard[i] = ''; // Desfaz simulação
+					return i; // Retorna índice para vencer
 				}
-				this.gameBoard[i] = ''; // Desfaz a simulação
+				this.gameBoard[i] = ''; // Desfaz simulação
 			}
 		}
 
-		// 2. Tenta bloquear: Verifica se o jogador humano pode vencer no próximo movimento e bloqueia
+		// 2. Tenta bloquear
 		for (let i = 0; i < 9; i++) {
 			if (this.gameBoard[i] === '') {
-				this.gameBoard[i] = 'X'; // Simula movimento do jogador humano
-				if (this.checkWinner() === 'X') { // Verifica se o jogador humano venceriathis.gameBoard[i] = ''; // Desfaz a simulação
-					return i;                // Retorna o índice para bloquear
+				this.gameBoard[i] = 'X'; // Simula movimento jogador
+				if (this.checkWinner() === 'X') { // Jogador venceria?
+					this.gameBoard[i] = ''; // Desfaz simulação
+					return i; // Retorna índice para bloquear
 				}
-				this.gameBoard[i] = ''; // Desfaz a simulação
+				this.gameBoard[i] = ''; // Desfaz simulação
 			}
 		}
 
-		// 3. Movimento Estratégico: Prioriza o centro, cantos e depois os lados
-		const strategicMoves = [4, 0, 2, 6, 8, 1, 3, 5, 7]; // Centro, Cantos, Lados
+		// 3. Movimento estratégico (centro, cantos, lados)
+		const strategicMoves = [4, 0, 2, 6, 8, 1, 3, 5, 7]; // Prioridades: Centro, Cantos, Lados
 		for (const move of strategicMoves) {
 			if (this.gameBoard[move] === '') {
-				return move; // Retorna o primeiro movimento estratégico disponível
+				return move; // Retorna primeiro movimento estratégico livre
 			}
 		}
 
-		// 4. Fallback: Se nenhum movimento estratégico estiver disponível (não deve acontecer em um jogo normal de Jogo da Velha com IA bem implementada neste nível, mas por segurança)
-		return null; // ou poderia retornar um movimento aleatório de células vazias, se necessário como último recurso. Em teoria, com as prioridades acima, sempre haverá um movimento válido a ser retornado antes de chegar aqui em um jogo de Jogo da Velha que não terminou em empate.
+		// 4. Fallback (não deve acontecer em jogo normal)
+		return null; // ou movimento aleatório se necessário
 	}
 
 
@@ -461,10 +471,10 @@ class JogoDaVelha {
 	 * @description Reinicia o jogo, resetando o tabuleiro, o jogador atual e o estado do jogo.
 	 */
 	reiniciarJogo() {
-		this.currentPlayer = 'X'; // Jogador 'X' (humano) começa sempre
-		this.gameBoard = ['', '', '', '', '', '', '', '', '']; // Limpa o tabuleiro
-		this.gameActive = true; // Reativa o jogo
-		this.renderBoard(); // Renderiza o tabuleiro vazio novamente
+		this.currentPlayer = 'X'; // Jogador 'X' sempre começa
+		this.gameBoard = ['', '', '', '', '', '', '', '', '']; // Limpa tabuleiro
+		this.gameActive = true; // Reativa jogo
+		this.renderBoard(); // Redesenha tabuleiro
 	}
 }
 
@@ -473,90 +483,89 @@ class JogoDaVelha {
 // --------------------------------------------------
 /**
  * @class ListaDeTarefas
- * @description Gerencia a lógica da Lista de Tarefas com renderização aprimorada e melhor organização.
+ * @description Gerencia a lógica da Lista de Tarefas com renderização e organização melhoradas.
  */
 class ListaDeTarefas {
 	constructor(contentDiv) {
 		this.contentDiv = contentDiv;
-		this.tasks = this.loadTasks(); // Carrega tarefas do localStorage no construtor
+		this.tasks = this.loadTasks(); // Inicializa tarefas carregando do localStorage
 	}
 
 	/**
 	 * @method loadTasks
-	 * @returns {Array<object>} - Array de tarefas carregadas do localStorage ou um array vazio se não houver tarefas salvas.
-	 * @description Carrega as tarefas do localStorage ou inicializa com um array vazio.
+	 * @returns {Array<object>} - Array de tarefas do localStorage ou vazio.
+	 * @description Carrega tarefas salvas ou inicia lista vazia.
 	 */
 	loadTasks() {
 		const storedTasks = localStorage.getItem('tasks');
-		return storedTasks ? JSON.parse(storedTasks) : [];
+		return storedTasks ? JSON.parse(storedTasks) : []; // Retorna tarefas do storage ou array vazio
 	}
 
 	/**
 	 * @method saveTasks
-	 * @description Salva o array de tarefas atual no localStorage.
+	 * @description Salva tarefas no localStorage.
 	 */
 	saveTasks() {
-		localStorage.setItem('tasks', JSON.stringify(this.tasks));
+		localStorage.setItem('tasks', JSON.stringify(this.tasks)); // Salva array de tarefas no storage
 	}
 
 	/**
 	 * @method renderTasks
-	 * @description Renderiza a estrutura HTML principal da lista de tarefas e lista as tarefas.
+	 * @description Renderiza a lista de tarefas na tela.
 	 */
 	renderTasks() {
 		this.contentDiv.innerHTML = `
-            <div class="todo-container fade-in">
-                <h2>Lista de Tarefas</h2>
-                <div class="todo-header">
-                    <input type="text" id="taskInput" placeholder="Adicione uma tarefa" aria-label="Nova tarefa">
-                    <button id="addTaskBtn">Adicionar</button>
+                <div class="todo-container fade-in">
+                    <h2>Lista de Tarefas</h2>
+                    <div class="todo-header">
+                        <input type="text" id="taskInput" placeholder="Adicione uma tarefa" aria-label="Nova tarefa">
+                        <button id="addTaskBtn">Adicionar</button>
+                    </div>
+                    <ul class="todo-list">
+                        ${this.renderTaskListItems()}
+                    </ul>
+                    <button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
                 </div>
-                <ul class="todo-list">
-                    ${this.renderTaskListItems()}
-                </ul>
-                <button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
-            </div>
-        `;
-		this.setupEventListeners(); // Configura os event listeners após renderizar o HTML
+            `;
+		this.setupEventListeners(); // Configura eventos dos botões
 	}
 
 	/**
 	 * @method renderTaskListItems
 	 * @private
-	 * @returns {string} - HTML string contendo os list items para cada tarefa.
-	 * @description Gera o HTML para cada item da lista de tarefas baseado no array de tarefas atual.
+	 * @returns {string} - HTML para itens da lista de tarefas.
+	 * @description Cria HTML para cada tarefa na lista.
 	 */
 	renderTaskListItems() {
 		return this.tasks.map((task, index) => `
-            <li class="todo-item">
-                <input type="checkbox" id="task-${index}" ${task.completed ? 'checked' : ''} aria-labelledby="task-label-${index}">
-                <span id="task-label-${index}" class="${task.completed ? 'completed' : ''}">${utils.sanitizeInput(task.text)}</span>
-                <button class="delete-btn" data-index="${index}" aria-label="Excluir tarefa ${task.text}">Excluir</button>
-            </li>`
-		).join(''); // .join('') para converter o array de strings HTML em uma única string
+                <li class="todo-item">
+                    <input type="checkbox" id="task-${index}" ${task.completed ? 'checked' : ''} aria-labelledby="task-label-${index}">
+                    <span id="task-label-${index}" class="${task.completed ? 'completed' : ''}">${utils.sanitizeInput(task.text)}</span>
+                    <button class="delete-btn" data-index="${index}" aria-label="Excluir tarefa ${task.text}">Excluir</button>
+                </li>`).join(''); // Transforma array de HTML em string
 	}
 
 
 	/**
 	 * @method setupEventListeners
 	 * @private
-	 * @description Configura os event listeners para os botões e checkboxes dentro da lista de tarefas.
+	 * @description Configura eventos para botões e checkboxes.
 	 */
 	setupEventListeners() {
-		document.getElementById('addTaskBtn').addEventListener('click', () => this.addTask());
+		document.getElementById('addTaskBtn').addEventListener('click', () => this.addTask()); // Evento botão Adicionar
 
 		const taskList = document.querySelector('.todo-list');
-		taskList.addEventListener('change', (event) => { // Delegação de eventos para checkboxes
+		taskList.addEventListener('change', (event) => { // Evento change nos checkboxes (delegação)
 			if (event.target.type === 'checkbox') {
-				const index = parseInt(event.target.id.split('-')[1], 10); // Extrai o índice do ID
-				this.toggleTask(index);
+				const index = parseInt(event.target.id.split('-')[1], 10); // Pega índice do checkbox
+				this.toggleTask(index); // Alterna tarefa
 			}
 		});
 
-		taskList.addEventListener('click', (event) => { // Delegação de eventos para botões de delete
+		taskList.addEventListener('click', (event) => { // Evento click nos botões delete (delegação)
 			if (event.target.classList.contains('delete-btn')) {
-				const index = parseInt(event.target.dataset.index, 10);
-				this.deleteTask(index);
+				const index = parseInt(event.target.dataset.index, 10); // Pega índice do botão delete
+				this.deleteTask(index); // Deleta tarefa
 			}
 		});
 	}
@@ -564,72 +573,75 @@ class ListaDeTarefas {
 
 	/**
 	 * @method addTask
-	 * @description Adiciona uma nova tarefa à lista, obtendo o texto do input, validando-o e atualizando a UI e o localStorage.
+	 * @description Adiciona nova tarefa. Valida input, atualiza UI e localStorage.
 	 */
 	addTask() {
 		const taskInput = document.getElementById('taskInput');
-		const taskText = taskInput.value.trim();
+		const taskText = taskInput.value.trim(); // Pega texto da tarefa
 
 		if (!taskText) {
-			alert("Por favor, insira uma tarefa antes de adicionar."); // Feedback amigável para o usuário
-			return; // Impede adicionar tarefa vazia
+			alert("Por favor, insira uma tarefa antes de adicionar."); // Alerta se input vazio
+			return; // Sai da função se não tiver texto
 		}
 
-		this.tasks.push({ text: taskText, completed: false });
-		this.saveTasks(); // Salva no localStorage após adicionar
-		taskInput.value = ''; // Limpa o input
-		this.updateTaskListUI(); // Atualiza apenas a lista de tarefas na UI
+		this.tasks.push({
+			text: taskText,
+			completed: false
+		}); // Adiciona tarefa ao array
+		this.saveTasks(); // Salva tarefas
+		taskInput.value = ''; // Limpa input
+		this.updateTaskListUI(); // Atualiza lista na tela
 	}
 
 
 	/**
 	 * @method toggleTask
-	 * @param {number} index - Índice da tarefa a ser alternada (concluída/não concluída).
-	 * @description Marca uma tarefa como concluída ou não concluída, atualizando a UI e o localStorage.
+	 * @param {number} index - Índice da tarefa.
+	 * @description Alterna status (concluída/não concluída) da tarefa. Atualiza UI e localStorage.
 	 */
 	toggleTask(index) {
-		if (index >= 0 && index < this.tasks.length) { // Validação de índice
-			this.tasks[index].completed = !this.tasks[index].completed;
-			this.saveTasks(); // Salva no localStorage após alterar o estado da tarefa
-			this.updateTaskItemUI(index); // Atualiza apenas o item da tarefa específico na UI
+		if (index >= 0 && index < this.tasks.length) { // Valida índice
+			this.tasks[index].completed = !this.tasks[index].completed; // Inverte status da tarefa
+			this.saveTasks(); // Salva tarefas
+			this.updateTaskItemUI(index); // Atualiza item da tarefa na tela
 		} else {
-			console.error('Índice de tarefa inválido:', index); // Log de erro para debug
+			console.error('Índice de tarefa inválido:', index); // Erro: índice inválido
 		}
 	}
 
 	/**
 	 * @method deleteTask
-	 * @param {number} index - Índice da tarefa a ser excluída.
-	 * @description Exclui uma tarefa da lista, atualizando a UI e o localStorage.
+	 * @param {number} index - Índice da tarefa.
+	 * @description Deleta tarefa da lista. Atualiza UI e localStorage.
 	 */
 	deleteTask(index) {
-		if (index >= 0 && index < this.tasks.length) { // Validação de índice
-			this.tasks.splice(index, 1);
-			this.saveTasks(); // Salva no localStorage após excluir
-			this.updateTaskListUI(); // Atualiza a lista de tarefas na UI
+		if (index >= 0 && index < this.tasks.length) { // Valida índice
+			this.tasks.splice(index, 1); // Remove tarefa do array
+			this.saveTasks(); // Salva tarefas
+			this.updateTaskListUI(); // Atualiza lista na tela
 		} else {
-			console.error('Índice de tarefa inválido:', index); // Log de erro para debug
+			console.error('Índice de tarefa inválido:', index); // Erro: índice inválido
 		}
 	}
 
 	/**
 	 * @method updateTaskListUI
 	 * @private
-	 * @description Renderiza novamente apenas a lista de itens de tarefas dentro da UL, de forma eficiente.
+	 * @description Atualiza a lista de tarefas (UL) na tela. Renderiza novamente os itens da lista.
 	 */
 	updateTaskListUI() {
 		const taskList = document.querySelector('.todo-list');
 		if (taskList) {
-			taskList.innerHTML = this.renderTaskListItems(); // Atualiza apenas o conteúdo da lista (UL)
-			this.setupEventListenersForListItems(); // Reconfigura event listeners para os novos list items
+			taskList.innerHTML = this.renderTaskListItems(); // Atualiza conteúdo da UL
+			this.setupEventListenersForListItems(); // Refaz eventos dos itens (deprecated)
 		}
 	}
 
 	/**
 	 * @method updateTaskItemUI
 	 * @private
-	 * @param {number} index - Índice do item da tarefa a ser atualizado na UI.
-	 * @description Atualiza um único item da tarefa na UI (e.g., para mudar a classe 'completed').
+	 * @param {number} index - Índice da tarefa.
+	 * @description Atualiza um item específico da tarefa na UI (classe 'completed', checkbox).
 	 */
 	updateTaskItemUI(index) {
 		const listItem = document.querySelector(`.todo-list li:nth-child(${index + 1})`);
@@ -638,25 +650,23 @@ class ListaDeTarefas {
 			const taskSpan = listItem.querySelector('span');
 			const checkbox = listItem.querySelector('input[type="checkbox"]');
 
-			if (taskSpan) taskSpan.className = task.completed ? 'completed' : ''; // Atualiza a classe do span
-			if (checkbox) checkbox.checked = task.completed; // Atualiza o estado do checkbox
+			if (taskSpan) taskSpan.className = task.completed ? 'completed' : ''; // Atualiza classe do span
+			if (checkbox) checkbox.checked = task.completed; // Atualiza checkbox
 		}
 	}
 
 	/**
 	 * @method setupEventListenersForListItems
 	 * @private
-	 * @description Configura event listeners especificamente para os itens da lista (checkboxes e delete buttons) após uma renderização parcial da lista.
-	 *              Necessário após substituir o innerHTML da lista para re-ligar os eventos.
-	 * @deprecated  -- Delegação de eventos no `setupEventListeners` tornou isto obsoleto, mantendo por referência ou possível uso futuro.
+	 * @description Configura eventos para itens da lista (checkboxes/delete btns) - DEPRECATED.
+	 * @deprecated  - Delegação de eventos em `setupEventListeners` torna isto redundante.
 	 */
-	setupEventListenersForListItems() { // @deprecated - Tornou-se redundante com a delegação no setupEventListeners principal
-		// Implementação de event listeners para checkboxes e delete buttons em cada item da lista, se necessário em cenários de renderização parcial.
-		// No modelo atual com delegação no 'setupEventListeners', esta função pode não ser mais necessária, mas é mantida como referência ou para cenários de uso futuro
+	setupEventListenersForListItems() { // DEPRECATED - Delegação no setupEventListeners torna obsoleto
+		// Implementação de listeners para checkboxes e delete buttons em cada item, se necessário em renderização parcial.
+		// No modelo atual, delegação em 'setupEventListeners' torna essa função redundante, mantida por referência.
 	}
 }
 
-/* script.js */
 // --------------------------------------------------
 //  CALCULADORA
 // --------------------------------------------------
@@ -666,26 +676,26 @@ class ListaDeTarefas {
  */
 class Calculator {
 	/**
-	 * Cria uma instância da Calculadora.
+	 * @constructor
 	 * @param {object} i18n - Objeto de internacionalização.
-	 * @param {object} contentDiv - Referência ao elemento div de conteúdo
+	 * @param {object} contentDiv - Div de conteúdo.
 	 */
 	constructor(i18n, contentDiv) {
 		this.contentDiv = contentDiv;
 		this.i18n = i18n;
 		this.history = [];
-		this.cache = new Cache(); // Supondo que Cache esteja definido em outro lugar se necessário
-		this.mathParser = math; // Usando a biblioteca math.js (inclua na sua HTML)
+		this.cache = new Cache(); // Cache (se precisar)
+		this.mathParser = math; // Biblioteca math.js
 	}
 
 	initialize() {
-		this.loadHistory();
+		this.loadHistory(); // Carrega o histórico salvo
 	}
 
 	/**
-	 * Renderiza os botões da calculadora.
 	 * @private
 	 * @returns {string} HTML dos botões.
+	 * @description Renderiza os botões.
 	 */
 	renderButtons() {
 		const buttons = [
@@ -693,279 +703,273 @@ class Calculator {
 			'4', '5', '6', '*',
 			'1', '2', '3', '-',
 			'0', '.', '=', '+',
-			'CE', '%' // Botões adicionados: Clear Entry e Porcentagem
+			'CE', '%' // Botões extras
 		];
 
 		return buttons.map(button => {
 			let className = 'calc-button';
-			if (['/', '*', '-', '+', '%'].includes(button)) { // Incluindo '%' como operador
+			if (['/', '*', '-', '+', '%'].includes(button)) { // É operador?
 				className += ' operator';
-			} else if (button === '=') {
+			} else if (button === '=') { // É igual?
 				className += ' equal';
-			} else if (button === 'CE') {
-				className += ' clear-entry'; // Classe para o botão CE
+			} else if (button === 'CE') { // É Clear Entry?
+				className += ' clear-entry';
 			}
 
 			return `<button
-                        class="${className}"
-                        data-key="${button}"
-                        aria-label="${button}"
-                    >${button}</button>`;
-		}).join('');
+                                 class="${className}"
+                                 data-key="${button}"
+                                 aria-label="${button}"
+                             >${button}</button>`;
+		}).join(''); // Junta tudo em HTML
 	}
 
 	/**
-	 * Manipula o clique nos botões da calculadora.
-	 * @param {string} button - O botão que foi clicado.
+	 * @param {string} button - Botão clicado.
+	 * @description Manipula o clique dos botões.
 	 */
 	handleButtonClick(button) {
 		const display = document.getElementById('display');
-		if (button === '=') {
+		if (button === '=') { // Clicou em igual
 			try {
-				const result = this.calculate(display.value);
-				display.value = result;
+				const result = this.calculate(display.value); // Calcula
+				display.value = result; // Mostra no display
 			} catch (error) {
-				app.notifications.show(error.message, 'error');
+				app.notifications.show(error.message, 'error'); // Mostra erro se tiver
 			}
-		} else if (button === 'CE') {
-			this.clearEntry(); // Limpa a entrada atual
-		} else if (button === '%') {
-			this.handlePercentage(); // Lida com o botão de porcentagem
-		}
-		else {
-			display.value += button;
+		} else if (button === 'CE') { // Clicou em CE
+			this.clearEntry(); // Limpa a entrada
+		} else if (button === '%') { // Clicou em porcentagem
+			this.handlePercentage(); // Faz a conta de porcentagem
+		} else { // Clicou em número ou operador
+			display.value += button; // Adiciona ao que já está no display
 		}
 	}
 
 	/**
-	 * Renderiza a interface da calculadora.
 	 * @returns {string} HTML da calculadora.
+	 * @description Renderiza a calculadora.
 	 */
 	render() {
 		return `
-            <div class="calculator-container" role="application">
-                <h2>Calculadora - Parecida com iphone</h2>
-                <div class="calc-display" role="textbox" aria-label="${this.i18n.t('display')}">
-                    <input type="text" id="display" value="0" readonly>
+                <div class="calculator-container" role="application">
+                    <h2>Calculadora - Parecida com iphone</h2>
+                    <div class="calc-display" role="textbox" aria-label="${this.i18n.t('display')}">
+                        <input type="text" id="display" value="0" readonly>
+                    </div>
+                    <div class="calc-buttons" role="group">
+                        ${this.renderButtons()}
+                    </div>
+                    <div class="calc-history">
+                        <h3>${this.i18n.t('history')}</h3>
+                        <ul id="calcHistory" role="list"></ul>
+                        <button class="clear-history" onclick="app.calculator.clearHistory()">${this.i18n.t('clearHistory') || 'Limpar Histórico'}</button>
+                    </div>
+                    <button
+                        onclick="app.voltarAoMenu()"
+                        class="secondary-button"
+                        aria-label="${this.i18n.t('returnToMenu')}"
+                    >${this.i18n.t('back')}
+                    </button>
                 </div>
-                <div class="calc-buttons" role="group">
-                    ${this.renderButtons()}
-                </div>
-                <div class="calc-history">
-                    <h3>${this.i18n.t('history')}</h3>
-                    <ul id="calcHistory" role="list"></ul>
-                    <button class="clear-history" onclick="app.calculator.clearHistory()">${this.i18n.t('clearHistory') || 'Limpar Histórico'}</button>
-                </div>
-                <button
-                    onclick="app.voltarAoMenu()"
-                    class="secondary-button"
-                    aria-label="${this.i18n.t('returnToMenu')}"
-                >${this.i18n.t('back')}
-                </button>
-            </div>
-        `;
+            `;
 	}
 
 	/**
-	 * Calcula o resultado de uma expressão matemática.
-	 * @param {string} expression - A expressão a ser calculada.
-	 * @returns {number} O resultado do cálculo.
+	 * @param {string} expression - Expressão matemática.
+	 * @returns {number} Resultado do cálculo.
 	 * @throws {Error} Se a expressão for inválida.
+	 * @description Calcula a expressão.
 	 */
 	calculate(expression) {
 		try {
-			// Substitui a porcentagem pelo seu valor decimal antes de avaliar
-			expression = expression.replace(/%/g, '/100');
-			const result = this.mathParser.evaluate(expression);
+			expression = expression.replace(/%/g, '/100'); // Troca % por divisão por 100
+			const result = this.mathParser.evaluate(expression); // Usa math.js pra calcular
 
-			if (!isFinite(result)) {
-				throw new Error(this.i18n.t('calculationError'));
+			if (!isFinite(result)) { // Checa se o resultado é um número válido
+				throw new Error(this.i18n.t('calculationError')); // Se não for, dá erro
 			}
 
-			this.addToHistory(expression, result);
-			return result;
+			this.addToHistory(expression, result); // Salva no histórico
+			return result; // Retorna o resultado
 		} catch (error) {
-			Logger.log(Logger.levels.ERROR, 'Erro no cálculo', {
+			Logger.log(Logger.levels.ERROR, 'Erro no cálculo', { // Loga o erro
 				expression,
 				error
 			});
-			throw new Error(this.i18n.t('calculationError'));
+			throw new Error(this.i18n.t('calculationError')); // Manda o erro pra tela
 		}
 	}
 
 	/**
-	 * Adiciona uma expressão e seu resultado ao histórico.
-	 * @param {string} expression - A expressão calculada.
-	 * @param {number} result - O resultado do cálculo.
+	 * @param {string} expression - Expressão calculada.
+	 * @param {number} result - Resultado do cálculo.
+	 * @description Adiciona ao histórico.
 	 */
 	addToHistory(expression, result) {
 		const historyItem = {
 			expression,
 			result,
-			timestamp: new Date().toISOString()
+			timestamp: new Date().toISOString() // Guarda a hora que calculou
 		};
 
-		this.history.unshift(historyItem);
-		this.history = this.history.slice(0, 10); // Manter apenas últimos 10 cálculos
-		this.saveHistory();
-		this.updateHistoryDisplay();
+		this.history.unshift(historyItem); // Põe no começo da lista
+		this.history = this.history.slice(0, 10); // Limita a 10 itens no histórico
+		this.saveHistory(); // Salva o histórico
+		this.updateHistoryDisplay(); // Atualiza a tela do histórico
 	}
 
 	/**
-	 * Carrega o histórico do localStorage.
+	 * @description Carrega histórico.
 	 */
 	loadHistory() {
 		try {
-			const saved = localStorage.getItem('calcHistory');
+			const saved = localStorage.getItem('calcHistory'); // Pega do localStorage
 			if (saved) {
-				this.history = JSON.parse(saved);
-				this.updateHistoryDisplay();
+				this.history = JSON.parse(saved); // Transforma de volta pra objeto
+				this.updateHistoryDisplay(); // Mostra na tela
 			}
 		} catch (error) {
-			Logger.log(Logger.levels.ERROR, 'Erro ao carregar histórico', {
+			Logger.log(Logger.levels.ERROR, 'Erro ao carregar histórico', { // Se der erro, loga
 				error
 			});
 		}
 	}
 
 	/**
-	 * Salva o histórico no localStorage.
+	 * @description Salva histórico.
 	 */
 	saveHistory() {
 		try {
-			localStorage.setItem('calcHistory', JSON.stringify(this.history));
+			localStorage.setItem('calcHistory', JSON.stringify(this.history)); // Salva no localStorage
 		} catch (error) {
-			Logger.log(Logger.levels.ERROR, 'Erro ao salvar histórico', {
+			Logger.log(Logger.levels.ERROR, 'Erro ao salvar histórico', { // Se der erro, loga
 				error
 			});
 		}
 	}
 
 	/**
-	 * Atualiza a exibição do histórico na interface.
+	 * @description Atualiza histórico na tela.
 	 */
 	updateHistoryDisplay() {
-		const historyList = this.contentDiv.querySelector('.calc-history ul');
-		if (!historyList) return;
+		const historyList = this.contentDiv.querySelector('.calc-history ul'); // Pega a lista HTML
+		if (!historyList) return; // Se não tem lista, não faz nada
 
 		historyList.innerHTML = this.history.map(item => `
-            <li class="history-item" role="listitem">
-                <span class="expression">${utils.sanitizeInput(item.expression)}</span>
-                <span class="separator">=</span>
-                <span class="result">${utils.formatNumber(item.result)}</span>
-                <span class="timestamp">${this.formatTimestamp(item.timestamp)}</span>
-            </li>
-        `).join('');
+                <li class="history-item" role="listitem">
+                    <span class="expression">${utils.sanitizeInput(item.expression)}</span>
+                    <span class="separator">=</span>
+                    <span class="result">${utils.formatNumber(item.result)}</span>
+                    <span class="timestamp">${this.formatTimestamp(item.timestamp)}</span>
+                </li>
+            `).join(''); // Cria HTML pra cada item do histórico
 
-		// Adiciona um efeito visual ao adicionar um novo item
-		const lastItem = historyList.lastElementChild;
+		const lastItem = historyList.lastElementChild; // Pega o último item adicionado
 		if (lastItem) {
-			lastItem.classList.add('new-item');
+			lastItem.classList.add('new-item'); // Animação visual de novo item
 			setTimeout(() => {
-				lastItem.classList.remove('new-item');
-			}, 500); // Remove o efeito após 500ms
+				lastItem.classList.remove('new-item'); // Remove a animação depois de um tempo
+			}, 500); // Tempo da animação
 		}
 	}
 
 	/**
-	 * Limpa o histórico de cálculos e atualiza a exibição.
+	 * @description Limpa o histórico.
 	 */
 	clearHistory() {
-		this.history = [];
-		this.saveHistory();
-		this.updateHistoryDisplay();
+		this.history = []; // Limpa o array do histórico
+		this.saveHistory(); // Salva histórico vazio
+		this.updateHistoryDisplay(); // Atualiza a tela do histórico
 	}
 
 	/**
-	 * Formata o timestamp para um formato mais legível.
 	 * @private
-	 * @param {string} timestamp - O timestamp no formato ISO.
-	 * @returns {string} O timestamp formatado.
+	 * @param {string} timestamp - Timestamp ISO.
+	 * @returns {string} Timestamp formatado.
+	 * @description Formata a hora.
 	 */
 	formatTimestamp(timestamp) {
-		const date = new Date(timestamp);
-		return `${date.toLocaleDateString('pt-BR')} ${date.toLocaleTimeString('pt-BR')}`;
+		const date = new Date(timestamp); // Cria objeto Date
+		return `${date.toLocaleDateString('pt-BR')} ${date.toLocaleTimeString('pt-BR')}`; // Formata pra pt-BR
 	}
 
 	/**
-	 * Configura os event listeners para os botões da calculadora e do teclado.
+	 * @description Configura eventos dos botões e teclado.
 	 */
 	setupEventListeners() {
-		const buttons = this.contentDiv.querySelector('.calc-buttons');
+		const buttons = this.contentDiv.querySelector('.calc-buttons'); // Pega os botões
 		if (buttons) {
-			buttons.addEventListener('click', (event) => {
-				const key = event.target.dataset.key;
+			buttons.addEventListener('click', (event) => { // Evento de clique nos botões
+				const key = event.target.dataset.key; // Qual botão clicou?
 				if (key) {
-					this.handleButtonClick(key);
+					this.handleButtonClick(key); // Manda pro manipulador de cliques
 				}
 			});
 		}
 
-		// Adiciona suporte para entrada via teclado
-		document.addEventListener('keydown', (event) => {
-			this.handleKeyPress(event);
+		document.addEventListener('keydown', (event) => { // Evento de teclado
+			this.handleKeyPress(event); // Manda pro manipulador de teclado
 		});
 	}
 
 	/**
-	 * Manipula a entrada do teclado.
-	 * @param {KeyboardEvent} event - O evento de teclado.
+	 * @param {KeyboardEvent} event - Evento de teclado.
+	 * @description Manipula teclado.
 	 */
 	handleKeyPress(event) {
-		const key = event.key;
-		const validKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '/', '*', '-', '+', '.', '=', '%']; // Adicionado '%' como tecla válida
+		const key = event.key; // Tecla que apertou
+		const validKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '/', '*', '-', '+', '.', '=', '%']; // Teclas válidas na calculadora
 
-		if (validKeys.includes(key)) {
+		if (validKeys.includes(key)) { // É tecla de número/operador?
+			event.preventDefault(); // Previne ação padrão da tecla
+			this.handleButtonClick(key === '=' ? '=' : key); // Simula clique no botão
+		} else if (key === 'Enter') { // É Enter?
 			event.preventDefault();
-			this.handleButtonClick(key === '=' ? '=' : key);
-		} else if (key === 'Enter') {
+			this.handleButtonClick('='); // Enter = Igual
+		} else if (key === 'Backspace') { // É Backspace?
 			event.preventDefault();
-			this.handleButtonClick('=');
-		} else if (key === 'Backspace') {
+			this.handleBackspace(); // Apaga um caractere
+		} else if (key === 'Escape') { // É Escape?
 			event.preventDefault();
-			this.handleBackspace();
-		} else if (key === 'Escape') {
-			event.preventDefault();
-			this.clearDisplay();
+			this.clearDisplay(); // Limpa o display
 		}
 	}
 
 	/**
-	 * Apaga o último caractere do display.
+	 * @description Apaga um caractere do display.
 	 */
 	handleBackspace() {
-		const display = document.getElementById('display');
-		display.value = display.value.slice(0, -1);
+		const display = document.getElementById('display'); // Display da calculadora
+		display.value = display.value.slice(0, -1); // Remove o último char
 	}
 
 	/**
-	 * Limpa o display da calculadora.
+	 * @description Limpa display pra zero.
 	 */
 	clearDisplay() {
-		const display = document.getElementById('display');
-		display.value = '0'; // Define o valor para '0' ao invés de vazio
+		const display = document.getElementById('display'); // Display da calculadora
+		display.value = '0'; // Zera o display
 	}
 
 	/**
-	 * Limpa a entrada atual no display (botão CE).
+	 * @description Limpa a entrada atual.
 	 */
 	clearEntry() {
-		this.clearDisplay(); // No exemplo, CE e Clear Display fazem o mesmo (limpar para '0') - pode ajustar se necessário
+		this.clearDisplay(); // CE faz a mesma coisa que Clear Display aqui
 	}
 
 	/**
-	 * Manipula o botão de porcentagem.
+	 * @description Manipula porcentagem.
 	 */
 	handlePercentage() {
-		const display = document.getElementById('display');
-		let currentValue = parseFloat(display.value);
-		if (!isNaN(currentValue)) {
-			display.value = currentValue / 100; // Divide o valor atual por 100
-			// Ou outra lógica de porcentagem que você desejar implementar
+		const display = document.getElementById('display'); // Display da calculadora
+		let currentValue = parseFloat(display.value); // Valor atual no display
+		if (!isNaN(currentValue)) { // Se for número
+			display.value = currentValue / 100; // Divide por 100 (cálculo da %)
 		}
 	}
 }
-
 
 // --------------------------------------------------
 //  CLASSE ImprovedBlindEqualization (Implementação do Algoritmo de Equalização Cega)
@@ -977,99 +981,106 @@ class Calculator {
  */
 class ImprovedBlindEqualization {
 	/**
-	 * Cria uma instância de ImprovedBlindEqualization.
-	 * @param {number} [stepSize=0.01] - Tamanho do passo inicial.
-	 * @param {number} [alpha=0.1] - Parâmetro de ajuste do fator variável dinâmico.
+	 * @constructor
+	 * @param {number} [stepSize=0.01] - Tamanho do passo.
+	 * @param {number} [alpha=0.1] - Ajuste dinâmico do fator.
 	 */
 	constructor(stepSize = 0.01, alpha = 0.1) {
 		this.weights = []; // Pesos do equalizador
 		this.stepSize = stepSize;
 		this.alpha = alpha;
-		this.decisionThreshold = 1; // Limiar de decisão, ajuste conforme a modulação
+		this.decisionThreshold = 1; // Limiar de decisão
 	}
 
 	/**
-	 * Inicializa os pesos do equalizador.
-	 * @param {number} numTaps - Número de taps do equalizador.
+	 * @method initializeWeights
+	 * @param {number} numTaps - Número de taps.
+	 * @description Inicializa os pesos do equalizador.
 	 */
 	initializeWeights(numTaps) {
-		this.weights = Array(numTaps).fill(0);
-		this.weights[0] = 1; // Inicializa o tap central como 1
+		this.weights = Array(numTaps).fill(0); // Cria array de pesos
+		this.weights[0] = 1; // Peso central = 1
 	}
 
 	/**
-	 * Equaliza o sinal de entrada.
-	 * @param {number[]} inputSignal - O sinal de entrada a ser equalizado.
-	 * @returns {number[]} O sinal equalizado.
+	 * @method equalize
+	 * @param {number[]} inputSignal - Sinal de entrada.
+	 * @returns {number[]} Sinal equalizado.
+	 * @description Equaliza o sinal de entrada.
 	 */
 	equalize(inputSignal) {
 		const outputSignal = [];
 		for (let i = 0; i < inputSignal.length; i++) {
-			const inputVector = inputSignal.slice(Math.max(0, i - this.weights.length + 1), i + 1);
-			const reversedInput = inputVector.slice().reverse(); // Inverte o vetor de entrada
-			const paddedInput = Array(this.weights.length - reversedInput.length).fill(0).concat(reversedInput);
-			const output = this.calculateOutput(paddedInput);
-			outputSignal.push(output);
-			this.updateWeights(paddedInput, output);
+			const inputVector = inputSignal.slice(Math.max(0, i - this.weights.length + 1), i + 1); // Vetor de entrada
+			const reversedInput = inputVector.slice().reverse(); // Inverte vetor
+			const paddedInput = Array(this.weights.length - reversedInput.length).fill(0).concat(reversedInput); // Preenche com zeros se curto
+			const output = this.calculateOutput(paddedInput); // Calcula saída
+			outputSignal.push(output); // Adiciona ao sinal de saída
+			this.updateWeights(paddedInput, output); // Atualiza pesos
 		}
-		return outputSignal;
+		return outputSignal; // Retorna sinal equalizado
 	}
 
 	/**
-	 * Calcula a saída do equalizador.
 	 * @private
-	 * @param {number[]} input - O vetor de entrada.
-	 * @returns {number} A saída do equalizador.
+	 * @method calculateOutput
+	 * @param {number[]} input - Vetor de entrada.
+	 * @returns {number} Saída do equalizador.
+	 * @description Calcula a saída do equalizador.
 	 */
 	calculateOutput(input) {
 		let output = 0;
 		for (let i = 0; i < this.weights.length; i++) {
-			output += this.weights[i] * input[i];
+			output += this.weights[i] * input[i]; // Saída = soma dos pesos * entradas
 		}
-		return output;
+		return output; // Retorna saída
 	}
 
 	/**
-	 * Atualiza os pesos do equalizador.
 	 * @private
-	 * @param {number[]} input - O vetor de entrada.
-	 * @param {number} output - A saída do equalizador.
+	 * @method updateWeights
+	 * @param {number[]} input - Vetor de entrada.
+	 * @param {number} output - Saída do equalizador.
+	 * @description Atualiza os pesos do equalizador.
 	 */
 	updateWeights(input, output) {
-		const decision = this.makeDecision(output);
-		const error = decision - output;
+		const decision = this.makeDecision(output); // Decisão sobre o símbolo
+		const error = decision - output; // Erro = decisão - saída
 
 		// Fator variável dinâmico
-		const dynamicFactor = Math.abs(output) > this.decisionThreshold ? 1 : this.alpha;
+		const dynamicFactor = Math.abs(output) > this.decisionThreshold ? 1 : this.alpha; // Fator dinâmico baseado na saída
 
 		for (let i = 0; i < this.weights.length; i++) {
-			this.weights[i] += dynamicFactor * this.stepSize * error * input[i];
+			this.weights[i] += dynamicFactor * this.stepSize * error * input[i]; // Atualiza cada peso
 		}
 	}
 
 	/**
-	 * Toma uma decisão sobre o símbolo de saída.
 	 * @private
-	 * @param {number} output - A saída do equalizador.
-	 * @returns {number} O símbolo decidido.
+	 * @method makeDecision
+	 * @param {number} output - Saída do equalizador.
+	 * @returns {number} Símbolo decidido.
+	 * @description Toma decisão sobre o símbolo de saída.
 	 */
 	makeDecision(output) {
-		// Decisão para QPSK (ajuste conforme a modulação)
-		return output > 0 ? 1 : -1;
+		// Decisão para QPSK (ajustar se modulation mudar)
+		return output > 0 ? 1 : -1; // Decisão simples: > 0 é 1, <= 0 é -1
 	}
 }
 
 // --------------------------------------------------
-//  CLASSE APP (GERENCIAMENTO DA APLICAÇÃO)
+//  CLASSE APP - Centralizando o gerenciamento da aplicação
 // --------------------------------------------------
 /**
  * @class App
- * @description Classe principal que gerencia a aplicação.
+ * @description Classe principal para gerenciar a aplicação.
  */
 class App {
 	constructor() {
-		this.contentDiv = document.getElementById('content'); // ডিফাইন করুন contentDiv
+		// Pego a div principal onde vou colocar todo o conteúdo dinâmico da aplicação.
+		this.contentDiv = document.getElementById('content');
 		/** @type {object} */
+		// Defino um objeto para lidar com textos da interface, para facilitar se precisar mudar o idioma depois.
 		this.i18n = {
 			t: (key) => {
 				const translations = {
@@ -1079,12 +1090,13 @@ class App {
 					'returnToMenu': 'Voltar ao Menu',
 					'back': 'Voltar',
 					'calculationError': 'Erro no cálculo'
-					// adicionar outras traduções conforme necessário
+					// Aqui posso adicionar mais traduções se precisar.
 				};
 				return translations[key] || key;
 			}
 		};
 		/** @type {Calculator} */
+		// Inicializo as classes que representam cada funcionalidade do menu, passando as dependências necessárias.
 		this.calculator = new Calculator(this.i18n, this.contentDiv);
 		this.notifications = new Notifications();
 		this.forca = new Forca(this.contentDiv);
@@ -1092,21 +1104,24 @@ class App {
 		this.listaDeTarefas = new ListaDeTarefas(this.contentDiv);
 	}
 	/**
-	 * Inicializa a aplicação e configura o menu principal.
+	 * @method initialize
+	 * @description Inicializo a aplicação e o menu principal.
 	 */
 	initialize() {
-		this.setupMenu();
+		this.setupMenu(); // Configuro o menu principal assim que a aplicação inicia.
 	}
 
 	/**
-	 * Configura os event listeners para o menu principal.
 	 * @private
+	 * @method setupMenu
+	 * @description Configura os listeners para os botões do menu.
 	 */
 	setupMenu() {
 		document.querySelectorAll(".menu button").forEach(button => {
 			button.addEventListener("click", () => {
 				const option = parseInt(button.dataset.option);
 
+				// Aqui direciono para a função correta baseado na opção que o usuário escolheu no menu.
 				switch (option) {
 					case 1:
 						this.exibirOlaMundo();
@@ -1115,7 +1130,7 @@ class App {
 						this.lerNome();
 						break;
 					case 3:
-						this.showCalculator();
+						this.showCalculator(); // Mostro a calculadora.
 						break;
 					case 4:
 						this.calculadoraIdade();
@@ -1152,183 +1167,184 @@ class App {
 	}
 
 	/**
-	 * Exibe a calculadora.
+	 * @method showCalculator
+	 * @description Exibe a interface da calculadora.
 	 */
 	showCalculator() {
-		this.contentDiv.innerHTML = this.calculator.render();
-		this.calculator.initialize();
-		this.calculator.setupEventListeners();
+		this.contentDiv.innerHTML = this.calculator.render(); // Renderizo a calculadora na tela.
+		this.calculator.initialize(); // Inicializo a lógica da calculadora.
+		this.calculator.setupEventListeners(); // Ativo os eventos dos botões e teclado para a calculadora funcionar.
 	}
 
 	/**
-	 * Exibe o jogo da forca.
+	 * @method showForca
+	 * @description Exibe o jogo da forca.
 	 */
 	showForca() {
-		this.forca.atualizarJogo();
+		this.forca.atualizarJogo(); // Atualizo a tela do jogo da forca.
 	}
 
 	/**
-	 * Exibe o jogo da velha.
+	 * @method showJogoDaVelha
+	 * @description Exibe o jogo da velha.
 	 */
 	showJogoDaVelha() {
-		this.jogoDaVelha.renderBoard();
+		this.jogoDaVelha.renderBoard(); // Renderizo o tabuleiro do jogo da velha.
 	}
 
 	/**
-	 * Exibe a lista de tarefas.
+	 * @method showListaDeTarefas
+	 * @description Exibe a lista de tarefas.
 	 */
 	showListaDeTarefas() {
-		this.listaDeTarefas.renderTasks();
+		this.listaDeTarefas.renderTasks(); // Renderizo a lista de tarefas.
 	}
 
 	/**
-	 * Volta ao menu principal.
+	 * @method voltarAoMenu
+	 * @description Limpa o conteúdo principal e volta para o menu.
 	 */
 	voltarAoMenu() {
-		this.contentDiv.innerHTML = "";
+		this.contentDiv.innerHTML = ""; // Limpo o conteúdo da div principal para voltar para o menu.
 	}
 
 	/**
-	 * Exibe a mensagem de "Olá Mundo!".
+	 * @method exibirOlaMundo
+	 * @description Exibe a tela de "Olá Mundo!".
 	 */
 	exibirOlaMundo() {
 		this.contentDiv.innerHTML = `
-			<div class="ola-mundo-container">
-				<h2>Olá Mundo!</h2>
-				<button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
-			</div>
-		`;
+                <div class="ola-mundo-container">
+                    <h2>Olá Mundo!</h2>
+                    <button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
+                </div>
+            `;
 	}
 
 	/**
-	 * Solicita e exibe o nome do usuário.
+	 * @method lerNome
+	 * @description Exibe a tela para ler o nome do usuário.
 	 */
 	lerNome() {
 		this.contentDiv.innerHTML = `
-			<div class="ler-nome-container">
-				<div class="input-group">
-					<label for="nome">Digite seu nome:</label>
-					<input type="text" id="nome">
-				</div>
-				<button onclick="app.exibirNome()">Exibir Nome</button>
-				<button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
-				<div id="resultado-nome" class="resultado-mensagem"></div>
-			</div>
-		`;
+                <div class="ler-nome-container">
+                    <div class="input-group">
+                        <label for="nome">Digite seu nome:</label>
+                        <input type="text" id="nome">
+                    </div>
+                    <button onclick="app.exibirNome()">Exibir Nome</button>
+                    <button onclick="app.voltarAoMenu()">Voltar ao Menu</button>
+                    <div id="resultado-nome" class="resultado-mensagem"></div>
+                </div>
+            `;
 	}
 
 	/**
-	 * Exibe o nome digitado pelo usuário.
+	 * @method exibirNome
+	 * @description Exibe o nome do usuário na tela.
 	 */
 	exibirNome() {
 		const nome = document.getElementById("nome").value;
 		if (nome.trim() !== "") {
 			document.getElementById("resultado-nome").innerHTML = `
-                <h2>Olá, ${utils.sanitizeInput(nome)}! Seja bem-vindo(a)!</h2>
-            `;
+                    <h2>Olá, ${utils.sanitizeInput(nome)}! Seja bem-vindo(a)!</h2>
+                `;
 		} else {
-			this.notifications.show("Nome inválido!", "error");
+			this.notifications.show("Nome inválido!", "error"); // Mostro notificação de erro caso o nome seja inválido.
 		}
 	}
 
 	/**
- * Solicita e calcula a idade do usuário, com melhorias na interface e validação.
- */
+	 * @method calculadoraIdade
+	 * @description Inicializa a calculadora de idade, configurando a interface.
+	 */
 	calculadoraIdade() {
 		this.contentDiv.innerHTML = `
-			<div class="calculadora-idade-container">
-				<div class="input-group">
-					<label for="anoNascimento">Ano de Nascimento:</label>
-					<input type="number" id="anoNascimento" placeholder="Ex: 1990">
-					<small class="error-message" id="anoNascimento-error"></small>
-				</div>
-				<div class="input-group">
-					<label for="anoAtual">Ano Atual:</label>
-					<input type="number" id="anoAtual" placeholder="${new Date().getFullYear()}">
-					<small class="error-message" id="anoAtual-error"></small>
-				</div>
-				<button id="calcularIdadeBtn">Calcular Idade</button>
-				<button id="voltarMenuBtn">Voltar ao Menu</button>
-				<div id="resultado-idade" class="resultado-mensagem"></div>
-			</div>
-		`;
-	
+                <div class="calculadora-idade-container">
+                    <div class="input-group">
+                        <label for="anoNascimento">Ano de Nascimento:</label>
+                        <input type="number" id="anoNascimento" placeholder="Ex: 1990">
+                        <small class="error-message" id="anoNascimento-error"></small>
+                    </div>
+                    <div class="input-group">
+                        <label for="anoAtual">Ano Atual:</label>
+                        <input type="number" id="anoAtual" placeholder="${new Date().getFullYear()}">
+                        <small class="error-message" id="anoAtual-error"></small>
+                    </div>
+                    <button id="calcularIdadeBtn">Calcular Idade</button>
+                    <button id="voltarMenuBtn">Voltar ao Menu</button>
+                    <div id="resultado-idade" class="resultado-mensagem"></div>
+                </div>
+            `;
+
 		document.getElementById('calcularIdadeBtn').addEventListener('click', () => this.processarCalculoIdade());
 		document.getElementById('voltarMenuBtn').addEventListener('click', () => this.voltarAoMenu());
 	}
 
 	/**
- * Processa o cálculo da idade após obter e validar os anos de nascimento e atual.
- * Este método é chamado ao clicar no botão 'Calcular Idade' na interface.
- */
+	 * @method processarCalculoIdade
+	 * @description Processa o cálculo da idade após validação dos inputs.
+	 */
 	processarCalculoIdade() {
-		// 1. Obter valores dos campos de input e tentar convertê-los para números.
+		// Valido se os anos digitados são números e se fazem sentido (nascimento < atual).
 		const anoNascimento = this.obterNumero("anoNascimento");
 		const anoAtual = this.obterNumero("anoAtual");
 
-		// 2. Limpar quaisquer mensagens de erro exibidas anteriormente.
-		this.limparMensagensErro();
+		this.limparMensagensErro(); // Limpo qualquer mensagem de erro que possa estar aparecendo.
 
-		// 3. Validar as entradas do usuário:
 		if (anoNascimento === null) {
 			this.mostrarMensagemErro("anoNascimento", "Ano de nascimento inválido. Digite um número.");
-			return; // Aborta o processamento se a entrada for inválida.
+			return;
 		}
 		if (anoAtual === null) {
 			this.mostrarMensagemErro("anoAtual", "Ano atual inválido. Digite um número.");
-			return; // Aborta o processamento se a entrada for inválida.
+			return;
 		}
 
 		if (anoNascimento > anoAtual) {
 			this.mostrarMensagemErro("anoNascimento", "O ano de nascimento não pode ser posterior ao ano atual.");
 			this.mostrarMensagemErro("anoAtual", "O ano atual não pode ser anterior ao ano de nascimento.");
-			return; // Aborta se os anos forem logicamente inválidos.
+			return;
 		}
 
 		const anoCorrente = new Date().getFullYear();
-		if (anoAtual > anoCorrente + 1) { // Limite de segurança para ano atual (considerando o próximo ano como razoável)
+		if (anoAtual > anoCorrente + 1) { // Verifico se o ano atual digitado não é irreal (muito no futuro).
 			this.mostrarMensagemErro("anoAtual", `Por favor, insira um ano atual válido (até ${anoCorrente + 1}).`);
-			return; // Aborta se o ano atual for irrealista.
+			return;
 		}
 
-		// 4. Calcular a idade (somente se todas as validações passarem).
+		// Se tudo estiver ok, calculo a idade e mostro na tela.
 		const idade = anoAtual - anoNascimento;
 
-		// 5. Exibir o resultado na interface do usuário.
 		if (idade >= 0) {
 			document.getElementById("resultado-idade").innerHTML = `
-            <h2>Sua idade é: <span class="idade-valor">${idade}</span> anos</h2>
-        `;
+                    <h2>Sua idade é: <span class="idade-valor">${idade}</span> anos</h2>
+            `;
 		} else {
-			// 6. Caso improvável de idade negativa após validações, exibir mensagem de erro genérica.
-			//    Este bloco deve ser dificilmente atingido pelas validações robustas.
 			this.notifications.show("Erro inesperado ao calcular a idade.", "error");
 		}
 	}
 
 
 	/**
-	 * Obtém o valor de um campo de input pelo ID, tenta convertê-lo para um número,
-	 * e valida se o resultado é realmente um número (não NaN).
-	 *
-	 * @param {string} idDoElemento - O ID do elemento input do qual obter o valor.
-	 * @returns {number|null} - O número obtido do campo de input, ou null se a entrada não for um número válido.
+	 * @method obterNumero
+	 * @param {string} idDoElemento - ID do elemento input.
+	 * @returns {number|null} Número obtido ou null se inválido.
+	 * @description Função reutilizável para obter um número de um input e validar.
 	 */
 	obterNumero(idDoElemento) {
 		const valorInput = document.getElementById(idDoElemento).value;
-		const numero = Number(valorInput); // Converte a string para um número.
+		const numero = Number(valorInput);
 
-		// 1. Verificar se a conversão resultou em um número válido (não NaN - Not a Number).
 		if (isNaN(numero)) {
-			return null; // Retorna null se a conversão falhar, indicando entrada não numérica.
+			return null; // Retorno null se não for número.
 		}
-
-		// 2. Retornar o número convertido se for válido.
 		return numero;
 	}
 
 	/**
-	 * Limpa todas as mensagens de erro exibidas.
+	 * @method limparMensagensErro
+	 * @description Limpa todas as mensagens de erro da tela.
 	 */
 	limparMensagensErro() {
 		let errorMessages = document.querySelectorAll('.error-message');
@@ -1336,9 +1352,10 @@ class App {
 	}
 
 	/**
-	 * Exibe uma mensagem de erro abaixo do campo de input especificado.
+	 * @method mostrarMensagemErro
 	 * @param {string} elementoId - ID do elemento input.
 	 * @param {string} mensagem - Mensagem de erro a ser exibida.
+	 * @description Mostra uma mensagem de erro abaixo de um input específico.
 	 */
 	mostrarMensagemErro(elementoId, mensagem) {
 		let errorElement = document.getElementById(elementoId + "-error");
@@ -1350,193 +1367,149 @@ class App {
 	}
 
 	/**
- * Inicializa a interface para verificar se um número é primo.
- * Solicita ao usuário que digite um número inteiro positivo.
- */
+	 * @method verificarNumeroPrimo
+	 * @description Inicializa a interface para verificar se um número é primo.
+	 */
 	verificarNumeroPrimo() {
 		this.contentDiv.innerHTML = `
-			<div class="verificador-primo-container">
-				<div class="input-group">
-					<label for="numeroPrimo">Digite um número inteiro positivo:</label>
-					<input type="number" id="numeroPrimo" placeholder="Ex: 17">
-					<small class="error-message" id="numeroPrimo-error"></small>
-				</div>
-				<button id="verificarPrimoBtn">Verificar</button>
-				<button id="voltarMenuBtn">Voltar ao Menu</button>
-				<div id="resultado-primo" class="resultado-mensagem"></div>
-			</div>
-		`;
-	
+                <div class="verificador-primo-container">
+                    <div class="input-group">
+                        <label for="numeroPrimo">Digite um número inteiro positivo:</label>
+                        <input type="number" id="numeroPrimo" placeholder="Ex: 17">
+                        <small class="error-message" id="numeroPrimo-error"></small>
+                    </div>
+                    <button id="verificarPrimoBtn">Verificar</button>
+                    <button id="voltarMenuBtn">Voltar ao Menu</button>
+                    <div id="resultado-primo" class="resultado-mensagem"></div>
+                </div>
+            `;
+
 		document.getElementById('verificarPrimoBtn').addEventListener('click', () => this.processarVerificacaoPrimo());
 		document.getElementById('voltarMenuBtn').addEventListener('click', () => this.voltarAoMenu());
 	}
 
 	/**
-	 * Processa a verificação se o número inserido é primo, após validação.
+	 * @method processarVerificacaoPrimo
+	 * @description Processa a verificação de número primo após validação.
 	 */
 	processarVerificacaoPrimo() {
-		// 1. Obtém o número do input e tenta convertê-lo para número.
+		// Valido se o que foi digitado é um número inteiro positivo.
 		const numeroInput = document.getElementById("numeroPrimo");
-		const numero = this.obterNumero("numeroPrimo"); // Já retorna null se não for um número válido
+		const numero = this.obterNumero("numeroPrimo");
 
-		// 2. Limpa mensagens de erro anteriores.
-		this.limparMensagensErro();
+		this.limparMensagensErro(); // Limpo mensagens de erro.
 
-		// 3. Validação da entrada:
 		if (numero === null) {
 			this.mostrarMensagemErro("numeroPrimo", "Por favor, digite um número inteiro válido.");
-			return; // Aborta se a entrada não for um número.
+			return;
 		}
 
 		if (!Number.isInteger(numero) || numero <= 0) {
 			this.mostrarMensagemErro("numeroPrimo", "Digite um número inteiro *positivo*.");
-			return; // Aborta se não for um inteiro positivo.
+			return;
 		}
 
-		// 4. Verifica se o número é primo.
+		// Se passou nas validações, verifico se é primo e exibo o resultado.
 		const ehPrimo = this.isPrimo(numero);
 
-		// 5. Exibe o resultado na interface.
 		const resultadoTexto = ehPrimo ? `<span class="primo-valor">${numero}</span> é um número primo.` : `<span class="nao-primo-valor">${numero}</span> não é um número primo.`;
 		document.getElementById("resultado-primo").innerHTML = `<h2>${resultadoTexto}</h2>`;
 	}
 
 	/**
-	 * Determina se um número é primo.
-	 * Implementa uma otimização simples: verifica divisores até a raiz quadrada do número.
-	 * @param {number} numero - O número a ser verificado.
-	 * @returns {boolean} - True se o número for primo, false caso contrário.
+	 * @method isPrimo
+	 * @param {number} numero - Número a ser verificado.
+	 * @returns {boolean} True se primo, false caso contrário.
+	 * @description Verifica se um número é primo de forma eficiente.
 	 */
 	isPrimo(numero) {
-		if (numero <= 1) return false; // Números menores ou iguais a 1 não são primos.
-		if (numero <= 3) return true;  // 2 e 3 são primos.
+		if (numero <= 1) return false; // Números <= 1 não são primos.
+		if (numero <= 3) return true; // 2 e 3 são primos.
 
-		// Se divisível por 2 ou 3, não é primo.
-		if (numero % 2 === 0 || numero % 3 === 0) return false;
+		if (numero % 2 === 0 || numero % 3 === 0) return false; // Se divisível por 2 ou 3, não é primo.
 
-		// Verifica apenas até a raiz quadrada de 'numero'.
-		// Otimização: incrementa de 6 em 6, verificando i e i+2, pois já excluímos divisíveis por 2 e 3.
+		// Otimização: verifico divisores só até a raiz quadrada e pulando de 6 em 6.
 		for (let i = 5; i * i <= numero; i = i + 6) {
 			if (numero % i === 0 || numero % (i + 2) === 0) return false;
 		}
 
-		return true; // Se não encontrou divisores, é primo.
+		return true; // Se não encontrei nenhum divisor, é primo.
 	}
 
 
 	/**
-	 * Obtém um número do campo de input, validando se é um número.
-	 * Retorna null se não for um número.
-	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 * @method calculadoraIMC
+	 * @description Inicializa a interface da calculadora de IMC.
 	 */
-	obterNumero(idDoElemento) {
-		const valorInput = document.getElementById(idDoElemento).value;
-		const numero = Number(valorInput);
-
-		if (isNaN(numero)) {
-			return null;
-		}
-		return numero;
-	}
-
-	/**
-	 * Limpa todas as mensagens de erro exibidas.
-	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
-	 */
-	limparMensagensErro() {
-		const errorMessages = document.querySelectorAll('.error-message');
-		errorMessages.forEach(message => message.textContent = '');
-	}
-
-	/**
-	 * Exibe uma mensagem de erro abaixo do campo de input especificado.
-	 * @param {string} elementoId - ID do elemento input.
-	 * @param {string} mensagem - Mensagem de erro a ser exibida.
-	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
-	 */
-	mostrarMensagemErro(elementoId, mensagem) {
-		const errorElement = document.getElementById(elementoId + "-error");
-		if (errorElement) {
-			errorElement.textContent = mensagem;
-		} else {
-			console.error("Elemento de erro não encontrado para ID:", elementoId);
-		}
-	}
-
-	/**
- * Inicializa a interface para a calculadora de IMC.
- * Solicita peso (em kg) e altura (em metros) do usuário.
- */
 	calculadoraIMC() {
 		this.contentDiv.innerHTML = `
-			<div class="calculadora-imc-container">
-				<div class="input-group">
-					<label for="peso">Digite seu peso (em kg):</label>
-					<input type="number" id="peso" placeholder="Ex: 75">
-					<small class="error-message" id="peso-error"></small>
-				</div>
-				<div class="input-group">
-					<label for="altura">Digite sua altura (em metros):</label>
-					<input type="number" id="altura" placeholder="Ex: 1.75" step="0.01">
-					<small class="error-message" id="altura-error"></small>
-				</div>
-				<button id="calcularIMCBtn">Calcular IMC</button>
-				<button id="voltarMenuBtn">Voltar ao Menu</button>
-				<div id="resultado-imc" class="resultado-mensagem"></div>
-			</div>
-		`;
-	
+                <div class="calculadora-imc-container">
+                    <div class="input-group">
+                        <label for="peso">Digite seu peso (em kg):</label>
+                        <input type="number" id="peso" placeholder="Ex: 75">
+                        <small class="error-message" id="peso-error"></small>
+                    </div>
+                    <div class="input-group">
+                        <label for="altura">Digite sua altura (em metros):</label>
+                        <input type="number" id="altura" placeholder="Ex: 1.75" step="0.01">
+                        <small class="error-message" id="altura-error"></small>
+                    </div>
+                    <button id="calcularIMCBtn">Calcular IMC</button>
+                    <button id="voltarMenuBtn">Voltar ao Menu</button>
+                    <div id="resultado-imc" class="resultado-mensagem"></div>
+                </div>
+            `;
+
 		document.getElementById('calcularIMCBtn').addEventListener('click', () => this.processarCalculoIMC());
 		document.getElementById('voltarMenuBtn').addEventListener('click', () => this.voltarAoMenu());
 	}
 
 	/**
-	 * Processa o cálculo do IMC após obter e validar peso e altura.
+	 * @method processarCalculoIMC
+	 * @description Processa o cálculo do IMC após validação dos inputs.
 	 */
 	processarCalculoIMC() {
-		// 1. Obter valores dos inputs e tentar convertê-los para números.
+		// Valido peso e altura, verificando se são números e se fazem sentido.
 		const peso = this.obterNumero("peso");
 		const altura = this.obterNumero("altura");
 
-		// 2. Limpar mensagens de erro anteriores.
-		this.limparMensagensErro();
+		this.limparMensagensErro(); // Limpo mensagens de erro.
 
-		// 3. Validação das entradas:
 		if (peso === null) {
 			this.mostrarMensagemErro("peso", "Peso inválido. Digite um número em kg.");
-			return; // Aborta se o peso for inválido.
+			return;
 		}
 		if (altura === null) {
 			this.mostrarMensagemErro("altura", "Altura inválida. Digite um número em metros.");
-			return; // Aborta se a altura for inválida.
+			return;
 		}
 
 		if (peso <= 0) {
 			this.mostrarMensagemErro("peso", "Peso deve ser maior que zero.");
-			return; // Aborta se o peso for zero ou negativo.
+			return;
 		}
-		if (altura <= 0 || altura > 3) { // Altura máxima razoável é 3 metros
+		if (altura <= 0 || altura > 3) { // Altura máxima razoável 3m.
 			this.mostrarMensagemErro("altura", "Altura deve ser maior que zero e razoável (máximo 3 metros).");
-			return; // Aborta se a altura for zero, negativa ou irrazoável.
+			return;
 		}
 
-		// 4. Calcular o IMC.
+		// Calculo o IMC se as validações passaram.
 		const imc = peso / (altura * altura);
 
-		// 5. Determinar a classificação do IMC.
+		// Classifico o IMC e exibo o resultado na tela.
 		const classificacao = this.classificarIMC(imc);
 
-		// 6. Exibir o resultado na interface do usuário.
 		document.getElementById("resultado-imc").innerHTML = `
-        <h2>Seu IMC é: <span class="imc-valor">${imc.toFixed(2).toLocaleString('pt-BR')}</span></h2>
-        <p class="imc-classificacao">Classificação: <span class="classificacao-valor">${classificacao}</span></p>
-    `;
+                <h2>Seu IMC é: <span class="imc-valor">${imc.toFixed(2).toLocaleString('pt-BR')}</span></h2>
+                <p class="imc-classificacao">Classificação: <span class="classificacao-valor">${classificacao}</span></p>
+        `;
 	}
 
 	/**
-	 * Classifica o IMC em categorias de peso.
-	 * @param {number} imc - O valor do IMC.
-	 * @returns {string} - A classificação do IMC.
+	 * @method classificarIMC
+	 * @param {number} imc - Valor do IMC.
+	 * @returns {string} Classificação do IMC.
+	 * @description Classifica o IMC em categorias.
 	 */
 	classificarIMC(imc) {
 		let classificacao = "";
@@ -1558,111 +1531,71 @@ class App {
 
 
 	/**
-	 * Obtém um número do campo de input, validando se é um número.
-	 * Retorna null se não for um número.
-	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 * @method conversorTemperatura
+	 * @description Inicializa a interface do conversor de temperatura.
 	 */
-	obterNumero(idDoElemento) {
-		const valorInput = document.getElementById(idDoElemento).value;
-		const numero = Number(valorInput);
-
-		if (isNaN(numero)) {
-			return null;
-		}
-		return numero;
-	}
-
-	/**
-	 * Limpa todas as mensagens de erro exibidas.
-	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
-	 */
-	limparMensagensErro() {
-		const errorMessages = document.querySelectorAll('.error-message');
-		errorMessages.forEach(message => message.textContent = '');
-	}
-
-	/**
-	 * Exibe uma mensagem de erro abaixo do campo de input especificado.
-	 * @param {string} elementoId - ID do elemento input.
-	 * @param {string} mensagem - Mensagem de erro a ser exibida.
-	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
-	 */
-	mostrarMensagemErro(elementoId, mensagem) {
-		const errorElement = document.getElementById(elementoId + "-error");
-		if (errorElement) {
-			errorElement.textContent = mensagem;
-		} else {
-			console.error("Elemento de erro não encontrado para ID:", elementoId);
-		}
-	}
-
-	/**
- * Inicializa a interface para o conversor de temperatura.
- * Solicita a temperatura e o tipo de conversão desejado.
- */
 	conversorTemperatura() {
 		this.contentDiv.innerHTML = `
-			<div class="conversor-temperatura-container"> <div class="input-group">
-				<label for="temperatura">Digite a temperatura:</label>
-				<input type="number" id="temperatura" placeholder="Ex: 25">
-				<small class="error-message" id="temperatura-error"></small>
-			</div>
-			<div class="input-group">
-				<label for="tipoConversao">Escolha a conversão:</label>
-				<select id="tipoConversao">
-					<option value="">Selecione o tipo de conversão</option>
-					<option value="1">Celsius para Fahrenheit</option>
-					<option value="2">Celsius para Kelvin</option>
-					<option value="3">Fahrenheit para Celsius</option>
-					<option value="4">Fahrenheit para Kelvin</option>
-					<option value="5">Kelvin para Celsius</option>
-					<option value="6">Kelvin para Fahrenheit</option>
-				</select>
-				<small class="error-message" id="tipoConversao-error"></small>
-			</div>
-			<button id="converterBtn">Converter</button>
-			<button id="voltarMenuBtn">Voltar ao Menu</button>
-			<div id="resultado-conversao" class="resultado-mensagem"></div>
-			</div>
-		`;
-	
+                <div class="conversor-temperatura-container"> <div class="input-group">
+                    <label for="temperatura">Digite a temperatura:</label>
+                    <input type="number" id="temperatura" placeholder="Ex: 25">
+                    <small class="error-message" id="temperatura-error"></small>
+                </div>
+                <div class="input-group">
+                    <label for="tipoConversao">Escolha a conversão:</label>
+                    <select id="tipoConversao">
+                        <option value="">Selecione o tipo de conversão</option>
+                        <option value="1">Celsius para Fahrenheit</option>
+                        <option value="2">Celsius para Kelvin</option>
+                        <option value="3">Fahrenheit para Celsius</option>
+                        <option value="4">Fahrenheit para Kelvin</option>
+                        <option value="5">Kelvin para Celsius</option>
+                        <option value="6">Kelvin para Fahrenheit</option>
+                    </select>
+                    <small class="error-message" id="tipoConversao-error"></small>
+                </div>
+                <button id="converterBtn">Converter</button>
+                <button id="voltarMenuBtn">Voltar ao Menu</button>
+                <div id="resultado-conversao" class="resultado-mensagem"></div>
+                </div>
+            `;
+
 		document.getElementById('converterBtn').addEventListener('click', () => this.processarConversao());
 		document.getElementById('voltarMenuBtn').addEventListener('click', () => this.voltarAoMenu());
 	}
 
 	/**
-	 * Processa a conversão de temperatura após validação da entrada.
+	 * @method processarConversao
+	 * @description Processa a conversão de temperatura após validação.
 	 */
 	processarConversao() {
-		// 1. Obter valores dos inputs e tentar convertê-los.
+		// Valido se a temperatura digitada é número e se o tipo de conversão foi selecionado.
 		const temperatura = this.obterNumero("temperatura");
 		const tipoConversaoElement = document.getElementById("tipoConversao");
 		const tipoConversao = parseInt(tipoConversaoElement.value);
 
 
-		// 2. Limpar mensagens de erro anteriores.
-		this.limparMensagensErro();
+		this.limparMensagensErro(); // Limpo mensagens de erro.
 
-		// 3. Validação das entradas:
 		if (temperatura === null) {
 			this.mostrarMensagemErro("temperatura", "Temperatura inválida. Digite um número.");
-			return; // Aborta se a temperatura for inválida.
+			return;
 		}
 
 		if (tipoConversaoElement.value === "") {
 			this.mostrarMensagemErro("tipoConversao", "Selecione o tipo de conversão.");
-			return; // Aborta se o tipo de conversão não for selecionado.
+			return;
 		}
 
-		if (isNaN(tipoConversao) || tipoConversao < 1 || tipoConversao > 6) {
+		if (isNaN(tipoConversao) || tipoConversao < 1 || tipoConversao > 6) { // Valido se o tipo de conversão é válido.
 			this.mostrarMensagemErro("tipoConversao", "Seleção de conversão inválida.");
-			return; // Validação adicional para garantir que tipoConversao é um valor esperado.
+			return;
 		}
 
 		let resultado;
 		let unidadeOriginal, unidadeConvertida;
 
-		// 4. Realizar a conversão com base no tipo selecionado.
+		// Faço a conversão baseada na opção escolhida.
 		switch (tipoConversao) {
 			case 1: // Celsius para Fahrenheit
 				resultado = (temperatura * 9) / 5 + 32;
@@ -1695,214 +1628,156 @@ class App {
 				unidadeConvertida = "°F";
 				break;
 			default:
-				// Este caso não deve ocorrer devido à validação anterior, mas é mantido como fallback.
 				this.mostrarMensagemErro("tipoConversao", "Erro interno na seleção de conversão.");
 				return;
 		}
 
-		// 5. Exibir o resultado da conversão na interface.
+		// Exibo o resultado da conversão na tela.
 		this.exibirResultadoConversao(temperatura, unidadeOriginal, resultado, unidadeConvertida);
 	}
 
 	/**
-	 * Exibe o resultado formatado da conversão de temperatura na interface.
+	 * @method exibirResultadoConversao
 	 * @param {number} temperatura - Temperatura original.
-	 * @param {string} unidadeOriginal - Unidade original da temperatura.
+	 * @param {string} unidadeOriginal - Unidade original.
 	 * @param {number} resultado - Temperatura convertida.
-	 * @param {string} unidadeConvertida - Unidade para a qual a temperatura foi convertida.
+	 * @param {string} unidadeConvertida - Unidade convertida.
+	 * @description Exibe o resultado formatado da conversão de temperatura.
 	 */
 	exibirResultadoConversao(temperatura, unidadeOriginal, resultado, unidadeConvertida) {
 		document.getElementById("resultado-conversao").innerHTML = `
-        <h2><span class="temperatura-original">${temperatura.toFixed(1).toLocaleString('pt-BR')}</span><span class="unidade-original">${unidadeOriginal}</span> equivalem a <span class="temperatura-convertida">${resultado.toFixed(1).toLocaleString('pt-BR')}</span><span class="unidade-convertida">${unidadeConvertida}</span></h2>
-    `;
+                <h2><span class="temperatura-original">${temperatura.toFixed(1).toLocaleString('pt-BR')}</span><span class="unidade-original">${unidadeOriginal}</span> equivalem a <span class="temperatura-convertida">${resultado.toFixed(1).toLocaleString('pt-BR')}</span><span class="unidade-convertida">${unidadeConvertida}</span></h2>
+        `;
 	}
 
 
 	/**
-	 * Obtém um número do campo de input, validando se é um número.
-	 * Retorna null se não for um número.
-	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 * @method geradorTabelaASCII
+	 * @description Gera e exibe a tabela ASCII na tela.
 	 */
-	obterNumero(idDoElemento) {
-		const valorInput = document.getElementById(idDoElemento).value;
-		const numero = Number(valorInput);
+	geradorTabelaASCII() {
+		// Crio a tabela HTML na string e depois adiciono ao contentDiv.
+		let tabelaHTML = `
+                <h2>Tabela ASCII</h2>
+                <div class="tabela-ascii">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Decimal</th>
+                                <th>Caractere</th>
+                                <th>Hexadecimal</th>
+                                <th>Octal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+        `;
 
-		if (isNaN(numero)) {
-			return null;
+		// Loop para gerar cada linha da tabela ASCII.
+		for (let codigoASCII = 0; codigoASCII <= 127; codigoASCII++) {
+			tabelaHTML += this.gerarLinhaTabelaASCII(codigoASCII);
 		}
-		return numero;
+
+		tabelaHTML += `
+                        </tbody>
+                    </table>
+                </div>
+                <button id="voltarMenuASCIIBtn">Voltar ao Menu</button>
+        `;
+
+		this.contentDiv.innerHTML = tabelaHTML; // Insiro a tabela no HTML.
+
+		document.getElementById('voltarMenuASCIIBtn').addEventListener('click', () => this.voltarAoMenu());
 	}
 
 	/**
-	 * Limpa todas as mensagens de erro exibidas.
-	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 * @method gerarLinhaTabelaASCII
+	 * @param {number} codigoASCII - Código ASCII.
+	 * @returns {string} Linha HTML da tabela ASCII.
+	 * @description Gera uma linha da tabela ASCII para um código específico.
 	 */
-	limparMensagensErro() {
-		const errorMessages = document.querySelectorAll('.error-message');
-		errorMessages.forEach(message => message.textContent = '');
+	gerarLinhaTabelaASCII(codigoASCII) {
+		// Converto para caractere, hexadecimal e octal.
+		const caractere = String.fromCharCode(codigoASCII);
+		const hexadecimal = codigoASCII.toString(16).toUpperCase();
+		const octal = codigoASCII.toString(8);
+
+		// Formato a linha HTML com os dados.
+		return `
+                <tr>
+                    <td>${codigoASCII}</td>
+                    <td>${this.formatarCaractereASCII(caractere, codigoASCII)}</td>
+                    <td>${hexadecimal}</td>
+                    <td>${octal}</td>
+                </tr>
+        `;
 	}
 
 	/**
-	 * Exibe uma mensagem de erro abaixo do campo de input especificado.
-	 * @param {string} elementoId - ID do elemento input.
-	 * @param {string} mensagem - Mensagem de erro a ser exibida.
-	 * (Função reutilizada e pode ser movida para um utilitário comum se aplicável)
+	 * @method formatarCaractereASCII
+	 * @param {string} caractere - Caractere ASCII.
+	 * @param {number} codigoASCII - Código ASCII.
+	 * @returns {string} Caractere formatado para exibição.
+	 * @description Formata o caractere ASCII para exibição na tabela, tratando caracteres de controle.
 	 */
-	mostrarMensagemErro(elementoId, mensagem) {
-		const errorElement = document.getElementById(elementoId + "-error");
-		if (errorElement) {
-			errorElement.textContent = mensagem;
+	formatarCaractereASCII(caractere, codigoASCII) {
+		// Caracteres de controle (códigos 0-31 e 127) não são imprimíveis, então mostro um nome pra eles.
+		if (codigoASCII < 32 || codigoASCII === 127) {
+			return `<span class="caractere-controle">${this.obterNomeControleASCII(codigoASCII)} (Código ${codigoASCII})</span>`;
 		} else {
-			console.error("Elemento de erro não encontrado para ID:", elementoId);
+			return caractere; // Caracteres normais mostro direto.
 		}
 	}
 
+
 	/**
- * Gera e exibe a tabela ASCII de forma mais estruturada e legível.
- */
-geradorTabelaASCII() {
-    // 1. Inicializa o cabeçalho da tabela HTML.
-    let tabelaHTML = `
-        <h2>Tabela ASCII</h2>
-        <div class="tabela-ascii">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Decimal</th>
-                        <th>Caractere</th>
-                        <th>Hexadecimal</th>
-                        <th>Octal</th>
-                    </tr>
-                </thead>
-                <tbody>
-    `;
-
-    // 2. Loop para gerar as linhas da tabela ASCII para os códigos de 0 a 127.
-    for (let codigoASCII = 0; codigoASCII <= 127; codigoASCII++) {
-        tabelaHTML += this.gerarLinhaTabelaASCII(codigoASCII);
-    }
-
-    // 3. Finaliza a tabela HTML e adiciona o botão 'Voltar ao Menu'.
-    tabelaHTML += `
-                </tbody>
-            </table>
-        </div>
-        <button id="voltarMenuASCIIBtn">Voltar ao Menu</button>
-    `;
-
-    // 4. Insere a tabela HTML completa e o botão no elemento contentDiv.
-    this.contentDiv.innerHTML = tabelaHTML;
-
-    // 5. Adiciona um listener de evento para o botão 'Voltar ao Menu' usando addEventListener.
-    document.getElementById('voltarMenuASCIIBtn').addEventListener('click', () => this.voltarAoMenu());
-}
-
-/**
- * Gera uma linha (<tr>) da tabela ASCII para um código ASCII específico.
- * @param {number} codigoASCII - O código ASCII para gerar a linha.
- * @returns {string} - Uma string representando a linha <tr> da tabela ASCII.
- */
-gerarLinhaTabelaASCII(codigoASCII) {
-    // Converte o código ASCII para caractere, hexadecimal e octal.
-    const caractere = String.fromCharCode(codigoASCII);
-    const hexadecimal = codigoASCII.toString(16).toUpperCase(); // Converter para hexadecimal (base 16) e maiúsculas
-    const octal = codigoASCII.toString(8); // Converter para octal (base 8)
-
-    // Formata a linha da tabela (<tr>) com os dados.
-    return `
-        <tr>
-            <td>${codigoASCII}</td>
-            <td>${this.formatarCaractereASCII(caractere, codigoASCII)}</td>
-            <td>${hexadecimal}</td>
-            <td>${octal}</td>
-        </tr>
-    `;
-}
-
-/**
- * Formata o caractere ASCII para exibição na tabela.
- * Para caracteres de controle (códigos 0-31 e 127), exibe representações especiais.
- * @param {string} caractere - O caractere ASCII a ser formatado.
- * @param {number} codigoASCII - O código ASCII do caractere.
- * @returns {string} - O caractere formatado para exibição.
- */
-formatarCaractereASCII(caractere, codigoASCII) {
-    // Caracteres de controle ASCII (0-31 e 127) não são imprimíveis, então os representamos por nomes.
-    if (codigoASCII < 32 || codigoASCII === 127) {
-        return `<span class="caractere-controle">${this.obterNomeControleASCII(codigoASCII)} (Código ${codigoASCII})</span>`;
-    } else {
-        return caractere; // Caracteres imprimíveis são exibidos normalmente.
-    }
-}
-
-
-/**
- * Obtém o nome descritivo de um caractere de controle ASCII.
- * @param {number} codigoASCII - O código ASCII do caractere de controle.
- * @returns {string} - O nome descritivo do caractere de controle.
- */
-obterNomeControleASCII(codigoASCII) {
-    // Mapeamento de alguns códigos de controle ASCII para nomes descritivos para melhor entendimento na tabela.
-    const nomesControle = {
-        0: "NUL (Null)",
-        1: "SOH (Start of Heading)",
-        2: "STX (Start of Text)",
-        3: "ETX (End of Text)",
-        4: "EOT (End of Transmission)",
-        5: "ENQ (Enquiry)",
-        6: "ACK (Acknowledgement)",
-        7: "BEL (Bell)",
-        8: "BS (Backspace)",
-        9: "TAB (Tab)",
-        10: "LF (Line Feed)",
-        11: "VT (Vertical Tab)",
-        12: "FF (Form Feed)",
-        13: "CR (Carriage Return)",
-        14: "SO (Shift Out)",
-        15: "SI (Shift In)",
-        16: "DLE (Data Link Escape)",
-        17: "DC1 (Device Control 1)",
-        18: "DC2 (Device Control 2)",
-        19: "DC3 (Device Control 3)",
-        20: "DC4 (Device Control 4)",
-        21: "NAK (Negative Acknowledgement)",
-        22: "SYN (Synchronous Idle)",
-        23: "ETB (End of Transmission Block)",
-        24: "CAN (Cancel)",
-        25: "EM (End of Medium)",
-        26: "SUB (Substitute)",
-        27: "ESC (Escape)",
-        28: "FS (File Separator)",
-        29: "GS (Group Separator)",
-        30: "RS (Record Separator)",
-        31: "US (Unit Separator)",
-        127: "DEL (Delete)"
-    };
-    return nomesControle[codigoASCII] || `Control Code ${codigoASCII}`; // Retorna nome ou um genérico se não mapeado.
-}
-
-
-/**
- * Obtém um número do campo de entrada especificado.
- * @param {string} idElemento - O ID do elemento do campo de entrada.
- * @param {boolean} [inteiro=false] - Se verdadeiro, retorna um inteiro, caso contrário, um float.
- * @returns {number|null} O número obtido ou null se a entrada for inválida.
- * (Função reutilizada - manter conforme necessário)
- */
-obterNumero(idElemento, inteiro = false) {
-    let valor = document.getElementById(idElemento).value;
-
-    if (valor.trim() === "" || (inteiro && !/^-?\d+$/.test(valor)) || (!inteiro && !/^-?\d+(\.\d+)?$/.test(valor))) {
-        this.notifications.show("Entrada inválida. Por favor, digite um número válido.", "error");
-        return null;
-    }
-
-    return inteiro ? parseInt(valor) : parseFloat(valor);
-}
+	 * @method obterNomeControleASCII
+	 * @param {number} codigoASCII - Código ASCII de controle.
+	 * @returns {string} Nome descritivo do caractere de controle.
+	 * @description Obtém o nome descritivo de um caractere de controle ASCII.
+	 */
+	obterNomeControleASCII(codigoASCII) {
+		// Um mapa de códigos de controle para nomes mais legíveis na tabela.
+		const nomesControle = {
+			0: "NUL (Null)",
+			1: "SOH (Start of Heading)",
+			2: "STX (Start of Text)",
+			3: "ETX (End of Text)",
+			4: "EOT (End of Transmission)",
+			5: "ENQ (Enquiry)",
+			6: "ACK (Acknowledgement)",
+			7: "BEL (Bell)",
+			8: "BS (Backspace)",
+			9: "TAB (Tab)",
+			10: "LF (Line Feed)",
+			11: "VT (Vertical Tab)",
+			12: "FF (Form Feed)",
+			13: "CR (Carriage Return)",
+			14: "SO (Shift Out)",
+			15: "SI (Shift In)",
+			16: "DLE (Data Link Escape)",
+			17: "DC1 (Device Control 1)",
+			18: "DC2 (Device Control 2)",
+			19: "DC3 (Device Control 3)",
+			20: "DC4 (Device Control 4)",
+			21: "NAK (Negative Acknowledgement)",
+			22: "SYN (Synchronous Idle)",
+			23: "ETB (End of Transmission Block)",
+			24: "CAN (Cancel)",
+			25: "EM (End of Medium)",
+			26: "SUB (Substitute)",
+			27: "ESC (Escape)",
+			28: "FS (File Separator)",
+			29: "GS (Group Separator)",
+			30: "RS (Record Separator)",
+			31: "US (Unit Separator)",
+			127: "DEL (Delete)"
+		};
+		return nomesControle[codigoASCII] || `CTRL-${codigoASCII}`; // Se não tiver nome específico, mostro como CTRL-código.
+	}
 }
 
 // --------------------------------------------------
-//  INICIALIZAÇÃO DA APLICAÇÃO
+//  INICIALIZAÇÃO DA APLICAÇÃO - Ponto de partida do app
 // --------------------------------------------------
 
 /**
@@ -1910,33 +1785,34 @@ obterNumero(idElemento, inteiro = false) {
  * @description Instância principal da aplicação.
  * @type {App}
  */
-let app;
+let app; // Aqui vai ficar a instância da nossa classe App.
 
 /**
  * @global
- * @description Função chamada quando o script math.js é carregado.
+ * @description Função que roda quando o math.js termina de carregar.
  */
 function initializeApp() {
-	app = new App();
-	app.initialize();
+	app = new App(); // Crio uma nova instância do App.
+	app.initialize(); // Inicializo o app, configurando o menu e tudo mais.
 
-	// Configura o modo escuro após a inicialização da App
+	// Modo escuro - Puxando as configurações e ativando se já tava antes
 	const darkModeToggle = document.getElementById('darkModeToggle');
 
-	// Verifica se o modo noturno está ativado no localStorage
+	// Checo se o modo escuro tava ligado da última vez no localStorage
 	if (localStorage.getItem('darkMode') === 'enabled') {
-		document.body.classList.add('dark-mode');
-		darkModeToggle.checked = true;
+		document.body.classList.add('dark-mode'); // Se tava, já ligo o modo escuro no body.
+		darkModeToggle.checked = true; // E deixo o toggle 'ligado' visualmente.
 	}
 
+	// Listener pro toggle do modo escuro - Pra mudar quando o usuário clica
 	darkModeToggle.addEventListener('change', () => {
 		console.log("DarkMode toggle changed:", darkModeToggle.checked);
 		if (darkModeToggle.checked) {
-			document.body.classList.add('dark-mode');
-			localStorage.setItem('darkMode', 'enabled');
+			document.body.classList.add('dark-mode'); // Ligo o modo escuro.
+			localStorage.setItem('darkMode', 'enabled'); // Salvo que tá ligado no localStorage.
 		} else {
-			document.body.classList.remove('dark-mode');
-			localStorage.setItem('darkMode', 'disabled');
+			document.body.classList.remove('dark-mode'); // Desligo o modo escuro.
+			localStorage.setItem('darkMode', 'disabled'); // Salvo que tá desligado.
 		}
 	});
 }
@@ -1946,15 +1822,15 @@ function loadMathLibrary() {
 	script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.7.0/math.min.js';
 	script.onload = () => {
 		console.log('Math.js loaded.');
-		initializeApp();
+		initializeApp(); // Assim que carregar, inicializo o app.
 	};
 	script.onerror = () => {
-		console.error('Erro ao carregar Math.js.');
+		console.error('Erro ao carregar Math.js.'); // Se der erro, console avisa.
 	};
-	document.head.appendChild(script);
+	document.head.appendChild(script); // Adiciono o script no head pra começar o download e execução.
 }
 
-// Inicializa a aplicação após o DOM ser carregado
+// Inicializa tudo DEPOIS que a página carrega completamente
 document.addEventListener('DOMContentLoaded', () => {
-	loadMathLibrary();
+	loadMathLibrary(); // Chamo a função que carrega o math.js e inicia o app.
 });

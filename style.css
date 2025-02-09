@@ -361,54 +361,57 @@ input:checked+.slider {
 
 /* Estilos para 'X' */
 .cell.X::before {
-    content: 'X';
+    content: "X";
     color: var(--color-error);
     display: block;
 }
 
 /* Estilos para 'O' */
 .cell.O::before {
-    content: 'O';
+    content: "O";
     color: var(--color-success);
     display: block;
 }
 
-/* calc */
+/* calc.css */
 
-
+/* --------------------------------------------------
+  ESTILOS DO CONTAINER PRINCIPAL DA CALCULADORA
+  Define o layout flexível e o espaçamento geral da calculadora.
+ -------------------------------------------------- */
 .calculator-container {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* Sutil sombra para o container, se desejar um efeito mais 'card' */
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.05); */
-    /* Removido para manter mais minimalista */
+    /* Container com fundo transparente e borda arredondada */
     border-radius: 10px;
-    /* Bordas mais arredondadas para o container, opcional */
     padding: 20px;
-    /* Aumentar padding interno para respiro, opcional */
 }
 
+/* --------------------------------------------------
+  ESTILOS DA ÁREA DE DISPLAY DA CALCULADORA
+  Define a aparência do visor, cor de fundo, texto e sombra interna.
+ -------------------------------------------------- */
 .calc-display {
     background-color: #000;
     border-radius: 8px;
-    /* Mais arredondamento no display para suavizar */
     padding: 15px;
-    /* Aumentar padding interno do display */
     text-align: right;
     font-size: 2.7em;
-    /* Aumentei mais o tamanho da fonte para o display */
     color: #fff;
-    /* Sutil sombra interna para o display, dando um leve efeito de profundidade */
+    /* Sombra interna para efeito de profundidade */
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* --------------------------------------------------
+  ESTILOS DO INPUT NO DISPLAY DA CALCULADORA
+  Garante que o input se comporte como parte do display, sem bordas e com texto alinhado.
+ -------------------------------------------------- */
 .calc-display input {
     width: 100%;
     border: none;
     background-color: transparent;
     font-size: 2.7em;
-    /* Tamanho da fonte do input alinhado com o display */
     text-align: right;
     padding: 0;
     margin: 0;
@@ -416,169 +419,229 @@ input:checked+.slider {
     color: #fff;
 }
 
+/* --------------------------------------------------
+  ESTILOS DO CONTAINER DOS BOTÕES DA CALCULADORA
+  Define o layout de grid para os botões e o espaçamento entre eles.
+ -------------------------------------------------- */
 .calc-buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
-    /* Aumentei um pouco o gap entre os botões */
 }
 
+/* --------------------------------------------------
+  ESTILOS BASE DOS BOTÕES DA CALCULADORA
+  Define a aparência geral dos botões: padding, borda, cor de fundo, fonte, cursor, transições e sombra.
+ -------------------------------------------------- */
 .calc-button {
     padding: 18px;
-    /* Aumentei o padding dos botões para ficarem um pouco maiores */
     border: none;
     border-radius: 50%;
     height: 150px;
-    background-color: #D4D4D2;
+    background-color: #d4d4d2;
     font-size: 2em;
-    /* Aumentei a fonte dos botões numéricos */
     cursor: pointer;
     text-align: center;
     user-select: none;
-    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
-    /* Adicionada transição para box-shadow e transform */
+    transition: background-color 0.2s ease, transform 0.1s ease,
+        box-shadow 0.2s ease;
+    /* Sombra suave abaixo dos botões */
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para os botões */
 }
 
+/* --------------------------------------------------
+  ESTILOS DOS BOTÕES DE OPERADOR
+  Define a cor de fundo e sombra específica para botões de operador.
+ -------------------------------------------------- */
 .calc-button.operator {
-    background-color: #FF9500;
+    background-color: #ff9500;
     color: white;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para botões de operador */
 }
 
+/* --------------------------------------------------
+  ESTILOS DO BOTÃO DE IGUAL
+  Estilos específicos para o botão de igual, incluindo span de coluna e borda arredondada retangular.
+ -------------------------------------------------- */
 .calc-button.equal {
-    background-color: #FF9500;
+    background-color: #ff9500;
     color: white;
     grid-column: span 2;
     border-radius: 45px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para botão igual */
 }
 
+/* --------------------------------------------------
+  ESTILOS DOS BOTÕES CLEAR/ENTRY E SECUNDÁRIOS
+  Define a cor de fundo e sombra para botões de limpar e secundários.
+ -------------------------------------------------- */
 .calc-button.clear-entry,
 .secondary-button {
-    background-color: #A6A6A6;
+    background-color: #a6a6a6;
     color: #000;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para botões clear/secundários */
 }
 
+/* --------------------------------------------------
+  ESTILOS DOS BOTÕES NO ESTADO HOVER (SOBRE)
+  Define a mudança de cor de fundo e sombra quando o mouse passa por cima dos botões.
+ -------------------------------------------------- */
 .calc-button:hover {
-    background-color: #B3B3B3;
+    background-color: #b3b3b3;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
-    /* Sombra um pouco maior no hover */
 }
 
+/* --------------------------------------------------
+  ESTILOS DOS BOTÕES DE OPERADOR E IGUAL NO ESTADO HOVER
+  Estilos de hover específicos para botões de operador e igual.
+ -------------------------------------------------- */
 .calc-button.operator:hover,
 .calc-button.equal:hover {
     background-color: #ffb84d;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
-    /* Sombra um pouco maior no hover para operadores/igual */
 }
 
+/* --------------------------------------------------
+  ESTILOS DOS BOTÕES CLEAR/ENTRY E SECUNDÁRIOS NO ESTADO HOVER
+  Estilos de hover específicos para botões clear/entry e secundários.
+ -------------------------------------------------- */
 .calc-button.clear-entry:hover,
 .secondary-button:hover {
-    background-color: #C0C0C0;
+    background-color: #c0c0c0;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
-    /* Sombra um pouco maior no hover para clear/secundários */
 }
 
+/* --------------------------------------------------
+  ESTILOS DOS BOTÕES NO ESTADO ACTIVE (CLIQUE)
+  Define a mudança de cor de fundo, escala e sombra quando os botões são clicados.
+ -------------------------------------------------- */
 .calc-button:active {
     background-color: #999;
     transform: scale(0.97);
-    /* Menor scale para o efeito de pressionar */
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    /* Sombra menor quando ativo */
 }
 
+/* --------------------------------------------------
+  ESTILOS ACTIVE PARA BOTÕES OPERADOR, IGUAL, CLEAR/ENTRY E SECUNDÁRIOS
+  Estilos active específicos para os botões especiais, mantendo a mesma cor e sombra.
+ -------------------------------------------------- */
 .calc-button.operator:active,
 .calc-button.equal:active,
 .calc-button.clear-entry:active,
 .secondary-button:active {
     background-color: #999;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    /* Sombra menor quando ativo para botões especiais */
 }
 
-
+/* --------------------------------------------------
+  ESTILOS DO CONTAINER DO HISTÓRICO DA CALCULADORA
+  Define margem superior, borda superior e padding superior para separar do display e botões.
+ -------------------------------------------------- */
 .calc-history {
     margin-top: 25px;
-    /* Aumentei a margem superior do histórico */
     border-top: 1px solid #333;
     padding-top: 15px;
-    /* Aumentei o padding superior do histórico */
 }
 
+/* --------------------------------------------------
+  ESTILOS DO TÍTULO DO HISTÓRICO
+  Define a fonte e cor do título "Histórico".
+ -------------------------------------------------- */
 .calc-history h3 {
     margin-top: 0;
     font-size: 1.3em;
-    /* Aumentei um pouco a fonte do título do histórico */
     color: #eee;
 }
 
+/* --------------------------------------------------
+  ESTILOS DA LISTA DO HISTÓRICO
+  Remove bullets da lista, define padding, margem e altura máxima com scroll vertical.
+ -------------------------------------------------- */
 .calc-history ul {
     list-style: none;
     padding: 0;
     margin: 0;
     max-height: 180px;
-    /* Aumentei a altura máxima do histórico */
     overflow-y: auto;
 }
 
+/* --------------------------------------------------
+  ESTILOS DE CADA ITEM DO HISTÓRICO
+  Define padding, borda inferior pontilhada, layout flexível, alinhamento, espaçamento, fonte, cor e transição de hover para cada item no histórico.
+ -------------------------------------------------- */
 .calc-history li.history-item {
     padding: 10px 0;
-    /* Aumentei o padding vertical dos itens do histórico */
     border-bottom: 1px dotted #555;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
-    /* Aumentei o gap nos itens do histórico */
     font-size: 1em;
-    /* Aumentei um pouco a fonte dos itens do histórico */
     color: #ddd;
     transition: background-color 0.3s ease;
 }
 
+/* --------------------------------------------------
+  REMOVE A BORDA INFERIOR DO ÚLTIMO ITEM DO HISTÓRICO
+  Para um visual mais limpo na última entrada.
+ -------------------------------------------------- */
 .calc-history li.history-item:last-child {
     border-bottom: none;
 }
 
+/* --------------------------------------------------
+  ESTILOS DA EXPRESSÃO MATEMÁTICA NO ITEM DO HISTÓRICO
+  Define flexibilidade para ocupar espaço, overflow e margem.
+ -------------------------------------------------- */
 .calc-history li.history-item .expression {
     flex-grow: 1;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-right: 8px;
-    /* Aumentei a margem direita da expressão */
 }
 
+/* --------------------------------------------------
+  ESTILOS DO SEPARADOR "=" NO ITEM DO HISTÓRICO
+  Define margem horizontal para o separador.
+ -------------------------------------------------- */
 .calc-history li.history-item .separator {
     margin: 0 8px;
-    /* Aumentei a margem horizontal do separador */
 }
 
+/* --------------------------------------------------
+  ESTILOS DO RESULTADO NO ITEM DO HISTÓRICO
+  Define peso da fonte, margem e cor para destacar o resultado.
+ -------------------------------------------------- */
 .calc-history li.history-item .result {
     font-weight: bold;
     margin-left: auto;
     color: #fff;
 }
 
+/* --------------------------------------------------
+  ESTILOS DO TIMESTAMP NO ITEM DO HISTÓRICO
+  Define cor e tamanho da fonte para o timestamp (hora do cálculo).
+ -------------------------------------------------- */
 .calc-history li.history-item .timestamp {
     color: #aaa;
     font-size: 0.9em;
-    /* Aumentei um pouco a fonte do timestamp */
     margin-left: 8px;
-    /* Aumentei a margem esquerda do timestamp */
 }
 
+/* --------------------------------------------------
+  ESTILOS PARA ITENS NOVOS NO HISTÓRICO (ANIMAÇÃO)
+  Define cor de fundo temporária e animação de flash para indicar novo item.
+ -------------------------------------------------- */
 .calc-history li.history-item.new-item {
     background-color: #222;
     animation: newItemFlash 1s ease-out;
 }
 
+/* --------------------------------------------------
+  ANIMAÇÃO DE FLASH PARA NOVOS ITENS NO HISTÓRICO
+  Define a animação que muda a cor de fundo e volta a transparente, destacando o novo item.
+ -------------------------------------------------- */
 @keyframes newItemFlash {
     0% {
         background-color: #222;
@@ -589,43 +652,42 @@ input:checked+.slider {
     }
 }
 
+/* --------------------------------------------------
+  ESTILOS DOS BOTÕES CLEAR HISTORY E SECUNDÁRIOS
+  Define padding, borda, cor de fundo, fonte, margem superior, transições e sombra para botões secundários e de limpar histórico.
+ -------------------------------------------------- */
 .clear-history,
 .secondary-button {
     padding: 12px 20px;
-    /* Aumentei o padding dos botões secundários */
     border: none;
     border-radius: 15px;
-    /* Mais arredondamento nos botões secundários */
-    background-color: #A6A6A6;
+    background-color: #a6a6a6;
     cursor: pointer;
     font-size: 1.3em;
-    /* Aumentei a fonte dos botões secundários */
     margin-top: 15px;
-    /* Aumentei a margem superior dos botões secundários */
     transition: background-color 0.2s ease, box-shadow 0.2s ease;
-    /* Adicionada transição para box-shadow */
     color: #000;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para botões secundários */
 }
 
+/* --------------------------------------------------
+  ESTILOS HOVER PARA BOTÕES CLEAR HISTORY E SECUNDÁRIOS
+  Define a mudança de cor e sombra no hover para esses botões.
+ -------------------------------------------------- */
 .clear-history:hover,
 .secondary-button:hover {
-    background-color: #C0C0C0;
+    background-color: #c0c0c0;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
-    /* Sombra um pouco maior no hover para botões secundários */
 }
 
+/* --------------------------------------------------
+  ESTILOS ACTIVE PARA BOTÕES CLEAR HISTORY E SECUNDÁRIOS
+  Define a mudança de cor e sombra quando esses botões estão ativos/clicados.
+ -------------------------------------------------- */
 .clear-history:active,
 .secondary-button:active {
     background-color: #999;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    /* Sombra menor quando ativo para botões secundários */
-}
-
-.secondary-button {
-    background-color: #A6A6A6;
-    color: #000;
 }
 
 /* ================================
@@ -663,156 +725,121 @@ input:checked+.slider {
 /* Container geral para os inputs e botões do conversor */
 .conversor-temperatura-container {
     max-width: 500px;
-    /* Limita a largura do container para melhor legibilidade em telas maiores */
     margin: 2em auto;
-    /* Centraliza o container na página e adiciona margem superior/inferior */
     padding: 2em;
     background-color: var(--color-container);
-    /* Cor de fundo do container, do tema */
     border-radius: var(--border-radius);
-    /* Bordas arredondadas, do tema */
     box-shadow: var(--box-shadow);
-    /* Sombra suave, do tema */
     font-family: var(--font-family-sans);
-    /* Fonte do tema */
     color: var(--color-text);
-    /* Cor do texto padrão, do tema */
 }
 
 /* Estilos para os grupos de input (label e input/select) */
 .conversor-temperatura-container .input-group {
     margin-bottom: 1.5em;
-    /* Espaçamento entre os grupos de input */
 }
 
+/* Estilos para labels */
 .conversor-temperatura-container label {
     display: block;
-    /* Faz a label ocupar a largura total do container */
     margin-bottom: 0.5em;
-    /* Espaçamento entre a label e o campo de input */
     font-weight: 500;
-    /* Deixa a label um pouco mais destacada */
     color: var(--color-secondary);
-    /* Cor secundária para a label, do tema */
 }
 
 /* Estilos para campos de input e select */
 .conversor-temperatura-container input[type="number"],
 .conversor-temperatura-container select {
     width: 100%;
-    /* Ocupa a largura total do container */
     padding: 0.8em;
     border: var(--border-width) solid var(--color-border);
-    /* Borda padrão, do tema */
     border-radius: var(--border-radius);
-    /* Bordas arredondadas, do tema */
     font-size: var(--font-size-base);
-    /* Tamanho da fonte base, do tema */
     color: var(--color-text);
-    /* Cor do texto, do tema */
     background-color: var(--color-background);
-    /* Cor de fundo levemente contrastante */
     box-sizing: border-box;
-    /* Garante que padding e border não aumentem a largura total */
     transition: border-color var(--transition-speed);
-    /* Transição suave na cor da borda */
 }
 
+/* Estilos para campos de input e select em foco */
 .conversor-temperatura-container input[type="number"]:focus,
 .conversor-temperatura-container select:focus {
     border-color: var(--color-primary-hover);
-    /* Cor da borda ao focar, do tema */
     outline: none;
-    /* Remove a borda de outline padrão do navegador ao focar */
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primary), transparent 80%);
-    /* Adiciona uma leve sombra ao redor ao focar */
 }
-
 
 /* Estilos para os botões */
 .conversor-temperatura-container button {
     padding: 0.8em 1.5em;
     border: none;
     border-radius: var(--border-radius);
-    /* Bordas arredondadas, do tema */
     font-size: var(--font-size-base);
-    /* Tamanho da fonte base, do tema */
     color: var(--color-text);
-    /* Cor do texto do botão (contraste com a cor de fundo) */
     background-color: var(--color-primary);
-    /* Cor primária para o fundo do botão, do tema */
     cursor: pointer;
-    /* Indica que é clicável */
     transition: background-color var(--transition-speed);
-    /* Transição suave na cor de fundo */
     margin-top: 1em;
-    /* Espaçamento acima do botão */
     margin-right: 0.5em;
-    /* Espaçamento entre botões, se houver */
 }
 
+/* Estilos para botões hover */
 .conversor-temperatura-container button:hover {
     background-color: var(--color-primary-hover);
-    /* Cor de fundo no hover, do tema */
 }
 
+/* Estilos para o botão voltar ao menu */
 .conversor-temperatura-container button#voltarMenuBtn {
     background-color: var(--color-secondary);
-    /* Cor secundária para o botão "Voltar ao Menu" */
 }
 
+/* Estilos para o botão voltar ao menu hover */
 .conversor-temperatura-container button#voltarMenuBtn:hover {
-    background-color: color-mix(in lch, var(--color-secondary) shade(10%), black);
-    /* Escurece um pouco no hover */
+    background-color: color-mix(in lch,
+            var(--color-secondary) shade(10%),
+            black);
 }
 
-
-/* Estilos para a mensagem de resultado (reutilizando e ajustando) */
+/* Estilos para a mensagem de resultado */
 .conversor-temperatura-container .resultado-mensagem {
     margin-top: 2em;
-    /* Mais espaço acima do resultado para destacar */
     padding: 1.5em;
     text-align: center;
-    background-color: color-mix(in lch, var(--color-primary) lightness(90%), white);
-    /* Fundo suavemente colorido para o resultado */
+    background-color: color-mix(in lch,
+            var(--color-primary) lightness(90%),
+            white);
     border-radius: var(--border-radius);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-    /* Sombra interna suave para destacar */
 }
 
+/* Estilos para o h2 da mensagem de resultado */
 .conversor-temperatura-container .resultado-mensagem h2 {
     font-size: 1.5em;
     color: var(--color-text);
-    /* Cor do texto do resultado */
     margin-bottom: 0.5em;
-    /* Espaçamento abaixo do título do resultado */
 }
 
-/* Estilos para formatar o resultado da conversão (reutilizando) */
+/* Estilos para a temperatura original no resultado */
 .conversor-temperatura-container .temperatura-original,
 .conversor-temperatura-container .temperatura-convertida {
     font-weight: bold;
     color: var(--color-primary);
-    /* Cor primária para destacar os valores numéricos */
 }
 
+/* Estilos para a unidade de temperatura no resultado */
 .conversor-temperatura-container .unidade-original,
 .conversor-temperatura-container .unidade-convertida {
     font-style: italic;
     color: var(--color-secondary);
-    /* Cor secundária para as unidades */
     margin: 0 0.2em;
 }
 
-
-/* Estilos para mensagens de erro (reutilizando) */
+/* Estilos para mensagens de erro */
 .conversor-temperatura-container .error-message {
     color: var(--color-error);
-    /* Cor de erro do tema */
     font-size: 0.9em;
     margin-top: 0.3em;
     display: block;
-    /* Garante que a mensagem de erro quebre linha e apareça abaixo do input */
 }
 
 /* Estilos específicos para a calculadora de IMC */
@@ -820,67 +847,45 @@ input:checked+.slider {
 /* Container geral para a calculadora de IMC */
 .calculadora-imc-container {
     max-width: 500px;
-    /* Limita a largura para manter o layout agradável */
     margin: 2em auto;
-    /* Centraliza na página e adiciona margem vertical */
     padding: 2em;
     background-color: var(--color-container);
-    /* Fundo do container, do tema */
     border-radius: var(--border-radius);
-    /* Bordas arredondadas, do tema */
     box-shadow: var(--box-shadow);
-    /* Sombra suave, do tema */
     font-family: var(--font-family-sans);
-    /* Fonte do tema */
     color: var(--color-text);
-    /* Cor do texto padrão, do tema */
 }
 
 /* Grupos de input (labels e inputs) */
 .calculadora-imc-container .input-group {
     margin-bottom: 1.5em;
-    /* Espaço entre os grupos de input */
 }
 
+/* Estilos para labels na calculadora de IMC */
 .calculadora-imc-container label {
     display: block;
-    /* Labels ocupam a largura total */
     margin-bottom: 0.5em;
-    /* Espaço entre label e input */
     font-weight: 500;
-    /* Label mais destacada */
     color: var(--color-secondary);
-    /* Cor secundária para labels, do tema */
 }
 
 /* Inputs de número */
 .calculadora-imc-container input[type="number"] {
     width: 100%;
-    /* Inputs ocupam a largura total */
     padding: 0.8em;
     border: var(--border-width) solid var(--color-border);
-    /* Borda padrão, do tema */
     border-radius: var(--border-radius);
-    /* Bordas arredondadas, do tema */
     font-size: var(--font-size-base);
-    /* Tamanho da fonte base, do tema */
     color: var(--color-text);
-    /* Cor do texto, do tema */
     background-color: var(--color-background);
-    /* Fundo levemente contrastante */
     box-sizing: border-box;
-    /* Padding/border não alteram a largura total */
     transition: border-color var(--transition-speed);
-    /* Transição suave na borda */
 }
 
 .calculadora-imc-container input[type="number"]:focus {
     border-color: var(--color-primary-hover);
-    /* Cor da borda ao focar, do tema */
     outline: none;
-    /* Remove outline padrão ao focar */
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primary), transparent 80%);
-    /* Sombra ao redor ao focar */
 }
 
 /* Botões */
@@ -888,89 +893,70 @@ input:checked+.slider {
     padding: 0.8em 1.5em;
     border: none;
     border-radius: var(--border-radius);
-    /* Bordas arredondadas, do tema */
     font-size: var(--font-size-base);
-    /* Fonte base, do tema */
     color: var(--color-text);
-    /* Cor do texto do botão */
     background-color: var(--color-primary);
-    /* Cor primária do botão, do tema */
     cursor: pointer;
-    /* Cursor de clique */
     transition: background-color var(--transition-speed);
-    /* Transição suave no fundo */
     margin-top: 1em;
-    /* Espaço acima dos botões */
     margin-right: 0.5em;
-    /* Espaço entre botões */
 }
 
 .calculadora-imc-container button:hover {
     background-color: var(--color-primary-hover);
-    /* Cor do botão no hover, do tema */
 }
 
 .calculadora-imc-container button#voltarMenuBtn {
     background-color: var(--color-secondary);
-    /* Cor secundária para "Voltar ao Menu" */
 }
 
 .calculadora-imc-container button#voltarMenuBtn:hover {
-    background-color: color-mix(in lch, var(--color-secondary) shade(10%), black);
-    /* Escurece no hover */
+    background-color: color-mix(in lch,
+            var(--color-secondary) shade(10%),
+            black);
 }
-
 
 /* Mensagem de resultado do IMC */
 .calculadora-imc-container .resultado-mensagem {
     margin-top: 2em;
-    /* Espaço superior para separar do input */
     padding: 1.5em;
     text-align: center;
-    background-color: color-mix(in lch, var(--color-success) lightness(90%), white);
-    /* Fundo suavemente verde */
+    background-color: color-mix(in lch,
+            var(--color-success) lightness(90%),
+            white);
     border-radius: var(--border-radius);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-    /* Sombra interna suave */
 }
 
 .calculadora-imc-container .resultado-mensagem h2 {
     font-size: 1.5em;
     color: var(--color-text);
-    /* Cor do texto do resultado */
     margin-bottom: 0.5em;
-    /* Espaço abaixo do título do resultado */
 }
 
 /* Estilos específicos para valores de IMC e classificação */
 .calculadora-imc-container .imc-valor {
     font-weight: bold;
     color: var(--color-primary);
-    /* Cor primária para o valor do IMC */
 }
 
 .calculadora-imc-container .imc-classificacao {
     font-style: italic;
     color: var(--color-secondary);
-    /* Cor secundária para a classificação */
     margin-top: 0.5em;
 }
 
 .calculadora-imc-container .classificacao-valor {
     font-weight: normal;
     color: var(--color-warning);
-    /* Cor de aviso para a classificação */
 }
-
 
 /* Mensagens de erro (reutilizando) */
 .calculadora-imc-container .error-message {
     color: var(--color-error);
-    /* Cor de erro do tema */
     font-size: 0.9em;
     margin-top: 0.3em;
     display: block;
-    /* Erros em bloco abaixo dos inputs */
 }
 
 /* Estilos para o Verificador de Número Primo */
@@ -1042,7 +1028,9 @@ input:checked+.slider {
 }
 
 .verificador-primo-container button#voltarMenuBtn:hover {
-    background-color: color-mix(in lch, var(--color-secondary) shade(10%), black);
+    background-color: color-mix(in lch,
+            var(--color-secondary) shade(10%),
+            black);
 }
 
 /* Mensagem de Resultado */
@@ -1050,7 +1038,8 @@ input:checked+.slider {
     margin-top: 2em;
     padding: 1.5em;
     text-align: center;
-    background-color: color-mix(in lch, var(--color-background) blend(10%, var(--color-success)));
+    background-color: color-mix(in lch,
+            var(--color-background) blend(10%, var(--color-success)));
     /* Fundo suavemente verde-claro */
     border-radius: var(--border-radius);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
@@ -1150,7 +1139,9 @@ input:checked+.slider {
 }
 
 .calculadora-idade-container button#voltarMenuBtn:hover {
-    background-color: color-mix(in lch, var(--color-secondary) shade(10%), black);
+    background-color: color-mix(in lch,
+            var(--color-secondary) shade(10%),
+            black);
 }
 
 /* Mensagem de Resultado */
@@ -1158,7 +1149,8 @@ input:checked+.slider {
     margin-top: 2em;
     padding: 1.5em;
     text-align: center;
-    background-color: color-mix(in lch, var(--color-background) blend(10%, var(--color-primary)));
+    background-color: color-mix(in lch,
+            var(--color-background) blend(10%, var(--color-primary)));
     /* Fundo suavemente azul-claro */
     border-radius: var(--border-radius);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
@@ -1175,7 +1167,6 @@ input:checked+.slider {
     font-weight: bold;
     color: var(--color-primary);
 }
-
 
 /* Mensagens de Erro */
 .calculadora-idade-container .error-message {
@@ -1223,9 +1214,10 @@ input:checked+.slider {
 }
 
 .ola-mundo-container button:hover {
-    background-color: color-mix(in lch, var(--color-secondary) shade(10%), black);
+    background-color: color-mix(in lch,
+            var(--color-secondary) shade(10%),
+            black);
 }
-
 
 /* Container Geral para Leitura de Nome */
 .ler-nome-container {
@@ -1298,16 +1290,18 @@ input:checked+.slider {
 }
 
 .ler-nome-container button[onclick*="voltarAoMenu"]:hover {
-    background-color: color-mix(in lch, var(--color-secondary) shade(10%), black);
+    background-color: color-mix(in lch,
+            var(--color-secondary) shade(10%),
+            black);
 }
-
 
 /* Mensagem de Resultado em Leitura de Nome */
 .ler-nome-container #resultado-nome {
     margin-top: 2em;
     padding: 1.5em;
     text-align: center;
-    background-color: color-mix(in lch, var(--color-background) blend(10%, var(--color-primary)));
+    background-color: color-mix(in lch,
+            var(--color-background) blend(10%, var(--color-primary)));
     /* Fundo suavemente azul-claro */
     border-radius: var(--border-radius);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
@@ -1318,7 +1312,6 @@ input:checked+.slider {
     color: var(--color-text);
     margin-bottom: 0.5em;
 }
-
 
 /* Mensagens de Erro (reutilizando) */
 .ler-nome-container .error-message {
@@ -1408,131 +1401,132 @@ footer {
 }
 
 /* ================================
-             Responsividade
-             ================================ */
+    Responsividade
+================================ */
 /* Para telas até 768px (tablets e alguns laptops menores) */
 @media (max-width: 768px) {
+
+    /* Ajustes no container principal da calculadora */
     .calculator-container {
         gap: 10px;
-        /* Reduz o espaçamento geral */
         padding: 15px;
-        /* Reduz o padding do container */
         border-radius: 8px;
-        /* Mantém ou ajusta o border-radius se necessário */
     }
 
+    /* Ajustes no display da calculadora */
     .calc-display {
         font-size: 2em;
-        /* Reduz a fonte no display */
         padding: 8px;
-        /* Reduz o padding do display */
         border-radius: 6px;
-        /* Ajusta o border-radius se necessário */
     }
 
+    /* Ajustes no input do display da calculadora */
     .calc-display input {
         font-size: 2em;
-        /* Reduz a fonte do input para corresponder ao display */
     }
 
+    /* Ajustes nos botões da calculadora */
     .calc-buttons {
         gap: 8px;
-        /* Reduz o espaçamento entre os botões */
     }
 
+    /* Ajustes nos botões individuais da calculadora */
     .calc-button {
         padding: 12px;
-        /* Reduz o padding dos botões */
         font-size: 1.6em;
-        /* Reduz a fonte dos botões */
         border-radius: 50%;
-        /* Ajusta o border-radius para manter a forma arredondada em tamanho menor */
     }
 
+    /* Ajuste específico para o botão de igual */
     .calc-button.equal {
         border-radius: 35px;
-        /* Ajusta o border-radius do botão de igual */
     }
 
+    /* Ajustes na seção de histórico da calculadora */
     .calc-history {
         margin-top: 15px;
-        /* Reduz a margem superior do histórico */
         padding-top: 8px;
-        /* Reduz o padding superior do histórico */
     }
 
+    /* Ajustes no título do histórico */
     .calc-history h3 {
         font-size: 1.1em;
-        /* Reduz a fonte do título do histórico */
     }
 
+    /* Ajustes nos itens do histórico */
     .calc-history li.history-item {
         padding: 6px 0;
-        /* Reduz o padding dos itens do histórico */
         font-size: 0.85em;
-        /* Reduz a fonte dos itens do histórico */
     }
 
+    /* Ajustes no timestamp dos itens do histórico */
     .calc-history li.history-item .timestamp {
         font-size: 0.75em;
-        /* Reduz a fonte do timestamp */
     }
 
+    /* Ajustes nos botões secundários e de limpar histórico */
     .clear-history,
     .secondary-button {
         padding: 10px 15px;
-        /* Reduz o padding dos botões secundários */
         font-size: 1.1em;
-        /* Reduz a fonte dos botões secundários */
         border-radius: 10px;
-        /* Ajusta o border-radius dos botões secundários */
         margin-top: 8px;
-        /* Reduz a margem superior dos botões secundários */
     }
 
+    /* Redução geral do tamanho da fonte no html */
     html {
         font-size: 14px;
     }
 
+    /* Ajustes no container geral da página */
     .container {
         padding: var(--spacing-unit);
     }
 
+    /* Ajustes no menu */
     .menu {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
+    /* Ajustes no grid do jogo da velha */
     .grid {
         grid-template-columns: repeat(3, 80px);
         grid-template-rows: repeat(3, 80px);
     }
 
+    /* Ajustes no footer */
     footer {
         padding: 1rem 0;
     }
 
+    /* Ajustes nos links do GitHub */
     .github-link {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
     }
 
+    /* Ajustes no ícone do link do GitHub */
     .github-link::before {
         width: 20px;
         height: 20px;
     }
 
+    /* Ajustes no título h1 */
     h1 {
         font-size: 2rem;
     }
 
+    /* Ajustes no título h2 */
     h2 {
         font-size: 1.5rem;
     }
 
+    /* Ajustes no título h3 */
     h3 {
         font-size: 1.2rem;
     }
 
+    /* Ajustes nos botões genéricos */
     button {
         font-size: 0.9rem;
         padding: calc(var(--spacing-unit) * 0.5) var(--spacing-unit);
@@ -1541,97 +1535,88 @@ footer {
 
 /* Para telas até 480px (celulares menores) */
 @media (max-width: 480px) {
+
+    /* Ajustes adicionais no container principal da calculadora para telas menores */
     .calculator-container {
         gap: 8px;
-        /* Reduz ainda mais o espaçamento */
         padding: 10px;
-        /* Reduz ainda mais o padding do container */
     }
 
+    /* Ajustes adicionais no display da calculadora para telas menores */
     .calc-display {
         font-size: 1.8em;
-        /* Reduz ainda mais a fonte no display */
         padding: 6px;
-        /* Reduz ainda mais o padding do display */
     }
 
+    /* Ajustes adicionais no input do display da calculadora para telas menores */
     .calc-display input {
         font-size: 1.8em;
-        /* Reduz a fonte do input para corresponder ao display */
     }
 
+    /* Ajustes adicionais nos botões da calculadora para telas menores */
     .calc-buttons {
         gap: 6px;
-        /* Reduz ainda mais o espaçamento entre os botões */
         grid-template-columns: repeat(4, 1fr);
-        /* Garante 4 colunas mesmo em telas pequenas */
     }
 
+    /* Ajustes adicionais nos botões individuais da calculadora para telas menores */
     .calc-button {
         padding: 10px;
-        /* Reduz ainda mais o padding dos botões */
         font-size: 1.4em;
-        /* Reduz ainda mais a fonte dos botões */
         border-radius: 50%;
-        /* Mantém ou ajusta o border-radius para forma arredondada */
         height: 80px;
     }
 
+    /* Ajuste específico do botão de igual para telas menores */
     .calc-button.equal {
         grid-column: span 2;
-        /* Garante que o botão igual continue ocupando 2 colunas */
         border-radius: 30px;
-        /* Ajusta o border-radius do botão de igual para telas menores */
     }
 
+    /* Ajustes adicionais na seção de histórico para telas menores */
     .calc-history {
         margin-top: 10px;
-        /* Reduz ainda mais a margem superior do histórico */
         padding-top: 6px;
-        /* Reduz ainda mais o padding superior do histórico */
     }
 
+    /* Ajustes adicionais no título do histórico para telas menores */
     .calc-history h3 {
         font-size: 1em;
-        /* Reduz ainda mais a fonte do título do histórico */
     }
 
+    /* Ajustes adicionais na lista do histórico para telas menores */
     .calc-history ul {
         max-height: 120px;
-        /* Reduz a altura máxima do histórico para telas menores */
     }
 
+    /* Ajustes adicionais nos itens do histórico para telas menores */
     .calc-history li.history-item {
         padding: 4px 0;
-        /* Reduz ainda mais o padding dos itens do histórico */
         font-size: 0.8em;
-        /* Reduz ainda mais a fonte dos itens do histórico */
         gap: 4px;
-        /* Reduz o gap nos itens do histórico */
     }
 
+    /* Ajustes adicionais no timestamp dos itens do histórico para telas menores */
     .calc-history li.history-item .timestamp {
         font-size: 0.7em;
-        /* Reduz ainda mais a fonte do timestamp */
     }
 
+    /* Ajustes adicionais nos botões secundários e de limpar histórico para telas menores */
     .clear-history,
     .secondary-button {
         padding: 8px 12px;
-        /* Reduz ainda mais o padding dos botões secundários */
         font-size: 1em;
-        /* Reduz ainda mais a fonte dos botões secundários */
         border-radius: 10px;
-        /* Ajusta o border-radius dos botões secundários */
         margin-top: 6px;
-        /* Reduz ainda mais a margem superior dos botões secundários */
     }
 
+    /* Ajustes no switch do tema dark mode para telas menores */
     .switch {
         width: 50px;
         height: 28px;
     }
 
+    /* Ajustes no slider do switch para telas menores */
     .slider:before {
         height: 22px;
         width: 22px;
@@ -1639,14 +1624,17 @@ footer {
         bottom: 3px;
     }
 
+    /* Ajustes no slider do switch quando checked para telas menores */
     input:checked+.slider:before {
         transform: translateX(22px);
     }
 
+    /* Ajustes no texto do slider para telas menores */
     .slider:after {
         font-size: 12px;
     }
 
+    /* Ajustes no menu para telas menores (uma coluna) */
     .menu {
         grid-template-columns: 1fr;
     }
@@ -1741,41 +1729,39 @@ footer {
     overflow-x: auto;
 }
 
+/* Estilos para a tabela ASCII */
 .tabela-ascii table {
     border-collapse: collapse;
     width: 100%;
     margin-top: 10px;
     border: var(--border-width) solid var(--color-border);
-    /* Usando variáveis para borda */
     background-color: var(--color-container);
-    /* Usando variável para cor de container */
     color: var(--color-text);
-    /* Usando variável para cor de texto */
 }
 
+/* Estilos para células de cabeçalho e corpo da tabela ASCII */
 .tabela-ascii th,
 .tabela-ascii td {
     border: var(--border-width) solid var(--color-border);
-    /* Usando variáveis para borda */
     padding: 8px 12px;
     text-align: left;
 }
 
+/* Estilos para o cabeçalho da tabela ASCII */
 .tabela-ascii thead {
     background-color: var(--color-secondary);
-    /* Usando variável para cor secundária para o header */
     color: var(--color-background);
-    /* Usando variável para cor de background para o texto do header, para contraste */
 }
 
+/* Estilos para linhas pares do corpo da tabela ASCII */
 .tabela-ascii tbody tr:nth-child(even) {
-    background-color: color-mix(in lch, var(--color-container) 10%, transparent);
-    /* Sutil variação de cor, mantendo tema */
+    background-color: color-mix(in lch,
+            var(--color-container) 10%,
+            transparent);
 }
 
-/* Estilo específico para caracteres de controle */
+/* Estilo específico para caracteres de controle na tabela ASCII */
 .caractere-controle {
     font-style: italic;
     color: var(--color-text);
-    /* Usando variável para cor secundária para caracteres de controle */
 }
